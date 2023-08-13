@@ -1,11 +1,12 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
+	import WelcomeCard from '../components/WelcomeCard.svelte';
 </script>
 
-<div class="gray-background px-5"><Navbar /></div>
+<div class="bg-[#dedede] px-5">
+	<Navbar />
+	<WelcomeCard />
+</div>
 
 <style>
-	.gray-background {
-		background-color: #dedede;
-	}
 </style>
