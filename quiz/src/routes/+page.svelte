@@ -25,17 +25,26 @@
 						<Text>{item}</Text>
 					</span>
 				{/each}
+				<a href="/houseStyles">
+					<Text variant="gradient" weight="bold">
+						Подробнее
+					</Text>
 			</div>
 		</Flex>
 	</div>
 </Center>
 
 <style>
+	:global(body) {
+		background-color: #DEDEDE;
+
+	}
 	.text-promo {
 		width: 800px;
 		padding-top: 120px;
 		padding-left: 30px;
 		padding-right: 30px;
+;
 
 		& h1 {
 			font-size: 87px;
