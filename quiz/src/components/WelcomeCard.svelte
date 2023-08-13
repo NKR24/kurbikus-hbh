@@ -7,11 +7,13 @@
 <div class="flex justify-center border-[0.5px] border-black">
 	<Card padding={0} class="bg-[#dedede] sm:w-[24.25rem] lg:w-[108rem]">
 		<Card.Section>
-			<Image src="src/assets/images/welcomecardhouse.jpeg" alt="housepic" />
+			<Image src="src/assets/images/welcomecardhouse.jpeg" class="sm:w-full h-[17.73rem] lg:w-[40.6875rem] lg:h-[54.5rem]" alt="housepic" />
+            <div class="absolute inset-0 flex justify-center sm: top-40 lg:invisible">
 			<button
 				class="bg-[#000] text-[#fff] sm: w-[14.46569rem] h-[3.25rem] text-[1rem] font-mikro"
 				>Консултация</button
 			>
+            </div>
 		</Card.Section>
 
 		<Group class="ml-[2.19rem]">
