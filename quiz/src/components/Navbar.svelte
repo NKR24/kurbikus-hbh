@@ -9,10 +9,8 @@
 		<div class="flex items-center justify-center gap-4">
 			<div><Logo /></div>
 			<div class="border border-black h-16" />
-			<div class="flex-col pt-2 items-center w-40 h-16 text">
-				<p>каркасные домапо</p>
-				<p>технологии с 2010 года.</p>
-				<p>Московская область.</p>
+			<div class="flex items-center w-40 h-8 text">
+				<p>каркасные домапо технологии с 2010 года. Московская область.</p>
 			</div>
 		</div>
 		<BurgerIcon />
