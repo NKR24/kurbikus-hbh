@@ -25,7 +25,7 @@
 						<Text>{item}</Text>
 					</span>
 				{/each}
-				<a href="/houseStyles">
+				<a href="/housestyles">
 					<Text variant="gradient" weight="bold">
 						Подробнее
 					</Text>
@@ -37,7 +37,7 @@
 <style>
 	:global(body) {
 		background-color: #DEDEDE;
-
+		min-height: 100vh;
 	}
 	.text-promo {
 		width: 800px;
