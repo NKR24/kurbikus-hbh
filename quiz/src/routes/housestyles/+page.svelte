@@ -61,7 +61,7 @@ function handleHouseClick(house) {
     {/each}
 
     </div>
-    <a href="#" on:click={() => handleHouseClick("all")}  class="text-base px-5 py-2 border-[0.5px] border-black border-solid flex justify-center items-center mb-16 lg:mb-0 lg:ml-20 lg:w-[204px] lg:h-[48px] {activeHouse === "all" ? 'text-white bg-black' : ''}">выбрать всё</a>
+    <a href="#" on:click={() => handleHouseClick("all")}  class="text-base px-5 py-2 border-[0.5px] border-black border-solid flex justify-center items-center mb-[10%] lg:mb-0 lg:ml-20 lg:w-[204px] lg:h-[48px] {activeHouse === "all" ? 'text-white bg-black' : ''}">выбрать всё</a>
     </div>
 
     <BottomNavigation />
