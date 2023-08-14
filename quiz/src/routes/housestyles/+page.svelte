@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 import '../../global.css';
 import { Center, Anchor, Container } from '@svelteuidev/core';
 import house1 from "$lib/assets/images/house/house_1.png";
@@ -12,7 +14,7 @@ let houseStyles = [
         id: 1,
         name: 'кубизм',
         image: house1
-    },
+    }, 
     {
         id: 2,
         name: 'шале',
@@ -30,6 +32,19 @@ let houseStyles = [
     },
 ]
 
+/**
+	 * @type {number | null}
+	 */
+let activeHouse = null;
+
+/**
+	 * @param {number} house
+	 */
+function handleHouseClick(house) {
+    activeHouse = house;
+}
+
+
 </script>
 
 <div class="h-screen bg-[#DEDEDE]  ">
@@ -41,12 +56,12 @@ let houseStyles = [
     {#each houseStyles as houseStyle}
         <div class="flex items-center  flex-col">
             <img src={houseStyle.image} alt={houseStyle.image} class="w-[146px] h-[161px] lg:w-[315px] lg:h-[352px]"/>
-            <Anchor href="/" color="black" underline={false} class="flex text-center items-center w-[114px] h-[35px] lg:w-[157px] lg:h-[46px] justify-center bg-inherit border-[0.5px] border-black border-solid font-['Mikro-Regular'] mt-[-30px] lg:mt-[-60px]">{houseStyle.name}</Anchor>
+            <a on:click={() => handleHouseClick(houseStyle.id)}  href="#"  class="z-10 flex text-center items-center w-[114px] h-[35px] lg:w-[157px] lg:h-[46px] justify-center bg-inherit border-[0.5px] border-black border-solid font-['Mikro-Regular'] mt-[-30px] lg:mt-[-60px] {activeHouse === houseStyle.id ? 'text-white bg-black' : ''}">{houseStyle.name}</a>
             </div>
     {/each}
 
     </div>
-    <Anchor href="/" color="white" underline={false} class="text-base px-5 py-2 bg-black lg:text-black lg:bg-inherit border-[0.5px] border-black border-solid flex justify-center items-center mb-16 lg:mb-0 lg:ml-20 lg:w-[204px] lg:h-[48px]">выбрать всё</Anchor>
+    <a href="#" on:click={() => handleHouseClick("all")}  class="text-base px-5 py-2 border-[0.5px] border-black border-solid flex justify-center items-center mb-16 lg:mb-0 lg:ml-20 lg:w-[204px] lg:h-[48px] {activeHouse === "all" ? 'text-white bg-black' : ''}">выбрать всё</a>
     </div>
 
     <BottomNavigation />
@@ -56,5 +71,5 @@ let houseStyles = [
     
 
 
-  
+ 
   

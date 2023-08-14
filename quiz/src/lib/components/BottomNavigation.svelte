@@ -34,6 +34,7 @@ import '../../global.css';
 	 */
   function handleLinkClick(link) {
     selectedLink = link; // Update selectedLink on link click
+
   }
 </script>
 
