@@ -47,9 +47,9 @@ function handleHouseClick(house) {
 
 </script>
 
-<div class="h-screen bg-[#DEDEDE]  ">
-<div class="flex items-center flex-col bg-[#DEDEDE] lg:pb-10">
-    <h1 class="text-5xl lg:text-[110px]	mt-12 mb-12 font-bold font-['Mikro-Bold'] lowercase">Стиль дома?</h1>
+<div class=" h-screen bg-[#DEDEDE] box-border py-10">
+<div class="flex items-center flex-col bg-[#DEDEDE] ">
+    <h1 class="text-5xl lg:text-[110px] mb-12 font-bold font-['Mikro-Bold'] lowercase">Стиль дома?</h1>
 
     <div class="flex flex-col items-center lg:flex-row lg:items-end ">
     <div class="flex justify-center  flex-wrap mb-20 max-w-sm  lg:mb-0 lg:gap-x-20 lg:max-w-[55rem] lg:pl-14 lg:justify-end">
