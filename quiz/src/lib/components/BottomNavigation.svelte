@@ -43,7 +43,7 @@ import '../../global.css';
     {#each navList as navItem}
       <a
         href={navItem.link}
-        class="text-[13px] md:text-xl lg:text-[32px] font-['Mikro-Regular'] {navItem.link === selectedLink ? 'font-["Mikro-Bold"] underline' : ''}"
+        class="text-[13px] md:text-xl lg:text-[32px] {navItem.link === selectedLink ? 'font-["Mikro-Bold"] underline' : ''}"
         on:click={() => handleLinkClick(navItem.link)}
       >
         {navItem.name}
