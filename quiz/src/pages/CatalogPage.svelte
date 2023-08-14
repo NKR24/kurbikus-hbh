@@ -6,27 +6,30 @@
 			image: 'src/assets/images/imageh1.png',
 			square: 'Площадь: от 90 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.'
+			price: 'От 4 300 000 руб.',
+			index: 1
 		},
 		{
 			image: 'src/assets/images/imageh2.png',
 			square: 'Площадь: от 90 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.'
+			price: 'От 4 300 000 руб.',
+			index: 2
 		},
 		{
 			image: 'src/assets/images/imageh3.png',
 			square: 'Площадь: от 90 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.'
+			price: 'От 4 300 000 руб.',
+			index: 3
 		},
 		{
 			image: 'src/assets/images/imageh4.jpeg',
 			square: 'Площадь: от 90 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.'
-		},
-
+			price: 'От 4 300 000 руб.',
+			index: 4
+		}
 	];
 </script>
 
@@ -35,7 +38,7 @@
 		каталоги домов с ценами
 	</h2>
 	{#each data as item, i}
-		<CatalogCard square={item.square} bedrooms={item.bedrooms} price={item.price} image={item.image} key={i} />
+		<CatalogCard {...item} key={i} />
 	{/each}
 </div>
 
