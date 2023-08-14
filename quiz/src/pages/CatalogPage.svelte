@@ -1,14 +1,42 @@
 <script>
 	import CatalogCard from '../components/CatalogCard.svelte';
 	import '../fonts.css';
+	const data = [
+		{
+			image: 'src/assets/images/imageh1.png',
+			square: 'Площадь: от 90 м²',
+			bedrooms: '3 спальни, 1 санузел.',
+			price: 'От 4 300 000 руб.'
+		},
+		{
+			image: 'src/assets/images/imageh2.png',
+			square: 'Площадь: от 90 м²',
+			bedrooms: '3 спальни, 1 санузел.',
+			price: 'От 4 300 000 руб.'
+		},
+		{
+			image: 'src/assets/images/imageh3.png',
+			square: 'Площадь: от 90 м²',
+			bedrooms: '3 спальни, 1 санузел.',
+			price: 'От 4 300 000 руб.'
+		},
+		{
+			image: 'src/assets/images/imageh4.jpeg',
+			square: 'Площадь: от 90 м²',
+			bedrooms: '3 спальни, 1 санузел.',
+			price: 'От 4 300 000 руб.'
+		},
+
+	];
 </script>
 
 <div class="bg-[#3E3E3E;] text text-[#dedede] sm: pl-[1.37rem] pr-[1.25rem]">
 	<h2 class="text-[0.75rem] pt-[1.13rem] mb-[1.37rem]">
 		каталоги домов с ценами
 	</h2>
-
-	<CatalogCard />
+	{#each data as item, i}
+		<CatalogCard square={item.square} bedrooms={item.bedrooms} price={item.price} image={item.image} key={i} />
+	{/each}
 </div>
 
 <style>
