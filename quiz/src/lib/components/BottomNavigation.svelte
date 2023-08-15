@@ -38,12 +38,12 @@ import '../../global.css';
   }
 </script>
 
-<div class="flex w-full md:mt-20 lg:mt-36 justify-center">
+<div class="flex w-full mt-6 justify-center">
   <nav class="flex gap-2 md:gap-10 ">
     {#each navList as navItem}
       <a
         href={navItem.link}
-        class="text-[13px] md:text-xl lg:text-[32px] {navItem.link === selectedLink ? 'font-["Mikro-Bold"] underline' : ''}"
+        class="text-[13px] md:text-xl font-['Mikro-Regular'] lg:text-[32px] {navItem.link === selectedLink ? 'font-bold underline' : ''}"
         on:click={() => handleLinkClick(navItem.link)}
       >
         {navItem.name}
