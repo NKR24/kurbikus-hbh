@@ -2,6 +2,7 @@
 	import { Badge, Button, Card, Group, Image, Text } from '@svelteuidev/core';
 	import '../fonts.css';
 	import PlayIcon from '../ui/svg-components/PlayIcon.svelte';
+	import BlackBtn from './BlackBtn.svelte';
 </script>
 
 <div class="flex justify-center border-[0.5px] border-black">
@@ -9,10 +10,7 @@
 		<Card.Section class='relative'>
 			<Image src="src/assets/images/welcomecardhouse.jpeg" class="h-full sm:w-full lg:w-[40.6875rem] lg:h-[54.5rem]" alt="housepic" />
             <div class="absolute inset-0 flex justify-center sm: lg:invisible top-[9rem]">
-			<button
-				class="bg-[#000] text-[#fff] sm: w-[14.46569rem] h-[3.25rem] text-[1rem] font-mikro"
-				>Консултация</button
-			>
+			<BlackBtn text='Консултация'/>
             </div>
 		</Card.Section>
 
