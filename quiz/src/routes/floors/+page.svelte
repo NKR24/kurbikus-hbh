@@ -11,6 +11,10 @@
 	function handleFloor(event: MouseEvent) {
 		chosenFloor.set(Number((event.target as HTMLButtonElement)?.textContent));
 	}
+
+	function handleChoice() {
+		if ($chosenFloor) console.log(`you chose ${$chosenFloor}`);
+	}
 </script>
 
 <Flex
@@ -31,15 +35,16 @@
 		/>
 	</picture>
 
-	<div class="flex gap-3">
+	<div class="flex gap-3 xl:gap-5">
 		{#each [1, 2] as floor}
 			<button
-				class={`w-[2.1875rem] text-black bg-transparent`}
+				class={`w-[2.1875rem] text-black bg-transparent md:w-[2.3rem] lg:w-[2.5rem] xl:w-[2.8rem] 2xl:w-[3.125rem]`}
 				on:click={handleFloor}>{floor}</button
 			>
 		{/each}
-		<button class="w-[8.8125rem] text-black" on:click={handleChoose}
-			>выбрать всё</button
+		<button
+			class="w-[8.8125rem] text-black md:w-[9.5rem] lg:w-[10.5rem] xl:w-[11.5rem] 2xl:w-[12.75rem]"
+			on:click={handleChoice}>выбрать всё</button
 		>
 	</div>
 </Flex>
