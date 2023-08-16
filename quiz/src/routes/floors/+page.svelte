@@ -4,8 +4,9 @@
 
 	import oneFloorMobile from '$lib/assets/images-stories/one-floor-mobile.png';
 	import oneFloorDesktop from '$lib/assets/images-stories/one-floor-desktop.png';
-	import { chosenFloor } from './store';
+	import { chosenFloor } from './store.ts';
 	import QuizTitle from '$lib/components/QuizTitle.svelte';
+	import QuizChooseAllButton from '$lib/components/QuizChooseAllButton.svelte';
 
 	$: console.log($chosenFloor);
 
@@ -39,49 +40,46 @@
 				on:click={handleFloor}>{floor}</button
 			>
 		{/each}
-		<button
-			class="w-[8.8125rem] text-black md:w-[9.5rem] lg:w-[10.5rem] xl:w-[11.5rem] 2xl:w-[12.75rem]"
-			on:click={handleChoice}>выбрать всё</button
-		>
+		<QuizChooseAllButton {handleChoice} />
 	</div>
 </Flex>
 
 <style>
-	button {
+	:global(button) {
 		border: 0.5px solid black;
 		font-size: 1rem;
 		font-weight: 400;
 		height: 2.1875rem;
 	}
 
-	button:focus {
+	:global(button):focus {
 		background: black;
 		color: white;
 	}
 
 	@media only screen and (min-width: 48rem) {
-		button {
+		:global(button) {
 			font-size: 1.0625rem;
 			height: 2.5rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
-		button {
+		:global(button) {
 			font-size: 1.125rem;
 			height: 2.75rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
-		button {
+		:global(button) {
 			font-size: 1.1875rem;
 			height: 2.875rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
-		button {
+		:global(button) {
 			font-size: 1.25rem;
 			height: 3rem;
 		}
