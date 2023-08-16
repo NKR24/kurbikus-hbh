@@ -5,6 +5,7 @@
 	import oneFloorMobile from '$lib/assets/images-stories/one-floor-mobile.png';
 	import oneFloorDesktop from '$lib/assets/images-stories/one-floor-desktop.png';
 	import { chosenFloor } from './store';
+	import QuizTitle from '$lib/components/QuizTitle.svelte';
 
 	$: console.log($chosenFloor);
 
@@ -21,11 +22,7 @@
 	direction="column"
 	class="bg-[#DEDEDE] w-full min-h-screen items-center py-10 justify-between gap-10"
 >
-	<h1
-		class="text-black text-5xl xl:text-[5rem] 2xl:text-[6.875rem] font-bold font-['Mikro-Bold'] lowercase"
-	>
-		Этажность?
-	</h1>
+	<QuizTitle content="Этажность?" />
 	<picture>
 		<source srcset={oneFloorDesktop} media="(min-width: 48rem)" />
 		<img
