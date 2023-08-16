@@ -54,7 +54,7 @@ function handleHouseClick(house) {
     <div class="flex justify-center  flex-wrap mb-20 max-w-sm md:max-w-md  lg:mb-0 lg:w-[60%] lg:ml-[50px] lg:ml-[160px] xl:ml-[200px] xl:w-[70%] lg:gap-x-10 lg:max-w-[55%] lg:pl-14 lg:justify-end">
     {#each houseStyles as houseStyle}
         <div class="flex items-center  flex-col">
-            <img src={houseStyle.image} alt={houseStyle.image} class="w-[146px] h-[161px] lg:w-[200px] md:w-[200px] md:h-[230px] lg:h-[230px] xl:w-[250px] xl:h-[260px] 2xl:w-[320px] 2xl:h-[350px]"/>
+            <img src={houseStyle.image} alt={houseStyle.image} class="w-[146px] h-[161px] lg:w-[200px] md:w-[150px] md:h-[160px] lg:h-[230px] xl:w-[250px] xl:h-[260px] 2xl:w-[320px] 2xl:h-[350px]"/>
             <a on:click={() => handleHouseClick(houseStyle.id)}  href="#"  class="z-10 flex text-center items-center w-[114px] h-[35px] lg:w-[157px] lg:h-[46px] justify-center border-[0.5px] border-black border-solid font-['Mikro-Regular'] mt-[-30px] lg:mt-[-60px] {activeHouse === houseStyle.id ? 'text-white bg-black' : ''}">{houseStyle.name}</a>
             </div>
     {/each}

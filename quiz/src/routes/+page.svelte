@@ -25,10 +25,7 @@
 						<Text>{item}</Text>
 					</span>
 				{/each}
-				<a href="/housestyles">
-					<Text variant="gradient" weight="bold">
-						Подробнее
-					</Text>
+				
 			</div>
 		</Flex>
 	</div>

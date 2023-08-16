@@ -39,7 +39,7 @@ import '../../global.css';
 </script>
 
 <div class="flex w-full mt-6 justify-center">
-  <nav class="flex gap-2 md:gap-10 ">
+  <nav class="flex gap-2 md:gap-6 lg:gap-8 xl:gap-10 ">
     {#each navList as navItem}
       <a
         href={navItem.link}
