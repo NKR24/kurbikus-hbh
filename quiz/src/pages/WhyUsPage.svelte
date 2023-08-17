@@ -15,21 +15,21 @@
 
 		<div class="item item-1">
 			<div class="item-number-1">02</div>
-			<div class="mt-5 ml-5 w-[18rem]">
+			<div class="mt-8 ml-5 w-[18rem]">
 				ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
 			</div>
 		</div>
 
 		<div class="item item-2">
 			<div class="item-number-2">03</div>
-			<div class="mt-5 ml-[4.5rem] w-48">
+			<div class="mt-8 ml-[5rem] w-56">
 				ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА
 			</div>
 		</div>
 
 		<div class="item item-3">
 			<div class="item-number-3">04</div>
-			<div class="mt-5 ml-[4.5rem] w-48">ГИБКАЯ СИСТЕМА ОПЛАТЫ</div>
+			<div class="mt-8 ml-[4.5rem] w-48">ГИБКАЯ СИСТЕМА ОПЛАТЫ</div>
 		</div>
 		<div class="item item-4">
 			<div class="item-number-4">05</div>
@@ -47,7 +47,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 375px;
-		height: 550px;
+		height: 700px;
 		position: relative;
 	}
 
@@ -60,7 +60,7 @@
 		border-left: 0;
 		border-bottom: 0;
 		width: 255px;
-		height: 90px;
+		height: 140px;
 		align-self: start;
 		position: relative;
 	}
@@ -77,9 +77,9 @@
 	.item-2 {
 		border-left: 0;
 		border-bottom: 0;
-		margin-right: 39.5px;
-		width: 255px;
-		height: 130px;
+		/* margin-right: 39.5px; */
+		width: 294.5px;
+		height: 150px;
 		align-self: end;
 	}
 
@@ -87,8 +87,9 @@
 		margin-left: 30px;
 		border-right: 0;
 		border-bottom: 0;
-		width: 304.5px;
-		align-self: start;
+		width: 345px;
+		height: 150px;
+		align-self: start;	
 	}
 	.item-4 {
 		margin-left: 30px;
@@ -110,7 +111,7 @@
 	.item-number-1 {
 		position: absolute;
 		font-size: 3rem;
-		top: 70px;
+		top: 125px;
 		left: 100px;
 		background-color: #dedede;
 		line-height: 35px;
@@ -118,7 +119,7 @@
 	.item-number-2 {
 		position: absolute;
 		font-size: 3rem;
-		top: 215px;
+		top: 275px;
 		left: 150px;
 		background-color: #dedede;
 		line-height: 35px;
@@ -126,7 +127,7 @@
 	.item-number-3 {
 		position: absolute;
 		font-size: 3rem;
-		top: 340px;
+		top: 425px;
 		left: 100px;
 		background-color: #dedede;
 		line-height: 35px;
@@ -134,7 +135,7 @@
 	.item-number-4 {
 		position: absolute;
 		font-size: 3rem;
-		top: 440px;
+		top: 575px;
 		left: 50px;
 		background-color: #dedede;
 		line-height: 35px;
