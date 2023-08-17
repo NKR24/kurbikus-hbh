@@ -54,7 +54,7 @@
 			<a href="/garage">
 				<button
 					class={`w-[2.1875rem] text-black bg-transparent md:w-[2.3rem] lg:w-[2.5rem] xl:w-[2.8rem] 2xl:w-[3.125rem]`}
-					on:click={handleFloor}>{floor}</button
+					on:mouseenter={handleFloor}>{floor}</button
 				>
 			</a>
 		{/each}
