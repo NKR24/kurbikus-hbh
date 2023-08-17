@@ -36,14 +36,19 @@ import '../../global.css';
     selectedLink = link; // Update selectedLink on link click
 
   }
+
+  
+
+
+
 </script>
 
-<div class="flex w-full mt-6 justify-center">
-  <nav class="flex gap-2 md:gap-6 lg:gap-8 xl:gap-10 ">
+<div class="flex w-full lg:mt-2 justify-center">
+  <nav class="flex gap-1 md:gap-4 lg:gap-6 xl:gap-8 ">
     {#each navList as navItem}
       <a
         href={navItem.link}
-        class="text-[13px] md:text-xl font-['Mikro-Regular'] lg:text-[32px] {navItem.link === selectedLink ? 'font-bold underline' : ''}"
+        class="text-[14px] md:text-xl font-['Mikro-Regular'] lg:text-[32px] xl:text-[46px] {navItem.link === selectedLink ? 'font-bold underline' : ''}"
         on:click={() => handleLinkClick(navItem.link)}
       >
         {navItem.name}

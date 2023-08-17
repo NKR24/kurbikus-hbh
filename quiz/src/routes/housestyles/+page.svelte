@@ -45,17 +45,19 @@ function handleHouseClick(house) {
 }
 
 
+
+
 </script>
 
-<div class=" h-screen bg-[#DEDEDE] box-border py-10 flex items-center flex-col justify-between">
+<div class=" h-screen bg-[#DEDEDE] box-border py-4 flex items-center flex-col justify-between">
     <h1 class="text-5xl xl:text-[80px] 2xl:text-[110px] font-bold font-['Mikro-Bold'] lowercase">Стиль дома?</h1>
 
     <div class="flex flex-col items-center lg:flex-row lg:items-end ">
-    <div class="flex justify-center  flex-wrap mb-20 max-w-sm md:max-w-md  lg:mb-0 lg:w-[60%] lg:ml-[50px] lg:ml-[160px] xl:ml-[200px] xl:w-[70%] lg:gap-x-10 lg:max-w-[55%] lg:pl-14 lg:justify-end">
+    <div class="flex justify-center  flex-wrap mb-20 max-w-sm md:max-w-md  lg:mb-0 lg:w-[60%] lg:ml-[50px] lg:ml-[160px] xl:ml-[200px] xl:w-[70%] lg:gap-x-4 lg:max-w-[55%] lg:pl-14 lg:justify-end">
     {#each houseStyles as houseStyle}
         <div class="flex items-center  flex-col">
-            <img src={houseStyle.image} alt={houseStyle.image} class="w-[146px] h-[161px] lg:w-[200px] md:w-[150px] md:h-[160px] lg:h-[230px] xl:w-[250px] xl:h-[260px] 2xl:w-[320px] 2xl:h-[350px]"/>
-            <a on:click={() => handleHouseClick(houseStyle.id)}  href="#"  class="z-10 flex text-center items-center w-[114px] h-[35px] lg:w-[157px] lg:h-[46px] justify-center border-[0.5px] border-black border-solid font-['Mikro-Regular'] mt-[-30px] lg:mt-[-60px] {activeHouse === houseStyle.id ? 'text-white bg-black' : ''}">{houseStyle.name}</a>
+            <img src={houseStyle.image} alt={houseStyle.image} class=" w-[170px] h-full object-cover md:w-[160px] md:h-full min-[820px]:w-[180px]  lg:w-[200px]  ] xl:w-[310px]  2xl:w-[320px]  min-[1800px]:w-[400px] "/>
+            <a on:click={() => handleHouseClick(houseStyle.id)}  href="#"  class="z-10 text-base md:text-xl	xl:text-[32px] flex text-center items-center w-[114px] h-[35px] lg:w-[157px] lg:h-[46px] xl:w-[180px] xl:h-[60px] justify-center border-[0.5px] border-black border-solid font-['Mikro-Regular'] mt-[-30px] lg:mt-[-60px] {activeHouse === houseStyle.id ? 'text-white bg-black' : ''}">{houseStyle.name}</a>
             </div>
     {/each}
 
