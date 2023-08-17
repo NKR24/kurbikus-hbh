@@ -1,0 +1,155 @@
+<script lang="ts">
+	import '../../global.css';
+	import { Flex } from '@svelteuidev/core';
+	import QuizTitle from '$lib/components/QuizTitle.svelte';
+	import QuizChooseAllButton from '$lib/components/QuizChooseAllButton.svelte';
+	import material1Desktop from '$lib/assets/images-material/material1-desktop.png';
+	import material1Mobile from '$lib/assets/images-material/material1-mobile.png';
+	import material2Desktop from '$lib/assets/images-material/material2-desktop.png';
+	import material2Mobile from '$lib/assets/images-material/material2-mobile.png';
+	import material3Desktop from '$lib/assets/images-material/material3-desktop.png';
+	import material3Mobile from '$lib/assets/images-material/material3-mobile.png';
+	import material4Desktop from '$lib/assets/images-material/material4-desktop.png';
+	import material4Mobile from '$lib/assets/images-material/material4-mobile.png';
+	import material5Desktop from '$lib/assets/images-material/material5-desktop.png';
+	import material5Mobile from '$lib/assets/images-material/material5-mobile.png';
+	import { material } from './store';
+
+	const materials = [
+		{
+			name: 'деревянный каркас',
+			imageMobile: material1Mobile,
+			imageDesktop: material1Desktop,
+			alt: 'wood frame/деревянный каркас'
+		},
+		{
+			name: 'клееный брус',
+			imageMobile: material2Mobile,
+			imageDesktop: material2Desktop,
+			alt: 'glued laminated timber/клееный брус'
+		},
+		{
+			name: 'керамоблок',
+			imageMobile: material3Mobile,
+			imageDesktop: material3Desktop,
+			alt: 'ceramic block/керамоблок'
+		},
+		{
+			name: 'каркас',
+			imageMobile: material4Mobile,
+			imageDesktop: material4Desktop,
+			alt: 'frame/каркас'
+		},
+		{
+			name: 'кирпич',
+			imageMobile: material5Mobile,
+			imageDesktop: material5Desktop,
+			alt: 'brick/кирпич'
+		}
+	];
+
+	$: console.log($material);
+
+	function handleAll() {
+		material.set('all');
+	}
+
+	function handleMaterial(event: MouseEvent) {
+		material.set((event.target as HTMLButtonElement).textContent);
+	}
+</script>
+
+<Flex
+	direction="column"
+	class="bg-[#DEDEDE] w-full min-h-screen items-center py-10 justify-between gap-10"
+>
+	<QuizTitle content="материал?" />
+
+	<Flex
+		class="flex-wrap gap-x-10 justify-between items-end max-w-[25rem] lg:max-w-[40rem] 2xl:max-w-[70rem] container"
+	>
+		{#each materials as material}
+			<Flex
+				direction="column"
+				class={`items-center ${
+					material.name === 'деревянный каркас'
+						? '2xl:order-1'
+						: material.name === 'клееный брус'
+						? '2xl:order-2'
+						: material.name === 'каркас'
+						? '2xl:order-3'
+						: material.name === 'керамоблок'
+						? '2xl:order-4'
+						: material.name === 'кирпич'
+						? '2xl:order-5'
+						: ''
+				}`}
+			>
+				<picture>
+					<source srcset={material.imageDesktop} media="(min-width: 64rem)" />
+					<img src={material.imageMobile} alt={material.alt} />
+				</picture>
+				<a href="/contacts">
+					<button on:click={handleMaterial}>{material.name}</button>
+				</a>
+			</Flex>
+		{/each}
+		<QuizChooseAllButton page="/contacts" handleChoice={handleAll} />
+	</Flex>
+</Flex>
+
+<style>
+	:global(a) {
+		order: 6;
+	}
+
+	:global(button) {
+		display: flex;
+		align-items: center;
+		color: black;
+		border: 0.5px solid black;
+		font-size: 1rem;
+		font-weight: 400;
+		height: 2.1875rem;
+		transition: 0.3s;
+		padding: 0.625rem 1.25rem;
+	}
+
+	:global(button):hover {
+		background: black;
+		color: white;
+		transform: scale(1.1);
+	}
+
+	@media only screen and (min-width: 48rem) {
+		:global(button) {
+			font-size: 1.0625rem;
+			height: 2.5rem;
+			padding: 0.625rem 1.375rem;
+		}
+	}
+
+	@media only screen and (min-width: 64rem) {
+		:global(button) {
+			font-size: 1.125rem;
+			height: 2.75rem;
+			padding: 0.625rem 1.5625rem;
+		}
+	}
+
+	@media only screen and (min-width: 80rem) {
+		:global(button) {
+			font-size: 1.1875rem;
+			height: 2.875rem;
+			padding: 0.625rem 1.75rem;
+		}
+	}
+
+	@media only screen and (min-width: 96rem) {
+		:global(button) {
+			font-size: 1.25rem;
+			height: 3rem;
+			padding: 0.625rem 1.875rem;
+		}
+	}
+</style>

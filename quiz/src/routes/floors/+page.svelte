@@ -54,12 +54,11 @@
 			<a href="/garage">
 				<button
 					class={`w-[2.1875rem] text-black bg-transparent md:w-[2.3rem] lg:w-[2.5rem] xl:w-[2.8rem] 2xl:w-[3.125rem]`}
-					on:click={handleFloor}
-					on:mouseenter={handleFloor}>{floor}</button
+					on:click={handleFloor}>{floor}</button
 				>
 			</a>
 		{/each}
-		<QuizChooseAllButton {handleAll} page="/garage" />
+		<QuizChooseAllButton handleChoice={handleAll} page="/garage" />
 	</div>
 </Flex>
 
@@ -85,21 +84,21 @@
 		}
 	}
 
-	@media only screen and (min-width: 48rem) {
+	@media only screen and (min-width: 64rem) {
 		:global(button) {
 			font-size: 1.125rem;
 			height: 2.75rem;
 		}
 	}
 
-	@media only screen and (min-width: 48rem) {
+	@media only screen and (min-width: 80rem) {
 		:global(button) {
 			font-size: 1.1875rem;
 			height: 2.875rem;
 		}
 	}
 
-	@media only screen and (min-width: 48rem) {
+	@media only screen and (min-width: 96rem) {
 		:global(button) {
 			font-size: 1.25rem;
 			height: 3rem;
