@@ -31,6 +31,12 @@
 			<div class="item-number-3">04</div>
 			<div class="mt-5 ml-[4.5rem] w-48">ГИБКАЯ СИСТЕМА ОПЛАТЫ</div>
 		</div>
+		<div class="item item-4">
+			<div class="item-number-4">05</div>
+			<div class="mt-6 ml-6 w-48">
+				БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -85,6 +91,14 @@
 		width: 304.5px;
 		align-self: start;
 	}
+	.item-4 {
+		margin-left: 30px;
+		border-right: 0;
+		border-bottom: 0;
+		border-left: 0;
+		width: 30px;
+		align-self: start;
+	}
 
 	.item-number-0 {
 		position: absolute;
@@ -105,7 +119,7 @@
 	.item-number-2 {
 		position: absolute;
 		font-size: 3rem;
-		top: 220px;
+		top: 215px;
 		left: 150px;
 		background-color: #dedede;
 		line-height: 35px;
@@ -113,8 +127,16 @@
 	.item-number-3 {
 		position: absolute;
 		font-size: 3rem;
-		top:350px;
+		top: 340px;
 		left: 100px;
+		background-color: #dedede;
+		line-height: 35px;
+	}
+	.item-number-4 {
+		position: absolute;
+		font-size: 3rem;
+		top: 440px;
+		left: 50px;
 		background-color: #dedede;
 		line-height: 35px;
 	}
