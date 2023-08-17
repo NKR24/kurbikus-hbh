@@ -2,7 +2,7 @@
 	import '../fonts.css';
 </script>
 
-<div class="text bg-[#dedede] lowercase">
+<div class="text bg-[#dedede] lowercase pb-[1.81rem]">
 	<div class="flex justify-center text-[2.5rem] font-bold mb-[2.81rem]">
 		<h2 class="">ПОЧЕМУ МЫ?</h2>
 	</div>
@@ -15,7 +15,7 @@
 
 		<div class="item item-1">
 			<div class="item-number-1">02</div>
-			<div class="mt-5 ml-5">
+			<div class="mt-5 ml-5 w-[18rem]">
 				ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
 			</div>
 		</div>
@@ -33,13 +33,12 @@
 		</div>
 		<div class="item item-4">
 			<div class="item-number-4">05</div>
-			<div class="mt-6 ml-6 w-48">
+			<div class="mt-6 ml-6 w-80">
 				БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
 			</div>
 		</div>
 	</div>
 </div>
-
 <style>
 	.text {
 		font-family: mikro;
