@@ -38,7 +38,7 @@
 		каталоги домов с ценами
 	</h2>
 	{#each data as item, i}
-		<CatalogCard {...item} key={i} />
+		<CatalogCard {...item} />
 	{/each}
 </div>
 
