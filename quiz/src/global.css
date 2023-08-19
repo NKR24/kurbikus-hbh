@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Mikro-Black';
+	src: url('./lib/assets/fonts/Mikro-Black.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mikro-Bold';
+	src: url('./lib/assets/fonts/Mikro-Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mikro-Medium';
+	src: url('./lib/assets/fonts/Mikro-Medium.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mikro-Regular';
+	src: url('./lib/assets/fonts/Mikro-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
