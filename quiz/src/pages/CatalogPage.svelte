@@ -13,21 +13,21 @@
 			image: 'src/assets/images/imageh2.png',
 			square: 'Площадь: от 90 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.',
+			price: 'От 4 600 000 руб.',
 			index: 2
 		},
 		{
 			image: 'src/assets/images/imageh3.png',
-			square: 'Площадь: от 90 м²',
+			square: 'Площадь: от 110 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.',
+			price: 'От 4 000 000 руб.',
 			index: 3
 		},
 		{
 			image: 'src/assets/images/imageh4.jpeg',
-			square: 'Площадь: от 90 м²',
+			square: 'Площадь: от 110 м²',
 			bedrooms: '3 спальни, 1 санузел.',
-			price: 'От 4 300 000 руб.',
+			price: 'От 3 900 000 руб.',
 			index: 4
 		}
 	];
