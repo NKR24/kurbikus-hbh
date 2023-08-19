@@ -30,18 +30,18 @@
 			<img
 				src={secondFloor}
 				alt="second floor of the house"
-				class={`w-[12.8125rem] sm:w-[18rem] md:w-[24rem] lg:w-[27rem] xl:w-[30rem] ${
+				class={`w-[18rem] sm:w-[22rem] md:w-[30rem] lg:w-[36rem] xl:w-[40rem] ${
 					$chosenFloor === 'all' ? 'absolute bottom-0 left-0' : ''
 				}`}
 			/>
 		{/if}
 		{#if $chosenFloor === 2 || $chosenFloor === 'all'}
 			<picture>
-				<source srcset={firstFloorDesktop} media="(min-width: 48rem)" />
+				<source srcset={firstFloorDesktop} media="(min-width: 40rem)" />
 				<img
 					src={firstFloorMobile}
 					alt="first floor of the house"
-					class={`w-[12.8125rem] sm:w-[18rem] md:w-[24rem] lg:w-[27rem] xl:w-[30rem] ${
+					class={`w-[18rem] sm:w-[22rem] md:w-[30rem] lg:w-[36rem] xl:w-[40rem] ${
 						$chosenFloor === 'all' ? 'opacity-60' : ''
 					}`}
 				/>
@@ -64,6 +64,15 @@
 </Flex>
 
 <style>
+	@font-face {
+		font-family: 'Mikro-Regular';
+		src: url('../assets/fonts/Mikro-Regular.otf');
+	}
+
+	:global(*) {
+		font-family: 'Mikro-Regular', sans-serif;
+	}
+
 	:global(button) {
 		border: 0.5px solid black;
 		font-size: 1rem;
@@ -80,28 +89,28 @@
 
 	@media only screen and (min-width: 48rem) {
 		:global(button) {
-			font-size: 1.0625rem;
+			font-size: 1.3rem;
 			height: 2.5rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
 		:global(button) {
-			font-size: 1.125rem;
+			font-size: 1.5rem;
 			height: 2.75rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
 		:global(button) {
-			font-size: 1.1875rem;
+			font-size: 1.8rem;
 			height: 2.875rem;
 		}
 	}
 
 	@media only screen and (min-width: 48rem) {
 		:global(button) {
-			font-size: 1.25rem;
+			font-size: 1.6rem;
 			height: 3rem;
 		}
 	}
