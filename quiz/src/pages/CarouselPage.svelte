@@ -42,7 +42,7 @@
 	}
 </script>
 
-<div class="bg-[#3E3E3E] text">
+<div class="bg-[#3E3E3E] text text-[#dedede]">
 	{#each DATA as item, i (item)}
 		{#if i === currentIndex}
 			<img
@@ -62,12 +62,11 @@
 				</div>
 			</div>
 			<div class="pl-[3.44rem] pr-[3.37rem]">
-				<div class="flex justify-center mt-6 text-[3rem] text-[#dedede]">
+				<div class="flex justify-center mt-6 text-[3rem]">
 					<p class="">{descriptions[i]}</p>
 				</div>
-				<!-- TODO: component for carousel text since some has list and others dont -->
 				<div
-					class="w-[100%] h-[30rem] text-[0.875rem] text-[#dedede] pb-28 mt-5"
+					class="w-[100%] h-fit text-[0.875rem] pb-28 mt-5"
 				>
 					{#if item.text.length > 1}
 						<ol>
