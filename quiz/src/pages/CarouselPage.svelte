@@ -66,7 +66,7 @@
 					<p class="">{descriptions[i]}</p>
 				</div>
 				<div
-					class="w-[100%] h-fit text-[0.875rem] pb-28 mt-5"
+					class="w-[100%] h-fit text-[0.875rem] pb-28 mt-5 font-montserrat"
 				>
 					{#if item.text.length > 1}
 						<ol>
@@ -100,5 +100,8 @@
 	}
 	.text {
 		font-family: mikro;
+	}
+	.font-montserrat{
+		font-family: montserrat;
 	}
 </style>
