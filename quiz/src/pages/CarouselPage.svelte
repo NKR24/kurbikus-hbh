@@ -1,6 +1,5 @@
 <script>
 	import '../fonts.css';
-	let currentIndex = 0;
 	let DATA = [
 		{
 			pic: 'src/assets/images/table-img.png',
@@ -29,16 +28,9 @@
 		}
 	];
 	let descriptions = ['фундамент', 'каркас/утеплитель', 'окна/стеклопакеты'];
-
+	let currentIndex = 0;
 	function goToIndex(index) {
 		currentIndex = index;
-	}
-	function goToNext() {
-		currentIndex = (currentIndex + 1) % images.length;
-	}
-
-	function goToPrevious() {
-		currentIndex = (currentIndex - 1 + images.length) % images.length;
 	}
 </script>
 
@@ -66,7 +58,7 @@
 					<p class="">{descriptions[i]}</p>
 				</div>
 				<div
-					class="w-[100%] h-fit text-[0.875rem] pb-28 mt-5 font-montserrat"
+					class="w-[100%] h-fit text-[0.875rem] pb-4 mt-5 font-montserrat"
 				>
 					{#if item.text.length > 1}
 						<ol>
@@ -82,9 +74,6 @@
 		{/if}
 	{/each}
 </div>
-
-<!-- <button on:click={goToPrevious} class="carousel-control">&#8249;</button>
-<button on:click={goToNext} class="carousel-control">&#8250;</button> -->
 
 <style>
 	.carousel-button {
