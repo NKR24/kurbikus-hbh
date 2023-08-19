@@ -107,6 +107,7 @@
 		font-size: 3rem;
 		background-color: #dedede;
 		line-height: 35px;
+		font-weight: 700;
 	}
 	.item-number-1 {
 		position: absolute;
@@ -115,6 +116,7 @@
 		left: 100px;
 		background-color: #dedede;
 		line-height: 35px;
+		font-weight: 700;
 	}
 	.item-number-2 {
 		position: absolute;
@@ -123,6 +125,7 @@
 		left: 150px;
 		background-color: #dedede;
 		line-height: 35px;
+		font-weight: 700;
 	}
 	.item-number-3 {
 		position: absolute;
@@ -131,6 +134,7 @@
 		left: 100px;
 		background-color: #dedede;
 		line-height: 35px;
+		font-weight: 700;
 	}
 	.item-number-4 {
 		position: absolute;
@@ -139,5 +143,6 @@
 		left: 50px;
 		background-color: #dedede;
 		line-height: 35px;
+		font-weight: 700;
 	}
 </style>
