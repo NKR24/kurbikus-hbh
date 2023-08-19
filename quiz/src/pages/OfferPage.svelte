@@ -3,8 +3,8 @@
 	import '../fonts.css';
 </script>
 
-<div class="text bg-[#dedede] pb-[5.44rem]">
-	<div class="sm: ml-[3.75rem] pt-[13.19rem]">
+<div class="text bg-[hsl(0,0%,87%)] pb-[5.44rem]">
+	<div class="text-center sm: pt-[13.19rem]">
 		<h2 class="text-[3rem] font-bold text-[#000] sm: mb-[5.81rem]">
 			5 вопросов о вашем доме
 		</h2>
