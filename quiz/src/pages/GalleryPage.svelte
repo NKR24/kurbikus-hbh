@@ -39,12 +39,20 @@
 		{/each}
 	</div>
 
-	<div class="carousel-grid mt-8">
+	<div class="carousel-grid">
 		{#each DATA[currentIndex].image as img, i}
 			{#if i < 4}
-				<img src={img} alt="Carousel Image" class="carousel-image" />
+				<div class="relative">
+					<img src={img} alt="Carousel Image" class="carousel-image" />
+					<p class="absolute top-2 left-2">{DATA[currentIndex].text}</p>
+					<p class="absolute bottom-2 left-2">дом по проекту h{i+1}</p>
+				</div>
 			{:else}
-				<img src={img} alt="Carousel Image" class="carousel-image-last" />
+				<div class="carousel-item-last relative">
+					<img src={img} alt="Carousel Image" class="carousel-image-last" />
+					<p class="absolute top-2 left-2">{DATA[currentIndex].text}</p>
+                    <p class="absolute bottom-2 left-2">дом по проекту h{i+1}</p>
+				</div>
 			{/if}
 		{/each}
 	</div>
@@ -60,8 +68,8 @@
 		background-color: #dedede;
 		color: #000;
 		cursor: pointer;
-        font-size: 0.875rem;
-        width: 100%;
+		font-size: 0.875rem;
+		width: 100%;
 	}
 
 	.carousel-button.selected {
@@ -72,9 +80,12 @@
 	.carousel-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr) 2fr;
+		grid-template-rows: repeat(2, 1fr) auto;
 		grid-column-gap: 8px;
 		grid-row-gap: 8px;
+		margin-top: 2rem;
+		font-size: 0.6875rem;
+		color: #fff;
 	}
 
 	.carousel-image {
@@ -82,6 +93,12 @@
 		height: 100%;
 	}
 	.carousel-image-last {
+		widows: 45%;
+		height: 100%;
+        width: 100%;
+	}
+	.carousel-item-last {
 		grid-column: span 2;
+        height: 70%;
 	}
 </style>
