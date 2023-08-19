@@ -10,7 +10,7 @@
 		<div class="flex items-center justify-center sm: gap-4">
 			<div><Logo /></div>
 			<div class="border border-black border-r-0 h-16" />
-			<div class="flex items-center sm: w-40 h-8">
+			<div class="flex items-center sm: w-36 h-8">
 				<p class="sm: text-[0.5rem] text">
 					каркасные домапо финской технологии с 2010 года. Московская область.
 				</p>
