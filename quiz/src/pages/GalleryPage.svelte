@@ -45,13 +45,13 @@
 				<div class="relative">
 					<img src={img} alt="Carousel Image" class="carousel-image" />
 					<p class="absolute top-2 left-2">{DATA[currentIndex].text}</p>
-					<p class="absolute bottom-2 left-2">дом по проекту h{i+1}</p>
+					<p class="absolute bottom-2 left-2">дом по проекту h{i + 1}</p>
 				</div>
 			{:else}
 				<div class="carousel-item-last relative">
 					<img src={img} alt="Carousel Image" class="carousel-image-last" />
 					<p class="absolute top-2 left-2">{DATA[currentIndex].text}</p>
-                    <p class="absolute bottom-2 left-2">дом по проекту h{i+1}</p>
+					<p class="absolute bottom-2 left-2">дом по проекту h{i + 1}</p>
 				</div>
 			{/if}
 		{/each}
@@ -95,10 +95,10 @@
 	.carousel-image-last {
 		widows: 45%;
 		height: 100%;
-        width: 100%;
+		width: 100%;
 	}
 	.carousel-item-last {
 		grid-column: span 2;
-        height: 70%;
+		height: 70%;
 	}
 </style>
