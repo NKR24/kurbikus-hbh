@@ -7,11 +7,17 @@
 
 <div class="flex justify-center border-[0.5px] border-black">
 	<Card padding={0} class="bg-[#dedede] sm:w-[24.25rem] lg:w-[108rem]">
-		<Card.Section class='relative'>
-			<Image src="src/assets/images/welcomecardhouse.jpeg" class="h-full sm:w-full lg:w-[40.6875rem] lg:h-[54.5rem]" alt="housepic" />
-            <div class="absolute inset-0 flex justify-center sm: lg:invisible top-[9rem]">
-			<BlackBtn text='Консултация'/>
-            </div>
+		<Card.Section class="relative">
+			<Image
+				src="src/assets/images/welcomecardhouse.jpeg"
+				class="h-full sm:w-full lg:w-[40.6875rem] lg:h-[54.5rem]"
+				alt="housepic"
+			/>
+			<div
+				class="absolute inset-0 flex justify-center sm: lg:invisible top-[9rem]"
+			>
+				<BlackBtn text="Консултация" />
+			</div>
 		</Card.Section>
 
 		<Group class="ml-[2.19rem]">
@@ -25,7 +31,9 @@
 			</div>
 		</Group>
 
-		<div class="border-t-[0.5px] border-black flex items-center sm: pt-[2.87rem] pb-[1.25rem] pl-[2.19rem] pr-[5.81rem]">
+		<div
+			class="border-t-[0.5px] border-black flex items-center sm: pt-[0.87rem] pb-[1.25rem] pl-[2.19rem] pr-[3.81rem]"
+		>
 			<PlayIcon />
 			<p
 				class="text-[1rem] lowercase sm:text-sm lg:text-[2rem] pl-[2.19rem] font-mikro"
