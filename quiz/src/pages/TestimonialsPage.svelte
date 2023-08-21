@@ -40,13 +40,18 @@
 		<p>отзывы:</p>
 		<p>&#8599;</p>
 	</div>
-	{#each DATA as item}
-		<TestimonialCard
-			date={item.date}
-			fullName={item.fullName}
-			comment={item.comment}
-		/>
-	{/each}
+	<div>
+		{#each DATA as item}
+			<TestimonialCard
+				date={item.date}
+				fullName={item.fullName}
+				comment={item.comment}
+			/>
+		{/each}
+	</div>
+	<div class="flex justify-center pb-7">
+		<button class="mt-7 w-[13.25rem] h-[2.5625rem] border-[1px] border-[#dedede]">загрузить ещё</button>
+	</div>
 </div>
 
 <style>
