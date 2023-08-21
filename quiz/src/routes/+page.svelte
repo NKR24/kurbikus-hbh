@@ -6,6 +6,7 @@
 	import CarouselPage from '../pages/CarouselPage.svelte';
 	import GalleryPage from '../pages/GalleryPage.svelte';
 	import TestimonialsPage from '../pages/TestimonialsPage.svelte';
+	import ExcursionPage from '../pages/ExcursionPage.svelte';
 </script>
 
 <div>
@@ -16,6 +17,7 @@
 	<CarouselPage/>
 	<GalleryPage/>
 	<TestimonialsPage/>
+	<ExcursionPage/>
 </div>
 
 <style>
