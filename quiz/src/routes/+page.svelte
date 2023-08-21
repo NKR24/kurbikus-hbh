@@ -5,6 +5,7 @@
 	import WhyUsPage from '../pages/WhyUsPage.svelte';
 	import CarouselPage from '../pages/CarouselPage.svelte';
 	import GalleryPage from '../pages/GalleryPage.svelte';
+	import TestimonialsPage from '../pages/TestimonialsPage.svelte';
 </script>
 
 <div>
@@ -14,6 +15,7 @@
 	<WhyUsPage/>
 	<CarouselPage/>
 	<GalleryPage/>
+	<TestimonialsPage/>
 </div>
 
 <style>

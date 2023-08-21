@@ -10,3 +10,9 @@
 	font-style: normal;
 	src: url('./assets/fonts/Montserrat-Regular.ttf') format('opentype');
 }
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: bold;
+	src: url('./assets/fonts/Montserrat-Bold.ttf') format('opentype');
+}
