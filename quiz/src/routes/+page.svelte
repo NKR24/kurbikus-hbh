@@ -7,6 +7,7 @@
 	import GalleryPage from '../pages/GalleryPage.svelte';
 	import TestimonialsPage from '../pages/TestimonialsPage.svelte';
 	import ExcursionPage from '../pages/ExcursionPage.svelte';
+	import ConsultationPage from '../pages/ConsultationPage.svelte';
 </script>
 
 <div>
@@ -18,6 +19,7 @@
 	<GalleryPage/>
 	<TestimonialsPage/>
 	<ExcursionPage/>
+	<ConsultationPage/>
 </div>
 
 <style>
