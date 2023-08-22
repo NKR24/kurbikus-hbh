@@ -45,57 +45,81 @@
 	}
 </script>
 
-<div class="bg-[#DEDEDE] w-full min-h-screen flex items-center flex-col p-12">
-	<h1 class="text-black text-5xl font-[Mikro-Bold] font-bold mt-[45px]">
+<div
+	class="bg-[#DEDEDE] w-full min-h-screen flex items-center flex-col p-12 lg:p-0"
+>
+	<h1
+		class="text-black text-5xl font-[Mikro-Bold] font-bold mt-[45px] lg:text-[110px]"
+	>
 		площадь?
 	</h1>
-	<div class="values mt-[137px] flex gap-6">
+	<div class="values mt-[130px] flex gap-6">
 		<h1
 			id="range1"
 			bind:this={displayValOne}
-			class="text-2xl font-normal font-[Mikro-Regular]"
+			class="text-5xl font-normal font-[Mikro-Regular]"
 		>
 			{displayValOne}
 		</h1>
 		<h1
 			id="range2"
 			bind:this={displayValTwo}
-			class="text-2xl font-normal font-[Mikro-Regular]"
+			class="text-5xl font-normal font-[Mikro-Regular]"
 		>
 			{displayValTwo}
 		</h1>
 	</div>
 
-	<div class="relative w-full">
-		<div class="container relative h-[100px] w-full">
+	<div class="relative w-full max-w-[300px] lg: mt-[89px] lg:max-w-[825px]">
+		<div class="container relative w-full">
 			<div
-				class="w-full h-[6px] absolute m-auto top-0 bottom-0 rounded-[5px]"
+				class="w-full h-[6px] absolute m-auto top-0 bottom-0 rounded-[5px] lg:h-[15px]"
 				bind:this={sliderTrack}
 			/>
-			<div class="w-full h-[1px] bg-black absolute top-[50%]" />
-			<div class="flex justify-between absolute w-full top-[20px]">
+			<div class="w-full h-[1px] bg-black absolute top-[50%] lg:h-[2px]" />
+			<div
+				class="flex justify-between absolute w-full top-[20px] lg:top-[-40px]"
+			>
 				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[-10px]">
 					45
 				</h1>
-				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[18px]">
+				<h1
+					class="font-[Mikro-Regular] text-[16px] font-normal ml-[18px] lg:ml-[30px]"
+				>
 					90
 				</h1>
-				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[7px]">
+				<h1
+					class="font-[Mikro-Regular] text-[16px] font-normal ml-[7px] lg:ml-[10px]"
+				>
 					135
 				</h1>
-				<h1 class="font-[Mikro-Regular] text-[16px] font-normal mr-[40px]">
+				<h1
+					class="font-[Mikro-Regular] text-[16px] font-normal mr-[40px] lg:mr-[130px]"
+				>
 					175
 				</h1>
 				<h1 class="font-[Mikro-Regular] text-[16px] font-normal mr-[-10px]">
 					250
 				</h1>
 			</div>
-			<div class="dots flex relative top-[45%] bottom-[50%] w-full">
-				<div class="h-[10px] w-[0.5px] bg-black absolute left-0" />
-				<div class="h-[10px] w-[0.5px] bg-black absolute left-[22.9%]" />
-				<div class="h-[10px] w-[0.5px] bg-black absolute left-[44.2%]" />
-				<div class="h-[10px] w-[0.5px] bg-black absolute left-[62.8%]" />
-				<div class="h-[10px] w-[0.5px] bg-black absolute left-[100%]" />
+			<div
+				class="dots flex relative top-[-5px] bottom-[50%] w-full lg:top-[-12px]"
+			>
+				<div
+					class="h-[10px] w-[0.5px] bg-black absolute left-0 lg:h-[24.5px] lg:w-[1px]"
+				/>
+				<div
+					class="h-[10px] w-[0.5px] bg-black absolute left-[22.9%] lg:h-[24.5px] lg:w-[1px]"
+				/>
+				<div
+					class="h-[10px] w-[0.5px] bg-black absolute left-[44.2%] lg:h-[24.5px] lg:w-[1px]"
+				/>
+				<div
+					class="h-[10px] w-[0.5px] bg-black absolute left-[62.8%] lg:h-[24.5px] lg:w-[1px]"
+				/>
+				<div
+					class="h-[10px] w-[0.5px] bg-black absolute left-[100%] lg:h-[24.5px] lg:w-[1px]"
+				/>
 			</div>
 			<input
 				type="range"
@@ -121,7 +145,7 @@
 	</div>
 
 	<button
-		class="mt-[196px] w-[141px] h-[35px] bg-black text-[#DEDEDE] text-base"
+		class="mt-[196px] w-[141px] h-[35px] bg-black text-[#DEDEDE] text-base lg:bg-transparent lg:border-black lg:border-[1px] lg:w-[204px] lg:h-12 lg:text-xl lg:text-black"
 	>
 		выбрать всё
 	</button>
