@@ -66,7 +66,7 @@
 	<QuizTitle content="материал?" />
 
 	<Flex
-		class="flex-wrap gap-x-10 justify-between items-end max-w-[25rem] lg:max-w-[40rem] 2xl:max-w-[70rem] container"
+		class="flex-wrap gap-10 justify-center items-end w-[186px] sm:w-[28.125rem] md:w-[30rem] lg:w-[40rem] lg:justify-between xl:w-[65rem] 2xl:w-[70rem]"
 	>
 		{#each materials as material}
 			<Flex
