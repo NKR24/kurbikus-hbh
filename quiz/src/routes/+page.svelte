@@ -9,6 +9,7 @@
 	import ExcursionPage from '../pages/ExcursionPage.svelte';
 	import ConsultationPage from '../pages/ConsultationPage.svelte';
 	import AccordionPage from '../pages/AccordionPage.svelte';
+	import AddressPage from '../pages/AddressPage.svelte';
 </script>
 
 <div>
@@ -22,6 +23,7 @@
 	<ExcursionPage/>
 	<ConsultationPage/>
 	<AccordionPage/>
+	<AddressPage/>
 </div>
 
 <style>
