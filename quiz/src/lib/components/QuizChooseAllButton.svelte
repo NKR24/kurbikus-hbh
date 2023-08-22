@@ -5,7 +5,7 @@
 
 <a href={page}>
 	<button
-		class="w-[8.8125rem] text-black md:w-[9.5rem] lg:w-[10.5rem] xl:w-[11.5rem] 2xl:w-[12.75rem]"
+		class="w-[8.8125rem] text-black md:w-[9.5rem] lg:w-[10.5rem] xl:w-[11.5rem] 2xl:w-[12.75rem] font-['Mikro-Regular']"
 		on:mouseenter={handleChoice}>выбрать всё</button
 	></a
 >

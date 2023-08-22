@@ -99,11 +99,15 @@
 </Flex>
 
 <style>
+	* {
+		font-family: 'Mikro-Regular';
+	}
 	:global(a) {
 		order: 6;
 	}
 
 	:global(button) {
+		min-width: max-content;
 		display: flex;
 		align-items: center;
 		color: black;
@@ -124,7 +128,6 @@
 	@media only screen and (min-width: 48rem) {
 		:global(button) {
 			font-size: 1.0625rem;
-			height: 2.5rem;
 			padding: 0.625rem 1.375rem;
 		}
 	}
@@ -132,7 +135,6 @@
 	@media only screen and (min-width: 64rem) {
 		:global(button) {
 			font-size: 1.125rem;
-			height: 2.75rem;
 			padding: 0.625rem 1.5625rem;
 		}
 	}
@@ -140,7 +142,6 @@
 	@media only screen and (min-width: 80rem) {
 		:global(button) {
 			font-size: 1.1875rem;
-			height: 2.875rem;
 			padding: 0.625rem 1.75rem;
 		}
 	}
@@ -148,7 +149,6 @@
 	@media only screen and (min-width: 96rem) {
 		:global(button) {
 			font-size: 1.25rem;
-			height: 3rem;
 			padding: 0.625rem 1.875rem;
 		}
 	}
