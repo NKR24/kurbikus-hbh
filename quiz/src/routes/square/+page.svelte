@@ -1,20 +1,33 @@
 <script>
 	import '../../global.css';
+	import { onMount } from 'svelte';
 
 	let sliderOne;
 	let sliderTwo;
+	let displayValOne = 'от 105';
+	let displayValTwo = 'до 120';
 	let minGap = 0;
+	onMount(() => {
+		displayValOne = 'от 105';
+		displayValTwo = 'до 120';
+	});
 
 	function slideOne() {
 		if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
 			sliderOne.value = parseInt(sliderTwo.value) - minGap;
 		}
+		requestAnimationFrame(() => {
+			displayValOne = `от ${sliderOne.value}`;
+		});
 	}
 
 	function slideTwo() {
 		if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
 			sliderTwo.value = parseInt(sliderOne.value) + minGap;
 		}
+		requestAnimationFrame(() => {
+			displayValTwo = `до ${sliderTwo.value}`;
+		});
 	}
 </script>
 
@@ -23,8 +36,20 @@
 		площадь?
 	</h1>
 	<div class="values mt-[137px] flex gap-6">
-		<h1 id="range1" class="text-2xl font-normal font-[Mikro-Regular]">от</h1>
-		<h1 id="range2" class="text-2xl font-normal font-[Mikro-Regular]">до</h1>
+		<h1
+			id="range1"
+			bind:this={displayValOne}
+			class="text-2xl font-normal font-[Mikro-Regular]"
+		>
+			{displayValOne}
+		</h1>
+		<h1
+			id="range2"
+			bind:this={displayValTwo}
+			class="text-2xl font-normal font-[Mikro-Regular]"
+		>
+			{displayValTwo}
+		</h1>
 	</div>
 
 	<div class="wrapper">
