@@ -5,11 +5,16 @@
 	let sliderOne;
 	let sliderTwo;
 	let displayValOne = 'от 105';
-	let displayValTwo = 'до 120';
+	let displayValTwo = 'до 250';
 	let minGap = 0;
+	let sliderTrack;
+	let sliderMaxValue;
+	const dotValues = [45, 90, 135, 175, 250];
 	onMount(() => {
 		displayValOne = 'от 105';
-		displayValTwo = 'до 120';
+		displayValTwo = 'до 250';
+		sliderMaxValue = sliderOne.max;
+		fillColor();
 	});
 
 	function slideOne() {
@@ -19,6 +24,7 @@
 		requestAnimationFrame(() => {
 			displayValOne = `от ${sliderOne.value}`;
 		});
+		fillColor();
 	}
 
 	function slideTwo() {
@@ -28,6 +34,14 @@
 		requestAnimationFrame(() => {
 			displayValTwo = `до ${sliderTwo.value}`;
 		});
+		fillColor();
+	}
+
+	function fillColor() {
+		let range = sliderMaxValue - 45;
+		let percent1 = ((sliderOne.value - 45) / range) * 100;
+		let percent2 = ((sliderTwo.value - 45) / range) * 100;
+		sliderTrack.style.background = `linear-gradient(to right, transparent ${percent1}%, black ${percent1}%, black ${percent2}%, transparent ${percent2}%)`;
 	}
 </script>
 
@@ -52,11 +66,40 @@
 		</h1>
 	</div>
 
-	<div class="wrapper">
-		<div class="container">
-			<div class="slider-track" />
+	<div class="relative w-full">
+		<div class="container relative h-[100px] w-full">
+			<div
+				class="w-full h-[6px] absolute m-auto top-0 bottom-0 rounded-[5px]"
+				bind:this={sliderTrack}
+			/>
+			<div class="w-full h-[1px] bg-black absolute top-[50%]" />
+			<div class="flex justify-between absolute w-full top-[20px]">
+				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[-10px]">
+					45
+				</h1>
+				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[18px]">
+					90
+				</h1>
+				<h1 class="font-[Mikro-Regular] text-[16px] font-normal ml-[7px]">
+					135
+				</h1>
+				<h1 class="font-[Mikro-Regular] text-[16px] font-normal mr-[40px]">
+					175
+				</h1>
+				<h1 class="font-[Mikro-Regular] text-[16px] font-normal mr-[-10px]">
+					250
+				</h1>
+			</div>
+			<div class="dots flex relative top-[45%] bottom-[50%] w-full">
+				<div class="h-[10px] w-[0.5px] bg-black absolute left-0" />
+				<div class="h-[10px] w-[0.5px] bg-black absolute left-[22.9%]" />
+				<div class="h-[10px] w-[0.5px] bg-black absolute left-[44.2%]" />
+				<div class="h-[10px] w-[0.5px] bg-black absolute left-[62.8%]" />
+				<div class="h-[10px] w-[0.5px] bg-black absolute left-[100%]" />
+			</div>
 			<input
 				type="range"
+				step="1"
 				min="45"
 				max="250"
 				value="105"
@@ -66,9 +109,10 @@
 			/>
 			<input
 				type="range"
+				step="1"
 				min="45"
 				max="250"
-				value="120"
+				value="250"
 				id="slider-2"
 				bind:this={sliderTwo}
 				on:input={slideTwo}
@@ -82,80 +126,3 @@
 		выбрать всё
 	</button>
 </div>
-
-<style>
-	.wrapper {
-		position: relative;
-		width: 100%;
-	}
-
-	.container {
-		position: relative;
-		width: 100%;
-		height: 100px;
-		border: 1px solid black;
-	}
-	input[type='range'] {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		width: 100%;
-		outline: none;
-		position: absolute;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		background-color: transparent;
-		pointer-events: none;
-	}
-
-	.slider-track {
-		width: 100%;
-		height: 6px;
-		background-color: red;
-		position: absolute;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		border-radius: 5px;
-	}
-
-	input[type='range']::-webkit-slider-runnable-track {
-		-webkit-appearance: none;
-		height: 5px;
-	}
-	input[type='range']::-moz-range-track {
-		-moz-appearance: none;
-		height: 5px;
-	}
-	input[type='range']::-ms-track {
-		appearance: none;
-		height: 5px;
-	}
-	input[type='range']::-webkit-slider-thumb {
-		-webkit-appearance: none;
-		height: 12px;
-		width: 12px;
-		background-color: #000;
-		cursor: pointer;
-		border-radius: 50%;
-		pointer-events: auto;
-		margin-top: -3px;
-	}
-	input[type='range']::-moz-range-thumb {
-		-webkit-appearance: none;
-		height: 12px;
-		width: 12px;
-		cursor: pointer;
-		border-radius: 50%;
-		background-color: black;
-	}
-	input[type='range']::-ms-thumb {
-		-webkit-appearance: none;
-		height: 12px;
-		width: 12px;
-		cursor: pointer;
-		border-radius: 50%;
-		background-color: black;
-	}
-</style>
