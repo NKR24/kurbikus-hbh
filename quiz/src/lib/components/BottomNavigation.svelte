@@ -1,0 +1,55 @@
+<script>
+	import '../../global.css';
+
+	let navList = [
+		{
+			name: 'стиль дома',
+			link: '/housestyles'
+		},
+		{
+			name: 'площадь',
+			link: '/square'
+		},
+		{
+			name: 'этажность',
+			link: '/floors'
+		},
+		{
+			name: 'гараж',
+			link: '/garage'
+		},
+		{
+			name: 'материал',
+			link: '/material'
+		}
+	];
+
+	/**
+	 * @type {string | null}
+	 */
+	let selectedLink = null; // Initialize selectedLink as null
+
+	/**
+	 * @param {string | null} link
+	 */
+	function handleLinkClick(link) {
+		selectedLink = link; // Update selectedLink on link click
+	}
+</script>
+
+<div class="flex w-full md:mt-20 lg:mt-36 justify-center">
+	<nav class="flex gap-2 md:gap-10">
+		{#each navList as navItem}
+			<a
+				href={navItem.link}
+				class="text-[13px] md:text-xl lg:text-[32px] font-['Mikro-Regular'] {navItem.link ===
+				selectedLink
+					? 'font-["Mikro-Bold"] underline'
+					: ''}"
+				on:click={() => handleLinkClick(navItem.link)}
+			>
+				{navItem.name}
+			</a>
+		{/each}
+	</nav>
+</div>

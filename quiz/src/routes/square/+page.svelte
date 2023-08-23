@@ -1,6 +1,7 @@
 <script>
 	import '../../global.css';
 	import { onMount } from 'svelte';
+	import BottomNavigation from '../../lib/components/BottomNavigation.svelte';
 
 	let sliderOne;
 	let sliderTwo;
@@ -46,7 +47,7 @@
 </script>
 
 <div
-	class="bg-[#DEDEDE] w-full min-h-screen flex items-center flex-col p-12 lg:p-0"
+	class="bg-[#DEDEDE] w-full min-h-screen flex items-center flex-col p-12 lg:p-0 lg:pb-20"
 >
 	<h1
 		class="text-black text-5xl font-[Mikro-Bold] font-bold mt-[45px] lg:text-[110px]"
@@ -145,8 +146,9 @@
 	</div>
 
 	<button
-		class="mt-[196px] w-[141px] h-[35px] bg-black text-[#DEDEDE] text-base lg:bg-transparent lg:border-black lg:border-[1px] lg:w-[204px] lg:h-12 lg:text-xl lg:text-black"
+		class="mt-[196px] w-[141px] h-[35px] mb-[72px] bg-black text-[#DEDEDE] text-base lg:bg-transparent lg:border-black lg:border-[1px] lg:w-[204px] lg:h-12 lg:text-xl lg:text-black"
 	>
 		выбрать всё
 	</button>
+	<BottomNavigation />
 </div>
