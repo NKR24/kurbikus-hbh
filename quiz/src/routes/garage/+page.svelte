@@ -25,7 +25,7 @@
 	<Center
 		class="flex justify-between items-center  h-screen flex-col py-4 md:py-4 2xl:py-14 2xl:pt-[75px] bg-[#DEDEDE]"
 	>
-		<h1 class="text-5xl font-['Mikro-Bold'] lg:text-[110px]!">Гараж</h1>
+		<h1 class="text-5xl font-['Mikro-Bold'] lg:text-[110px]!">гараж?</h1>
 		<div class="flex flex-col gap-14 items-center">
 			{#if isMobile}
 				<img src={garage} alt="garage" class="image ml-[28px]" />
@@ -35,7 +35,7 @@
 
 			<div class="flex gap-2 md:gap-8">
 				<button
-					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[270px] 2xl:h-[80px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[40px] {selectedInfo ===
+					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[204px] 2xl:h-[48px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[20px] {selectedInfo ===
 					'с гаражом'
 						? 'text-white bg-black'
 						: ''}"
@@ -46,7 +46,7 @@
 					с гаражом
 				</button>
 				<button
-					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[270px] 2xl:h-[80px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[40px] {selectedInfo ===
+					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[204px] 2xl:h-[48px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[20px] {selectedInfo ===
 					'без гаража'
 						? 'text-white bg-black'
 						: ''}"
@@ -57,7 +57,7 @@
 					без гаража
 				</button>
 				<button
-					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[270px] 2xl:h-[80px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[40px] {selectedInfo ===
+					class="w-[114px] h-[35px] md:w-[171px] md:h-[48px] xl:w-[204px] 2xl:h-[48px] border-[0.5px] border-black border-solid text-black font-['Mikro-Regular'] text-base md:text-xl xl:text-[20px] {selectedInfo ===
 					'выбрать всё'
 						? 'text-white bg-black'
 						: ''}"
@@ -105,6 +105,9 @@
 	@media (min-width: 1024px) {
 		h1 {
 			font-size: 110px;
+		}
+        .image {
+			width: 576px;
 		}
 	}
 </style>
