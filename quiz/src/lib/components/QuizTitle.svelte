@@ -7,3 +7,22 @@
 >
 	{content}
 </h1>
+
+<style>
+	@media only screen and (min-height: 1000px) {
+		h1 {
+			font-size: 6rem;
+		}
+	}
+	@media only screen and (min-height: 1366px) {
+		h1 {
+			font-size: 7rem;
+		}
+	}
+
+	@media only screen and (min-height: 1733px) {
+		h1 {
+			font-size: 10rem;
+		}
+	}
+</style>

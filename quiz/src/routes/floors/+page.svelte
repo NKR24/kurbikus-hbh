@@ -77,6 +77,7 @@
 	}
 
 	:global(button) {
+		min-width: max-content;
 		border: 0.5px solid black;
 		font-size: 1rem;
 		font-weight: 400;
@@ -115,6 +116,64 @@
 		:global(button) {
 			font-size: 1.6rem;
 			height: 3rem;
+		}
+	}
+
+	@media only screen and (min-height: 600px) {
+		img {
+			width: 330px;
+		}
+
+		:global(button) {
+			font-size: 25px;
+			height: 3rem;
+		}
+	}
+
+	@media only screen and (min-height: 1000px) {
+		img {
+			width: 600px;
+		}
+
+		:global(button) {
+			padding: 0 20px;
+			font-size: 50px;
+			height: 5rem;
+		}
+	}
+
+	@media only screen and (min-height: 1366px) {
+		img {
+			width: 700px;
+		}
+
+		:global(button) {
+			font-size: 70px;
+			height: 6rem;
+		}
+	}
+
+	@media only screen and (min-height: 1500px) {
+		img {
+			width: 850px;
+		}
+
+		:global(button) {
+			padding: 5px 30px 10px;
+			font-size: 70px;
+			height: 7rem;
+		}
+	}
+
+	@media only screen and (min-height: 1733px) {
+		img {
+			width: 1000px;
+		}
+
+		:global(button) {
+			padding: 5px 30px 30px;
+			font-size: 90px;
+			height: 9rem;
 		}
 	}
 </style>
