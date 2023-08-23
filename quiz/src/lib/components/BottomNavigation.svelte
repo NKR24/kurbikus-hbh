@@ -57,31 +57,31 @@
 <style>
 	@media only screen and (min-height: 600px) {
 		a {
-			font-size: 30px;
+			font-size: 20px;
 		}
 	}
 
 	@media only screen and (min-height: 1000px) {
 		a {
-			font-size: 40px;
+			font-size: 25px;
 		}
 	}
 
 	@media only screen and (min-height: 1366px) {
 		a {
-			font-size: 45px;
+			font-size: 30px;
 		}
+	}
 
-		@media only screen and (min-height: 1500px) {
-			a {
-				font-size: 50px;
-			}
+	@media only screen and (min-height: 1500px) {
+		a {
+			font-size: 35px;
 		}
+	}
 
-		@media only screen and (min-height: 1733px) {
-			a {
-				font-size: 52px;
-			}
+	@media only screen and (min-height: 1733px) {
+		a {
+			font-size: 40px;
 		}
 	}
 </style>
