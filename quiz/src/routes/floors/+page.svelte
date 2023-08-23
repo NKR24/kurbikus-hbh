@@ -8,6 +8,7 @@
 	import { chosenFloor } from './store.ts';
 	import QuizTitle from '$lib/components/QuizTitle.svelte';
 	import QuizChooseAllButton from '$lib/components/QuizChooseAllButton.svelte';
+	import BottomNavigation from '$lib/components/BottomNavigation.svelte';
 
 	$: console.log($chosenFloor);
 
@@ -61,6 +62,8 @@
 		{/each}
 		<QuizChooseAllButton {handleAll} page="/garage" />
 	</div>
+
+	<BottomNavigation />
 </Flex>
 
 <style>
