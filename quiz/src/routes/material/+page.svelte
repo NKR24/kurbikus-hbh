@@ -14,6 +14,7 @@
 	import material5Desktop from '$lib/assets/images-material/material5-desktop.png';
 	import material5Mobile from '$lib/assets/images-material/material5-mobile.png';
 	import { material } from './store';
+	import BottomNavigation from '$lib/components/BottomNavigation.svelte';
 
 	const materials = [
 		{
@@ -66,7 +67,7 @@
 	<QuizTitle content="материал?" />
 
 	<Flex
-		class="flex-wrap gap-10 justify-center items-end w-[186px] sm:w-[28.125rem] md:w-[30rem] lg:w-[40rem] lg:justify-between xl:w-[65rem] 2xl:w-[70rem]"
+		class="flex-wrap gap-10 justify-center items-end w-[186px] sm:w-[28.125rem] md:w-[30rem] lg:w-[41rem] lg:justify-between xl:w-[65rem] 2xl:w-[70rem]"
 	>
 		{#each materials as material}
 			<Flex
@@ -96,6 +97,8 @@
 		{/each}
 		<QuizChooseAllButton page="/contacts" handleChoice={handleAll} />
 	</Flex>
+
+	<BottomNavigation />
 </Flex>
 
 <style>
@@ -150,6 +153,61 @@
 		:global(button) {
 			font-size: 1.25rem;
 			padding: 0.625rem 1.875rem;
+		}
+	}
+
+	@media only screen and (min-height: 600px) {
+		img {
+			width: 150px;
+		}
+
+		:global(button) {
+			font-size: 25px;
+			height: 40px;
+		}
+	}
+
+	@media only screen and (min-height: 1000px) {
+		img {
+			width: 175px;
+		}
+
+		:global(button) {
+			height: 45px;
+			font-size: 30px;
+		}
+	}
+
+	@media only screen and (min-height: 1366px) {
+		img {
+			width: 200px;
+		}
+
+		:global(button) {
+			font-size: 35px;
+			height: 50px;
+		}
+	}
+
+	@media only screen and (min-height: 1500px) {
+		img {
+			width: 225px;
+		}
+
+		:global(button) {
+			height: 55px;
+			font-size: 40px;
+		}
+	}
+
+	@media only screen and (min-height: 1733px) {
+		img {
+			width: 250px;
+		}
+
+		:global(button) {
+			height: 60px;
+			font-size: 45px;
 		}
 	}
 </style>
