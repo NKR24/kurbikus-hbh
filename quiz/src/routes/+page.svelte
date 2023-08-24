@@ -13,15 +13,15 @@
 </script>
 
 <div>
-	<WelcomePage/>
-	<CatalogPage/>
-	<OfferPage/>
-	<WhyUsPage/>
-	<CarouselPage/>
-	<GalleryPage/>
-	<TestimonialsPage/>
-	<ExcursionPage/>
-	<ConsultationPage/>
-	<AccordionPage/>
-	<AddressPage/>
+	<WelcomePage />
+	<CatalogPage />
+	<OfferPage />
+	<WhyUsPage />
+	<CarouselPage />
+	<GalleryPage />
+	<TestimonialsPage />
+	<ExcursionPage />
+	<ConsultationPage />
+	<AccordionPage />
+	<AddressPage />
 </div>

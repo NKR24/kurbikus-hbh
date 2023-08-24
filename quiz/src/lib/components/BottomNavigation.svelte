@@ -8,7 +8,7 @@
 		},
 		{
 			name: 'площадь',
-			link: '/area'
+			link: '/square'
 		},
 		{
 			name: 'этажность',

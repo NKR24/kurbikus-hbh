@@ -19,8 +19,9 @@
 		<BurgerIcon />
 	</Flex>
 </nav>
+
 <style>
-	.text{
+	.text {
 		font-family: mikro;
 	}
 </style>

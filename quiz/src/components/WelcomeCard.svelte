@@ -21,7 +21,9 @@
 		</Card.Section>
 
 		<Group class="ml-[2.19rem]">
-			<p class="sm: text-[3rem] mt-2 font-bold lowercase font-mikro">БарнХаус</p>
+			<p class="sm: text-[3rem] mt-2 font-bold lowercase font-mikro">
+				БарнХаус
+			</p>
 
 			<div class="sm: w-[12.625rem] h-[6.875rem] mt-[-1.25rem] pb-[10rem]">
 				<p class="text-[1rem] lowercase sm:text-sm lg:text-[2rem] font-mikro">
