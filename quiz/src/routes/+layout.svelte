@@ -5,11 +5,11 @@
 
 	let themeObserver = lightTheme;
 
-	isDarkTheme.subscribe((value) => {
-		themeObserver = value ? darkTheme : lightTheme;
-	});
+	// isDarkTheme.subscribe((value) => {
+	//   themeObserver = value ? darkTheme : lightTheme;
+	// });
 </script>
 
-<SvelteUIProvider  withglobalstyles>
+<SvelteUIProvider {themeObserver} withGlobalStyles>
 	<slot />
 </SvelteUIProvider>

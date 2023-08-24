@@ -25,6 +25,3 @@
 	<AccordionPage/>
 	<AddressPage/>
 </div>
-
-<style>
-</style>
