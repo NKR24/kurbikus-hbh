@@ -28,8 +28,8 @@
 		</p>
 	</div>
 	<div class="flex justify-center mt-8">
-        <BlackBtn text={'записаться'} />
-    </div>
+		<BlackBtn text={'записаться'} />
+	</div>
 </div>
 
 <style>

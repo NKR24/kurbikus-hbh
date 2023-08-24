@@ -49,7 +49,9 @@
 					*нажимая на кнопку «Отправить» вы даете согласие на обработку
 					персональных данных
 				</p>
-				<button type="submit" class="bg-black text-white w-[49%] h-9">отправить</button>
+				<button type="submit" class="bg-black text-white w-[49%] h-9"
+					>отправить</button
+				>
 			</div>
 		</form>
 	</div>
