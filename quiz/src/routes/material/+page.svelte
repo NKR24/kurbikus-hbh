@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../../global.css';
 	import { Flex } from '@svelteuidev/core';
-	import QuizTitle from '$lib/components/QuizTitle.svelte';
 	import QuizChooseAllButton from '$lib/components/QuizChooseAllButton.svelte';
 	import material1Desktop from '$lib/assets/images-material/material1-desktop.png';
 	import material1Mobile from '$lib/assets/images-material/material1-mobile.png';
@@ -64,7 +63,11 @@
 	direction="column"
 	class="bg-[#DEDEDE] w-full min-h-screen items-center py-10 justify-between gap-10"
 >
-	<QuizTitle content="материал?" />
+	<h1
+		class="text-5xl xl:text-[80px] 2xl:text-[110px] font-bold font-['Mikro-Bold'] lowercase"
+	>
+		материал?
+	</h1>
 
 	<Flex
 		class="flex-wrap gap-10 justify-center items-end w-[186px] sm:w-[28.125rem] md:w-[30rem] lg:w-[41rem] lg:justify-between xl:w-[65rem] 2xl:w-[70rem]"
