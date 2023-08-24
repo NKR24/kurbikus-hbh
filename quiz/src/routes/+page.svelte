@@ -25,7 +25,6 @@
 						<Text>{item}</Text>
 					</span>
 				{/each}
-				
 			</div>
 		</Flex>
 	</div>
@@ -33,7 +32,7 @@
 
 <style>
 	:global(body) {
-		background-color: #DEDEDE;
+		background-color: #dedede;
 		min-height: 100vh;
 	}
 	.text-promo {
@@ -41,8 +40,6 @@
 		padding-top: 120px;
 		padding-left: 30px;
 		padding-right: 30px;
-;
-
 		& h1 {
 			font-size: 87px;
 			line-height: 1.1;
