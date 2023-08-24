@@ -57,9 +57,7 @@
 				<div class="flex justify-center mt-6 text-[3rem]">
 					<p class="">{descriptions[i]}</p>
 				</div>
-				<div
-					class="w-[100%] h-fit text-[0.875rem] pb-4 mt-5 font-montserrat"
-				>
+				<div class="w-[100%] h-fit text-[0.875rem] pb-4 mt-5 font-montserrat">
 					{#if item.text.length > 1}
 						<ol>
 							{#each item.text as text}
@@ -90,7 +88,7 @@
 	.text {
 		font-family: mikro;
 	}
-	.font-montserrat{
+	.font-montserrat {
 		font-family: montserrat;
 	}
 </style>

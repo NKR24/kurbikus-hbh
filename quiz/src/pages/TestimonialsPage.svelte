@@ -50,7 +50,10 @@
 		{/each}
 	</div>
 	<div class="flex justify-center pb-7">
-		<button class="mt-7 w-[13.25rem] h-[2.5625rem] border-[1px] border-[#dedede]">загрузить ещё</button>
+		<button
+			class="mt-7 w-[13.25rem] h-[2.5625rem] border-[1px] border-[#dedede]"
+			>загрузить ещё</button
+		>
 	</div>
 </div>
 
