@@ -38,7 +38,7 @@
 </script>
 
 <div class="flex w-full lg:mt-2 justify-center">
-	<nav class="flex gap-1 md:gap-4 lg:gap-6 xl:gap-8">
+	<nav class="flex gap-2 md:gap-4 lg:gap-6 xl:gap-8">
 		{#each navList as navItem}
 			<a
 				href={navItem.link}
