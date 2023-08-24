@@ -39,6 +39,7 @@
 		</div>
 	</div>
 </div>
+
 <style>
 	.text {
 		font-family: mikro;
@@ -89,7 +90,7 @@
 		border-bottom: 0;
 		width: 345px;
 		height: 150px;
-		align-self: start;	
+		align-self: start;
 	}
 	.item-4 {
 		margin-left: 30px;

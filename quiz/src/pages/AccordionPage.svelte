@@ -33,7 +33,10 @@
 <div class="font-montserrat">
 	<Accordion chevron={Plus} class={'bg-[#DEDEDE]'}>
 		{#each DATA as item, i}
-			<Accordion.Item value={item.header} class={'border-b-[0.5px] border-black'}>
+			<Accordion.Item
+				value={item.header}
+				class={'border-b-[0.5px] border-black'}
+			>
 				<div slot="control">
 					<h2 class="text-[0.875rem] font-bold">{item.header}</h2>
 				</div>
