@@ -1,7 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* src/global.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+/* lib/global.css */
 @font-face {
 	font-family: 'Mikro-Black';
 	src: url('./lib/assets/fonts/Mikro-Black.otf') format('opentype');
@@ -28,80 +30,4 @@
 	src: url('./lib/assets/fonts/Mikro-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-input[type='range'] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	width: 100%;
-	outline: none;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	background-color: transparent;
-	pointer-events: none;
-}
-
-input[type='range']::-webkit-slider-runnable-track {
-	-webkit-appearance: none;
-	height: 5px;
-}
-input[type='range']::-moz-range-track {
-	-moz-appearance: none;
-	height: 5px;
-}
-input[type='range']::-ms-track {
-	appearance: none;
-	height: 5px;
-}
-input[type='range']::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 12px;
-	width: 12px;
-	background-color: #000;
-	cursor: pointer;
-	border-radius: 50%;
-	pointer-events: auto;
-	margin-top: -3px;
-}
-input[type='range']::-moz-range-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 12px;
-	width: 12px;
-	cursor: pointer;
-	border-radius: 50%;
-	background-color: black;
-}
-input[type='range']::-ms-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 12px;
-	width: 12px;
-	cursor: pointer;
-	border-radius: 50%;
-	background-color: black;
-}
-
-@media (min-width: 1024px) {
-	input[type='range']::-webkit-slider-thumb {
-		height: 30px;
-		width: 30px;
-		margin-top: -12px;
-	}
-	input[type='range']::-moz-range-thumb {
-		height: 30px;
-		width: 30px;
-	}
-	input[type='range']::-ms-thumb {
-		height: 30px;
-		width: 30px;
-	}
 }

@@ -1,4 +1,5 @@
 <script>
+	import '../app.postcss';
 	import { SvelteUIProvider } from '@svelteuidev/core';
 	import { darkTheme, isDarkTheme, lightTheme } from '$lib/store';
 

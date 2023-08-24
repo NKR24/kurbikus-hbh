@@ -37,14 +37,14 @@
 	}
 </script>
 
-<div class="flex w-full md:mt-20 lg:mt-36 justify-center">
-	<nav class="flex gap-2 md:gap-10">
+<div class="flex w-full lg:mt-2 justify-center">
+	<nav class="flex gap-1 md:gap-4 lg:gap-6 xl:gap-8">
 		{#each navList as navItem}
 			<a
 				href={navItem.link}
-				class="text-[13px] md:text-xl lg:text-[32px] font-['Mikro-Regular'] {navItem.link ===
+				class="text-[14px] md:text-xl font-['Mikro-Regular'] lg:text-[32px] xl:text-[46px] {navItem.link ===
 				selectedLink
-					? 'font-["Mikro-Bold"] underline'
+					? 'font-bold underline'
 					: ''}"
 				on:click={() => handleLinkClick(navItem.link)}
 			>
