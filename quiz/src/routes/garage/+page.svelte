@@ -106,7 +106,7 @@
 		h1 {
 			font-size: 110px;
 		}
-        .image {
+		.image {
 			width: 576px;
 		}
 	}
