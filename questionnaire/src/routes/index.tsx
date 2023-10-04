@@ -9,3 +9,46 @@ export default function Home() {
     </>
   )
 }
+
+function Section_1() {
+  return (
+    <>
+    </>
+  )
+}
+
+function Section_2() {
+  return (
+    <>
+    </>
+  )
+}
+
+function Section_3() {
+  return (
+    <>
+    </>
+  )
+}
+
+function Section_4() {
+  return (
+    <>
+    </>
+  )
+}
+
+function Section_5() {
+  return (
+    <>
+    </>
+  )
+}
+
+function Section_6() {
+  return (
+    <>
+    </>
+  )
+}
+
