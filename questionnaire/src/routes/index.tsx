@@ -6,47 +6,61 @@ export default function Home() {
     <>
       <Title>Опросник</Title>
       <Navbar />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
     </>
   )
 }
 
-function Section_1() {
-  return (
+function Section1() {
+  return(
     <>
     </>
   )
 }
 
-function Section_2() {
-  return (
+function Section2() {
+  return(
     <>
     </>
   )
 }
 
-function Section_3() {
-  return (
+function Section3() {
+  return(
     <>
     </>
   )
 }
 
-function Section_4() {
-  return (
+function Section4() {
+  return(
     <>
     </>
   )
 }
 
-function Section_5() {
-  return (
+function Section5() {
+  return(
     <>
     </>
   )
 }
 
-function Section_6() {
-  return (
+function Section6() {
+  return(
+    <>
+    </>
+  )
+}
+
+function Section7() {
+  return(
     <>
     </>
   )
