@@ -1,6 +1,6 @@
 import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
-import "~/routes/index.css"
+import "./index.scss"
 
 export default function Home() {
   return (
@@ -19,76 +19,62 @@ export default function Home() {
 }
 
 function Section1() {
-  return(
+  return (
     <>
-    <div class="first-section">
-      <div class="onepiece">
-        <div class="barnhouse">
-          <h1>барнхаус</h1>
-          <div class="barndescripton">
-            <h2>В котором можно жить даже на крайнем севере</h2>
+      <div class="container-main">
+        <div class="container-section">
+          <div class="box box-1">
+            <div class="text text-1large">
+              <p>БарнХаус</p>
+            </div>
+            <div class="text text-1small">
+              <p>В котором можно жить даже на крайнем севере</p>
+            </div>
+          </div>
+          <div class="box box-2">
+            <div class="text text-2">
+              <p>НА МОНОЛИТНОМ ФУНДАМЕНТЕ ЗА 60 ДНЕЙ </p>
+            </div>
+          </div>
+          <div class="box box-3">
+            <div class="text text-3">
+              <p>ГАРАНТИЯ 50 лет.</p>
+            </div>
+          </div>
+          <div class="box box-4">
+            <div class="text text-4">
+              <p>Ипотека без первоначального взноса</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="twopiece">
-        <div class="descriptiontwo">
-          <h3>на монолитном фундаменте за 60 дней</h3>
+        <div class="container-image">
+          <p>1</p>
         </div>
       </div>
-      <div class="threepiece">
-        <div class="descriptionthree">
-          <h4>гарантия 50 лет.</h4>
-        </div>
-      </div>
-      <div class="fourpiece">
-        <div class="descriptionfour">
-          <h4>Ипотека без первоначального взноса</h4>
-        </div>
-      </div>
-    </div>
     </>
   )
 }
 
 function Section2() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
 
 function Section3() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
 
 function Section4() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
 
 function Section5() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
 
 function Section6() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
 
 function Section7() {
-  return(
-    <>
-    </>
-  )
+  return <></>
 }
-

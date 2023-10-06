@@ -31,7 +31,7 @@ export default function Navbar() {
           {state.label()}
         </span>
         <div class="hidden lg:block">
-          <div 
+          <div
             class="
               flex
               text-[24px]
@@ -41,9 +41,7 @@ export default function Navbar() {
               justify-center
             "
           >
-              <a href="tel:88003003333">
-                8 800 300 33 33
-              </a>
+            <a href="tel:88003003333">8 800 300 33 33</a>
           </div>
         </div>
         <div class="pt-[14px] md:pt-[23px]">
