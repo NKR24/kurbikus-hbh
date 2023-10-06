@@ -30,6 +30,22 @@ export default function Navbar() {
         >
           {state.label()}
         </span>
+        <div class="hidden lg:block">
+          <div 
+            class="
+              flex
+              text-[24px]
+              mt-[23px] ml-[200px]
+              w-[275px] h-[57px]
+              items-center
+              justify-center
+            "
+          >
+              <a href="tel:88003003333">
+                8 800 300 33 33
+              </a>
+          </div>
+        </div>
         <div class="pt-[14px] md:pt-[23px]">
           <Menu size={state.menuButtonSize()} />
         </div>
