@@ -1,9 +1,14 @@
 @import "../utils.scss";
 
-.contaner-main {
+.containerMain {
   display: flex;
   width: auto;
-  background-color: aqua !important;
+}
+
+@include sm {
+  .containerMain {
+    background-color: aqua;
+  }
 }
 
 .container-section {
@@ -118,22 +123,22 @@
   text-transform: lowercase;
 }
 
-@include lg {
-  .contaner-main {
-    display: none;
-    min-width: 1525px;
-    min-height: 872px;
-  }
+// @include lg {
+//   .contaner-main {
+//     display: none;
+//     min-width: 1525px;
+//     min-height: 872px;
+//   }
 
-  .container-section {
-    display: flex;
-    width: 1729px;
-    height: 1050px;
-    flex-shrink: 0;
-  }
+//   .container-section {
+//     display: flex;
+//     width: 1729px;
+//     height: 1050px;
+//     flex-shrink: 0;
+//   }
 
-  .box-1 {
-    min-width: 873px;
-    min-height: 361px;
-  }
-}
+//   .box-1 {
+//     min-width: 873px;
+//     min-height: 361px;
+//   }
+// }

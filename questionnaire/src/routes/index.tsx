@@ -1,6 +1,6 @@
 import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
-import "./index.scss"
+import styles from "./index.module.scss"
 
 export default function Home() {
   return (
@@ -20,38 +20,36 @@ export default function Home() {
 
 function Section1() {
   return (
-    <>
-      <div class="container-main">
-        <div class="container-section">
-          <div class="box box-1">
-            <div class="text text-1large">
-              <p>БарнХаус</p>
-            </div>
-            <div class="text text-1small">
-              <p>В котором можно жить даже на крайнем севере</p>
-            </div>
+    <div class={styles.containerMain}>
+      <div class="container-section">
+        <div class="box box-1">
+          <div class="text text-1large">
+            <p>БарнХаус</p>
           </div>
-          <div class="box box-2">
-            <div class="text text-2">
-              <p>НА МОНОЛИТНОМ ФУНДАМЕНТЕ ЗА 60 ДНЕЙ </p>
-            </div>
-          </div>
-          <div class="box box-3">
-            <div class="text text-3">
-              <p>ГАРАНТИЯ 50 лет.</p>
-            </div>
-          </div>
-          <div class="box box-4">
-            <div class="text text-4">
-              <p>Ипотека без первоначального взноса</p>
-            </div>
+          <div class="text text-1small">
+            <p>В котором можно жить даже на крайнем севере</p>
           </div>
         </div>
-        <div class="container-image">
-          <p>1</p>
+        <div class="box box-2">
+          <div class="text text-2">
+            <p>НА МОНОЛИТНОМ ФУНДАМЕНТЕ ЗА 60 ДНЕЙ </p>
+          </div>
+        </div>
+        <div class="box box-3">
+          <div class="text text-3">
+            <p>ГАРАНТИЯ 50 лет.</p>
+          </div>
+        </div>
+        <div class="box box-4">
+          <div class="text text-4">
+            <p>Ипотека без первоначального взноса</p>
+          </div>
         </div>
       </div>
-    </>
+      <div class="container-image">
+        <p>1</p>
+      </div>
+    </div>
   )
 }
 
