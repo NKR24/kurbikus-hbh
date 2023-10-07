@@ -50,7 +50,31 @@ function Section1() {
           </div>
         </div>
         <div class={styles.containerSecond}>
-            <img src={mainHome} class={styles.mainHomeImage} />
+          <img src={mainHome} class={styles.mainHomeImage} />
+          <p class={styles.mainHomeText}>h1</p>
+        </div>
+        <div class={styles.containerMobile}>
+          <div class={clsx(styles.box, styles.MobileImage)}>
+            <img src={mainHome} class={styles.homeMobile} />
+          </div>
+          <div class={clsx(styles.box, styles.MobileFisrt)}>
+            <div class={clsx(styles.text, styles.MobTextFirstLarge)}>
+              <p>ДВУХЭТАЖНЫЙ ДОМЗА 3,9 МЛН.</p>
+            </div>
+            <div class={clsx(styles.text, styles.MobTextFirstSmall)}>
+              <p>Из ПРЕМИУМ материалов, за 2 месяца на вашем участке</p>
+            </div>
+          </div>
+          <div class={clsx(styles.box, styles.MobileSecond)}>
+            <div class={clsx(styles.text, styles.MobTextSecond)}>
+              <p>смотри видео и приезжай на экскурсию</p>
+            </div>
+          </div>
+          <div class={clsx(styles.box, styles.MobileThird)}>
+            <div class={clsx(styles.text, styles.MobTextThird)}>
+              <p>СОБСТВЕННОЕ ПРОИЗВОДСТВО В ПОДМОСКОВЬЕ</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
