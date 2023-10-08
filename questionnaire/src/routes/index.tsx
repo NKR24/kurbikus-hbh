@@ -91,12 +91,29 @@ function Section1() {
           </div>
           <div class={clsx(section1Styles.box, section1Styles.MobileSecond)}>
             <div class={section1Styles.videoButton}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <path d="M28.25 55.5C43.2998 55.5 55.5 43.2998 55.5 28.25C55.5 13.2002 43.2998 1 28.25 1C13.2002 1 1 13.2002 1 28.25C1 43.2998 13.2002 55.5 28.25 55.5Z" stroke="#1D1D1B" stroke-miterlimit="10"/>
-                <path d="M20.3926 28.6651V19.0557L28.718 23.857L37.0435 28.6651L28.718 33.4731L20.3926 38.2744V28.6651Z" fill="#D9D9D9" stroke="#1D1D1B" stroke-miterlimit="10"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+              >
+                <path
+                  d="M28.25 55.5C43.2998 55.5 55.5 43.2998 55.5 28.25C55.5 13.2002 43.2998 1 28.25 1C13.2002 1 1 13.2002 1 28.25C1 43.2998 13.2002 55.5 28.25 55.5Z"
+                  stroke="#1D1D1B"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M20.3926 28.6651V19.0557L28.718 23.857L37.0435 28.6651L28.718 33.4731L20.3926 38.2744V28.6651Z"
+                  fill="#D9D9D9"
+                  stroke="#1D1D1B"
+                  stroke-miterlimit="10"
+                />
               </svg>
             </div>
-            <div class={clsx(section1Styles.text, section1Styles.MobTextSecond)}>
+            <div
+              class={clsx(section1Styles.text, section1Styles.MobTextSecond)}
+            >
               <p>Посмотрите видео о строительстве вашего дома</p>
             </div>
           </div>
@@ -109,33 +126,33 @@ function Section1() {
 function Section2() {
   return (
     <>
-      <div class="section fonts">
-        <div class="first-text">каталоги домов с ценами</div>
-        <div class="blocks">
-          <div class="block1">
+      <div class={clsx(section2Styles.section, section2Styles.fonts)}>
+        <div class={section2Styles.firstText}>каталоги домов с ценами</div>
+        <div class={section2Styles.blocks}>
+          <div class={section2Styles.block1}>
             <img src={home1} alt="" />
-            <h1 class="text">
+            <h1 class={section2Styles.text}>
               Площадь: от 90 м² <br />
               3 спальни, 1 санузел От <br />4 300 000 руб.
             </h1>
           </div>
-          <div class="block1">
+          <div class={section2Styles.block1}>
             <img src={home2} alt="" />
-            <h1 class="text">
+            <h1 class={section2Styles.text}>
               Площадь: от 90 м² 3 спальни, <br />
               1 санузел От <br />4 600 000 руб.
             </h1>
           </div>
-          <div class="block1">
+          <div class={section2Styles.block1}>
             <img src={home3} alt="" />
-            <h1 class="text">
+            <h1 class={section2Styles.text}>
               Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000
               руб.
             </h1>
           </div>
-          <div class="block1">
+          <div class={section2Styles.block1}>
             <img src={home4} alt="" />
-            <h1 class="text">
+            <h1 class={section2Styles.text}>
               Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000
               руб.
             </h1>
