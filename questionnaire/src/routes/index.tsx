@@ -5,9 +5,10 @@ import home1 from "../assets/img/home1.jpg"
 import home2 from "../assets/img/home2.jpg"
 import home3 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
-import styles from "./index.module.scss"
 import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
+import section1Styles from "./index/section1.module.scss"
+import section2Styles from "./index/section2.module.scss"
 
 export default function Home() {
   return (
@@ -27,55 +28,55 @@ export default function Home() {
 
 function Section1() {
   return (
-    <div class={styles.containerMain}>
-      <div class={styles.containerSection}>
-        <div class={styles.containerDesktop}>
-          <div class={styles.containerFirst}>
-            <div class={clsx(styles.box, styles.box1)}>
-              <div class={clsx(styles.text, styles.text1large)}>
+    <div class={section1Styles.containerMain}>
+      <div class={section1Styles.containerSection}>
+        <div class={section1Styles.containerDesktop}>
+          <div class={section1Styles.containerFirst}>
+            <div class={clsx(section1Styles.box, section1Styles.box1)}>
+              <div class={clsx(section1Styles.text, section1Styles.text1large)}>
                 <p>БарнХаус</p>
               </div>
-              <div class={clsx(styles.text, styles.text1small)}>
+              <div class={clsx(section1Styles.text, section1Styles.text1small)}>
                 <p>В котором можно жить даже на крайнем севере</p>
               </div>
             </div>
-            <div class={clsx(styles.box, styles.box2)}>
-              <div class={clsx(styles.text, styles.text2)}>
+            <div class={clsx(section1Styles.box, section1Styles.box2)}>
+              <div class={clsx(section1Styles.text, section1Styles.text2)}>
                 <p>НА МОНОЛИТНОМ ФУНДАМЕНТЕ ЗА 60 ДНЕЙ </p>
               </div>
             </div>
-            <div class={clsx(styles.box, styles.box3)}>
-              <div class={clsx(styles.text, styles.text3)}>
+            <div class={clsx(section1Styles.box, section1Styles.box3)}>
+              <div class={clsx(section1Styles.text, section1Styles.text3)}>
                 <p>ГАРАНТИЯ 50 лет.</p>
               </div>
             </div>
-            <div class={clsx(styles.box, styles.box4)}>
-              <div class={clsx(styles.text, styles.text4)}>
+            <div class={clsx(section1Styles.box, section1Styles.box4)}>
+              <div class={clsx(section1Styles.text, section1Styles.text4)}>
                 <p>Ипотека без первоначального взноса</p>
               </div>
             </div>
           </div>
-          <div class={styles.containerSecond}>
-            <img src={mainHome} class={styles.mainHomeImage} />
+          <div class={section1Styles.containerSecond}>
+            <img src={mainHome} class={section1Styles.mainHomeImage} />
           </div>
         </div>
-        <div class={styles.containerMobile}>
-          <div class={clsx(styles.box, styles.MobileImage)}>
-            <p class={styles.textMobileHome}>h1</p>
-            {/* <img src={mainHome} class={styles.homeMobile} /> */}
+        <div class={section1Styles.containerMobile}>
+          <div class={clsx(section1Styles.box, section1Styles.MobileImage)}>
+            <p class={section1Styles.textMobileHome}>h1</p>
+            {/* <img src={mainHome} class={section1Styles.homeMobile} /> */}
           </div>
-          <div class={clsx(styles.box, styles.MobileFisrt)}>
-            <div class={clsx(styles.text, styles.MobTextFirstLarge)}>
+          <div class={clsx(section1Styles.box, section1Styles.MobileFisrt)}>
+            <div class={clsx(section1Styles.text, section1Styles.MobTextFirstLarge)}>
               <p>ДВУХЭТАЖНЫЙ ДОМЗА 3,9 МЛН.</p>
             </div>
-            <div class={clsx(styles.text, styles.MobTextFirstSmall)}>
+            <div class={clsx(section1Styles.text, section1Styles.MobTextFirstSmall)}>
               <p>Из ПРЕМИУМ материалов, за 2 месяца на вашем участке</p>
             </div>
           </div>
-          <div class={clsx(styles.box, styles.MobileSecond)}>
-            <div class={clsx(styles.text, styles.MobTextSecond)}>
+          <div class={clsx(section1Styles.box, section1Styles.MobileSecond)}>
+            <div class={clsx(section1Styles.text, section1Styles.MobTextSecond)}>
               <svg
-                class={styles.MobileButton}
+                class={section1Styles.MobileButton}
                 xmlns="http://www.w3.org/2000/svg"
                 width="56"
                 height="56"
@@ -97,8 +98,8 @@ function Section1() {
               <p>смотри видео и приезжай на экскурсию</p>
             </div>
           </div>
-          <div class={clsx(styles.box, styles.MobileThird)}>
-            <div class={clsx(styles.text, styles.MobTextThird)}>
+          <div class={clsx(section1Styles.box, section1Styles.MobileThird)}>
+            <div class={clsx(section1Styles.text, section1Styles.MobTextThird)}>
               <p>СОБСТВЕННОЕ ПРОИЗВОДСТВО В ПОДМОСКОВЬЕ</p>
             </div>
           </div>
