@@ -1,10 +1,13 @@
 import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
-import "~/routes/index.css"
+
 import home1 from "../assets/img/home1.jpg"
 import home2 from "../assets/img/home2.jpg"
 import home3 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
+import styles from "./index.module.scss"
+import clsx from "clsx"
+import mainHome from "../assets/img/home-main.jpg"
 
 export default function Home() {
   return (
@@ -23,34 +26,39 @@ export default function Home() {
 }
 
 function Section1() {
-  return(
-    <>
-    <div class="first-section">
-      <div class="onepiece">
-        <div class="barnhouse">
-          <h1>барнхаус</h1>
-          <div class="barndescripton">
-            <h2>В котором можно жить даже на крайнем севере</h2>
+  return (
+    <div class={styles.containerMain}>
+      <div class={styles.containerSection}>
+        <div class={styles.containerFirst}>
+          <div class={clsx(styles.box, styles.box1)}>
+            <div class={clsx(styles.text, styles.text1large)}>
+              <p>БарнХаус</p>
+            </div>
+            <div class={clsx(styles.text, styles.text1small)}>
+              <p>В котором можно жить даже на крайнем севере</p>
+            </div>
+          </div>
+          <div class={clsx(styles.box, styles.box2)}>
+            <div class={clsx(styles.text, styles.text2)}>
+              <p>НА МОНОЛИТНОМ ФУНДАМЕНТЕ ЗА 60 ДНЕЙ </p>
+            </div>
+          </div>
+          <div class={clsx(styles.box, styles.box3)}>
+            <div class={clsx(styles.text, styles.text3)}>
+              <p>ГАРАНТИЯ 50 лет.</p>
+            </div>
+          </div>
+          <div class={clsx(styles.box, styles.box4)}>
+            <div class={clsx(styles.text, styles.text4)}>
+              <p>Ипотека без первоначального взноса</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="twopiece">
-        <div class="descriptiontwo">
-          <h3>на монолитном фундаменте за 60 дней</h3>
-        </div>
-      </div>
-      <div class="threepiece">
-        <div class="descriptionthree">
-          <h4>гарантия 50 лет.</h4>
-        </div>
-      </div>
-      <div class="fourpiece">
-        <div class="descriptionfour">
-          <h4>Ипотека без первоначального взноса</h4>
+        <div class={styles.containerSecond}>
+            <img src={mainHome} class={styles.mainHomeImage} />
         </div>
       </div>
     </div>
-    </>
   )
 }
 

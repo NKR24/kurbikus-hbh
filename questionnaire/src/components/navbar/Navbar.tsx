@@ -7,50 +7,38 @@ export default function Navbar() {
   const state = createNavbarState()
 
   return (
-    <nav
-      class="
-        flex
+    <div class="container">
+      <nav
+        class="
+          flex 
 
-        h-[73px] md:h-[105px]
-
-        px-[22px] md:px-[104px]
-      "
-    >
-      <Logo />
-      <div class="flex w-full justify-between leading-[1.3]">
-        <span
-          class="
-            text-[8px] md:text-[12px] lg:text-[15px]
-
-            w-[150px] md:w-[250px] lg:w-[370px]
-
-            pt-[19px] md:pt-[52px]
-            pl-[17px]
-          "
-        >
-          {state.label()}
-        </span>
-        <div class="hidden lg:block">
-          <div 
+          max-w-[1635px]
+  
+          h-[73px] md:h-[105px]
+  
+          px-[22px] md:px-[104px]
+        "
+      >
+        <Logo />
+        <div class="flex w-full justify-between leading-[1.3]">
+          <span
             class="
-              flex
-              text-[24px]
-              mt-[23px] ml-[200px]
-              w-[275px] h-[57px]
-              items-center
-              justify-center
+              text-[8px] md:text-[12px] lg:text-[15px]
+  
+              w-[150px] md:w-[250px] lg:w-[370px]
+  
+              pt-[19px] md:pt-[52px]
+              pl-[17px]
             "
           >
-              <a href="tel:88003003333">
-                8 800 300 33 33
-              </a>
+            {state.label()}
+          </span>
+          <div class="pt-[14px] md:pt-[23px]">
+            <Menu size={state.menuButtonSize()} />
           </div>
         </div>
-        <div class="pt-[14px] md:pt-[23px]">
-          <Menu size={state.menuButtonSize()} />
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 
