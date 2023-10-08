@@ -62,45 +62,42 @@ function Section1() {
         </div>
         <div class={section1Styles.containerMobile}>
           <div class={clsx(section1Styles.box, section1Styles.MobileImage)}>
-            <p class={section1Styles.textMobileHome}>h1</p>
-            {/* <img src={mainHome} class={section1Styles.homeMobile} /> */}
+            <div class={section1Styles.homeButton}>
+              <div class={section1Styles.homeButtonText}>
+                <p>Консультация</p>
+              </div>
+            </div>
           </div>
           <div class={clsx(section1Styles.box, section1Styles.MobileFisrt)}>
-            <div class={clsx(section1Styles.text, section1Styles.MobTextFirstLarge)}>
-              <p>ДВУХЭТАЖНЫЙ ДОМЗА 3,9 МЛН.</p>
+            <div
+              class={clsx(
+                section1Styles.text,
+                section1Styles.MobTextFirstLarge
+              )}
+            >
+              <p>барнхаус</p>
             </div>
-            <div class={clsx(section1Styles.text, section1Styles.MobTextFirstSmall)}>
-              <p>Из ПРЕМИУМ материалов, за 2 месяца на вашем участке</p>
+            <div
+              class={clsx(
+                section1Styles.text,
+                section1Styles.MobTextFirstSmall
+              )}
+            >
+              <p>
+                В котором можно жить даже на крайнем севере на монолитном
+                фундаменте за 60 дней.
+              </p>
             </div>
           </div>
           <div class={clsx(section1Styles.box, section1Styles.MobileSecond)}>
-            <div class={clsx(section1Styles.text, section1Styles.MobTextSecond)}>
-              <svg
-                class={section1Styles.MobileButton}
-                xmlns="http://www.w3.org/2000/svg"
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
-                fill="none"
-              >
-                <path
-                  d="M28.25 55.5C43.2998 55.5 55.5 43.2998 55.5 28.25C55.5 13.2002 43.2998 1 28.25 1C13.2002 1 1 13.2002 1 28.25C1 43.2998 13.2002 55.5 28.25 55.5Z"
-                  stroke="#1D1D1B"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M20.3926 28.6651V19.0557L28.718 23.857L37.0435 28.6651L28.718 33.4731L20.3926 38.2744V28.6651Z"
-                  fill="#D9D9D9"
-                  stroke="#1D1D1B"
-                  stroke-miterlimit="10"
-                />
+            <div class={section1Styles.videoButton}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <path d="M28.25 55.5C43.2998 55.5 55.5 43.2998 55.5 28.25C55.5 13.2002 43.2998 1 28.25 1C13.2002 1 1 13.2002 1 28.25C1 43.2998 13.2002 55.5 28.25 55.5Z" stroke="#1D1D1B" stroke-miterlimit="10"/>
+                <path d="M20.3926 28.6651V19.0557L28.718 23.857L37.0435 28.6651L28.718 33.4731L20.3926 38.2744V28.6651Z" fill="#D9D9D9" stroke="#1D1D1B" stroke-miterlimit="10"/>
               </svg>
-              <p>смотри видео и приезжай на экскурсию</p>
             </div>
-          </div>
-          <div class={clsx(section1Styles.box, section1Styles.MobileThird)}>
-            <div class={clsx(section1Styles.text, section1Styles.MobTextThird)}>
-              <p>СОБСТВЕННОЕ ПРОИЗВОДСТВО В ПОДМОСКОВЬЕ</p>
+            <div class={clsx(section1Styles.text, section1Styles.MobTextSecond)}>
+              <p>Посмотрите видео о строительстве вашего дома</p>
             </div>
           </div>
         </div>
