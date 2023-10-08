@@ -161,18 +161,27 @@
   }
 
   .containerSection{
-    width: 100%;
+    margin-left: 22px;
+    margin-right: 20px;
+    margin-bottom: 19px;
+    display: flex;
     overflow: hidden;
+    flex-direction: column;
     
   }
 
- .containerDesktop{
-  display: none;
- }
+  .containerDesktop{
+    display: none;
+  }
 
   .containerMobile{
     display: flex;
+    width: 388px;
     flex-direction: column;
+  }
+
+  .box{
+    width: 388px;
   }
 
   .MobileImage{
@@ -183,11 +192,11 @@
   }
 
   .homeMobile{
-
+    height: 284px;
   }
 
   .MobileFisrt{
-    
+    height: 185px;
   }
 
   .MobileSecond{
