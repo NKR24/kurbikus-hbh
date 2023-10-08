@@ -1,5 +1,10 @@
 import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
+
+import home1 from "../assets/img/home1.jpg"
+import home2 from "../assets/img/home2.jpg"
+import home3 from "../assets/img/home3.jpg"
+import home4 from "../assets/img/home4.jpg"
 import styles from "./index.module.scss"
 import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
@@ -104,7 +109,43 @@ function Section1() {
 }
 
 function Section2() {
-  return <></>
+  return (
+    <>
+      <div class="section fonts">
+        <div class="first-text">каталоги домов с ценами</div>
+        <div class="blocks">
+          <div class="block1">
+            <img src={home1} alt="" />
+            <h1 class="text">
+              Площадь: от 90 м² <br />
+              3 спальни, 1 санузел От <br />4 300 000 руб.
+            </h1>
+          </div>
+          <div class="block1">
+            <img src={home2} alt="" />
+            <h1 class="text">
+              Площадь: от 90 м² 3 спальни, <br />
+              1 санузел От <br />4 600 000 руб.
+            </h1>
+          </div>
+          <div class="block1">
+            <img src={home3} alt="" />
+            <h1 class="text">
+              Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000
+              руб.
+            </h1>
+          </div>
+          <div class="block1">
+            <img src={home4} alt="" />
+            <h1 class="text">
+              Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000
+              руб.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
 function Section3() {
