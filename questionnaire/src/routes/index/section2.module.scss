@@ -32,25 +32,24 @@
 .blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 200px;
+  grid-column-gap: 220px;
+  grid-row-gap: 38.45px;
   margin: 0 auto;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  margin-left: 104px;
+  margin-right: 102px;
+  margin-bottom: 62.58px;
 }
-
 
 .block1 {
-  width: 651px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 651px;
   height: 413px;
   border: 0.5px solid #DEDEDE;
+  position: relative;
 }
 
-.first-section {
-  margin-right: 102px;
-  margin-left: 101px;
-  min-width: 1525px;
-  min-height: 872px;
-  border: 1px solid black;
+.home1 {
+  
 }
