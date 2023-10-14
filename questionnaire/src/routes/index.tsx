@@ -127,39 +127,39 @@ function Section1() {
 function Section2() {
   return (
     <>
-      {/*<div class={clsx(section2Styles.section, section2Styles.fonts)}>*/}
-      {/*  <div class={section2Styles.firstText}>каталоги домов с ценами</div>*/}
-      {/*  <div class={section2Styles.blocks}>*/}
-      {/*    <div class={section2Styles.block1}>*/}
-      {/*      <img src={home1} alt="" />*/}
-      {/*      <h1 class={section2Styles.text}>*/}
-      {/*        Площадь: от 90 м² <br />*/}
-      {/*        3 спальни, 1 санузел От <br />4 300 000 руб.*/}
-      {/*      </h1>*/}
-      {/*    </div>*/}
-      {/*    <div class={section2Styles.block1}>*/}
-      {/*      <img src={home2} alt="" />*/}
-      {/*      <h1 class={section2Styles.text}>*/}
-      {/*        Площадь: от 90 м² 3 спальни, <br />*/}
-      {/*        1 санузел От <br />4 600 000 руб.*/}
-      {/*      </h1>*/}
-      {/*    </div>*/}
-      {/*    <div class={section2Styles.block1}>*/}
-      {/*      <img src={home3} alt="" />*/}
-      {/*      <h1 class={section2Styles.text}>*/}
-      {/*        Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000*/}
-      {/*        руб.*/}
-      {/*      </h1>*/}
-      {/*    </div>*/}
-      {/*    <div class={section2Styles.block1}>*/}
-      {/*      <img src={home4} alt="" />*/}
-      {/*      <h1 class={section2Styles.text}>*/}
-      {/*        Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000*/}
-      {/*        руб.*/}
-      {/*      </h1>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+      <div class={clsx(section2Styles.section, section2Styles.fonts)}>
+        <div class={section2Styles.firstText}>каталоги домов с ценами</div>
+        <div class={section2Styles.blocks}>
+          <div class={section2Styles.block1}>
+            <img src={home1} alt="" />
+            <h1 class={section2Styles.text}>
+              Площадь: от 90 м² <br />
+              3 спальни, 1 санузел От <br />4 300 000 руб.
+            </h1>
+          </div>
+          <div class={section2Styles.block1}>
+            <img src={home2} alt="" />
+            <h1 class={section2Styles.text}>
+              Площадь: от 90 м² 3 спальни, <br />
+              1 санузел От <br />4 600 000 руб.
+            </h1>
+          </div>
+          <div class={section2Styles.block1}>
+            <img src={home3} alt="" />
+            <h1 class={section2Styles.text}>
+              Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000
+              руб.
+            </h1>
+          </div>
+          <div class={section2Styles.block1}>
+            <img src={home4} alt="" />
+            <h1 class={section2Styles.text}>
+              Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000
+              руб.
+            </h1>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
