@@ -10,6 +10,7 @@ import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
 import section3Styles from "./index/section3.module.scss"
+import section4Styles from "./index/section4.module.scss"
 
 export default function Home() {
   return (
@@ -221,9 +222,15 @@ function Section3() {
 
 function Section4() {
   return (
-      <>
-
-      </>
+      <div class={section4Styles.containerMain}>
+        <div class={section4Styles.containerSection}>
+          <div class={section4Styles.containerDesktop}>
+            <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
+              <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
+            </div>
+          </div>
+        </div>
+      </div>
   )
 }
 

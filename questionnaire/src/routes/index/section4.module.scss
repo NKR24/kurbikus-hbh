@@ -1,0 +1,44 @@
+@import "../../utils";
+
+.containerMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.containerSection {
+  max-width: 1725px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.containerDesktop{
+  display: flex;
+  flex-direction: column;
+}
+
+.box{
+  width: 100%;
+}
+
+.boxFisrt{
+  margin-top: 67px;
+}
+
+.textMain{
+  width: 715px;
+  height: 125px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.boxSecond{
+  margin-top: 166px;
+}
