@@ -9,6 +9,7 @@ import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
+import section3Styles from "./index/section3.module.scss"
 
 export default function Home() {
   return (
@@ -57,7 +58,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <img src={mainHome} class={section1Styles.mainHomeImage} />
+            <img src={mainHome} class={section1Styles.mainHomeImage}  alt={""}/>
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
@@ -126,49 +127,104 @@ function Section1() {
 function Section2() {
   return (
     <>
-      <div class={clsx(section2Styles.section, section2Styles.fonts)}>
-        <div class={section2Styles.firstText}>каталоги домов с ценами</div>
-        <div class={section2Styles.blocks}>
-          <div class={section2Styles.block1}>
-            <img src={home1} alt="" />
-            <h1 class={section2Styles.text}>
-              Площадь: от 90 м² <br />
-              3 спальни, 1 санузел От <br />4 300 000 руб.
-            </h1>
-          </div>
-          <div class={section2Styles.block1}>
-            <img src={home2} alt="" />
-            <h1 class={section2Styles.text}>
-              Площадь: от 90 м² 3 спальни, <br />
-              1 санузел От <br />4 600 000 руб.
-            </h1>
-          </div>
-          <div class={section2Styles.block1}>
-            <img src={home3} alt="" />
-            <h1 class={section2Styles.text}>
-              Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000
-              руб.
-            </h1>
-          </div>
-          <div class={section2Styles.block1}>
-            <img src={home4} alt="" />
-            <h1 class={section2Styles.text}>
-              Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000
-              руб.
-            </h1>
-          </div>
-        </div>
-      </div>
+      {/*<div class={clsx(section2Styles.section, section2Styles.fonts)}>*/}
+      {/*  <div class={section2Styles.firstText}>каталоги домов с ценами</div>*/}
+      {/*  <div class={section2Styles.blocks}>*/}
+      {/*    <div class={section2Styles.block1}>*/}
+      {/*      <img src={home1} alt="" />*/}
+      {/*      <h1 class={section2Styles.text}>*/}
+      {/*        Площадь: от 90 м² <br />*/}
+      {/*        3 спальни, 1 санузел От <br />4 300 000 руб.*/}
+      {/*      </h1>*/}
+      {/*    </div>*/}
+      {/*    <div class={section2Styles.block1}>*/}
+      {/*      <img src={home2} alt="" />*/}
+      {/*      <h1 class={section2Styles.text}>*/}
+      {/*        Площадь: от 90 м² 3 спальни, <br />*/}
+      {/*        1 санузел От <br />4 600 000 руб.*/}
+      {/*      </h1>*/}
+      {/*    </div>*/}
+      {/*    <div class={section2Styles.block1}>*/}
+      {/*      <img src={home3} alt="" />*/}
+      {/*      <h1 class={section2Styles.text}>*/}
+      {/*        Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000*/}
+      {/*        руб.*/}
+      {/*      </h1>*/}
+      {/*    </div>*/}
+      {/*    <div class={section2Styles.block1}>*/}
+      {/*      <img src={home4} alt="" />*/}
+      {/*      <h1 class={section2Styles.text}>*/}
+      {/*        Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000*/}
+      {/*        руб.*/}
+      {/*      </h1>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </>
   )
 }
 
 function Section3() {
-  return <></>
+  return (
+      <>
+        <div class={section3Styles.containerMain}>
+          <div class={section3Styles.containerSection}>
+            <div class={section3Styles.containerDesktop}>
+              <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
+                <div class={clsx(section3Styles.text, section3Styles.textMain)}>
+                  <p>5 вопросов о вашем доме</p>
+                </div>
+                <div class={section3Styles.buttonStart}>
+                  <div class={section3Styles.textButton}>
+                    <p>начать</p>
+                  </div>
+                </div>
+                <div class={section3Styles.table}>
+                  <p class={section3Styles.tableTextMain}>Вы получите:</p>
+                  <ol class={section3Styles.tableText}>
+                    <li>Подходящие проекты с ценой в PDF</li>
+                    <li>Изменение комплектации и цены</li>
+                    <li>Выбор цветов и покрытий</li>
+                    <li>Подбор материалов кровли и окон</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class={section3Styles.containerMobile}>
+              <div class={clsx(section3Styles.box, section3Styles.boxMobileFirst)}>
+                <div class={clsx(section3Styles.text, section3Styles.textMainMob)}>
+                  <p>5 вопросов о вашем доме</p>
+                </div>
+                <div class={section3Styles.buttonStartMob}>
+                  <div class={section3Styles.textButtonMob}>
+                    <p>начать</p>
+                  </div>
+                </div>
+              </div>
+              <div class={clsx(section3Styles.box, section3Styles.boxMobileSecond)}>
+                <div class={section3Styles.tableMob}>
+                  <p class={section3Styles.tableTextMainMob}>Вы получите:</p>
+                  <ol class={section3Styles.tableTextMob}>
+                    <li>Подходящие проекты с ценой в PDF</li>
+                    <li>Изменение комплектации и цены</li>
+                    <li>Выбор цветов и покрытий</li>
+                    <li>Подбор материалов кровли и окон</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+  )
 }
 
 function Section4() {
-  return <></>
+  return (
+      <>
+
+      </>
+  )
 }
 
 function Section5() {
@@ -182,3 +238,4 @@ function Section6() {
 function Section7() {
   return <></>
 }
+

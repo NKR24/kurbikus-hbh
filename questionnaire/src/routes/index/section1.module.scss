@@ -7,7 +7,7 @@
 }
 
 .containerSection {
-  width: 100%;
+  max-width: 1725px;
   display: flex;
   border: 1px solid black;
   margin-left: 101px;
@@ -15,7 +15,6 @@
   margin-bottom: 72px;
   overflow: hidden;
   flex-direction: row;
-  overflow: hidden;
 }
 
 .containerDesktop{
@@ -81,7 +80,6 @@
 .text2 {
   padding-top: 55px;
   padding-left: 88px;
-
   width: 690px;
   height: 197px;
   flex-shrink: 0;

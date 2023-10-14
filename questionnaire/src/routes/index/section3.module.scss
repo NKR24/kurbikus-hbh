@@ -1,0 +1,192 @@
+@import "../../utils";
+
+.containerMain{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.containerSection {
+  max-width: 1725px;
+  display: flex;
+  margin-left: 101px;
+  margin-right: 102px;
+  margin-bottom: 72px;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.containerMobile{
+  display: none;
+}
+
+.textMain{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+  flex-wrap: nowrap;
+}
+
+.buttonStart{
+  margin-top: 94px;
+  margin-left: 551px;
+  display: flex;
+  width: 395px;
+  height: 107px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #000;
+}
+
+.textButton{
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.tableTextMain{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.table{
+  margin-top: 93px;
+  margin-left: 452px;
+  margin-bottom: 114px;
+}
+
+.tableText{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  list-style-type: disc;
+}
+
+@include sm{
+  .containerMain{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .containerSection{
+    margin-left: 22px;
+    margin-right: 20px;
+    margin-top: 211px;
+    width: 388px;
+    height: 653px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .box{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .boxMobileFirst{
+    padding-left: 38px;
+  }
+
+  .textMainMob{
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .buttonStartMob{
+    margin-left: 72px;
+    width: 157px;
+    height: 59px;
+    flex-shrink: 0;
+    background: #000;
+  }
+
+  .textButtonMob{
+    margin-top: 93px;
+    padding-top: 19px;
+    padding-left: 49px;
+    padding-right: 50px;
+    width: 58px;
+    height: 21px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .boxMobileSecond{
+    flex-shrink: 0;
+    margin-top: 50px;
+    border: 0.5px solid #000;
+  }
+
+  .tableMob{
+    margin-top: 14px;
+    margin-bottom: 25px;
+  }
+
+  .tableTextMainMob{
+    padding-left: 31px;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableTextMob{
+    padding-left: 48px;
+    list-style-type: disc;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+
+  }
+}
