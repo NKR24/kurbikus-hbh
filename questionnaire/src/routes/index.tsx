@@ -2,8 +2,8 @@ import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
 
 import home1 from "../assets/img/home1.jpg"
-import home2 from "../assets/img/home2.jpg"
-import home3 from "../assets/img/home3.jpg"
+import home3 from "../assets/img/home2.jpg"
+import home2 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
 import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
@@ -11,6 +11,7 @@ import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
 import section3Styles from "./index/section3.module.scss"
 import section4Styles from "./index/section4.module.scss"
+import PDF from "../assets/img/PDF.png"
 
 export default function Home() {
   return (
@@ -131,31 +132,50 @@ function Section2() {
       <div class={clsx(section2Styles.section, section2Styles.fonts)}>
         <div class={section2Styles.firstText}>каталоги домов с ценами</div>
         <div class={section2Styles.blocks}>
-          <div class={section2Styles.block1}>
-            <img src={home1} alt="" />
+          <div class={clsx(section2Styles.block1, section2Styles.relative)}>
+            <img src={home1} alt="home1" />
+            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+            <div class={section2Styles.textOverlay}>
+              h1
+            </div>
             <h1 class={section2Styles.text}>
               Площадь: от 90 м² <br />
               3 спальни, 1 санузел От <br />4 300 000 руб.
             </h1>
           </div>
           <div class={section2Styles.block1}>
-            <img src={home2} alt="" />
+            <img src={home3} alt="home3" />
+            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+            <div class={section2Styles.textOverlay}>
+              h3
+            </div>
             <h1 class={section2Styles.text}>
-              Площадь: от 90 м² 3 спальни, <br />
-              1 санузел От <br />4 600 000 руб.
+              Площадь: от 110 м² <br />3 спальни,
+              1 санузел От <br />4 000 000 руб.
             </h1>
           </div>
           <div class={section2Styles.block1}>
-            <img src={home3} alt="" />
+            <img src={home2} alt="home2" />
+            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+            <div class={section2Styles.textOverlay}>
+              h2
+            </div>
+            <div class={section2Styles.textShale}>
+              шале
+            </div>
             <h1 class={section2Styles.text}>
-              Площадь: от 110 м² 3 спальни, <br />1 санузел От <br /> 4 000 000
+              Площадь: от 90 м²<br /> 3 спальни, 1 санузел От <br /> 4 600 000
               руб.
             </h1>
           </div>
           <div class={section2Styles.block1}>
-            <img src={home4} alt="" />
+            <img src={home4} alt="home4" />
+            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+            <div class={section2Styles.textOverlay}>
+              h4
+            </div>
             <h1 class={section2Styles.text}>
-              Площадь: от 110 м² 3 спальни, <br /> 1 санузел От <br /> 3 900 000
+              Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />3 900 000
               руб.
             </h1>
           </div>
