@@ -9,6 +9,8 @@ import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
+import section3Styles from "./index/section3.module.scss"
+import section4Styles from "./index/section4.module.scss"
 
 export default function Home() {
   return (
@@ -57,7 +59,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <img src={mainHome} class={section1Styles.mainHomeImage} />
+            <img src={mainHome} class={section1Styles.mainHomeImage}  alt={""}/>
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
@@ -164,11 +166,72 @@ function Section2() {
 }
 
 function Section3() {
-  return <></>
+  return (
+      <>
+        <div class={section3Styles.containerMain}>
+          <div class={section3Styles.containerSection}>
+            <div class={section3Styles.containerDesktop}>
+              <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
+                <div class={clsx(section3Styles.text, section3Styles.textMain)}>
+                  <p>5 вопросов о вашем доме</p>
+                </div>
+                <div class={section3Styles.buttonStart}>
+                  <div class={section3Styles.textButton}>
+                    <p>начать</p>
+                  </div>
+                </div>
+                <div class={section3Styles.table}>
+                  <p class={section3Styles.tableTextMain}>Вы получите:</p>
+                  <ol class={section3Styles.tableText}>
+                    <li>Подходящие проекты с ценой в PDF</li>
+                    <li>Изменение комплектации и цены</li>
+                    <li>Выбор цветов и покрытий</li>
+                    <li>Подбор материалов кровли и окон</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class={section3Styles.containerMobile}>
+              <div class={clsx(section3Styles.box, section3Styles.boxMobileFirst)}>
+                <div class={clsx(section3Styles.text, section3Styles.textMainMob)}>
+                  <p>5 вопросов о вашем доме</p>
+                </div>
+                <div class={section3Styles.buttonStartMob}>
+                  <div class={section3Styles.textButtonMob}>
+                    <p>начать</p>
+                  </div>
+                </div>
+              </div>
+              <div class={clsx(section3Styles.box, section3Styles.boxMobileSecond)}>
+                <div class={section3Styles.tableMob}>
+                  <p class={section3Styles.tableTextMainMob}>Вы получите:</p>
+                  <ol class={section3Styles.tableTextMob}>
+                    <li>Подходящие проекты с ценой в PDF</li>
+                    <li>Изменение комплектации и цены</li>
+                    <li>Выбор цветов и покрытий</li>
+                    <li>Подбор материалов кровли и окон</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+  )
 }
 
 function Section4() {
-  return <></>
+  return (
+      <div class={section4Styles.containerMain}>
+        <div class={section4Styles.containerSection}>
+          <div class={section4Styles.containerDesktop}>
+            <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
+              <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  )
 }
 
 function Section5() {
@@ -182,3 +245,4 @@ function Section6() {
 function Section7() {
   return <></>
 }
+
