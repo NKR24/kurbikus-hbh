@@ -59,11 +59,10 @@
   margin-right: 48px;
 }
 
-
 .textOverlay {
   position: absolute;
   font-size: 96px;
-  color: #3E3E3E;
+  color: #3e3e3e;
   font-family: Mikro;
   font-style: normal;
   font-weight: 700;
@@ -71,6 +70,28 @@
   top: -3%;
   margin-top: 0px;
   margin-left: 66px;
+}
+
+.blackRectangle {
+  position: absolute;
+  top: 0%;
+  margin-left: 179px;
+  margin-top: 197.2px;
+  border: 0.5px solid #000;
+  width: 249.026px;
+  height: 76.455px;
+}
+
+.textShale {
+  color: #000;
+  font-family: Mikro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-left: 76.46px;
+  margin-top: 17.48px;
 }
 
 @include sm {

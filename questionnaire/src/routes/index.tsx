@@ -60,7 +60,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <img src={mainHome} class={section1Styles.mainHomeImage}  alt={""}/>
+            <img src={mainHome} class={section1Styles.mainHomeImage} alt={""} />
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
@@ -135,9 +135,7 @@ function Section2() {
           <div class={clsx(section2Styles.block1, section2Styles.relative)}>
             <img src={home1} alt="home1" />
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>
-              h1
-            </div>
+            <div class={section2Styles.textOverlay}>h1</div>
             <h1 class={section2Styles.text}>
               Площадь: от 90 м² <br />
               3 спальни, 1 санузел От <br />4 300 000 руб.
@@ -146,34 +144,28 @@ function Section2() {
           <div class={section2Styles.block1}>
             <img src={home3} alt="home3" />
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>
-              h3
-            </div>
+            <div class={section2Styles.textOverlay}>h3</div>
             <h1 class={section2Styles.text}>
-              Площадь: от 110 м² <br />3 спальни,
-              1 санузел От <br />4 000 000 руб.
+              Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />4 000 000
+              руб.
             </h1>
           </div>
           <div class={section2Styles.block1}>
             <img src={home2} alt="home2" />
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>
-              h2
-            </div>
-            <div class={section2Styles.textShale}>
-              шале
+            <div class={section2Styles.textOverlay}>h2</div>
+            <div class={section2Styles.blackRectangle}>
+              <div class={section2Styles.textShale}>шале</div>
             </div>
             <h1 class={section2Styles.text}>
-              Площадь: от 90 м²<br /> 3 спальни, 1 санузел От <br /> 4 600 000
-              руб.
+              Площадь: от 90 м²
+              <br /> 3 спальни, 1 санузел От <br /> 4 600 000 руб.
             </h1>
           </div>
           <div class={section2Styles.block1}>
             <img src={home4} alt="home4" />
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>
-              h4
-            </div>
+            <div class={section2Styles.textOverlay}>h4</div>
             <h1 class={section2Styles.text}>
               Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />3 900 000
               руб.
@@ -187,70 +179,76 @@ function Section2() {
 
 function Section3() {
   return (
-      <>
-        <div class={section3Styles.containerMain}>
-          <div class={section3Styles.containerSection}>
-            <div class={section3Styles.containerDesktop}>
-              <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
-                <div class={clsx(section3Styles.text, section3Styles.textMain)}>
-                  <p>5 вопросов о вашем доме</p>
+    <>
+      <div class={section3Styles.containerMain}>
+        <div class={section3Styles.containerSection}>
+          <div class={section3Styles.containerDesktop}>
+            <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
+              <div class={clsx(section3Styles.text, section3Styles.textMain)}>
+                <p>5 вопросов о вашем доме</p>
+              </div>
+              <div class={section3Styles.buttonStart}>
+                <div class={section3Styles.textButton}>
+                  <p>начать</p>
                 </div>
-                <div class={section3Styles.buttonStart}>
-                  <div class={section3Styles.textButton}>
-                    <p>начать</p>
-                  </div>
-                </div>
-                <div class={section3Styles.table}>
-                  <p class={section3Styles.tableTextMain}>Вы получите:</p>
-                  <ol class={section3Styles.tableText}>
-                    <li>Подходящие проекты с ценой в PDF</li>
-                    <li>Изменение комплектации и цены</li>
-                    <li>Выбор цветов и покрытий</li>
-                    <li>Подбор материалов кровли и окон</li>
-                  </ol>
+              </div>
+              <div class={section3Styles.table}>
+                <p class={section3Styles.tableTextMain}>Вы получите:</p>
+                <ol class={section3Styles.tableText}>
+                  <li>Подходящие проекты с ценой в PDF</li>
+                  <li>Изменение комплектации и цены</li>
+                  <li>Выбор цветов и покрытий</li>
+                  <li>Подбор материалов кровли и окон</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class={section3Styles.containerMobile}>
+            <div
+              class={clsx(section3Styles.box, section3Styles.boxMobileFirst)}
+            >
+              <div
+                class={clsx(section3Styles.text, section3Styles.textMainMob)}
+              >
+                <p>5 вопросов о вашем доме</p>
+              </div>
+              <div class={section3Styles.buttonStartMob}>
+                <div class={section3Styles.textButtonMob}>
+                  <p>начать</p>
                 </div>
               </div>
             </div>
-            <div class={section3Styles.containerMobile}>
-              <div class={clsx(section3Styles.box, section3Styles.boxMobileFirst)}>
-                <div class={clsx(section3Styles.text, section3Styles.textMainMob)}>
-                  <p>5 вопросов о вашем доме</p>
-                </div>
-                <div class={section3Styles.buttonStartMob}>
-                  <div class={section3Styles.textButtonMob}>
-                    <p>начать</p>
-                  </div>
-                </div>
-              </div>
-              <div class={clsx(section3Styles.box, section3Styles.boxMobileSecond)}>
-                <div class={section3Styles.tableMob}>
-                  <p class={section3Styles.tableTextMainMob}>Вы получите:</p>
-                  <ol class={section3Styles.tableTextMob}>
-                    <li>Подходящие проекты с ценой в PDF</li>
-                    <li>Изменение комплектации и цены</li>
-                    <li>Выбор цветов и покрытий</li>
-                    <li>Подбор материалов кровли и окон</li>
-                  </ol>
-                </div>
+            <div
+              class={clsx(section3Styles.box, section3Styles.boxMobileSecond)}
+            >
+              <div class={section3Styles.tableMob}>
+                <p class={section3Styles.tableTextMainMob}>Вы получите:</p>
+                <ol class={section3Styles.tableTextMob}>
+                  <li>Подходящие проекты с ценой в PDF</li>
+                  <li>Изменение комплектации и цены</li>
+                  <li>Выбор цветов и покрытий</li>
+                  <li>Подбор материалов кровли и окон</li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
-      </>
+      </div>
+    </>
   )
 }
 
 function Section4() {
   return (
-      <div class={section4Styles.containerMain}>
-        <div class={section4Styles.containerSection}>
-          <div class={section4Styles.containerDesktop}>
-            <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
-              <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
-            </div>
+    <div class={section4Styles.containerMain}>
+      <div class={section4Styles.containerSection}>
+        <div class={section4Styles.containerDesktop}>
+          <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
+            <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
           </div>
         </div>
       </div>
+    </div>
   )
 }
 
@@ -265,4 +263,3 @@ function Section6() {
 function Section7() {
   return <></>
 }
-
