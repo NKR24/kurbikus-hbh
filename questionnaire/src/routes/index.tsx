@@ -133,7 +133,7 @@ function Section2() {
         <div class={section2Styles.firstText}>каталоги домов с ценами</div>
         <div class={section2Styles.blocks}>
           <div class={clsx(section2Styles.block1, section2Styles.relative)}>
-            <img src={home1} alt="home1" />
+            <img src={home1} alt="home1" class={section2Styles.imageHome}/>
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
             <div class={section2Styles.textOverlay}>h1</div>
             <h1 class={section2Styles.text}>
@@ -141,8 +141,8 @@ function Section2() {
               3 спальни, 1 санузел От <br />4 300 000 руб.
             </h1>
           </div>
-          <div class={section2Styles.block1}>
-            <img src={home3} alt="home3" />
+          <div class={clsx(section2Styles.block1, section2Styles.thirdBlock)}>
+            <img src={home3} alt="home3" class={section2Styles.imageHome}/>
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
             <div class={section2Styles.textOverlay}>h3</div>
             <h1 class={section2Styles.text}>
@@ -150,8 +150,8 @@ function Section2() {
               руб.
             </h1>
           </div>
-          <div class={section2Styles.block1}>
-            <img src={home2} alt="home2" />
+          <div class={clsx(section2Styles.block1, section2Styles.thirdBlock1)}>
+            <img src={home2} alt="home2" class={section2Styles.imageHome}/>
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
             <div class={section2Styles.textOverlay}>h2</div>
             <div class={section2Styles.blackRectangle}>
@@ -162,8 +162,8 @@ function Section2() {
               <br /> 3 спальни, 1 санузел От <br /> 4 600 000 руб.
             </h1>
           </div>
-          <div class={section2Styles.block1}>
-            <img src={home4} alt="home4" />
+          <div class={clsx(section2Styles.block1, section2Styles.fourthBlock)}>
+            <img src={home4} alt="home4" class={section2Styles.imageHome}/>
             <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
             <div class={section2Styles.textOverlay}>h4</div>
             <h1 class={section2Styles.text}>

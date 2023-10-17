@@ -102,21 +102,58 @@
     font-size: 12px;
   }
 
+  .thirdBlock {
+    order: 1;
+  }
+
+  .fourthBlock {
+    order: 2;
+  }
+
+  .textShale, .blackRectangle {
+    display: none;
+  }
+
+  .overlayImage {
+    width: 57.298px;
+    height: 43.955px;
+    right: 0%;
+    margin-top: 23px;
+    margin-right: 61.7px;
+  }
+
+  .imageHome {
+    height: 249px;
+    max-width: 388px;
+    width: 388px;
+  }
+
   .text {
     margin-left: 34px;
-    margin-bottom: 7px;
+    margin-top: 12px;
+  }
+
+  .textOverlay {
+    top: -11%;
+    margin-left: 41px;
+    margin-top: 22px;
   }
 
   .section {
+    height: 1488px;
+    width: 100%;
   }
 
   .blocks {
     grid-template-columns: 1fr;
+    grid-row-gap: 27px;
     margin-left: 22px;
     margin-right: 20px;
   }
 
   .block1 {
     height: 324px;
+    width: 100%;
+    max-width: 430px;
   }
 }
