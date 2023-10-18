@@ -246,6 +246,9 @@ function Section4() {
           <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
             <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
           </div>
+          <div class={clsx(section4Styles.box, section4Styles.boxSecond)}>
+            <p>.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -255,9 +258,9 @@ function Section4() {
 function Section5() {
   return (
     <>
-      <div>
+      {/*<div>
         test
-      </div>
+      </div>*/}
     </>
   )
 }

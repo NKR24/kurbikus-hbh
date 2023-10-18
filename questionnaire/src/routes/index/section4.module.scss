@@ -7,7 +7,7 @@
 }
 
 .containerSection {
-  max-width: 1725px;
+  max-width: 1920px;
   display: flex;
   overflow: hidden;
   flex-direction: row;
@@ -22,7 +22,9 @@
   width: 100%;
 }
 
-.boxFisrt{
+.boxFirst{
+  display: flex;
+  justify-content: center;
   margin-top: 67px;
 }
 
