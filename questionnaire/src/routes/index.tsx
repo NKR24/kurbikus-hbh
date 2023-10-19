@@ -11,6 +11,7 @@ import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
 import section3Styles from "./index/section3.module.scss"
 import section4Styles from "./index/section4.module.scss"
+import section5Styles from "./index/section5.module.scss"
 import PDF from "../assets/img/PDF.png"
 
 export default function Home() {
@@ -255,8 +256,32 @@ function Section4() {
 function Section5() {
   return (
     <>
-      <div>
-        test
+      <div class={section5Styles.section5}>
+        <p class={section5Styles.fundament}>фундамент</p>
+        <img src="" alt="" class="" />
+        <ol class={section5Styles.numberedList}>
+          <li>
+            Бетонные плиты (собственного производства) устанавливаются на
+            длинные ригели из гидротехнического бетона со спец армированием.
+          </li>
+          <li>
+            Конструкцию держат монолитные бетонные сваи на титановых крепежах.
+            Данный сплав используется для строения космических аппаратов.
+          </li>
+          <li>
+            На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
+            теплоизоляционного материала (экструдированный пенополистерол).
+          </li>
+          <li>
+            Затем производится полусухая стяжка на немецком оборудовании. В
+            результате создаётся идеально ровное предфинальное покрытие пола. На
+            него кладётся финальное половое покрытие.
+          </li>
+          <li>
+            Конструкция обладает высокой несущей способностью, большой площадью
+            опоры, что делает невозможным опрокидывание и провалы грунта.
+          </li>
+        </ol>
       </div>
     </>
   )
