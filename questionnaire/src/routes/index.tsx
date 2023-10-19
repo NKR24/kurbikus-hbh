@@ -13,6 +13,7 @@ import section3Styles from "./index/section3.module.scss"
 import section4Styles from "./index/section4.module.scss"
 import section5Styles from "./index/section5.module.scss"
 import PDF from "../assets/img/PDF.png"
+import foundation from "../assets/img/foundation.jpg"
 
 export default function Home() {
   return (
@@ -257,8 +258,8 @@ function Section5() {
   return (
     <>
       <div class={section5Styles.section5}>
-        <p class={section5Styles.fundament}>фундамент</p>
-        <img src="" alt="" class="" />
+        <div class={section5Styles.foundationText}>фундамент</div>
+        <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
         <ol class={section5Styles.numberedList}>
           <li>
             Бетонные плиты (собственного производства) устанавливаются на

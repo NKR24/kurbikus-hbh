@@ -6,7 +6,7 @@
   height: 1050px;
 }
 
-.fundament {
+.foundationText {
   color: #dedede;
   font-family: Mikro;
   font-size: 48px;
@@ -14,10 +14,22 @@
   font-weight: 700;
   line-height: normal;
   text-transform: lowercase;
-  margin-left: 103px;
-  margin-top: 163px;
+  margin-left: 104px;
+  margin-top: 0px;
+}
+
+.foundationPic {
+  margin-left: 321px;
 }
 
 .numberedList {
-  list-style-type: decimal;
+  color: #dedede;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-left: 94px;
+  margin-top: 48px;
 }
