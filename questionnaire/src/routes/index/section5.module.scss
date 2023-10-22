@@ -1,0 +1,38 @@
+@import "../../utils";
+
+.section5 {
+  background-color: #3e3e3e;
+  width: 100%;
+  width: 1741px;
+  height: 1050px;
+}
+
+.foundationText {
+  color: #dedede;
+  font-family: Mikro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-left: 104px;
+  margin-top: 163px;
+}
+
+.foundationPic {
+  margin-left: 321px;
+}
+
+.numberedList {
+  color: #dedede;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-left: 104px;
+  margin-top: 48px;
+  margin-right: 122px;
+  list-style-type: decimal;
+}
