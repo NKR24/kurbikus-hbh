@@ -5,10 +5,6 @@ import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
-import homeOneThreeFive from "../assets/img/section6Images/home-1-3-5.jpg"
-import homeFourSixEight from "../assets/img/section6Images/home-4-6-8.jpg"
-import homeSecond from "../assets/img/section6Images/home-second.jpg"
-import homeSeven from "../assets/img/section6Images/home-7.jpg"
 import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
@@ -30,6 +26,12 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Section8 />
+      <Section9 />
+      <Section10 />
+      <Section11 />
+      <Section12 />
+      <Section13 />
     </>
   )
 }
@@ -285,7 +287,6 @@ function Section6() {
                 </div>
               </div>
               <div class={section6Styles.partSecond}>
-
                   <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
                     <p class={section6Styles.textLow}>наши дома</p>
                     <p class={section6Styles.textLarge}>дом по проекту h1</p>
@@ -320,6 +321,39 @@ function Section6() {
                   </div>
               </div>
             </div>
+            <div class={section6Styles.containerMobile}>
+              <div class={section6Styles.mobileOne}>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobFirst)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobFirst)}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobSecond)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobSecond)}>интерьер</p>
+                </div>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobThird)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobThird)}>стройка</p>
+                </div>
+              </div>
+              <div class={section6Styles.mobileTwo}>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobOne)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobTwo)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobThree)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobFour)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobFive)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobSix)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </>
@@ -329,3 +363,29 @@ function Section6() {
 function Section7() {
   return <></>
 }
+
+function Section8() {
+  return <></>
+}
+
+function Section9() {
+  return <></>
+}
+
+function Section10() {
+  return <></>
+}
+
+function Section11() {
+  return <></>
+}
+
+function Section12() {
+  return <></>
+}
+
+function Section13() {
+  return <></>
+}
+
+
