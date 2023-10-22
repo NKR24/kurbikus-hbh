@@ -5,6 +5,10 @@ import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
+import homeOneThreeFive from "../assets/img/section6Images/home-1-3-5.jpg"
+import homeFourSixEight from "../assets/img/section6Images/home-4-6-8.jpg"
+import homeSecond from "../assets/img/section6Images/home-second.jpg"
+import homeSeven from "../assets/img/section6Images/home-7.jpg"
 import clsx from "clsx"
 import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
@@ -12,6 +16,7 @@ import section2Styles from "./index/section2.module.scss"
 import section3Styles from "./index/section3.module.scss"
 import section4Styles from "./index/section4.module.scss"
 import section5Styles from "./index/section5.module.scss"
+import section6Styles from "./index/section6.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
 
@@ -248,6 +253,9 @@ function Section4() {
           <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
             <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
           </div>
+          <div class={clsx(section4Styles.box, section4Styles.boxSecond)}>
+            <p>.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -289,7 +297,62 @@ function Section5() {
 }
 
 function Section6() {
-  return <></>
+  return (
+      <>
+        <div class={section6Styles.containerMain}>
+          <div class={section6Styles.containerSection}>
+            <div class={section6Styles.containerDesktop}>
+              <div class={section6Styles.partFirst}>
+                <div class={clsx(section6Styles.box,section6Styles.boxFirst)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textFirst)}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.box,section6Styles.boxSecond)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textSecond)}>интерьер</p>
+                </div>
+                <div class={clsx(section6Styles.box,section6Styles.boxThird)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textThird)}>стройка</p>
+                </div>
+              </div>
+              <div class={section6Styles.partSecond}>
+
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.Second)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.target, section6Styles.Seven)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+  )
 }
 
 function Section7() {

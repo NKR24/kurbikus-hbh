@@ -1,0 +1,162 @@
+@import "../../utils";
+
+.containerMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.containerSection {
+  max-width: 1920px;
+  display: flex;
+  overflow: hidden;
+}
+
+.containerDesktop{
+  display: flex;
+  flex-direction: column;
+}
+
+.partFirst{
+  display: flex;
+  flex-direction: row;
+  padding-right: 522px;
+}
+
+.boxFirst{
+  background: black;
+}
+
+.box{
+  width: 331px;
+  height: 80px;
+  top: 5294px;
+  left: 103px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.boxSecond{
+  border-right: 1px solid black;
+}
+
+.boxThird{
+  border-right: 1px solid black;
+}
+
+.text{
+  font-family: Mikro, serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.textFirst{
+  color: #dedede;
+  width: 144px;
+  height: 33px;
+  top: 5318px;
+  left: 193px;
+  margin-left: 90px;
+
+}
+
+.textSecond{
+  width: 126px;
+  height: 33px;
+  top: 5318px;
+  left: 530px;
+  margin-left: 96px;
+}
+
+.textThird{
+  width: 110px;
+  height: 33px;
+  top: 5318px;
+  left: 873px;
+  margin-left: 109px;
+}
+
+.partSecond{
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+
+.child{
+  width: 481px;
+  height: 270px;
+  flex-shrink: 0;
+}
+
+.target{
+  margin-right: 7px;
+  height: 270px;
+  flex-shrink: 0;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.OneThreeFive{
+  background-image: url("../../assets/img/section6Images/home-1-3-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Second{
+  background-image: url("../../assets/img/section6Images/home-second.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.FourSixEight{
+  background-image: url("../../assets/img/section6Images/home-4-6-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.Seven{
+  background-image: url("../../assets/img/section6Images/home-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.textLow{
+  margin-top: 23px;
+  margin-left: 16px;
+  width: 162px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.textLarge{
+  margin-left: 16px;
+  margin-top: 178px;
+  width: 314px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: lowercase;
+}
