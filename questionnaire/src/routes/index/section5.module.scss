@@ -8,6 +8,7 @@
 }
 
 .foundationText {
+  
   color: #dedede;
   font-family: Mikro;
   font-size: 48px;
@@ -17,13 +18,18 @@
   text-transform: lowercase;
   margin-left: 104px;
   margin-top: 163px;
+  position: relative;
+  display: inline-block;
 }
 
 .foundationPic {
+  position: absolute;
+  margin-top: 123px;
   margin-left: 321px;
 }
 
 .numberedList {
+  
   color: #dedede;
   font-family: Montserrat;
   font-size: 30px;
@@ -32,7 +38,7 @@
   line-height: normal;
   text-transform: lowercase;
   margin-left: 104px;
-  margin-top: 48px;
+  margin-top: 453px;
   margin-right: 122px;
   list-style-type: decimal;
 }

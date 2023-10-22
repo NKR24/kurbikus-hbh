@@ -266,8 +266,10 @@ function Section5() {
   return (
     <>
       <div class={section5Styles.section5}>
-        <div class={section5Styles.foundationText}>фундамент</div>
-        <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
+        <div class={section5Styles.TextAndPic}>
+          <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
+          <div class={section5Styles.foundationText}>фундамент</div>
+        </div>
         <ol class={section5Styles.numberedList}>
           <li>
             Бетонные плиты (собственного производства) устанавливаются на
