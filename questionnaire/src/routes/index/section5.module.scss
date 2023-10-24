@@ -1,39 +1,63 @@
 @import "../../utils";
 
-.section5 {
-  background-color: #3e3e3e;
+
+.containerMain {
+  display: flex;
   width: 100%;
   height: 1050px;
+  background: #3E3E3E;
+  justify-content: center;
 }
 
-.foundationText {
-  color: #dedede;
-  font-family: Mikro;
+.containerSection {
+  max-width: 1920px;
+  margin-top: 163px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.fundament{
+  margin-right: 1200px;
+}
+
+.fundamentText{
+  width: 320px;
+  height: 64px;
+  flex-shrink: 0;
+  color: #DEDEDE;
+  font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: lowercase;
-  margin-left: 104px;
-  margin-top: 163px;
-  position: relative;
-  display: inline-block;
 }
 
-.foundationPic {
-  position: absolute;
-  margin-top: 123px;
-  margin-left: 321px;
+.foundationImage{
+  width: 1181px;
+  height: 509px;
+  flex-shrink: 0;
+  margin-left: 218px;
+  margin-bottom: 48px;
+}
+
+
+.table{
+  width: 1563px;
+  height: 281px;
+  flex-shrink: 0;
+  margin-bottom: 90px;
 }
 
 .numberedList {
+  padding-left: 40px;
   list-style-type: decimal;
-  margin-left: 125px;
-  margin-top: 453px;
-  margin-right: 75px;
-
-  color: #dedede;
-  font-family: Montserrat;
+  flex-shrink: 0;
+  color: #DEDEDE;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Montserrat, serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

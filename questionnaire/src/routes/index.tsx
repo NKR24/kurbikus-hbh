@@ -249,6 +249,7 @@ function Section3() {
 
 function Section4() {
   return (
+  <>
     <div class={section4Styles.containerMain}>
       <div class={section4Styles.containerSection}>
         <div class={section4Styles.containerDesktop}>
@@ -261,51 +262,49 @@ function Section4() {
         </div>
       </div>
     </div>
+  </>
   )
 }
 
 function Section5() {
   return (
-    <>
-      <div class={section5Styles.section5}>
-        <div class={section5Styles.TextAndPic}>
-          <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
-          <div class={section5Styles.sevenLines}>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
+      <>
+        <div class={section5Styles.containerMain}>
+          <div class={section5Styles.containerSection}>
+            <div class={section5Styles.containerDesktop}>
+              <div class={section5Styles.fundament}>
+                <p class={section5Styles.fundamentText}>фундамент</p>
+              </div>
+              <img src={foundation} alt={foundation} class={section5Styles.foundationImage}/>
+              <div class={section5Styles.table}>
+                <ol type={"1"} class={section5Styles.numberedList}>
+                  <li>
+                    Бетонные плиты (собственного производства) устанавливаются на
+                    длинные ригели из гидротехнического бетона со спец армированием.
+                  </li>
+                  <li>
+                    Конструкцию держат монолитные бетонные сваи на титановых крепежах.
+                    Данный сплав используется для строения космических аппаратов.
+                  </li>
+                  <li>
+                    На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
+                    теплоизоляционного материала (экструдированный пенополистерол).
+                  </li>
+                  <li>
+                    Затем производится полусухая стяжка на немецком оборудовании. В
+                    результате создаётся идеально ровное предфинальное покрытие пола. На
+                    него кладётся финальное половое покрытие.
+                  </li>
+                  <li>
+                    Конструкция обладает высокой несущей способностью, большой площадью
+                    опоры, что делает невозможным опрокидывание и провалы грунта.
+                  </li>
+                </ol>
+              </div>
+            </div>
           </div>
-          <div class={section5Styles.foundationText}>фундамент</div>
         </div>
-        <ol class={section5Styles.numberedList}>
-          <li>
-            Бетонные плиты (собственного производства) устанавливаются на
-            длинные ригели из гидротехнического бетона со спец армированием.
-          </li>
-          <li>
-            Конструкцию держат монолитные бетонные сваи на титановых крепежах.
-            Данный сплав используется для строения космических аппаратов.
-          </li>
-          <li>
-            На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
-            теплоизоляционного материала (экструдированный пенополистерол).
-          </li>
-          <li>
-            Затем производится полусухая стяжка на немецком оборудовании. В
-            результате создаётся идеально ровное предфинальное покрытие пола. На
-            него кладётся финальное половое покрытие.
-          </li>
-          <li>
-            Конструкция обладает высокой несущей способностью, большой площадью
-            опоры, что делает невозможным опрокидывание и провалы грунта.
-          </li>
-        </ol>
-      </div>
-    </>
+      </>
   )
 }
 
