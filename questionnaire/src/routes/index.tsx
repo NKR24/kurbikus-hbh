@@ -1,6 +1,5 @@
 import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
-
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
@@ -13,8 +12,10 @@ import section3Styles from "./index/section3.module.scss"
 import section4Styles from "./index/section4.module.scss"
 import section5Styles from "./index/section5.module.scss"
 import section6Styles from "./index/section6.module.scss"
+import section8Styles from "./index/section8.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
+import intro from "../assets/img/intro-section8.jpg"
 
 export default function Home() {
   return (
@@ -31,9 +32,6 @@ export default function Home() {
       <Section8 />
       <Section9 />
       <Section10 />
-      <Section11 />
-      <Section12 />
-      <Section13 />
     </>
   )
 }
@@ -269,41 +267,35 @@ function Section4() {
 function Section5() {
   return (
       <>
-        <div class={section5Styles.containerMain}>
-          <div class={section5Styles.containerSection}>
-            <div class={section5Styles.containerDesktop}>
-              <div class={section5Styles.fundament}>
-                <p class={section5Styles.fundamentText}>фундамент</p>
-              </div>
-              <img src={foundation} alt={foundation} class={section5Styles.foundationImage}/>
-              <div class={section5Styles.table}>
-                <ol type={"1"} class={section5Styles.numberedList}>
-                  <li>
-                    Бетонные плиты (собственного производства) устанавливаются на
-                    длинные ригели из гидротехнического бетона со спец армированием.
-                  </li>
-                  <li>
-                    Конструкцию держат монолитные бетонные сваи на титановых крепежах.
-                    Данный сплав используется для строения космических аппаратов.
-                  </li>
-                  <li>
-                    На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
-                    теплоизоляционного материала (экструдированный пенополистерол).
-                  </li>
-                  <li>
-                    Затем производится полусухая стяжка на немецком оборудовании. В
-                    результате создаётся идеально ровное предфинальное покрытие пола. На
-                    него кладётся финальное половое покрытие.
-                  </li>
-                  <li>
-                    Конструкция обладает высокой несущей способностью, большой площадью
-                    опоры, что делает невозможным опрокидывание и провалы грунта.
-                  </li>
-                </ol>
-              </div>
-            </div>
+        <>
+          <div class={section5Styles.section5}>
+            <div class={section5Styles.foundationText}>фундамент</div>
+            <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
+            <ol class={section5Styles.numberedList}>
+              <li>
+                Бетонные плиты (собственного производства) устанавливаются на
+                длинные ригели из гидротехнического бетона со спец армированием.
+              </li>
+              <li>
+                Конструкцию держат монолитные бетонные сваи на титановых крепежах.
+                Данный сплав используется для строения космических аппаратов.
+              </li>
+              <li>
+                На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
+                теплоизоляционного материала (экструдированный пенополистерол).
+              </li>
+              <li>
+                Затем производится полусухая стяжка на немецком оборудовании. В
+                результате создаётся идеально ровное предфинальное покрытие пола. На
+                него кладётся финальное половое покрытие.
+              </li>
+              <li>
+                Конструкция обладает высокой несущей способностью, большой площадью
+                опоры, что делает невозможным опрокидывание и провалы грунта.
+              </li>
+            </ol>
           </div>
-        </div>
+        </>
       </>
   )
 }
@@ -400,31 +392,79 @@ function Section6() {
 }
 
 function Section7() {
-  return <></>
+  return (
+      <></>
+  )
 }
 
 function Section8() {
-  return <></>
+  return (
+      <>
+        <div class={section8Styles.containerMain}>
+          <div class={section8Styles.containerSection}>
+            <div class={section8Styles.containerDesktop}>
+              <div class={section8Styles.partFirst}>
+                <div class={section8Styles.textMainBox}>
+                  <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
+                </div>
+                <div class={section8Styles.videoBox}>
+                  <div class={section8Styles.videoButton}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none">
+                      <path d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10"/>
+                      <path d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z" fill="black" fill-opacity="0.05" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class={section8Styles.textPartFirst}>
+                  <p class={section8Styles.textLow}>Демонстрируем построенный вариант дома, однако может отвезти на недостроенный объект, чтобы вы могли проверить и убедиться своими глазами. Экскурсию проводит наш проектный менеджер, поэтому вы получите ответы на все интересующие вас вопросы. Также поможем подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что лучше.</p>
+                </div>
+                <div class={section8Styles.buttonMain}>
+                  <p class={section8Styles.buttonText}>записаться</p>
+                </div>
+              </div>
+              <div class={section8Styles.partSecond}>
+                <div class={section8Styles.textSecond}>
+                  <p class={section8Styles.textSecondMain}>Консультация</p>
+                  <p class={section8Styles.textSecondLow}>Оставьте свои контактные данные и мы обязательно с вами свяжемся</p>
+                </div>
+                <div class={section8Styles.formPart}>
+                  <div class={section8Styles.login}>
+                    <p class={section8Styles.textForm}>имя*</p>
+                  </div>
+                  <div class={section8Styles.password}>
+                    <p class={section8Styles.textForm}>почта или номер телефона*</p>
+                  </div>
+                  <div class={section8Styles.textMessage}>
+                    <p class={section8Styles.textForm}>Текст сообщения</p>
+                  </div>
+                </div>
+                <div class={section8Styles.boxLast}>
+                  <div class={section8Styles.boxText}>
+                    <p class={section8Styles.boxTextMain}>нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных</p>
+                  </div>
+                  <div class={section8Styles.boxButton}>
+                    <p class={section8Styles.boxButtonText}>отправить</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+  )
 }
 
-function Section9() {
-  return <></>
+function Section9(){
+  return (
+      <></>
+  )
 }
 
-function Section10() {
-  return <></>
+function Section10(){
+  return (
+      <></>
+  )
 }
 
-function Section11() {
-  return <></>
-}
-
-function Section12() {
-  return <></>
-}
-
-function Section13() {
-  return <></>
-}
 
 

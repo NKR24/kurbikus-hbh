@@ -1,0 +1,220 @@
+.containerMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 62px;
+}
+
+.containerSection {
+  max-width: 1920px;
+  display: flex;
+  overflow: hidden;
+  margin-left: 101px;
+  margin-right: 101px;
+  margin-top: 62px;
+}
+
+.containerDesktop{
+  display: flex;
+  flex-direction: column;
+}
+
+.partFirst{
+  width: 100%;
+  border: 2px solid black;
+}
+
+.textMainBox{
+  margin-top: 55px;
+  margin-left: 367px;
+  margin-right: 371px;
+}
+
+.textMain{
+  color: #000;
+  text-align: center;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.videoBox{
+  margin-top: 53px;
+  margin-left: 260px;
+  background: url("../../assets/img/preview-section8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 997px;
+  height: 587px;
+  flex-shrink: 0;
+  border: 2px solid black;
+}
+
+.videoButton{
+  display: flex;
+  justify-content: center;
+  padding-top: 240px;
+}
+
+.textPartFirst{
+  width: 1002px;
+  height: 231px;
+  flex-shrink: 0;
+  margin-top: 86px;
+  margin-left: 258px;
+}
+
+.textLow{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.buttonMain{
+  display: flex;
+  width: 422px;
+  height: 107px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #000;
+  margin-left: 553px;
+  margin-top: 27px;
+  margin-bottom: 68px;
+}
+
+.buttonText{
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.partSecond{
+  width: 738px;
+  height: 700px;
+  flex-shrink: 0;
+  border: 2px solid black;
+  margin-left: 405px;
+  margin-top: 177px;
+  margin-bottom: 114px;
+}
+
+.textSecond{
+  margin-top: 62px;
+}
+
+.textSecondMain{
+  margin-left: 75px;
+  width: 431px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.textSecondLow{
+  margin-left: 81px;
+  margin-top: 6px;
+  width: 385px;
+  height: 83px;
+  flex-shrink: 0;
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formPart{
+  margin-top: 114px;
+  margin-left: 75px;
+  margin-right: 49.99px;
+}
+
+.login{
+  border-bottom: 2px solid black;
+}
+
+.password{
+  margin-top: 33px;
+  border-bottom: 2px solid black;
+}
+
+.textMessage{
+  margin-top: 30px;
+  border-bottom: 2px solid black;
+}
+
+.textForm{
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boxLast{
+  display: flex;
+  flex-direction: row;
+}
+
+.boxText{
+  margin-top: 71px;
+  margin-left: 75px;
+  width: 281px;
+  height: 67px;
+  flex-shrink: 0;
+}
+
+.boxTextMain{
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boxButton{
+  margin-top: 67px;
+  margin-left: 118px;
+  border: 2px solid black;
+  display: flex;
+  width: 214px;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.boxButtonText{
+  color: #181818;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
