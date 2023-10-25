@@ -15,6 +15,7 @@ import section6Styles from "./index/section6.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
+import intro from "../assets/img/intro-section8.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
 
 export default function Home() {
@@ -376,16 +377,22 @@ function Section6() {
               </div>
               <div class={section6Styles.mobileTwo}>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobOne)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobTwo)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobThree)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobFour)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobFive)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
                 <div class={clsx(section6Styles.childMobile, section6Styles.mobSix)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
                 </div>
               </div>
             </div>
@@ -449,35 +456,6 @@ function Section8() {
                   <div class={section8Styles.boxButton}>
                     <p class={section8Styles.boxButtonText}>отправить</p>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class={section8Styles.containerMobile}>
-              <div class={section8Styles.partFirstMob}>
-                <div class={section8Styles.boxMainMob}>
-                  <div class={section8Styles.textMainMob}>
-                    <p class={section8Styles.textMobileMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
-                  </div>
-                  <div class={section8Styles.videoBoxMob}>
-                    <div class={section8Styles.videoButtonMob}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
-                        <g clip-path="url(#clip0_1_636)">
-                          <path d="M22.2273 44.4545C34.5031 44.4545 44.4545 34.5031 44.4545 22.2273C44.4545 9.95149 34.5031 0 22.2273 0C9.95149 0 0 9.95149 0 22.2273C0 34.5031 9.95149 44.4545 22.2273 44.4545Z" stroke="#DEDEDE" stroke-miterlimit="10"/>
-                          <path d="M15.8184 22.5657V14.7275L22.6093 18.6439L29.4002 22.5657L22.6093 26.4875L15.8184 30.4039V22.5657Z" fill="black" fill-opacity="0.05" stroke="#DEDEDE" stroke-miterlimit="10"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_1_636">
-                            <rect width="45" height="45" fill="white"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class={section8Styles.textMobBox}>
-                  <p class={section8Styles.textTextBox}>
-                    Демонстрируем построенный вариант дома, однако может отвезти на недостроенный объект, чтобы вы могли проверить и убедиться своими глазами. Экскурсию проводит наш проектный менеджер, поэтому вы получите ответы на все интересующие вас вопросы. Также поможем подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что лучше.
-                  </p>
                 </div>
               </div>
             </div>
