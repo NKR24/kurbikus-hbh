@@ -15,7 +15,6 @@ import section6Styles from "./index/section6.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
-import intro from "../assets/img/intro-section8.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
 
 export default function Home() {

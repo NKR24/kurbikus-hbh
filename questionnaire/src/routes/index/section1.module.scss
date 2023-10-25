@@ -1,61 +1,64 @@
 @import "../../utils";
 
-.containerMain {
-  display: flex;
+.containerMain{
   width: 100%;
-  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  padding-left: 101px;
+  padding-right: 102px;
 }
 
-.containerSection {
-  max-width: 1725px;
-  display: flex;
+.containerSection{
   border: 1px solid black;
-  margin-left: 101px;
-  margin-right: 102px;
   margin-bottom: 72px;
-  overflow: hidden;
-  flex-direction: row;
 }
 
 .containerDesktop{
   display: flex;
 }
 
-.box {
-  width: 873px;
+.containerMobile{
+  display: none;
 }
 
-.text {
-  width: auto;
+.containerFirst{
 }
 
-.box1 {
+.containerSecond{
+  max-width: 688px;
+  display: flex;
+  justify-content: flex-end;
+  border-left: 1px solid black;
+}
+
+.box1{
+  max-height: 361px;
+  border-bottom: 1px solid black;
+}
+
+.box2{
+  max-height: 176px;
+  border-bottom: 1px solid black;
+}
+
+.box3{
+  max-height: 204px;
+  border-bottom: 1px solid black;
+}
+
+.box4{
+  max-height: 131px;
+}
+
+.text1large{
   padding-top: 65px;
-  border-bottom: 1px solid black;
-}
-
-.box2 {
-  border-bottom: 1px solid black;
-}
-
-.box3 {
-  padding-top: 36px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid black;
-}
-
-.box4 {
-  padding-top: 18px;
-  padding-bottom: 25px;
-}
-
-.text1large {
   padding-left: 79px;
+  margin-right: 158px;
   width: 777px;
   height: 129px;
   flex-shrink: 0;
   color: #000;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 110px;
   font-style: normal;
   font-weight: 700;
@@ -63,13 +66,16 @@
   text-transform: uppercase;
 }
 
-.text1small {
+.text1small{
+  padding-top: 55px;
   padding-left: 88px;
+  margin-right: 75px;
+  margin-bottom: 87px;
   width: 710px;
   height: 147px;
   flex-shrink: 0;
   color: #000;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -77,14 +83,15 @@
   text-transform: uppercase;
 }
 
-.text2 {
+.text2{
   padding-top: 55px;
-  padding-left: 88px;
+  padding-left: 85px;
+  margin-bottom: 35px;
   width: 690px;
   height: 197px;
   flex-shrink: 0;
   color: #000;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -92,8 +99,10 @@
   text-transform: uppercase;
 }
 
-.text3 {
+.text3{
+  padding-top: 76px;
   padding-left: 88px;
+  margin-bottom: 92px;
   display: flex;
   width: 699px;
   height: 118px;
@@ -101,7 +110,7 @@
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -109,10 +118,10 @@
   text-transform: capitalize;
 }
 
-.text4 {
+.text4{
+  padding-top: 50px;
   padding-left: 88px;
-  padding-top: 18px;
-  padding-bottom: 25px;
+  margin-bottom: 58px;
   display: flex;
   width: 691px;
   height: 88px;
@@ -120,34 +129,17 @@
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
-  white-space: nowrap;
-}
-
-.containerFirst{
-  max-width: 873px;
-}
-
-.containerSecond{
-  display: flex;
-  justify-content: flex-end;
-  border-left: 1px solid black;
-  max-width: 652px;
-
 }
 
 .mainHomeImage{
   width: 100%;
   object-fit: cover;
-}
-
-.containerMobile{
-  display: none;
 }
 
 @include sm{
@@ -211,7 +203,7 @@
     height: 14.987px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -242,7 +234,7 @@
     height: 75px;
     flex-shrink: 0;
     color: #000;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -257,7 +249,7 @@
     height: 110px;
     flex-shrink: 0;
     color: #000;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -272,7 +264,7 @@
     height: 74px;
     flex-shrink: 0;
     color: #000;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
