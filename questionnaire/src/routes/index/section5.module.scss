@@ -1,10 +1,28 @@
 @import "../../utils";
 
-
 .section5 {
+  display: flex;
+  justify-content: center;
   background-color: #3e3e3e;
   width: 100%;
   height: 1050px;
+}
+
+.sectionMain {
+  max-width: 1920px;
+}
+
+.foundationPic {
+  width: 1181px;
+  height: 509px;
+  flex-shrink: 0;
+  margin-left: 321px;
+  margin-top: 123px;
+  position: absolute;
+}
+
+.foundationPicForMobile {
+  display: none;
 }
 
 .foundationText {
@@ -17,43 +35,44 @@
   text-transform: lowercase;
   margin-left: 104px;
   margin-top: 163px;
-}
-
-.foundationPic {
-  margin-left: 321px;
+  position: relative;
 }
 
 .numberedList {
   color: #dedede;
   font-family: Montserrat, serif;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
   margin-left: 104px;
-  margin-top: 48px;
+  margin-top: 453px;
   margin-right: 122px;
   list-style-type: decimal;
 }
 
 @include sm {
   .section5 {
-    height: 744px;
     width: 100%;
+    height: 744px;
   }
 
-  .foundationText {
-    margin-left: 55px;
-    margin-right: 0px;
-    margin-bottom: 24px;
-    margin-top: 0px;
+  .sectionMain {
+    max-width: 430px;
   }
 
   .foundationPic {
-    margin-top: 40px;
-    margin-left: 7px;
+    display: none;
+  }
+
+  .foundationPicForMobile {
     width: 456px;
+    height: 260px;
+    flex-shrink: 0;
+    margin-top: 0px;
+    position: absolute;
+    display: block;
   }
 
   .sevenLines {
@@ -61,7 +80,9 @@
     grid-template-columns: repeat(7, 47px);
     grid-gap: 0;
     margin-left: 56px;
+    margin-right: 55px;
     margin-bottom: 20px;
+    position: relative;
   }
 
   .line {
@@ -71,10 +92,18 @@
     margin-right: 14px;
   }
 
+  .foundationText {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 55px;
+    margin-bottom: 24px;
+  }
+
   .numberedList {
     font-size: 14px;
     margin-left: 75px;
     margin-top: 0px;
     margin-right: 54px;
+    line-height: 1.2;
   }
 }

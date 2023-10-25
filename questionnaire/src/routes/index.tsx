@@ -16,6 +16,7 @@ import section8Styles from "./index/section8.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
 import intro from "../assets/img/intro-section8.jpg"
+import forMobile from "..//assets/img/forMobile.jpg"
 
 export default function Home() {
   return (
@@ -266,11 +267,21 @@ function Section4() {
 
 function Section5() {
   return (
-      <>
         <>
-          <div class={section5Styles.section5}>
-            <div class={section5Styles.foundationText}>фундамент</div>
+        <div class={section5Styles.section5}>
+          <div class={section5Styles.sectionMain}>
             <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
+            <img src={forMobile} alt="foundation1" class={section5Styles.foundationPicForMobile} />
+            <div class={section5Styles.sevenLines}>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+            </div>
+            <div class={section5Styles.foundationText}>фундамент</div>
             <ol class={section5Styles.numberedList}>
               <li>
                 Бетонные плиты (собственного производства) устанавливаются на
@@ -295,8 +306,8 @@ function Section5() {
               </li>
             </ol>
           </div>
+        </div>
         </>
-      </>
   )
 }
 
