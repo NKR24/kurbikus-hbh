@@ -439,6 +439,11 @@ function Section7() {
               <path d="M2 43L43 2M43 2H2M43 2V43" stroke="#DEDEDE" stroke-width="3"/>
             </svg>
           </div>
+          <div class={section7Styles.arrow2}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+              <path d="M1 18L18 1M18 1H1M18 1V18" stroke="#DEDEDE" stroke-width="1"/>
+            </svg>
+          </div>
           <p class={section7Styles.textReviews}>отзывы:</p>
           <div class={section7Styles.lines}></div>
           <div class={section7Styles.reviews}>

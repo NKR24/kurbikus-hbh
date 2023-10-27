@@ -156,6 +156,10 @@
   flex-shrink: 0;
 }
 
+.arrow2 {
+  display: none;
+}
+
 @include sm {
   .section7 {
     height: 945px;
@@ -219,19 +223,24 @@
     text-transform: lowercase;
     margin-top: 44px;
     margin-left: 22px;
+    margin-bottom: 12px;
   }
 
   .lines {
-    width: 100%;
-    height: 2.5px;
-    background: #db0a0a;
+    height: 0.5px;
+    background: #DEDEDE;
   }
 
   .reviews {
+    display: flex;
+    flex-direction: column;
     margin-top: 27px;
     margin-left: 22px;
     margin-right: 20px;
     margin-bottom: 19px;
+    width: 388px;
+    height: 131px;
+    flex-shrink: 0;
   }
 
   .recallTime {
@@ -263,13 +272,38 @@
   }
 
   .arrow {
+    display: none;
+  }
+
+  .arrow2 {
+    display: block;
     width: 17px;
     height: 17px;
     flex-shrink: 0;
     margin-top: 272px;
     margin-left: 393px;
     margin-right: 20px;
-    stroke-width: 1px;
-    stroke: #dedede;
+    position: absolute;
+  }
+
+  .downloadButton {
+    width: 212px;
+    height: 41px;
+    flex-shrink: 0;
+    border: 0.5px solid #d9d9d9;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 110px;
+    margin-right: 109px;
+  }
+
+  .textDownload {
+    color: #fff;
+    font-family: Mikro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
   }
 }
