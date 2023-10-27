@@ -19,6 +19,7 @@ import intro from "../assets/img/intro-section8.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
 import section7Styles from "./index/section7.module.scss"
 import introSection7 from "../assets/img/preview-section7-for-Mobile.jpg"
+import intro2Section7 from "../assets/img/preview-section7.jpg"
 
 export default function Home() {
   return (
@@ -408,10 +409,10 @@ function Section7() {
   return (
       <>
       <div class={section7Styles.section7}>
-        <div>
           <div class={section7Styles.videoBox}>
             <p class={section7Styles.textInterview2}>ИНТЕРВЬЮ С СОЗДАТЕЛЕМ КОМПАНИИ</p>
-            <img src={introSection7} alt="" class={section7Styles.sizeIntroSection7}/>
+            <img src={intro2Section7} alt="interview" class={section7Styles.sizeIntro2Section7}/>
+            <img src={introSection7} alt="interview" class={section7Styles.sizeIntroSection7}/>
             <div class={section7Styles.playButton}>
               <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none" class={section7Styles.svgclass}>
                 <path d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10"/>
@@ -465,7 +466,6 @@ function Section7() {
             <p class={section7Styles.textDownload}>загрузить ещё</p>
           </div>
         </div>
-      </div>
     </>
   )
 }
