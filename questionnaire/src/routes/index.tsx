@@ -1,4 +1,5 @@
 import { Title } from "solid-start"
+import PopupVideo from "~/components/popupVideo"
 import Navbar from "~/components/navbar"
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
@@ -466,13 +467,7 @@ function Section8() {
               </div>
               <div class={section8Styles.videoBox}>
                 <div class={section8Styles.videoButton}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none">
-                    <path
-                      d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z"
-                      stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z"
-                          fill="black" fill-opacity="0.05" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10" />
-                  </svg>
+                  <PopupVideo/>
                 </div>
               </div>
               <div class={section8Styles.textPartFirst}>
@@ -528,7 +523,9 @@ function Section9() {
 
 function Section10() {
   return (
-    <></>
+    <>
+      <PopupVideo/>
+    </>
   )
 }
 
