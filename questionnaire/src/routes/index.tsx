@@ -1,5 +1,4 @@
 import { Title } from "solid-start"
-
 import Navbar from "~/components/navbar"
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
@@ -16,6 +15,7 @@ import section6Styles from "./index/section6.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
+import intro from "../assets/img/intro-section8.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
 
 export default function Home() {
@@ -248,243 +248,232 @@ function Section3() {
 
 function Section4() {
   return (
-    <>
-      <div class={section4Styles.containerMain}>
-        <div class={section4Styles.containerSection}>
-          <div class={section4Styles.containerDesktop}>
-            <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
-              <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
-            </div>
-            <div class={clsx(section4Styles.box, section4Styles.boxSecond)}>
-              <p>.</p>
-            </div>
+  <>
+    <div class={section4Styles.containerMain}>
+      <div class={section4Styles.containerSection}>
+        <div class={section4Styles.containerDesktop}>
+          <div class={clsx(section4Styles.box, section4Styles.boxFirst)}>
+            <p class={section4Styles.textMain}>ПОЧЕМУ МЫ?</p>
+          </div>
+          <div class={clsx(section4Styles.box, section4Styles.boxSecond)}>
+            <p>.</p>
           </div>
         </div>
       </div>
-    </>
+    </div>
+  </>
   )
 }
 
 function Section5() {
   return (
-    <>
-      <div class={section5Styles.section5}>
-        <div class={section5Styles.sectionMain}>
-          <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
-          <img src={forMobile} alt="foundation1" class={section5Styles.foundationPicForMobile} />
-          <div class={section5Styles.sevenLines}>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
-            <div class={section5Styles.line}></div>
+        <>
+        <div class={section5Styles.section5}>
+          <div class={section5Styles.sectionMain}>
+            <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
+            <img src={forMobile} alt="foundation1" class={section5Styles.foundationPicForMobile} />
+            <div class={section5Styles.sevenLines}>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+              <div class={section5Styles.line}></div>
+            </div>
+            <div class={section5Styles.foundationText}>фундамент</div>
+            <ol class={section5Styles.numberedList}>
+              <li>
+                Бетонные плиты (собственного производства) устанавливаются на
+                длинные ригели из гидротехнического бетона со спец армированием.
+              </li>
+              <li>
+                Конструкцию держат монолитные бетонные сваи на титановых крепежах.
+                Данный сплав используется для строения космических аппаратов.
+              </li>
+              <li>
+                На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
+                теплоизоляционного материала (экструдированный пенополистерол).
+              </li>
+              <li>
+                Затем производится полусухая стяжка на немецком оборудовании. В
+                результате создаётся идеально ровное предфинальное покрытие пола. На
+                него кладётся финальное половое покрытие.
+              </li>
+              <li>
+                Конструкция обладает высокой несущей способностью, большой площадью
+                опоры, что делает невозможным опрокидывание и провалы грунта.
+              </li>
+            </ol>
           </div>
-          <div class={section5Styles.foundationText}>фундамент</div>
-          <ol class={section5Styles.numberedList}>
-            <li>
-              Бетонные плиты (собственного производства) устанавливаются на
-              длинные ригели из гидротехнического бетона со спец армированием.
-            </li>
-            <li>
-              Конструкцию держат монолитные бетонные сваи на титановых крепежах.
-              Данный сплав используется для строения космических аппаратов.
-            </li>
-            <li>
-              На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
-              теплоизоляционного материала (экструдированный пенополистерол).
-            </li>
-            <li>
-              Затем производится полусухая стяжка на немецком оборудовании. В
-              результате создаётся идеально ровное предфинальное покрытие пола. На
-              него кладётся финальное половое покрытие.
-            </li>
-            <li>
-              Конструкция обладает высокой несущей способностью, большой площадью
-              опоры, что делает невозможным опрокидывание и провалы грунта.
-            </li>
-          </ol>
         </div>
-      </div>
-    </>
+        </>
   )
 }
 
 function Section6() {
   return (
-    <>
-      <div class={section6Styles.containerMain}>
-        <div class={section6Styles.containerSection}>
-          <div class={section6Styles.containerDesktop}>
-            <div class={section6Styles.partFirst}>
-              <div class={clsx(section6Styles.box, section6Styles.boxFirst)}>
-                <p class={clsx(section6Styles.text, section6Styles.textFirst)}>наши дома</p>
+      <>
+        <div class={section6Styles.containerMain}>
+          <div class={section6Styles.containerSection}>
+            <div class={section6Styles.containerDesktop}>
+              <div class={section6Styles.partFirst}>
+                <div class={clsx(section6Styles.box,section6Styles.boxFirst)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textFirst)}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.box,section6Styles.boxSecond)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textSecond)}>интерьер</p>
+                </div>
+                <div class={clsx(section6Styles.box,section6Styles.boxThird)}>
+                  <p class={clsx(section6Styles.text, section6Styles.textThird)}>стройка</p>
+                </div>
               </div>
-              <div class={clsx(section6Styles.box, section6Styles.boxSecond)}>
-                <p class={clsx(section6Styles.text, section6Styles.textSecond)}>интерьер</p>
-              </div>
-              <div class={clsx(section6Styles.box, section6Styles.boxThird)}>
-                <p class={clsx(section6Styles.text, section6Styles.textThird)}>стройка</p>
-              </div>
-            </div>
-            <div class={section6Styles.partSecond}>
-              <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.Second)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.target, section6Styles.Seven)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-            </div>
-          </div>
-          <div class={section6Styles.containerMobile}>
-            <div class={section6Styles.mobileOne}>
-              <div class={clsx(section6Styles.boxMobile, section6Styles.mobFirst)}>
-                <p class={clsx(section6Styles.textMobile, section6Styles.textMobFirst)}>наши дома</p>
-              </div>
-              <div class={clsx(section6Styles.boxMobile, section6Styles.mobSecond)}>
-                <p class={clsx(section6Styles.textMobile, section6Styles.textMobSecond)}>интерьер</p>
-              </div>
-              <div class={clsx(section6Styles.boxMobile, section6Styles.mobThird)}>
-                <p class={clsx(section6Styles.textMobile, section6Styles.textMobThird)}>стройка</p>
+              <div class={section6Styles.partSecond}>
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.Second)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.OneThreeFive)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.target, section6Styles.Seven)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
+                  <div class={clsx(section6Styles.child, section6Styles.FourSixEight)}>
+                    <p class={section6Styles.textLow}>наши дома</p>
+                    <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                  </div>
               </div>
             </div>
-            <div class={section6Styles.mobileTwo}>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobOne)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
+            <div class={section6Styles.containerMobile}>
+              <div class={section6Styles.mobileOne}>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobFirst)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobFirst)}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobSecond)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobSecond)}>интерьер</p>
+                </div>
+                <div class={clsx(section6Styles.boxMobile,section6Styles.mobThird)}>
+                  <p class={clsx(section6Styles.textMobile, section6Styles.textMobThird)}>стройка</p>
+                </div>
               </div>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobTwo)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobThree)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobFour)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobFive)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div class={clsx(section6Styles.childMobile, section6Styles.mobSix)}>
-                <p class={section6Styles.textLowMobile}>наши дома</p>
+              <div class={section6Styles.mobileTwo}>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobOne)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobTwo)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobThree)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobFour)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobFive)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div class={clsx(section6Styles.childMobile, section6Styles.mobSix)}>
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </>
   )
 }
 
 function Section7() {
   return (
-    <></>
+      <></>
   )
 }
 
 function Section8() {
   return (
-    <>
-      <div class={section8Styles.containerMain}>
-        <div class={section8Styles.containerSection}>
-          <div class={section8Styles.containerDesktop}>
-            <div class={section8Styles.partFirst}>
-              <div class={section8Styles.textMainBox}>
-                <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
-              </div>
-              <div class={section8Styles.videoBox}>
-                <div class={section8Styles.videoButton}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none">
-                    <path
-                      d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z"
-                      stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z"
-                          fill="black" fill-opacity="0.05" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10" />
-                  </svg>
+      <>
+        <div class={section8Styles.containerMain}>
+          <div class={section8Styles.containerSection}>
+            <div class={section8Styles.containerDesktop}>
+              <div class={section8Styles.partFirst}>
+                <div class={section8Styles.textMainBox}>
+                  <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
+                </div>
+                <div class={section8Styles.videoBox}>
+                  <div class={section8Styles.videoButton}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99" viewBox="0 0 99 99" fill="none">
+                      <path d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10"/>
+                      <path d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z" fill="black" fill-opacity="0.05" stroke="#DEDEDE" stroke-width="2" stroke-miterlimit="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class={section8Styles.textPartFirst}>
+                  <p class={section8Styles.textLow}>Демонстрируем построенный вариант дома, однако может отвезти на недостроенный объект, чтобы вы могли проверить и убедиться своими глазами. Экскурсию проводит наш проектный менеджер, поэтому вы получите ответы на все интересующие вас вопросы. Также поможем подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что лучше.</p>
+                </div>
+                <div class={section8Styles.buttonMain}>
+                  <p class={section8Styles.buttonText}>записаться</p>
                 </div>
               </div>
-              <div class={section8Styles.textPartFirst}>
-                <p class={section8Styles.textLow}>Демонстрируем построенный вариант дома, однако может отвезти на
-                  недостроенный объект, чтобы вы могли проверить и убедиться своими глазами. Экскурсию проводит наш
-                  проектный менеджер, поэтому вы получите ответы на все интересующие вас вопросы. Также поможем
-                  подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что
-                  лучше.</p>
-              </div>
-              <div class={section8Styles.buttonMain}>
-                <p class={section8Styles.buttonText}>записаться</p>
-              </div>
-            </div>
-            <div class={section8Styles.partSecond}>
-              <div class={section8Styles.textSecond}>
-                <p class={section8Styles.textSecondMain}>Консультация</p>
-                <p class={section8Styles.textSecondLow}>Оставьте свои контактные данные и мы обязательно с вами
-                  свяжемся</p>
-              </div>
-              <div class={section8Styles.formPart}>
-                <div class={section8Styles.login}>
-                  <p class={section8Styles.textForm}>имя*</p>
+              <div class={section8Styles.partSecond}>
+                <div class={section8Styles.textSecond}>
+                  <p class={section8Styles.textSecondMain}>Консультация</p>
+                  <p class={section8Styles.textSecondLow}>Оставьте свои контактные данные и мы обязательно с вами свяжемся</p>
                 </div>
-                <div class={section8Styles.password}>
-                  <p class={section8Styles.textForm}>почта или номер телефона*</p>
+                <div class={section8Styles.formPart}>
+                  <div class={section8Styles.login}>
+                    <p class={section8Styles.textForm}>имя*</p>
+                  </div>
+                  <div class={section8Styles.password}>
+                    <p class={section8Styles.textForm}>почта или номер телефона*</p>
+                  </div>
+                  <div class={section8Styles.textMessage}>
+                    <p class={section8Styles.textForm}>Текст сообщения</p>
+                  </div>
                 </div>
-                <div class={section8Styles.textMessage}>
-                  <p class={section8Styles.textForm}>Текст сообщения</p>
-                </div>
-              </div>
-              <div class={section8Styles.boxLast}>
-                <div class={section8Styles.boxText}>
-                  <p class={section8Styles.boxTextMain}>нажимая на кнопку «Отправить» вы даете согласие на обработку
-                    персональных данных</p>
-                </div>
-                <div class={section8Styles.boxButton}>
-                  <p class={section8Styles.boxButtonText}>отправить</p>
+                <div class={section8Styles.boxLast}>
+                  <div class={section8Styles.boxText}>
+                    <p class={section8Styles.boxTextMain}>нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных</p>
+                  </div>
+                  <div class={section8Styles.boxButton}>
+                    <p class={section8Styles.boxButtonText}>отправить</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </>
   )
 }
 
-function Section9() {
+function Section9(){
   return (
-    <>
-
-    </>
+      <></>
   )
 }
 
-function Section10() {
+function Section10(){
   return (
-    <></>
+      <></>
   )
 }
 

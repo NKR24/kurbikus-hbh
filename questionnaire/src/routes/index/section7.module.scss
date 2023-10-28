@@ -7,9 +7,6 @@
   display: flex;
 }
 
-.gridRow {
-}
-
 .videoBox {
   border: 2px solid #d9d9d9;
   width: 1002px;
@@ -17,10 +14,6 @@
   flex-shrink: 0;
   margin-top: 123px;
   margin-left: 361px;
-  background: url("../../assets/img/preview-section7.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
 }
 
@@ -136,4 +129,119 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+}
+
+.textInterview2 {
+  display: none;
+}
+
+.svgclass {
+  width: 96.812px;
+  height: 96.812px;
+  flex-shrink: 0;
+}
+
+.svgclass2 {
+  display: none;
+}
+
+@include sm {
+  .section7 {
+    height: 945px;
+  }
+
+  .videoBox {
+    width: 388px;
+    height: 208px;
+    flex-shrink: 0;
+    border: 0.5px solid #d9d9d9;
+    margin-top: 11px;
+    margin-left: 22px;
+  }
+
+  .introSection7 {
+    margin-top: 10px;
+    margin-left: 44px;
+  }
+
+  .textInterview2 {
+    display: block;
+    color: #dedede;
+    font-family: Mikro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 19px;
+    margin-left: 42px;
+  }
+
+  .textInterview {
+    display: none;
+  }
+
+  .sizeIntroSection7 {
+    width: 308px;
+    height: 133px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-left: 44px;
+  }
+
+  .svgclass {
+    display: none;
+  }
+
+  .svgclass2 {
+    display: block;
+  }
+
+  .textReviews {
+    color: #dedede;
+    font-family: Mikro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 44px;
+    margin-left: 22px;
+  }
+
+  .lines {
+    width: 440px;
+    height: 0.5px;
+  }
+
+  .reviews {
+    margin-top: 27px;
+    margin-left: 22px;
+    margin-right: 20px;
+    margin-bottom: 19px;
+  }
+
+  .recallTime {
+    color: #dedede;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+
+  .review {
+    color: #dedede;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+
+  .buttonExpand {
+    display: none;
+  }
 }
