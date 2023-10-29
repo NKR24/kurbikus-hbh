@@ -8,6 +8,7 @@
   padding-right: 102px;
 }
 
+
 .containerSection{
   border: 1px solid black;
   margin-bottom: 72px;
@@ -22,6 +23,7 @@
 }
 
 .containerFirst{
+  max-width: 973px;
 }
 
 .containerSecond{
@@ -119,8 +121,8 @@
 }
 
 .text4{
+  margin-left: 88px;
   padding-top: 50px;
-  padding-left: 88px;
   margin-bottom: 58px;
   display: flex;
   width: 691px;
@@ -143,62 +145,50 @@
 }
 
 @include sm{
-  .containerMain{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .containerSection{
-    margin-left: 22px;
-    margin-right: 20px;
-    margin-bottom: 19px;
-    width: 388px;
-    height: 653px;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    border: 0.5px solid black !important;
-
-  }
-
   .containerDesktop{
     display: none;
   }
 
+  .containerMain{
+    width: 100%;
+    padding-left: 11px;
+    padding-right: 10px;
+  }
+
+  .containerSection{
+    border: 0.5px solid black!important;
+    overflow: hidden;
+    margin-bottom: 19px!important;
+  }
+
   .containerMobile{
     display: flex;
-    width: 100%;
     flex-direction: column;
   }
 
-  .box{
-    width: 100%;
-  }
-
   .MobileImage{
-    height: 284px;
-    overflow: hidden;
-    background-image: url("../../assets/img/home-main.jpg");
+    width: 100%;
+    height: 283.68px;
+    background: url("../../assets/img/home-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-bottom: 0.5px solid black;
-
+    display: flex;
+    justify-content: center;
   }
 
   .homeButton{
+    display: flex;
+    justify-content: center;
     margin-top: 207px;
-    margin-left: 77px;
     width: 231.451px;
     height: 52px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     background: #000;
   }
 
   .homeButtonText{
-    padding-left: 56.15px;
-    padding-top: 16.75px;
+    margin-top: 16.75px;
     width: 119.705px;
     height: 14.987px;
     flex-shrink: 0;
@@ -209,27 +199,15 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-
   }
 
-  .MobileFisrt{
-    height: 229px;
-    border-bottom: 0.5px solid black;
-  }
+  .MobileFirst{
 
-  .MobileSecond{
-    height: 140px;
-    display: flex;
-  }
-
-  .videoButton{
-    padding-top: 42px;
-    padding-left: 35px;
   }
 
   .MobTextFirstLarge{
     padding-top: 23px;
-    padding-left: 30px;
+    padding-left: 31px;
     width: 451px;
     height: 75px;
     flex-shrink: 0;
@@ -243,8 +221,7 @@
   }
 
   .MobTextFirstSmall{
-    padding-left: 34px;
-    padding-bottom: 37px;
+    margin-left: 34px;
     width: 202px;
     height: 110px;
     flex-shrink: 0;
@@ -257,9 +234,22 @@
     text-transform: lowercase;
   }
 
+  .MobileSecond{
+    border-top: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .videoButton{
+    margin-top: 42px;
+    margin-left: 35px;
+    margin-bottom: 43.5px;
+  }
+
   .MobTextSecond{
-    padding-left: 19.5px;
-    padding-top: 46px;
+    margin-top: 46px;
+    margin-left: 19.5px;
+    margin-right: 93px;
     width: 186px;
     height: 74px;
     flex-shrink: 0;
@@ -272,3 +262,4 @@
     text-transform: lowercase;
   }
 }
+
