@@ -22,8 +22,6 @@ import section12Styles from "./index/section12.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
-import introSection7 from "../assets/img/preview-section7-for-Mobile.jpg"
-import intro2Section7 from "../assets/img/preview-section7.jpg"
 
 export default function Home() {
   return (
@@ -467,7 +465,37 @@ function Section7() {
 
 function Section8() {
   return (
-    <></>
+    <>
+      <div class={section8Styles.containerMain}>
+        <div class={section8Styles.containerSection}>
+          <p class={section8Styles.textMain}>
+            ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ
+          </p>
+          <div class={section8Styles.videoBox}>
+            <div class={section8Styles.videoButton}>
+              <PopupVideo/>
+            </div>
+          </div>
+          <p class={clsx(section8Styles.text, section8Styles.textOne)}>
+            Демонстрируем построенный вариант дома, однако может отвезти на недостроенный объект, чтобы вы могли проверить и убедиться своими глазами.
+            Экскурсию проводит наш проектный менеджер, поэтому вы получите ответы на
+          </p>
+          <p class={clsx(section8Styles.text, section8Styles.textTwo)}>
+            все интересующие вас вопросы.
+          </p>
+          <p class={clsx(section8Styles.text, section8Styles.textThree)}>
+            Также поможем подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что лучше.
+          </p>
+          <div class={section8Styles.button}>
+            <div class={section8Styles.textButton}>
+              <p class={section8Styles.textFont}>
+                записаться
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
