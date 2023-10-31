@@ -455,7 +455,7 @@ function Section7() {
           </div>
           <div class={section7Styles.lines} />
           <div class={section7Styles.downloadButton}>
-            <p class={section7Styles.textDownload}>загрузить ещё</p>
+            <p class={section7Styles.textDownload}>загрузить ещё test</p>
           </div>
         </div>
     </>
