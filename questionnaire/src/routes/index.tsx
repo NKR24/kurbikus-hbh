@@ -17,10 +17,11 @@ import section7Styles from "./index/section7.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import section9Styles from "./index/section9.module.scss"
 import section10Styles from "./index/section10.module.scss"
+import section11Styles from "./index/section11.module.scss"
+import section12Styles from "./index/section12.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
 import forMobile from "..//assets/img/forMobile.jpg"
-import section7Styles from "./index/section7.module.scss"
 import introSection7 from "../assets/img/preview-section7-for-Mobile.jpg"
 import intro2Section7 from "../assets/img/preview-section7.jpg"
 
@@ -39,6 +40,8 @@ export default function Home() {
       <Section8 />
       <Section9 />
       <Section10 />
+      <Section11 />
+      <Section12 />
     </>
   )
 }
@@ -254,8 +257,7 @@ function Section3() {
 
 function Section4() {
   return (
-    <>
-    </>
+    <></>
   )
 }
 
@@ -458,67 +460,14 @@ function Section7() {
             <p class={section7Styles.textDownload}>загрузить ещё test</p>
           </div>
         </div>
+      </div>
     </>
   )
 }
 
 function Section8() {
   return (
-    <>
-      <div class={section8Styles.containerMain}>
-        <div class={section8Styles.containerSection}>
-          <div class={section8Styles.containerDesktop}>
-            <div class={section8Styles.partFirst}>
-              <div class={section8Styles.textMainBox}>
-                <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
-              </div>
-              <div class={section8Styles.videoBox}>
-                <div class={section8Styles.videoButton}>
-                  <PopupVideo/>
-                </div>
-              </div>
-              <div class={section8Styles.textPartFirst}>
-                <p class={section8Styles.textLow}>Демонстрируем построенный вариант дома, однако может отвезти на
-                  недостроенный объект, чтобы вы могли проверить и убедиться своими глазами. Экскурсию проводит наш
-                  проектный менеджер, поэтому вы получите ответы на все интересующие вас вопросы. Также поможем
-                  подобрать вам участок, если вы в растерянности от большого количества предложений и не знаете, что
-                  лучше.</p>
-              </div>
-              <div class={section8Styles.buttonMain}>
-                <p class={section8Styles.buttonText}>записаться</p>
-              </div>
-            </div>
-            <div class={section8Styles.partSecond}>
-              <div class={section8Styles.textSecond}>
-                <p class={section8Styles.textSecondMain}>Консультация</p>
-                <p class={section8Styles.textSecondLow}>Оставьте свои контактные данные и мы обязательно с вами
-                  свяжемся</p>
-              </div>
-              <div class={section8Styles.formPart}>
-                <div class={section8Styles.login}>
-                  <p class={section8Styles.textForm}>имя*</p>
-                </div>
-                <div class={section8Styles.password}>
-                  <p class={section8Styles.textForm}>почта или номер телефона*</p>
-                </div>
-                <div class={section8Styles.textMessage}>
-                  <p class={section8Styles.textForm}>Текст сообщения</p>
-                </div>
-              </div>
-              <div class={section8Styles.boxLast}>
-                <div class={section8Styles.boxText}>
-                  <p class={section8Styles.boxTextMain}>нажимая на кнопку «Отправить» вы даете согласие на обработку
-                    персональных данных</p>
-                </div>
-                <div class={section8Styles.boxButton}>
-                  <p class={section8Styles.boxButtonText}>отправить</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <></>
   )
 }
 
@@ -530,9 +479,19 @@ function Section9() {
 
 function Section10() {
   return (
-    <>
-      <PopupVideo/>
-    </>
+    <></>
+  )
+}
+
+function Section11(){
+  return(
+      <></>
+  )
+}
+
+function Section12(){
+  return(
+      <></>
   )
 }
 
