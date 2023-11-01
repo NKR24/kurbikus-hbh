@@ -3,12 +3,11 @@
 .containerMain {
   display: flex;
   width: 100%;
-  justify-content: center;
 }
 
 .containerSection {
+  margin-left: 103px;
   margin-top: 40px;
-  max-width: 1920px;
   display: flex;
   overflow: hidden;
 }
@@ -95,7 +94,7 @@
 
 
 .child{
-  width: 481px;
+  width: 28.4vw;
   height: 270px;
   flex-shrink: 0;
 }
@@ -170,12 +169,12 @@
   .containerMain{
     display: flex;
     width: 100%;
-    justify-content: center;
   }
 
   .containerSection{
     margin-top: 31px;
     margin-bottom: 27px;
+    margin-left: 22px;
     display: flex;
     overflow: hidden;
     flex-direction: column;
