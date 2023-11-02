@@ -199,11 +199,9 @@ function Section3() {
                             <div class={clsx(section3Styles.text, section3Styles.textMain)}>
                                 <p>5 вопросов о вашем доме</p>
                             </div>
-                            <div class={section3Styles.buttonStart}>
-                                <div class={section3Styles.textButton}>
-                                    <p>начать</p>
-                                </div>
-                            </div>
+                            <button class={section3Styles.buttonStart}>
+                                <span class={section3Styles.textButton}>начать</span>
+                            </button>
                             <div class={section3Styles.table}>
                                 <p class={section3Styles.tableTextMain}>Вы получите:</p>
                                 <ol class={section3Styles.tableText}>
@@ -495,13 +493,9 @@ function Section8() {
                         Также поможем подобрать вам участок, если вы в растерянности от большого количества предложений
                         и не знаете, что лучше.
                     </p>
-                    <div class={section8Styles.button}>
-                        <div class={section8Styles.textButton}>
-                            <p class={section8Styles.textFont}>
-                                записаться
-                            </p>
-                        </div>
-                    </div>
+                    <button class={section8Styles.button}>
+                        <span class={section8Styles.textButton}>записаться</span>
+                    </button>
                 </div>
             </div>
         </>
@@ -534,13 +528,9 @@ function Section9() {
                         <p class={section9Styles.textLow}>
                             нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных
                         </p>
-                        <div class={section9Styles.button}>
-                            <div class={section9Styles.buttonText}>
-                                <p class={section9Styles.fontButton}>
-                                    отправить
-                                </p>
-                            </div>
-                        </div>
+                        <button class={section9Styles.button}>
+                            <span class={section9Styles.fontButton}>отправить</span>
+                        </button>
                     </div>
                 </div>
             </div>
