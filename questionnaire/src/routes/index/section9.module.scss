@@ -1,1 +1,110 @@
 @import "../../utils";
+
+.containerMain{
+  width: 100%;
+  padding-left: 508px;
+}
+
+.containerSection{
+  margin-top: 150px;
+  margin-right: 400px;
+  margin-bottom: 114px;
+  border: 2px solid black;
+  height: 700px;
+  flex-shrink: 0;
+}
+
+.boxFirst{
+  margin-top: 62px;
+  margin-left: 75px;
+}
+
+.textMain{
+  width: 431px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.textNoMain{
+  width: 385px;
+  height: 83px;
+  flex-shrink: 0;
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 114px;
+}
+
+.forminputmaterial{
+  display: grid;;
+  margin-right: 50px;
+  border-bottom: 2px solid black;
+  margin-bottom: 33px;
+}
+
+.formcontrolmaterial{
+  background: #DEDEDE;
+}
+
+.formcontrolmaterial::placeholder {
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 268px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+
+.boxSecond{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 197px;
+  margin-left: 75px;
+}
+
+.textLow{
+  width: 281px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button{
+  width: 214px;
+  height: 60px;
+  border: 2px solid black;
+}
+
+.buttonText{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.fontButton{
+  color: #181818;
+  font-family: Montserrat, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
