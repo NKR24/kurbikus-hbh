@@ -1,1 +1,88 @@
 @import "../../utils";
+
+.containerMain {
+  width: 100%;
+}
+
+.containerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border-bottom: 2px solid black;
+}
+
+.boxOne {
+  display: grid;
+  border-top: 2px solid black;
+}
+
+.boxTwo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxThree {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxFour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxFive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxSix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.plus{
+  margin-top: 20px;
+  margin-left: 275px;
+}
+
+.minus{
+  margin-top: 31px;
+  margin-left: 1556px;
+  width: 37px;
+  height: 2px;
+  background: #000;
+}
+
+.textMain {
+  margin-top: 18px;
+  margin-left: 103px;
+  margin-bottom: 54px;
+  width: 1178px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Montserrat, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textLow {
+  margin-left: 103px;
+  margin-bottom: 60px;
+  width: 1509px;
+  height: 311px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Montserrat, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
