@@ -1,78 +1,86 @@
 @import "../../utils";
 
-.section5 {
-  display: flex;
-  justify-content: center;
-  background-color: #3e3e3e;
+.Section5 {
   width: 100%;
-  height: 1050px;
+  height: 1051px;
+  flex-shrink: 0;
+  background: #3e3e3e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.sectionMain {
-  max-width: 1920px;
-}
-
-.foundationPic {
+.foundationImage {
   width: 1181px;
   height: 509px;
   flex-shrink: 0;
-  margin-left: 321px;
   margin-top: 123px;
-  position: absolute;
+  margin-left: 341px;
+  margin-right: 219px;
 }
 
-.foundationPicForMobile {
+.foundationImage2 {
   display: none;
 }
 
+.sevenLines {
+}
+
+.line {
+}
+
 .foundationText {
+  width: 320px;
+  height: 64px;
+  flex-shrink: 0;
   color: #dedede;
-  font-family: Mikro, serif;
+  font-family: Mikro;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: lowercase;
-  margin-left: 104px;
+  margin-left: 103px;
+  position: absolute;
   margin-top: 163px;
-  position: relative;
 }
 
 .numberedList {
+  list-style-type: decimal;
+  width: 1563px;
+  height: 281px;
+  flex-shrink: 0;
   color: #dedede;
-  font-family: Montserrat, serif;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
-  margin-left: 104px;
-  margin-top: 453px;
-  margin-right: 122px;
-  list-style-type: decimal;
+  margin-left: 131px;
+  margin-top: 48px;
 }
 
 @include sm {
-  .section5 {
+  .Section5 {
     width: 100%;
     height: 744px;
+    overflow: hidden;
   }
 
-  .sectionMain {
-    max-width: 430px;
-  }
-
-  .foundationPic {
+  .foundationImage {
     display: none;
   }
 
-  .foundationPicForMobile {
+  .foundationImage2 {
+    display: block;
     width: 456px;
     height: 260px;
     flex-shrink: 0;
-    margin-top: 0px;
-    position: absolute;
-    display: block;
+    margin-left: 19px;
+    object-fit: cover;
   }
 
   .sevenLines {
@@ -81,29 +89,28 @@
     grid-gap: 0;
     margin-left: 56px;
     margin-right: 55px;
-    margin-bottom: 20px;
-    position: relative;
   }
 
   .line {
+    display: block;
     height: 1px;
     background-color: #dedede;
-    margin-top: 252px;
     margin-right: 14px;
   }
 
   .foundationText {
-    display: flex;
-    margin-top: 0px;
+    width: 320px;
+    height: 64px;
+    flex-shrink: 0;
+    color: #dedede;
+    font-family: Mikro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
     margin-left: 55px;
-    margin-bottom: 24px;
-  }
-
-  .numberedList {
-    font-size: 14px;
-    margin-left: 75px;
-    margin-top: 0px;
-    margin-right: 54px;
-    line-height: 1.2;
+    margin-top: 20px;
+    position: static;
   }
 }
