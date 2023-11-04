@@ -1,5 +1,8 @@
 @import "../../utils";
 
+.containerSection{
+  display: none;
+}
 
 @include sm {
   .containerMain {
@@ -8,7 +11,7 @@
   }
 
   .containerSection {
-
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
