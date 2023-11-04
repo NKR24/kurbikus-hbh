@@ -258,7 +258,7 @@ function Section4() {
 function Section5() {
   return (
     <>
-      <div class={section5Styles.section5}>
+      {/*<div class={section5Styles.section5}>
         <div class={section5Styles.sectionMain}>
           <img src={foundation} alt="foundation" class={section5Styles.foundationPic} />
           <img src={forMobile} alt="foundation1" class={section5Styles.foundationPicForMobile} />
@@ -298,7 +298,7 @@ function Section5() {
             </li>
           </ol>
         </div>
-      </div>
+      </div>*/}
     </>
   )
 }
@@ -397,7 +397,7 @@ function Section6() {
 function Section7() {
   return (
     <>
-      <div class={section7Styles.section7}>
+      {/*<div class={section7Styles.section7}>
         <div class={section7Styles.gridRow}>
           <div class={section7Styles.videoBox}>
             <div class={section7Styles.playButton}>
@@ -464,7 +464,7 @@ function Section7() {
             <p class={section7Styles.textDownload}>загрузить ещё test</p>
           </div>
         </div>
-      </div>
+      </div>*/}
     </>
   )
 }
