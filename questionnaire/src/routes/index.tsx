@@ -545,60 +545,122 @@ function Section10() {
     <>
       <div class={section10Styles.containerMain}>
         <div class={section10Styles.containerSection}>
-          <div class={clsx(section10Styles.box, section10Styles.boxOne)}>
-            <div class={section10Styles.minus}/>
-            <h1 class={section10Styles.textMain}>Из чего состоит наш фундамент</h1>
-            <p class={section10Styles.textLow}>Бетонные плиты (собственного производства)
-              устанавливаются на длинные ригели из гидротехнического бетона со спец армированием. Конструкцию держат
-              монолитные бетонные сваи на титановых крепежах (Данный сплав используется для строения космических
-              аппаратов)На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя теплоизоляционного материала
-              (экструдированный пенополистерол).Затем производится полусухая стяжка на немецком оборудовании.
-              Конструкция обладает высокой несущей способностью, большой площадью опоры, что делает невозможным
-              опрокидывание и провалы грунта.</p>
-          </div>
-          <div class={clsx(section10Styles.box, section10Styles.boxTwo)}>
-            <h2 class={section10Styles.textMain}>Подбираем ли мы участок</h2>
-            <div class={section10Styles.plus}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
-              </svg>
+          <div class={section10Styles.containerDesktop}>
+            <div class={clsx(section10Styles.box, section10Styles.boxOne)}>
+              <div class={section10Styles.minus}/>
+              <h1 class={section10Styles.textMain}>Из чего состоит наш фундамент</h1>
+              <p class={section10Styles.textLow}>Бетонные плиты (собственного производства)
+                устанавливаются на длинные ригели из гидротехнического бетона со спец армированием. Конструкцию держат
+                монолитные бетонные сваи на титановых крепежах (Данный сплав используется для строения космических
+                аппаратов)На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя теплоизоляционного материала
+                (экструдированный пенополистерол).Затем производится полусухая стяжка на немецком оборудовании.
+                Конструкция обладает высокой несущей способностью, большой площадью опоры, что делает невозможным
+                опрокидывание и провалы грунта.</p>
+            </div>
+            <div class={clsx(section10Styles.box, section10Styles.boxTwo)}>
+              <h2 class={section10Styles.textMain}>Подбираем ли мы участок</h2>
+              <div class={section10Styles.plus}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
+                  <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.box, section10Styles.boxThree)}>
+              <h3 class={section10Styles.textMain}>Какие материалы используем</h3>
+              <div class={section10Styles.plus}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
+                  <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.box, section10Styles.boxFour)}>
+              <h4 class={section10Styles.textMain}>Можем ли мы помочь с ипотекой</h4>
+              <div class={section10Styles.plus}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
+                  <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.box, section10Styles.boxFive)}>
+              <h5 class={section10Styles.textMain}>Технологии строительства</h5>
+              <div class={section10Styles.plus}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
+                  <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.box, section10Styles.boxSix)}>
+              <h6 class={section10Styles.textMain}>Чем каркасные дома лучше остальных</h6>
+              <div class={section10Styles.plus}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
+                  <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
             </div>
           </div>
-          <div class={clsx(section10Styles.box, section10Styles.boxThree)}>
-            <h3 class={section10Styles.textMain}>Какие материалы используем</h3>
-            <div class={section10Styles.plus}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
-              </svg>
+          <div class={section10Styles.containerMobile}>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxOneMob)}>
+              <div class={section10Styles.partMob}>
+                <h1 class={section10Styles.textMainMob}>Из чего состоит наш фундамент</h1>
+                <div class={section10Styles.minusMob}/>
+              </div>
+              <p class={section10Styles.textLowMob}>Бетонные плиты (собственного производства)
+                устанавливаются на длинные ригели из гидротехнического бетона со спец армированием. Конструкцию держат
+                монолитные бетонные сваи на титановых крепежах (Данный сплав используется для строения космических
+                аппаратов)На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя теплоизоляционного материала
+                (экструдированный пенополистерол).Затем производится полусухая стяжка на немецком оборудовании.
+                Конструкция обладает высокой несущей способностью, большой площадью опоры, что делает невозможным
+                опрокидывание и провалы грунта.</p>
             </div>
-          </div>
-          <div class={clsx(section10Styles.box, section10Styles.boxFour)}>
-            <h4 class={section10Styles.textMain}>Можем ли мы помочь с ипотекой</h4>
-            <div class={section10Styles.plus}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
-              </svg>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxTwoMob)}>
+              <h2 class={section10Styles.textMainMob}>Подбираем ли мы участок</h2>
+              <div class={section10Styles.plusMob}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <line x1="8.41016" x2="8.41016" y2="17" stroke="black" stroke-width="0.5"/>
+                  <line y1="8.59009" x2="17" y2="8.59009" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class={clsx(section10Styles.box, section10Styles.boxFive)}>
-            <h5 class={section10Styles.textMain}>Технологии строительства</h5>
-            <div class={section10Styles.plus}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
-              </svg>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxThreeMob)}>
+              <h3 class={section10Styles.textMainMob}>Какие материалы используем</h3>
+              <div class={section10Styles.plusMob}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <line x1="8.41016" x2="8.41016" y2="17" stroke="black" stroke-width="0.5"/>
+                  <line y1="8.59009" x2="17" y2="8.59009" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class={clsx(section10Styles.box, section10Styles.boxSix)}>
-            <h6 class={section10Styles.textMain}>Чем каркасные дома лучше остальных</h6>
-            <div class={section10Styles.plus}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2"/>
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2"/>
-              </svg>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxFourMob)}>
+              <h4 class={section10Styles.textMainMob}>Можем ли мы помочь с ипотекой</h4>
+              <div class={section10Styles.plusMob}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <line x1="8.41016" x2="8.41016" y2="17" stroke="black" stroke-width="0.5"/>
+                  <line y1="8.59009" x2="17" y2="8.59009" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxFiveMob)}>
+              <h5 class={section10Styles.textMainMob}>Технологии строительства</h5>
+              <div class={section10Styles.plusMob}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <line x1="8.41016" x2="8.41016" y2="17" stroke="black" stroke-width="0.5"/>
+                  <line y1="8.59009" x2="17" y2="8.59009" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class={clsx(section10Styles.boxMob, section10Styles.boxSixMob)}>
+              <h6 class={section10Styles.textMainMob}>Чем каркасные дома лучше остальных</h6>
+              <div class={section10Styles.plusMob}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <line x1="8.41016" x2="8.41016" y2="17" stroke="black" stroke-width="0.5"/>
+                  <line y1="8.59009" x2="17" y2="8.59009" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
