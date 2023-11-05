@@ -16,6 +16,7 @@ import section7Styles from "./index/section7.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import section9Styles from "./index/section9.module.scss"
 import section10Styles from "./index/section10.module.scss"
+import section12Styles from "./index/section12.module.scss"
 import sectionMapStyles from "./index/sectionMap.module.scss"
 import PDF from "../assets/img/PDF.png"
 import foundation from "../assets/img/foundation.jpg"
@@ -481,7 +482,7 @@ function Section8() {
           </p>
           <div class={section8Styles.videoBox}>
             <div class={section8Styles.videoButton}>
-              <PopupVideo />
+              <PopupVideo/>
             </div>
           </div>
           <p class={clsx(section8Styles.text, section8Styles.textOne)}>
@@ -681,7 +682,46 @@ function Section11() {
 
 function Section12() {
   return (
-    <></>
+    <>
+      <div class={section12Styles.containerMain}>
+        <div class={section12Styles.containerSection}>
+          <p class={section12Styles.textMain}>О НАС</p>
+          <div class={section12Styles.table}>
+            <div  class={clsx(section12Styles.box, section12Styles.One)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoOne)}/>
+              <h1 class={section12Styles.main}>Александр</h1>
+              <p class={section12Styles.text}>Технический директор</p>
+            </div>
+            <div  class={clsx(section12Styles.box, section12Styles.Two)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoTwo)}/>
+              <h1 class={section12Styles.main}>Андрей Аркадьевич</h1>
+              <p class={section12Styles.text}>Технический надзор</p>
+            </div>
+            <div  class={clsx(section12Styles.box, section12Styles.Three)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoThree)}/>
+              <h1 class={section12Styles.main}>Александр</h1>
+              <p class={section12Styles.text}>Бригадир монтажников</p>
+            </div>
+            <div  class={clsx(section12Styles.box, section12Styles.Four)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoFour)}/>
+              <h1 class={section12Styles.main}>Александр</h1>
+              <p class={section12Styles.text}>Бригадир кровельщиков</p>
+            </div>
+            <div  class={clsx(section12Styles.box, section12Styles.Five)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoFive)}/>
+              <h1 class={section12Styles.main}>Федор</h1>
+              <p class={section12Styles.text}>Бетонных дел мастер</p>
+            </div>
+            <div class={clsx(section12Styles.box, section12Styles.Six)}>
+              <div class={clsx(section12Styles.photo, section12Styles.photoSix)}/>
+              <h1 class={section12Styles.main}>Максим</h1>
+              <p class={section12Styles.text}>Руководитель производства</p>
+            </div>
+          </div>
+          <div class={section12Styles.logo}/>
+        </div>
+      </div>
+    </>
   )
 }
 
