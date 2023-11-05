@@ -81,6 +81,7 @@
     flex-shrink: 0;
     margin-left: 19px;
     object-fit: cover;
+    position: relative;
   }
 
   .sevenLines {
@@ -89,6 +90,8 @@
     grid-gap: 0;
     margin-left: 56px;
     margin-right: 55px;
+    position: absolute;
+    margin-top: 252px;
   }
 
   .line {
@@ -110,7 +113,26 @@
     line-height: normal;
     text-transform: lowercase;
     margin-left: 55px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: static;
+  }
+
+  .numberedList {
+    width: 321px;
+    height: 365px;
+    flex-shrink: 0;
+    color: #dedede;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-left: 73px;
+    margin-top: 24px;
+    margin-right: 54px;
+    line-height: 1.2;
   }
 }
