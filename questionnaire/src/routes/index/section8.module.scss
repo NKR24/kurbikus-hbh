@@ -1,42 +1,22 @@
 @import "../../utils";
 
 .containerMain {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  margin-top: 62px;
-}
-
-.containerSection {
-  max-width: 1920px;
-  display: flex;
-  overflow: hidden;
-  margin-left: 101px;
-  margin-right: 101px;
-  margin-top: 62px;
-}
-
-.containerDesktop{
   display: flex;
   flex-direction: column;
 }
 
-.containerMobile{
-  display: none;
+.containerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  height: 1272px;
+  margin: 62px 116px 20px 103px;
 }
 
-.partFirst{
-  width: 100%;
-  border: 2px solid black;
-}
-
-.textMainBox{
+.textMain {
   margin-top: 55px;
-  margin-left: 367px;
-  margin-right: 371px;
-}
-
-.textMain{
   color: #000;
   text-align: center;
   font-family: Mikro, serif;
@@ -47,34 +27,24 @@
   text-transform: lowercase;
 }
 
-.videoBox{
+.videoBox {
   margin-top: 53px;
-  margin-left: 260px;
-  background: url("../../assets/img/preview-section8.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 997px;
   height: 587px;
   flex-shrink: 0;
-  border: 2px solid black;
+  background: url("~/assets/img/preview-section8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.videoButton{
+.videoButton {
   display: flex;
   justify-content: center;
-  padding-top: 240px;
+  margin-top: 240px;
 }
 
-.textPartFirst{
-  width: 1002px;
-  height: 231px;
-  flex-shrink: 0;
-  margin-top: 86px;
-  margin-left: 258px;
-}
-
-.textLow{
+.text {
   color: #000;
   font-family: Mikro, serif;
   font-size: 24px;
@@ -84,7 +54,24 @@
   text-transform: lowercase;
 }
 
-.buttonMain{
+.textOne {
+  margin-top: 86px;
+  width: 1002px;
+  flex-shrink: 0;
+}
+
+.textTwo {
+  width: 1002px;
+  flex-shrink: 0;
+}
+
+.textThree {
+  width: 1002px;
+  flex-shrink: 0;
+}
+
+.button {
+  margin-top: 90px;
   display: flex;
   width: 422px;
   height: 107px;
@@ -94,12 +81,9 @@
   gap: 10px;
   flex-shrink: 0;
   background: #000;
-  margin-left: 553px;
-  margin-top: 27px;
-  margin-bottom: 68px;
 }
 
-.buttonText{
+.textButton {
   color: #FFF;
   font-family: Mikro, serif;
   font-size: 48px;
@@ -109,156 +93,26 @@
   text-transform: lowercase;
 }
 
-.partSecond{
-  width: 738px;
-  height: 700px;
-  flex-shrink: 0;
-  border: 2px solid black;
-  margin-left: 405px;
-  margin-top: 177px;
-  margin-bottom: 114px;
-}
-
-.textSecond{
-  margin-top: 62px;
-}
-
-.textSecondMain{
-  margin-left: 75px;
-  width: 431px;
-  height: 60px;
-  flex-shrink: 0;
-  color: #000;
-  font-family: Mikro, serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.textSecondLow{
-  margin-left: 81px;
-  margin-top: 6px;
-  width: 385px;
-  height: 83px;
-  flex-shrink: 0;
-  color: #181818;
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.formPart{
-  margin-top: 114px;
-  margin-left: 75px;
-  margin-right: 49.99px;
-}
-
-.login{
-  border-bottom: 2px solid black;
-}
-
-.password{
-  margin-top: 33px;
-  border-bottom: 2px solid black;
-}
-
-.textMessage{
-  margin-top: 30px;
-  border-bottom: 2px solid black;
-}
-
-.textForm{
-  color: #181818;
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.boxLast{
-  display: flex;
-  flex-direction: row;
-}
-
-.boxText{
-  margin-top: 71px;
-  margin-left: 75px;
-  width: 281px;
-  height: 67px;
-  flex-shrink: 0;
-}
-
-.boxTextMain{
-  color: #181818;
-  font-family: Montserrat, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.boxButton{
-  margin-top: 67px;
-  margin-left: 118px;
-  border: 2px solid black;
-  display: flex;
-  width: 214px;
-  height: 60px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.boxButtonText{
-  color: #181818;
-  font-family: Montserrat, serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-
 @include sm{
-  .containerMain{
+  .containerMain {
     width: 100%;
-    margin: 0 !important;
-  }
-
-  .containerSection{
-    display: flex;
-    margin-top: 28px!important;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
-
-  .containerDesktop{
-    display: none;
-  }
-
-  .containerMobile{
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
   }
 
-  .boxMainMob{
-    border: 0.5px solid black!important;
-  }
-
-  .textMainMob{
+  .containerSection {
     display: flex;
-    padding-left: 33px;
-    margin-top: 11px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    height: 465px;
+    margin: 28px 19px 28px 23px;
   }
 
-  .textMobileMain{
+  .textMain {
+    margin-top: 11px;
+    margin-right: 97px;
     width: 228px;
     height: 16px;
     flex-shrink: 0;
@@ -271,35 +125,70 @@
     text-transform: lowercase;
   }
 
-  .videoBoxMob{
-    background: url("../../assets/img/preview-section8.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  .videoBox {
+    margin-top: 12px;
     width: 319px;
     height: 154px;
     flex-shrink: 0;
-    margin: 12px 36px 24px 33px;
+    background: url("~/assets/img/preview-section8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
-  .videoButtonMob{
+  .videoButton {
     display: flex;
     justify-content: center;
-    padding-top: 59px;
+    margin-top: 56px;
   }
 
-  .textMobBox{
-    margin-left: 33px;
-    margin-top: 13px;
-  }
-
-  .textTextBox{
-    width: 311px;
-    height: 142px;
-    flex-shrink: 0;
+  .text {
+    margin-right: 7px;
     color: #000;
     font-family: Mikro, serif;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .textOne {
+    margin-top: 20px;
+    width: 311px;
+    flex-shrink: 0;
+  }
+
+  .textTwo {
+    width: 311px;
+    flex-shrink: 0;
+  }
+
+  .textThree {
+    width: 311px;
+    flex-shrink: 0;
+  }
+
+  .button {
+    margin-top: 35px;
+    display: flex;
+    width: 157px;
+    height: 59px;
+    flex-shrink: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+  }
+
+  .textButton {
+    width: 94px;
+    height: 19px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mikro;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

@@ -3,12 +3,11 @@
 .containerMain {
   display: flex;
   width: 100%;
-  justify-content: center;
 }
 
 .containerSection {
+  margin-left: 103px;
   margin-top: 40px;
-  max-width: 1920px;
   display: flex;
   overflow: hidden;
 }
@@ -95,7 +94,7 @@
 
 
 .child{
-  width: 481px;
+  width: 28.4vw;
   height: 270px;
   flex-shrink: 0;
 }
@@ -168,21 +167,17 @@
 
 @include sm{
   .containerMain{
-    display: flex;
     width: 100%;
-    justify-content: center;
   }
 
   .containerSection{
-    margin-top: 31px;
-    margin-bottom: 27px;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
+    margin: 31px 20px 27px 22px;
   }
 
   .containerMobile{
-    display: grid;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
   }
 
   .containerDesktop{
@@ -196,7 +191,7 @@
   }
 
   .boxMobile{
-    width: 128px;
+    width: 124px;
     height: 59px;
     flex-shrink: 0;
     border-bottom: 0.5px solid black;
@@ -209,11 +204,9 @@
 
   .mobSecond{
     background: black;
-    margin-right: 2px;
   }
 
   .mobThird{
-    width: 128px;
     border-right: 0.5px solid black;
   }
 
@@ -222,6 +215,18 @@
     margin-bottom: 20px;
     font-family: Mikro, serif;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .textLowMobile{
+    margin-top: 7px;
+    margin-left: 8px;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -246,10 +251,12 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
   }
 
+
   .childMobile{
-    width: 192px;
+    width: 185px;
     height: 126px;
     flex-shrink: 0;
   }

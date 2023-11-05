@@ -1,1 +1,196 @@
 @import "../../utils";
+
+.containerMain {
+  width: 100%;
+}
+
+.containerSection {
+  width: 100%;
+}
+
+.containerDesktop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerMobile {
+  display: none;
+}
+
+.box {
+  border-bottom: 2px solid black;
+}
+
+.boxOne {
+  display: grid;
+  border-top: 2px solid black;
+}
+
+.boxTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxThree {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxFour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxFive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.boxSix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.plus {
+  margin-top: 20px;
+  margin-left: 275px;
+}
+
+.minus {
+  margin-top: 31px;
+  margin-left: 1556px;
+  width: 37px;
+  height: 2px;
+  background: #000;
+}
+
+.textMain {
+  margin-top: 18px;
+  margin-left: 103px;
+  margin-bottom: 54px;
+  width: 1178px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Montserrat, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textLow {
+  margin-left: 103px;
+  margin-bottom: 60px;
+  width: 1509px;
+  height: 311px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Montserrat, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@include sm {
+  .containerMain {
+    width: 100%;
+  }
+
+  .containerSection {
+    width: 100%;
+  }
+
+  .containerDesktop {
+    display: none;
+  }
+
+  .containerMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .boxMob {
+    border-bottom: 1px solid black;
+  }
+
+  .boxOneMob {
+    display: grid;
+    border-top: 1px solid black;
+  }
+
+  .boxTwoMob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxThreeMob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxFourMob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxFiveMob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxSixMob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plusMob {
+    margin-top: 24px;
+    margin-left: 34px;
+  }
+
+  .minusMob {
+    margin-left: 35px;
+    margin-top: 33px;
+    width: 17px;
+    height: 0.5px;
+    background: #000;
+  }
+
+  .textMainMob {
+    margin-top: 24px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    width: 310px;
+    height: 17px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .textLowMob {
+    margin-left: 22px;
+    margin-bottom: 10px;
+    width: 349px;
+    height: 143px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .partMob{
+    display: flex;
+    flex-direction: row;
+  }
+}
