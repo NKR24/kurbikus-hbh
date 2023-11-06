@@ -65,6 +65,7 @@
   text-transform: lowercase;
   margin-top: 276px;
   margin-left: 103px;
+  margin-bottom: 29px;
 }
 
 .arrow {
@@ -75,6 +76,83 @@
   margin-left: 1575px;
   margin-right: 103px;
   position: absolute;
+}
+
+.arrow2 {
+  display: none;
+}
+
+.lines {
+  width: 100%;
+  height: 2px;
+  background: #dedede;
+}
+
+.reviews {
+  margin-top: 40px;
+  margin-bottom: 17px;
+  margin-left: 103px;
+  margin-right: 111px;
+}
+
+.recallTime {
+  color: #dedede;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: small-caps;
+}
+
+.buttonExpand {
+  color: #faad67;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: small-caps;
+}
+
+.review, .review2 {
+  color: #dedede;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: small-caps;
+}
+
+.reviewMobile {
+  display: none;
+}
+
+.downloadButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 478px;
+  height: 107px;
+  padding: 10px;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 1px solid #dedede;
+  margin-top: 77px;
+  margin-bottom: 91px;
+  margin-left: 638px;
+  margin-right: 629px;
+}
+
+.textDownload {
+  color: #dedede;
+  font-family: Mikro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
 }
 
 @include sm {
@@ -148,9 +226,92 @@
     text-transform: lowercase;
     margin-top: 44px;
     margin-left: 22px;
+    margin-bottom: 12px;
   }
 
   .arrow {
     display: none;
+  }
+
+  .arrow2 {
+    display: block;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #dedede;
+    margin-top: 272px;
+    margin-left: 393px;
+    margin-right: 20px;
+    position: absolute;
+  }
+
+  .lines {
+    height: 0.5px;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    margin-left: 22px;
+    margin-right: 20px;
+    margin-bottom: 19px;
+    width: 388px;
+    height: 131px;
+    flex-shrink: 0;
+  }
+
+  .recallTime {
+    color: #dedede;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+
+  .review, .reviewMobile {
+    color: #dedede;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+
+  .reviewMobile {
+    display: block;
+  }
+
+  .review2 {
+    display: none;
+  }
+
+  .buttonExpand {
+    display: none;
+  }
+
+  .downloadButton {
+    width: 212px;
+    height: 41px;
+    flex-shrink: 0;
+    border: 0.5px solid #d9d9d9;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 110px;
+    margin-right: 109px;
+  }
+
+  .textDownload {
+    color: #fff;
+    font-family: Mikro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
   }
 }

@@ -548,6 +548,68 @@ function Section7() {
             stroke-width="3"
           />
         </svg>
+        <svg
+          class={section7Styles.arrow2}
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="19"
+          viewBox="0 0 19 19"
+          fill="none"
+        >
+          <path d="M1 18L18 1M18 1H1M18 1V18" stroke="#DEDEDE" />
+        </svg>
+        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.reviews}>
+          <p class={section7Styles.recallTime}>Март 2023</p>
+          <br />
+          <p class={section7Styles.review}>Мария Ш</p>
+          <br />
+          <p class={section7Styles.review2}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно. Нам срочно
+            нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+            за домом! все сделали быстро и качественно. Нам срочно нужно было
+            съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+            все сделали быстро и качественно.
+          </p>
+          <p class={section7Styles.reviewMobile}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </p>
+          <br />
+          <p class={section7Styles.buttonExpand}>Раскрыть...</p>
+        </div>
+        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.reviews}>
+          <p class={section7Styles.recallTime}>Февраль 2023</p>
+          <br />
+          <p class={section7Styles.review}>Игорь Д</p>
+          <br />
+          <p class={section7Styles.review}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </p>
+          <br />
+          <p class={section7Styles.buttonExpand}>Раскрыть...</p>
+        </div>
+        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.reviews}>
+          <p class={section7Styles.recallTime}>Февраль 2023</p>
+          <br />
+          <p class={section7Styles.review}>Игорь Д</p>
+          <br />
+          <p class={section7Styles.review}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно. Спасибо Дом
+            за домом! все сделали быстро и качественно.
+          </p>
+          <br />
+          <p class={section7Styles.buttonExpand}>Раскрыть...</p>
+        </div>
+        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.downloadButton}>
+          <p class={section7Styles.textDownload}>загрузить ещё</p>
+        </div>
       </div>
     </>
   )
