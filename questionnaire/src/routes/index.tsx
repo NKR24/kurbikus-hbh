@@ -466,39 +466,88 @@ function Section7() {
     <>
       <div class={section7Styles.Section7}>
         <div class={section7Styles.rectangle}>
-          <div class={section7Styles.videoBox}>
-            <img
-              src={s7image}
-              alt="preview"
-              class={section7Styles.previewImage}
+          <img
+            src={s7image}
+            alt="preview"
+            class={section7Styles.previewImage}
+          />
+          <svg
+            class={section7Styles.playButton}
+            xmlns="http://www.w3.org/2000/svg"
+            width="99"
+            height="99"
+            viewBox="0 0 99 99"
+            fill="none"
+          >
+            <path
+              d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z"
+              stroke="#DEDEDE"
+              stroke-width="2"
+              stroke-miterlimit="10"
             />
-            <div class={section7Styles.playButton}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="99"
-                height="99"
-                viewBox="0 0 99 99"
-                fill="none"
-              >
+            <path
+              d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z"
+              fill="black"
+              fill-opacity="0.05"
+              stroke="#DEDEDE"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <div class={section7Styles.rectangle2}>
+            <img
+              src={s7imageForMobile}
+              alt="preview"
+              class={section7Styles.previewImage2}
+            />
+            <svg
+              class={section7Styles.playButton2}
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              viewBox="0 0 45 45"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_1_631)">
                 <path
-                  d="M49.4061 97.8121C76.14 97.8121 97.8121 76.14 97.8121 49.4061C97.8121 22.6721 76.14 1 49.4061 1C22.6721 1 1 22.6721 1 49.4061C1 76.14 22.6721 97.8121 49.4061 97.8121Z"
+                  d="M22.2273 44.4545C34.5031 44.4545 44.4545 34.5031 44.4545 22.2273C44.4545 9.95149 34.5031 0 22.2273 0C9.95149 0 0 9.95149 0 22.2273C0 34.5031 9.95149 44.4545 22.2273 44.4545Z"
                   stroke="#DEDEDE"
-                  stroke-width="2"
                   stroke-miterlimit="10"
                 />
                 <path
-                  d="M35 49.0698V32L49.7891 40.529L64.5782 49.0698L49.7891 57.6107L35 66.1396V49.0698Z"
+                  d="M15.8184 22.5657V14.7275L22.6093 18.6439L29.4002 22.5657L22.6093 26.4875L15.8184 30.4039V22.5657Z"
                   fill="black"
                   fill-opacity="0.05"
                   stroke="#DEDEDE"
-                  stroke-width="2"
                   stroke-miterlimit="10"
                 />
-              </svg>
-            </div>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_631">
+                  <rect width="45" height="45" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </div>
         </div>
-        <p></p>
+        <p class={section7Styles.interviewText}>
+          ИНТЕРВЬЮ С СОЗДАТЕЛЕМ КОМПАНИИ
+        </p>
+        <p class={section7Styles.textReviews}>отзывы:</p>
+        <svg
+          class={section7Styles.arrow}
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+        >
+          <path
+            d="M2 43L43 2M43 2H2M43 2V43"
+            stroke="#DEDEDE"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </>
   )

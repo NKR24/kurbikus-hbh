@@ -12,43 +12,69 @@
 .rectangle {
   border: 2px solid #d9d9d9;
   width: 1002px;
-  height: 587px;
+  height: 590px;
   flex-shrink: 0;
   margin-top: 123px;
   margin-left: 361px;
-}
-
-.videoBox {
-  width: 1002px;
-  height: 587px;
-  flex-shrink: 0;
+  position: relative;
 }
 
 .previewImage {
   width: 1002px;
   height: 587px;
   flex-shrink: 0;
-  position: absolute;
-}
-
-.previewImage2 {
-  display: none;
 }
 
 .playButton {
   width: 96.812px;
   height: 96.812px;
   flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 240px;
   margin-left: 443px;
   position: absolute;
+  top: 0%;
+}
+
+.previewImage2 {
+  display: none;
 }
 
 .playButton2 {
   display: none;
+}
+
+.interviewText {
+  color: #fff;
+  font-family: Mikro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-top: 61px;
+  margin-left: 401px;
+}
+
+.textReviews {
+  color: #dedede;
+  font-family: Mikro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-top: 276px;
+  margin-left: 103px;
+}
+
+.arrow {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  margin-top: 1134px;
+  margin-left: 1575px;
+  margin-right: 103px;
+  position: absolute;
 }
 
 @include sm {
@@ -59,7 +85,7 @@
   }
 
   .rectangle {
-    border: 0.5px solid #D9D9D9;
+    border: 0.5px solid #d9d9d9;
     width: 388px;
     height: 208px;
     flex-shrink: 0;
@@ -67,15 +93,10 @@
     margin-left: 22px;
   }
 
-  .videoBox {
-    border: 0.5px solid #d9d9d9;
-    width: 308px;
-    height: 133px;
-    flex-shrink: 0;
+  .rectangle2 {
     margin-top: 46px;
     margin-left: 44px;
-    margin-right: 36px;
-    margin-bottom: 29px;
+    position: relative;
   }
 
   .previewImage {
@@ -98,10 +119,38 @@
     width: 45px;
     height: 45px;
     flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 0%;
     margin-top: 41px;
     margin-left: 131px;
+  }
+
+  .interviewText {
+    color: #dedede;
+    font-family: Mikro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 30px;
+    margin-left: 64px;
+    position: absolute;
+  }
+
+  .textReviews {
+    color: #dedede;
+    font-family: Mikro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 44px;
+    margin-left: 22px;
+  }
+
+  .arrow {
+    display: none;
   }
 }
