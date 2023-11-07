@@ -1,0 +1,54 @@
+@import "../../utils";
+
+.minus{
+  display: flex;
+  justify-content: center;
+  width: 37.494px;
+  height: 2px;
+  flex-shrink: 0;
+  background: black;
+}
+
+.buttonFont{
+  width: 37.494px;
+  height: 2px;
+  flex-shrink: 0;
+  background: black;
+}
+
+.containerMain{
+  width: 100%;
+}
+
+.containerSection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxOne{
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.boxTwo{
+  border-bottom: 2px solid black;
+}
+
+.boxThree{
+  border-bottom: 2px solid black;
+}
+
+.boxFour{
+  border-bottom: 2px solid black;
+}
+
+.boxFive{
+  border-bottom: 2px solid black;
+}
+
+.boxSix{
+  border-bottom: 2px solid black;
+}
