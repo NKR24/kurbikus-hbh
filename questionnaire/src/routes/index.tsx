@@ -17,7 +17,7 @@ import section7Styles from "./index/section7.module.scss"
 import section8Styles from "./index/section8.module.scss"
 import section9Styles from "./index/section9.module.scss"
 import section10Styles from "./index/section10.module.scss"
-import section12Styles from "./index/section12.module.scss"
+import section11Styles from "./index/section11.module.scss"
 import sectionMapStyles from "./index/sectionMap.module.scss"
 import PDF from "../assets/img/PDF.png"
 import s5image from "../assets/img/Section5image.jpg"
@@ -39,9 +39,9 @@ export default function Home() {
       <Section7 />
       <Section8 />
       <Section9 />
-      <Accordion/>
+      <Accordion />
+      <Section10 />
       <Section11 />
-      <Section12 />
       <SectionMap />
     </>
   )
@@ -273,13 +273,13 @@ function Section5() {
           class={section5Styles.foundationImage2}
         />
         <div class={section5Styles.sevenLines}>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
-          <div class={section5Styles.line}></div>
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
+          <div class={section5Styles.line} />
         </div>
         <p class={section5Styles.foundationText}>фундамент</p>
         <ol class={section5Styles.numberedList}>
@@ -559,7 +559,7 @@ function Section7() {
         >
           <path d="M1 18L18 1M18 1H1M18 1V18" stroke="#DEDEDE" />
         </svg>
-        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.lines} />
         <div class={section7Styles.reviews}>
           <p class={section7Styles.recallTime}>Март 2023</p>
           <br />
@@ -580,7 +580,7 @@ function Section7() {
           <br />
           <p class={section7Styles.buttonExpand}>Раскрыть...</p>
         </div>
-        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.lines} />
         <div class={section7Styles.reviews}>
           <p class={section7Styles.recallTime}>Февраль 2023</p>
           <br />
@@ -593,7 +593,7 @@ function Section7() {
           <br />
           <p class={section7Styles.buttonExpand}>Раскрыть...</p>
         </div>
-        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.lines} />
         <div class={section7Styles.reviews}>
           <p class={section7Styles.recallTime}>Февраль 2023</p>
           <br />
@@ -607,7 +607,7 @@ function Section7() {
           <br />
           <p class={section7Styles.buttonExpand}>Раскрыть...</p>
         </div>
-        <div class={section7Styles.lines}></div>
+        <div class={section7Styles.lines} />
         <div class={section7Styles.downloadButton}>
           <p class={section7Styles.textDownload}>загрузить ещё</p>
         </div>
@@ -711,416 +711,75 @@ function Section9() {
 function Section10() {
   return (
     <>
-      <div class={section10Styles.containerMain}>
-        <div class={section10Styles.containerSection}>
-          <div class={section10Styles.containerDesktop}>
-            <div class={clsx(section10Styles.box, section10Styles.boxOne)}>
-              <div class={section10Styles.minus} />
-              <h1 class={section10Styles.textMain}>
-                Из чего состоит наш фундамент
-              </h1>
-              <p class={section10Styles.textLow}>
-                Бетонные плиты (собственного производства) устанавливаются на
-                длинные ригели из гидротехнического бетона со спец армированием.
-                Конструкцию держат монолитные бетонные сваи на титановых
-                крепежах (Данный сплав используется для строения космических
-                аппаратов)На бетонной плите, внутри деревянной обвязки шириной
-                150 мм, 2 слоя теплоизоляционного материала (экструдированный
-                пенополистерол).Затем производится полусухая стяжка на немецком
-                оборудовании. Конструкция обладает высокой несущей способностью,
-                большой площадью опоры, что делает невозможным опрокидывание и
-                провалы грунта.
-              </p>
-            </div>
-            <div class={clsx(section10Styles.box, section10Styles.boxTwo)}>
-              <h2 class={section10Styles.textMain}>Подбираем ли мы участок</h2>
-              <div class={section10Styles.plus}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                >
-                  <line
-                    x1="18.9976"
-                    x2="18.9976"
-                    y2="37.4943"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                  <line
-                    y1="18.4967"
-                    x2="37.4943"
-                    y2="18.4967"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class={clsx(section10Styles.box, section10Styles.boxThree)}>
-              <h3 class={section10Styles.textMain}>
-                Какие материалы используем
-              </h3>
-              <div class={section10Styles.plus}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                >
-                  <line
-                    x1="18.9976"
-                    x2="18.9976"
-                    y2="37.4943"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                  <line
-                    y1="18.4967"
-                    x2="37.4943"
-                    y2="18.4967"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class={clsx(section10Styles.box, section10Styles.boxFour)}>
-              <h4 class={section10Styles.textMain}>
-                Можем ли мы помочь с ипотекой
-              </h4>
-              <div class={section10Styles.plus}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                >
-                  <line
-                    x1="18.9976"
-                    x2="18.9976"
-                    y2="37.4943"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                  <line
-                    y1="18.4967"
-                    x2="37.4943"
-                    y2="18.4967"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class={clsx(section10Styles.box, section10Styles.boxFive)}>
-              <h5 class={section10Styles.textMain}>Технологии строительства</h5>
-              <div class={section10Styles.plus}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                >
-                  <line
-                    x1="18.9976"
-                    x2="18.9976"
-                    y2="37.4943"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                  <line
-                    y1="18.4967"
-                    x2="37.4943"
-                    y2="18.4967"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class={clsx(section10Styles.box, section10Styles.boxSix)}>
-              <h6 class={section10Styles.textMain}>
-                Чем каркасные дома лучше остальных
-              </h6>
-              <div class={section10Styles.plus}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
-                >
-                  <line
-                    x1="18.9976"
-                    x2="18.9976"
-                    y2="37.4943"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                  <line
-                    y1="18.4967"
-                    x2="37.4943"
-                    y2="18.4967"
-                    stroke="black"
-                    stroke-width="2"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class={section10Styles.containerMobile}>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxOneMob)}
-            >
-              <div class={section10Styles.partMob}>
-                <h1 class={section10Styles.textMainMob}>
-                  Из чего состоит наш фундамент
-                </h1>
-                <div class={section10Styles.minusMob} />
-              </div>
-              <p class={section10Styles.textLowMob}>
-                Бетонные плиты (собственного производства) устанавливаются на
-                длинные ригели из гидротехнического бетона со спец армированием.
-                Конструкцию держат монолитные бетонные сваи на титановых
-                крепежах (Данный сплав используется для строения космических
-                аппаратов)На бетонной плите, внутри деревянной обвязки шириной
-                150 мм, 2 слоя теплоизоляционного материала (экструдированный
-                пенополистерол).Затем производится полусухая стяжка на немецком
-                оборудовании. Конструкция обладает высокой несущей способностью,
-                большой площадью опоры, что делает невозможным опрокидывание и
-                провалы грунта.
-              </p>
-            </div>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxTwoMob)}
-            >
-              <h2 class={section10Styles.textMainMob}>
-                Подбираем ли мы участок
-              </h2>
-              <div class={section10Styles.plusMob}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <line
-                    x1="8.41016"
-                    x2="8.41016"
-                    y2="17"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                  <line
-                    y1="8.59009"
-                    x2="17"
-                    y2="8.59009"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxThreeMob)}
-            >
-              <h3 class={section10Styles.textMainMob}>
-                Какие материалы используем
-              </h3>
-              <div class={section10Styles.plusMob}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <line
-                    x1="8.41016"
-                    x2="8.41016"
-                    y2="17"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                  <line
-                    y1="8.59009"
-                    x2="17"
-                    y2="8.59009"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxFourMob)}
-            >
-              <h4 class={section10Styles.textMainMob}>
-                Можем ли мы помочь с ипотекой
-              </h4>
-              <div class={section10Styles.plusMob}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <line
-                    x1="8.41016"
-                    x2="8.41016"
-                    y2="17"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                  <line
-                    y1="8.59009"
-                    x2="17"
-                    y2="8.59009"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxFiveMob)}
-            >
-              <h5 class={section10Styles.textMainMob}>
-                Технологии строительства
-              </h5>
-              <div class={section10Styles.plusMob}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <line
-                    x1="8.41016"
-                    x2="8.41016"
-                    y2="17"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                  <line
-                    y1="8.59009"
-                    x2="17"
-                    y2="8.59009"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class={clsx(section10Styles.boxMob, section10Styles.boxSixMob)}
-            >
-              <h6 class={section10Styles.textMainMob}>
-                Чем каркасные дома лучше остальных
-              </h6>
-              <div class={section10Styles.plusMob}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <line
-                    x1="8.41016"
-                    x2="8.41016"
-                    y2="17"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                  <line
-                    y1="8.59009"
-                    x2="17"
-                    y2="8.59009"
-                    stroke="black"
-                    stroke-width="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class={section10Styles.containerMain} />
     </>
   )
 }
 
 function Section11() {
-  return <></>
-}
-
-function Section12() {
   return (
     <>
-      <>
-        <div class={section12Styles.containerMain}>
-          <div class={section12Styles.containerSection}>
-            <p class={section12Styles.textMain}>О НАС</p>
-            <div class={section12Styles.table}>
-              <div class={clsx(section12Styles.box, section12Styles.One)}>
-                <div
-                  class={clsx(section12Styles.photo, section12Styles.photoOne)}
-                />
-                <h1 class={section12Styles.main}>Александр</h1>
-                <p class={section12Styles.text}>Технический директор</p>
-              </div>
-              <div class={clsx(section12Styles.box, section12Styles.Two)}>
-                <div
-                  class={clsx(section12Styles.photo, section12Styles.photoTwo)}
-                />
-                <h1 class={section12Styles.main}>Андрей Аркадьевич</h1>
-                <p class={section12Styles.text}>Технический надзор</p>
-              </div>
-              <div class={clsx(section12Styles.box, section12Styles.Three)}>
-                <div
-                  class={clsx(
-                    section12Styles.photo,
-                    section12Styles.photoThree
-                  )}
-                />
-                <h1 class={section12Styles.main}>Александр</h1>
-                <p class={section12Styles.text}>Бригадир монтажников</p>
-              </div>
-              <div class={clsx(section12Styles.box, section12Styles.Four)}>
-                <div
-                  class={clsx(section12Styles.photo, section12Styles.photoFour)}
-                />
-                <h1 class={section12Styles.main}>Александр</h1>
-                <p class={section12Styles.text}>Бригадир кровельщиков</p>
-              </div>
-              <div class={clsx(section12Styles.box, section12Styles.Five)}>
-                <div
-                  class={clsx(section12Styles.photo, section12Styles.photoFive)}
-                />
-                <h1 class={section12Styles.main}>Федор</h1>
-                <p class={section12Styles.text}>Бетонных дел мастер</p>
-              </div>
-              <div class={clsx(section12Styles.box, section12Styles.Six)}>
-                <div
-                  class={clsx(section12Styles.photo, section12Styles.photoSix)}
-                />
-                <h1 class={section12Styles.main}>Максим</h1>
-                <p class={section12Styles.text}>Руководитель производства</p>
-              </div>
+      <div class={section11Styles.containerMain}>
+        <div class={section11Styles.containerSection}>
+          <p class={section11Styles.textMain}>О НАС</p>
+          <div class={section11Styles.table}>
+            <div class={clsx(section11Styles.box, section11Styles.One)}>
+              <div
+                class={clsx(section11Styles.photo, section11Styles.photoOne)}
+              />
+              <h1 class={section11Styles.main}>Александр</h1>
+              <p class={section11Styles.text}>Технический директор</p>
             </div>
-            <div class={section12Styles.logo} />
+            <div class={clsx(section11Styles.box, section11Styles.Two)}>
+              <div
+                class={clsx(section11Styles.photo, section11Styles.photoTwo)}
+              />
+              <h1 class={section11Styles.main}>Андрей Аркадьевич</h1>
+              <p class={section11Styles.text}>Технический надзор</p>
+            </div>
+            <div class={clsx(section11Styles.box, section11Styles.Three)}>
+              <div
+                class={clsx(
+                  section11Styles.photo,
+                  section11Styles.photoThree
+                )}
+              />
+              <h1 class={section11Styles.main}>Александр</h1>
+              <p class={section11Styles.text}>Бригадир монтажников</p>
+            </div>
+            <div class={clsx(section11Styles.box, section11Styles.Four)}>
+              <div
+                class={clsx(section11Styles.photo, section11Styles.photoFour)}
+              />
+              <h1 class={section11Styles.main}>Александр</h1>
+              <p class={section11Styles.text}>Бригадир кровельщиков</p>
+            </div>
+            <div class={clsx(section11Styles.box, section11Styles.Five)}>
+              <div
+                class={clsx(section11Styles.photo, section11Styles.photoFive)}
+              />
+              <h1 class={section11Styles.main}>Федор</h1>
+              <p class={section11Styles.text}>Бетонных дел мастер</p>
+            </div>
+            <div class={clsx(section11Styles.box, section11Styles.Six)}>
+              <div
+                class={clsx(section11Styles.photo, section11Styles.photoSix)}
+              />
+              <h1 class={section11Styles.main}>Максим</h1>
+              <p class={section11Styles.text}>Руководитель производства</p>
+            </div>
+          </div>
+          <div class={section11Styles.logo} />
+          <div class={section11Styles.boxInfo}>
+            <p class={section11Styles.link}>
+              HBH.ru©2022
+            </p>
+            <p class={section11Styles.M}>
+              M
+            </p>
           </div>
         </div>
-      </>
+      </div>
     </>
   )
 }
