@@ -156,9 +156,8 @@
 
   .forminputmaterial {
     display: grid;
-    margin-right: 42px;
     border-bottom: 1px solid black;
-    margin-bottom: 13px;
+    margin: 10px 42px 13px 0;
   }
 
   .formcontrolmaterial {
@@ -201,6 +200,7 @@
   }
 
   .button {
+    margin-left: 9px;
     width: 146px;
     height: 36px;
     border: 1px solid black;
