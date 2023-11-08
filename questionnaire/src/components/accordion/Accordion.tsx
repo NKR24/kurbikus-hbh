@@ -9,6 +9,8 @@ export default function Accordion() {
   const [isExpandedFour, setIsExpandedFour] = createSignal(false)
   const [isExpandedFive, setIsExpandedFive] = createSignal(false)
   const [isExpandedSix, setIsExpandedSix] = createSignal(false)
+
+
   return (
     <div class={styles.containerMain}>
       <div class={styles.containerSection}>
@@ -16,10 +18,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Из чего состоит наш фундамент</h1>
             <button class={styles.button} onClick={() => setIsExpandedOne(!isExpandedOne())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>
@@ -39,10 +38,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Подбираем ли мы участок</h1>
             <button class={styles.button} onClick={() => setIsExpandedTwo(!isExpandedTwo())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>
@@ -58,10 +54,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Какие материалы используем</h1>
             <button class={styles.button} onClick={() => setIsExpandedThree(!isExpandedThree())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>
@@ -80,10 +73,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Можем ли мы помочь с ипотекой</h1>
             <button class={styles.button} onClick={() => setIsExpandedFour(!isExpandedFour())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>
@@ -98,10 +88,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Технологии строительства</h1>
             <button class={styles.button} onClick={() => setIsExpandedFive(!isExpandedFive())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>
@@ -116,10 +103,7 @@ export default function Accordion() {
           <div class={styles.first}>
             <h1 class={styles.mainText}>Чем каркасные дома лучше остальных</h1>
             <button class={styles.button} onClick={() => setIsExpandedSix(!isExpandedSix())}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                <line x1="18.9976" x2="18.9976" y2="37.4943" stroke="black" stroke-width="2" />
-                <line y1="18.4967" x2="37.4943" y2="18.4967" stroke="black" stroke-width="2" />
-              </svg>
+              <div class={styles.plus}/>
             </button>
           </div>
           <div class={styles.second}>

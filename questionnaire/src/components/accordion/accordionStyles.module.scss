@@ -2,7 +2,6 @@
 
 .description{
   margin-left: 103px;
-  margin-bottom: 60px;
   width: 1509px;
   color: #000;
   font-family: Montserrat, serif;
@@ -19,7 +18,7 @@
 .mainText{
   margin-left: 103px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 1178px;
   height: 60px;
   flex-shrink: 0;
@@ -31,12 +30,24 @@
   line-height: normal;
 }
 
+.plus{
+  width: 37.494px;
+  height: 37.494px;
+  flex-shrink: 0;
+  background: url("../../assets/img/accordion/plusDesktop.svg");
+}
+
 .button{
+  margin-top: 43px;
+  width: 37.494px;
+  height: 37.494px;
+  flex-shrink: 0;
   margin-left: 297px;
 }
 
+
 .myTransition {
-  transition: height 300ms cubic-bezier(0.65, 0, 0.35, 1);
+  transition: height 700ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .containerMain{
@@ -44,6 +55,7 @@
 }
 
 .boxOne{
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   border-top: 2px solid black;
@@ -51,29 +63,33 @@
 }
 
 .boxTwo{
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 .boxThree{
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 .boxFour{
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 .boxFive{
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 .boxSix{
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 @include sm{
   .description{
     margin-left: 23px;
-    margin-bottom: 10px;
     width: 349px;
     flex-shrink: 0;
     color: #000;
@@ -90,8 +106,8 @@
 
   .mainText{
     margin-left: 23px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 368px;
     height: 17px;
     flex-shrink: 0;
@@ -104,14 +120,22 @@
   }
 
   .button{
+    margin-top: 15px;
     width: 17px;
     height: 17px;
     flex-shrink: 0;
     margin-left: 0;
   }
 
+  .plus{
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    background: url("../../assets/img/accordion/plusMobile.svg");
+  }
+
   .myTransition {
-    transition: height 100ms cubic-bezier(0.65, 0, 0.35, 1);
+    transition: height 700ms cubic-bezier(0.65, 0, 0.35, 1);
   }
 
   .containerMain{
@@ -123,25 +147,31 @@
     flex-direction: column;
     border-top: 0.5px solid black;
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 
   .boxTwo{
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 
   .boxThree{
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 
   .boxFour{
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 
   .boxFive{
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 
   .boxSix{
     border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
   }
 }
