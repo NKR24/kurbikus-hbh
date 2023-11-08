@@ -171,7 +171,9 @@
   }
 
   .containerSection{
-    margin: 31px 20px 27px 22px;
+    margin-top: 31px;
+    margin-left: 23px;
+    margin-bottom: 27px;
   }
 
   .containerMobile{
@@ -191,7 +193,7 @@
   }
 
   .boxMobile{
-    width: 124px;
+    width: 129px;
     height: 59px;
     flex-shrink: 0;
     border-bottom: 0.5px solid black;
@@ -244,7 +246,7 @@
   }
 
   .textMobThird{
-    margin-left: 35px;
+    margin-left: 36px;
   }
 
   .mobileTwo{
@@ -256,7 +258,7 @@
 
 
   .childMobile{
-    width: 185px;
+    width: 190px;
     height: 126px;
     flex-shrink: 0;
   }
