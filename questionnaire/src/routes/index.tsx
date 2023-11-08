@@ -1,6 +1,7 @@
 import { Title } from "solid-start"
 import PopupVideo from "~/components/popupVideo"
 import Navbar from "~/components/navbar"
+import Accordion from "~/components/accordion"
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
@@ -38,7 +39,7 @@ export default function Home() {
       <Section7 />
       <Section8 />
       <Section9 />
-      <Section10 />
+      <Accordion/>
       <Section11 />
       <Section12 />
       <SectionMap />
