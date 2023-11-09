@@ -28,7 +28,6 @@ export default function Home() {
   return (
     <>
       <Title>Опросник</Title>
-      <Player/>
       <Navbar />
       <Section1 />
       <Section2 />
