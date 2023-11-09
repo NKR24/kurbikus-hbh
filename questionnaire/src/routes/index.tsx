@@ -1,5 +1,4 @@
 import { Title } from "solid-start"
-import PopupVideo from "~/components/popupVideo"
 import Navbar from "~/components/navbar"
 import Accordion from "~/components/accordion"
 import home1 from "../assets/img/home1.jpg"
@@ -29,6 +28,7 @@ export default function Home() {
   return (
     <>
       <Title>Опросник</Title>
+      <Player/>
       <Navbar />
       <Section1 />
       <Section2 />
@@ -623,9 +623,7 @@ function Section8() {
         <div class={section8Styles.containerSection}>
           <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
           <div class={section8Styles.videoBox}>
-            <div class={section8Styles.videoButton}>
-              <PopupVideo />
-            </div>
+            <div class={section8Styles.videoButton}/>
           </div>
           <p class={clsx(section8Styles.text, section8Styles.textOne)}>
             Демонстрируем построенный вариант дома, однако может отвезти на
