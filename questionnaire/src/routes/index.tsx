@@ -745,7 +745,19 @@ function Section9() {
 function Section10() {
   return (
     <>
-      <div class={section10Styles.containerMain} />
+      <div class={section10Styles.containerMain}>
+        <div class={section10Styles.containerSection}>
+          <h1 class={section10Styles.textMain}>ПЛЮСЫ</h1>
+          <p class={clsx(section10Styles.itemMain, section10Styles.OneHalf)}>мобильные</p>
+          <div class={section10Styles.part}>
+            <div class={section10Styles.tableOne}>
+              <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfTwo)}>бригады</p>
+              <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfThree)}>по всей россии</p>
+              <p class={clsx(section10Styles.itemMain, section10Styles.Two)}>Используем европейские материалы</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

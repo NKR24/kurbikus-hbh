@@ -1,1 +1,57 @@
 @import "../../utils";
+
+.containerMain{
+
+}
+
+.containerSection{
+
+}
+
+.textMain{
+  margin-top: 150px;
+  margin-left: 108px;
+  width: 766px;
+  height: 123px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.itemMain{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.OneHalf{
+  margin-top: 66px;
+  margin-left: 106px;
+}
+
+.OneHalfTwo{
+  width: 462px;
+  flex-shrink: 0;
+  margin-left: 106px;
+}
+
+.OneHalfThree{
+  width: 462px;
+  flex-shrink: 0;
+  margin-left: 106px;
+}
+
+.part{
+  width: 1728px;
+  height: 538px;
+  background: url("../../assets/img/lines-10.svg") no-repeat;
+}
