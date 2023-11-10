@@ -22,11 +22,11 @@
 }
 
 .containerFirst{
-  max-width: 973px;
+  width: 900px;
 }
 
 .containerSecond{
-  max-width: 678px;
+  width: 630px;
   display: flex;
   justify-content: flex-end;
   border-left: 1px solid black;
@@ -140,7 +140,10 @@
 
 .mainHomeImage{
   width: 100%;
-  object-fit: cover;
+  background: url("../../assets/img/home-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @include sm{

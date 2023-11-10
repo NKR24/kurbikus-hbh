@@ -1,34 +1,23 @@
 @import "../../utils";
 
 .containerMain {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+
 }
 
 .containerSection {
-  max-width: 1920px;
-  display: flex;
-  overflow: hidden;
-  flex-direction: row;
+
 }
 
-.containerDesktop{
-  display: flex;
-  flex-direction: column;
+.containerDesktop {
+
 }
 
-.box{
+.boxOne {
   width: 100%;
 }
 
-.boxFirst{
-  display: flex;
-  justify-content: center;
-  margin-top: 67px;
-}
-
-.textMain{
+.mainText {
+  margin-left: 557px;
   width: 715px;
   height: 125px;
   flex-shrink: 0;
@@ -41,6 +30,128 @@
   text-transform: lowercase;
 }
 
-.boxSecond{
-  margin-top: 166px;
+.boxSecond {
+  margin-top: 90px;
+  margin-left: 159px;
+  margin-right: 64px;
+}
+
+.partOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.One {
+  width: 258px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+
+.OneD{
+  margin-top: 16px;
+  width: 260px;
+  margin-left: 30px;
+}
+
+.Two {
+  width: 257px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-left: 178px;
+}
+
+.TwoD{
+  margin-top: 16px;
+  margin-left: 180px;
+  width: 464px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
+.content{
+  margin-left: 180px;
+}
+
+.Three{
+  width: 257px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.ThreeD{
+  margin-top: 44px;
+  width: 265px;
+  height: 85px;
+  flex-shrink: 0;
+}
+
+.Four{
+  width: 257px;
+  margin-left: 391px;
+}
+
+.FourD{
+  width: 372px;
+  height: 193px;
+  flex-shrink: 0;
+  margin-left: 329px;
+}
+
+.Five{
+  width: 256px;
+}
+
+.FiveD{
+  width: 324px;
+  height: 188px;
+  flex-shrink: 0;
+}
+
+.partTwo{
+  width: 1509px;
+  height: 429px;
+  margin-bottom: 20px;
+  background-size: 1508px 428px;
+  background: url("../../assets/img/lines-4.svg") no-repeat center;
+}
+
+.partThree{
+  display: flex;
+  margin-left: 210px;
+  margin-bottom: 58px;
+}
+
+.tableOne{
+  display: flex;
+}
+
+.tableTwo{
+  display: flex;
+  margin-top: 90px;
+  margin-left: 202px;
+}
+
+.itemMain {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.itemDescription {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.itemOne {
+
 }

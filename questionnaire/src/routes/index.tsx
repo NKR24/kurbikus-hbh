@@ -6,10 +6,10 @@ import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
 import home4 from "../assets/img/home4.jpg"
 import clsx from "clsx"
-import mainHome from "../assets/img/home-main.jpg"
 import section1Styles from "./index/section1.module.scss"
 import section2Styles from "./index/section2.module.scss"
 import section3Styles from "./index/section3.module.scss"
+import section4Styles from "./index/section4.module.scss"
 import section5Styles from "./index/section5.module.scss"
 import section6Styles from "./index/section6.module.scss"
 import section7Styles from "./index/section7.module.scss"
@@ -77,7 +77,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <img src={mainHome} class={section1Styles.mainHomeImage} alt={""} />
+            <div class={section1Styles.mainHomeImage} />
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
@@ -254,7 +254,44 @@ function Section3() {
 }
 
 function Section4() {
-  return <></>
+  return (
+    <>
+      <div class={section4Styles.containerMain}>
+        <div class={section4Styles.containerDesktop}>
+          <div class={section4Styles.containerSection}>
+            <div class={section4Styles.boxOne}>
+              <h1 class={section4Styles.mainText}>ПОЧЕМУ МЫ?</h1>
+            </div>
+          </div>
+          <div class={section4Styles.boxSecond}>
+            <div class={section4Styles.partOne}>
+              <p class={clsx(section4Styles.itemMain, section4Styles.One)}>01</p>
+              <p class={clsx(section4Styles.itemMain, section4Styles.Two)}>02</p>
+            </div>
+            <div class={section4Styles.partTwo}>
+              <div class={section4Styles.tableOne}>
+                <p class={clsx(section4Styles.itemDescription, section4Styles.OneD)}>СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД</p>
+                <p class={clsx(section4Styles.itemDescription, section4Styles.TwoD)}>ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И
+                  ГАРАНТИЯ КАЧЕСТВА</p>
+                <div class={section4Styles.content}>
+                  <p class={clsx(section4Styles.itemMain, section4Styles.Three)}>03</p>
+                  <p class={clsx(section4Styles.itemDescription, section4Styles.ThreeD)}>ГИБКАЯ СИСТЕМА ОПЛАТЫ</p>
+                </div>
+              </div>
+              <div class={section4Styles.tableTwo}>
+                <p class={clsx(section4Styles.itemMain, section4Styles.Five)}>05</p>
+                <p class={clsx(section4Styles.itemMain, section4Styles.Four)}>04</p>
+              </div>
+            </div>
+            <div class={section4Styles.partThree}>
+              <p class={clsx(section4Styles.itemDescription, section4Styles.FiveD)}>БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА</p>
+              <p class={clsx(section4Styles.itemDescription, section4Styles.FourD)}>ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
 function Section5() {
@@ -622,7 +659,7 @@ function Section8() {
         <div class={section8Styles.containerSection}>
           <p class={section8Styles.textMain}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
           <div class={section8Styles.videoBox}>
-            <div class={section8Styles.videoButton}/>
+            <div class={section8Styles.videoButton} />
           </div>
           <p class={clsx(section8Styles.text, section8Styles.textOne)}>
             Демонстрируем построенный вариант дома, однако может отвезти на
