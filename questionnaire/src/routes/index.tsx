@@ -751,9 +751,15 @@ function Section10() {
           <p class={clsx(section10Styles.itemMain, section10Styles.OneHalf)}>мобильные</p>
           <div class={section10Styles.part}>
             <div class={section10Styles.tableOne}>
-              <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfTwo)}>бригады</p>
-              <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfThree)}>по всей россии</p>
+              <div class={section10Styles.SecondHalf}>
+                <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfTwo)}>бригады</p>
+                <p class={clsx(section10Styles.itemMain, section10Styles.OneHalfThree)}>по всей россии</p>
+              </div>
               <p class={clsx(section10Styles.itemMain, section10Styles.Two)}>Используем европейские материалы</p>
+            </div>
+            <div class={section10Styles.tableTwo}>
+              <p class={clsx(section10Styles.itemMain, section10Styles.Three)}>СОБСТВЕННЕ ПРОИЗВОДСТВО</p>
+              <p class={clsx(section10Styles.itemMain, section10Styles.Four)}>низкая цена за счет серийного производства</p>
             </div>
           </div>
         </div>

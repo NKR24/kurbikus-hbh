@@ -5,7 +5,7 @@
 }
 
 .containerSection{
-
+  margin-bottom: 250px;
 }
 
 .textMain{
@@ -24,6 +24,7 @@
 }
 
 .itemMain{
+  width: 462px;
   color: #000;
   font-family: Mikro, serif;
   font-size: 48px;
@@ -54,4 +55,25 @@
   width: 1728px;
   height: 538px;
   background: url("../../assets/img/lines-10.svg") no-repeat;
+}
+
+
+.tableOne{
+  display: flex;
+}
+
+.Two{
+  margin-top: 27px;
+  margin-left: 197px;
+}
+
+.tableTwo{
+  margin-top: 187px;
+  display: flex;
+  margin-left: 497px;
+}
+
+.Four{
+  margin-left: 186px;
+  margin-top: 50px;
 }
