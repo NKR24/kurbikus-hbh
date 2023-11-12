@@ -1,15 +1,15 @@
 @import "../../utils";
 
 .containerMain {
-
-}
-
-.containerSection {
-
+  width: 100%;
 }
 
 .containerDesktop {
+  width: 100%;
+}
 
+.containerMobile{
+  display: none;
 }
 
 .boxOne {
@@ -151,4 +151,38 @@
 
 .itemOne {
 
+}
+
+@include sm{
+  .containerMain{
+    width: 100%;
+  }
+
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainTextMob{
+    margin-bottom: 16px;
+    margin-left: 90px;
+    width: 268px;
+    height: 57px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .part{
+    margin-left: 22px;
+  }
 }

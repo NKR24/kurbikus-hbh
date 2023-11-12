@@ -171,9 +171,7 @@
   }
 
   .containerSection{
-    margin-top: 31px;
-    margin-left: 23px;
-    margin-bottom: 27px;
+    margin: 31px 19px 27px 23px;
   }
 
   .containerMobile{
@@ -193,7 +191,7 @@
   }
 
   .boxMobile{
-    width: 129px;
+    width: 124px;
     height: 59px;
     flex-shrink: 0;
     border-bottom: 0.5px solid black;
@@ -237,28 +235,29 @@
 
   .textMobFirst{
     color: #000;
-    margin-left: 25px;
+    margin-left: 23px;
   }
 
   .textMobSecond{
     color: #dedede;
-    margin-left: 30px;
+    margin-left: 29px;
   }
 
   .textMobThird{
-    margin-left: 36px;
+    margin-left: 33px;
   }
 
   .mobileTwo{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
+    grid-template-columns: 3fr 3fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 6px;
   }
 
 
   .childMobile{
-    width: 190px;
+    width: 100%;
     height: 126px;
     flex-shrink: 0;
   }

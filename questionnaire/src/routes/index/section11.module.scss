@@ -135,27 +135,19 @@
   line-height: normal;
 }
 
-.logo{
-  margin-left: 985px;
-  margin-top: 995px;
-  margin-bottom: 92px;
-  width: 202px;
-  height: 91px;
+.boxContacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+  width: 218.097px;
+  height: 100.66px;
   flex-shrink: 0;
   background: url("../../assets/img/hbh-logo.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.boxInfo{
-  margin-top: 300px;
-  display: flex;
-  margin-left: 105px;
-}
-
-.M{
-  margin-left: 1395px;
 }
 
 @include sm{

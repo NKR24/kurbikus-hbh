@@ -26,7 +26,8 @@
   }
 
   .Box {
-    width: 70%;
+    max-width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     margin-top: 7px;
@@ -54,7 +55,9 @@
   }
 
   .logos{
-    margin: 14px 22px 14px 24px;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .Three {
@@ -102,6 +105,6 @@
   }
 
   .M{
-    margin-left: 275px;
+    margin-left: 230px;
   }
 }

@@ -23,6 +23,7 @@ import s5image from "../assets/img/Section5image.jpg"
 import s5imageForMobile from "..//assets/img/Section5imageForMobile.jpg"
 import s7image from "../assets/img/Section7image.jpg"
 import s7imageForMobile from "..//assets/img/Section7imageForMobile.jpg"
+import Contacts from "~/components/contacts"
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       <Accordion />
       <Section10 />
       <Section11 />
+      <Contacts/>
       <SectionMap />
     </>
   )
@@ -258,10 +260,8 @@ function Section4() {
     <>
       <div class={section4Styles.containerMain}>
         <div class={section4Styles.containerDesktop}>
-          <div class={section4Styles.containerSection}>
-            <div class={section4Styles.boxOne}>
-              <h1 class={section4Styles.mainText}>ПОЧЕМУ МЫ?</h1>
-            </div>
+          <div class={section4Styles.boxOne}>
+            <h1 class={section4Styles.mainText}>ПОЧЕМУ МЫ?</h1>
           </div>
           <div class={section4Styles.boxSecond}>
             <div class={section4Styles.partOne}>
@@ -284,9 +284,30 @@ function Section4() {
               </div>
             </div>
             <div class={section4Styles.partThree}>
-              <p class={clsx(section4Styles.itemDescription, section4Styles.FiveD)}>БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА</p>
-              <p class={clsx(section4Styles.itemDescription, section4Styles.FourD)}>ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА</p>
+              <p class={clsx(section4Styles.itemDescription, section4Styles.FiveD)}>БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ
+                ФУНДАМЕНТА</p>
+              <p class={clsx(section4Styles.itemDescription, section4Styles.FourD)}>ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ
+                СОБСТВЕННОГО ПРОИЗВОДСТВА</p>
             </div>
+          </div>
+        </div>
+        <div class={section4Styles.containerMobile}>
+          <h1 class={section4Styles.mainTextMob}>ПОЧЕМУ МЫ?</h1>
+          <div class={section4Styles.part}>
+            <svg width="389" height="515" viewBox="0 0 389 515" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="54" y1="0.75" x2="289" y2="0.750021" stroke="black" stroke-width="0.5"/>
+              <path d="M289.25 0.5L289.25 119.5" stroke="black" stroke-width="0.5"/>
+              <line x1="289" y1="119.25" x2="130" y2="119.25" stroke="black" stroke-width="0.5"/>
+              <line x1="34.25" y1="119" x2="34.25" y2="260" stroke="black" stroke-width="0.5"/>
+              <line x1="0.25" y1="386" x2="0.249994" y2="515" stroke="black" stroke-width="0.5"/>
+              <path d="M388.25 259.5L388.25 386" stroke="black" stroke-width="0.5"/>
+              <line x1="34" y1="259.75" x2="137" y2="259.75" stroke="black" stroke-width="0.5"/>
+              <line x1="217" y1="259.75" x2="388" y2="259.75" stroke="black" stroke-width="0.5"/>
+              <line x1="193" y1="385.75" x2="388" y2="385.75" stroke="black" stroke-width="0.5"/>
+              <line x1="50" y1="119.25" x2="34" y2="119.25" stroke="black" stroke-width="0.5"/>
+              <line x1="2.18557e-08" y1="385.75" x2="112" y2="385.75" stroke="black" stroke-width="0.5"/>
+              <line x1="2.18557e-08" y1="514.75" x2="22" y2="514.75" stroke="black" stroke-width="0.5"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -759,7 +780,8 @@ function Section10() {
             </div>
             <div class={section10Styles.tableTwo}>
               <p class={clsx(section10Styles.itemMain, section10Styles.Three)}>СОБСТВЕННЕ ПРОИЗВОДСТВО</p>
-              <p class={clsx(section10Styles.itemMain, section10Styles.Four)}>низкая цена за счет серийного производства</p>
+              <p class={clsx(section10Styles.itemMain, section10Styles.Four)}>низкая цена за счет серийного
+                производства</p>
             </div>
           </div>
         </div>
@@ -820,15 +842,6 @@ function Section11() {
               <h1 class={section11Styles.main}>Максим</h1>
               <p class={section11Styles.text}>Руководитель производства</p>
             </div>
-          </div>
-          <div class={section11Styles.logo} />
-          <div class={section11Styles.boxInfo}>
-            <p class={section11Styles.link}>
-              HBH.ru©2022
-            </p>
-            <p class={section11Styles.M}>
-              M
-            </p>
           </div>
         </div>
       </div>

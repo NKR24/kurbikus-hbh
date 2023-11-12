@@ -1,0 +1,42 @@
+@import "../../utils";
+
+.containerMain{
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.boxSecond{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.logo{
+  margin: 46.14px 71.3px 46.14px 67.11px;
+}
+
+.instagram{
+  margin-left: 101px;
+  margin-top: 58.72px;
+  width: 73.864px;
+  height: 73.534px;
+  flex-shrink: 0;
+}
+
+.youtube{
+  margin-top: 58.72px;
+  width: 97.711px;
+  height: 73.363px;
+  flex-shrink: 0;
+}
+
+.telegram{
+  margin-top: 58.72px;
+  width: 87.625px;
+  height: 75.473px;
+  flex-shrink: 0;
+}
