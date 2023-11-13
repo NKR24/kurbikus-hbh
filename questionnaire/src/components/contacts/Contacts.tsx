@@ -57,10 +57,11 @@ export default function Contacts(){
           </button>
         </div>
         <div class={styles.boxThird}>
-          <p class={styles.nubmer}>8 985 472 35 09</p>
+          <p class={styles.number}>8 985 472 35 09</p>
           <p class={styles.address}>МКАД, 69-й километр, внешняя сторона, к19</p>
         </div>
       </div>
+      <p class={styles.website}>HBH.ru©2022</p>
     </>
   )
 }
