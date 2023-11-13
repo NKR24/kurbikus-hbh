@@ -2,6 +2,7 @@ import { Title } from "solid-start"
 import Navbar from "~/components/navbar"
 import Accordion from "~/components/accordion"
 import Contacts from "~/components/contacts"
+import Map from "~/components/map"
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
@@ -41,6 +42,7 @@ export default function Home() {
       <Accordion />
       <Section10 />
       <Section11 />
+      <Map/>
       <Contacts/>
     </>
   )
