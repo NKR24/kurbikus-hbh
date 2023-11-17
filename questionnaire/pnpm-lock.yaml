@@ -8,6 +8,9 @@ dependencies:
   '@solid-primitives/media':
     specifier: ^2.2.5
     version: 2.2.5(solid-js@1.7.11)
+  '@solid-primitives/scroll':
+    specifier: ^2.0.20
+    version: 2.0.20(solid-js@1.7.11)
   '@solidjs/meta':
     specifier: ^0.28.6
     version: 0.28.6(solid-js@1.7.11)
@@ -1772,6 +1775,17 @@ packages:
       solid-js: ^1.6.12
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.7.11)
+      solid-js: 1.7.11
+    dev: false
+
+  /@solid-primitives/scroll@2.0.20(solid-js@1.7.11):
+    resolution: {integrity: sha512-Om19Sehb1MD02aAViNexXfSOfbUQOfDA41W5DpORxgty/7GeE7RIVPzoNGDdNOEdmM7K0Yw3roxa9d9jb/dL7Q==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      '@solid-primitives/event-listener': 2.3.0(solid-js@1.7.11)
+      '@solid-primitives/rootless': 1.4.2(solid-js@1.7.11)
+      '@solid-primitives/static-store': 0.0.5(solid-js@1.7.11)
       solid-js: 1.7.11
     dev: false
 
