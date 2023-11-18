@@ -3,6 +3,7 @@ import Navbar from "~/components/navbar"
 import Accordion from "~/components/accordion"
 import Contacts from "~/components/contacts"
 import Map from "~/components/map"
+import MainHome from "../assets/img/home-main.jpg"
 import home1 from "../assets/img/home1.jpg"
 import home3 from "../assets/img/home2.jpg"
 import home2 from "../assets/img/home3.jpg"
@@ -79,7 +80,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <div class={section1Styles.mainHomeImage} />
+            <img src={MainHome} alt={"homeImage"}/>
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
