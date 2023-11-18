@@ -91,7 +91,7 @@ function Section1() {
               </div>
             </div>
           </div>
-          <div class={clsx(section1Styles.box, section1Styles.MobileFisrt)}>
+          <div class={clsx(section1Styles.box, section1Styles.MobileFirst)}>
             <div
               class={clsx(
                 section1Styles.text,

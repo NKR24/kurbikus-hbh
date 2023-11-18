@@ -343,11 +343,201 @@
     text-transform: lowercase;
   }
 
-  .containerSecond img{
-    width: 100%; /* Ширина 100% от родительского контейнера */
-    max-width: 100%; /* Не превышает оригинальную ширину изображения */
-    height: 100%;
-    object-fit: cover;
+}
+
+@include m{
+  .containerMain{
+    width: 100%;
+    padding-left: 61px;
+    padding-right: 63px;
+    padding-bottom: 42px;
+  }
+
+
+  .text1large{
+    margin-top: 45px;
+    margin-left: 48px;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .text1small{
+    margin-bottom: 0;
+    margin-left: 54px;
+    width: 300px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .text2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 54px;
+    width: 400px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .text3{
+    margin-top: 6px;
+    margin-left: 54px;
+    margin-bottom: 10px;
+    width: 699px;
+    height: 90px;
+  }
+
+  .text4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 54px;
+    display: flex;
+    width: 691px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+}
+
+@include lg{
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMain{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 102px;
+  }
+
+
+  .containerMobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MobileImage{
+    width: 100%;
+    height: 283.68px;
+    background: url("../../assets/img/home-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 207px;
+    width: 231.451px;
+    height: 52px;
+    flex-shrink: 0;
+    background: #000;
+  }
+
+  .homeButtonText{
+    margin-top: 16.75px;
+    width: 119.705px;
+    height: 14.987px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .MobileFirst{
+  }
+
+  .MobTextFirstLarge{
+    padding-top: 23px;
+    padding-left: 31px;
+    width: 451px;
+    height: 75px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .MobTextFirstSmall{
+    margin-left: 34px;
+    width: 202px;
+    height: 110px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .MobileSecond{
+    border-top: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .videoButton{
+    margin-top: 42px;
+    margin-left: 35px;
+    margin-bottom: 43.5px;
+  }
+
+  .MobTextSecond{
+    margin-top: 46px;
+    margin-left: 19.5px;
+    margin-right: 93px;
+    width: 186px;
+    height: 74px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
   }
 }
 
@@ -358,8 +548,8 @@
 
   .containerMain{
     width: 100%;
-    padding-left: 11px;
-    padding-right: 10px;
+    padding-left: 22px;
+    padding-right: 20px;
   }
 
   .containerSection{
