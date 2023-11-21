@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.containerMobile{
+.containerMobile {
   display: none;
 }
 
@@ -48,7 +48,7 @@
   margin-left: 24px;
 }
 
-.OneD{
+.OneD {
   margin-top: 16px;
   width: 260px;
   margin-left: 30px;
@@ -61,7 +61,7 @@
   margin-left: 178px;
 }
 
-.TwoD{
+.TwoD {
   margin-top: 16px;
   margin-left: 180px;
   width: 464px;
@@ -69,61 +69,61 @@
   flex-shrink: 0;
 }
 
-.content{
+.content {
   margin-left: 180px;
 }
 
-.Three{
+.Three {
   width: 257px;
   height: 90px;
   flex-shrink: 0;
 }
 
-.ThreeD{
+.ThreeD {
   margin-top: 44px;
   width: 265px;
   height: 85px;
   flex-shrink: 0;
 }
 
-.Four{
+.Four {
   width: 257px;
   margin-left: 391px;
 }
 
-.FourD{
+.FourD {
   width: 372px;
   height: 193px;
   flex-shrink: 0;
   margin-left: 329px;
 }
 
-.Five{
+.Five {
   width: 256px;
 }
 
-.FiveD{
+.FiveD {
   width: 324px;
   height: 188px;
   flex-shrink: 0;
 }
 
-.partTwo{
+.partTwo {
   width: 1510px;
   background: url("../../assets/img/lines-4.svg") no-repeat;
 }
 
-.partThree{
+.partThree {
   display: flex;
   margin-left: 210px;
   margin-bottom: 58px;
 }
 
-.tableOne{
+.tableOne {
   display: flex;
 }
 
-.tableTwo{
+.tableTwo {
   display: flex;
   margin-top: 90px;
   margin-left: 202px;
@@ -153,21 +153,21 @@
 
 }
 
-@include sm{
-  .containerMain{
+@include sm {
+  .containerMain {
     width: 100%;
   }
 
-  .containerDesktop{
+  .containerDesktop {
     display: none;
   }
 
-  .containerMobile{
+  .containerMobile {
     display: flex;
     flex-direction: column;
   }
 
-  .mainTextMob{
+  .mainTextMob {
     margin-bottom: 16px;
     margin-left: 90px;
     width: 268px;
@@ -182,15 +182,15 @@
     text-transform: lowercase;
   }
 
-  .module{
+  .module {
     margin-left: 16px;
   }
 
-  .linesOne{
+  .linesOne {
     display: flex;
   }
 
-  .main{
+  .main {
     color: #000;
     font-family: Mikro, serif;
     font-size: 48px;
@@ -200,7 +200,7 @@
     text-transform: lowercase;
   }
 
-  .des{
+  .des {
     color: #000;
     font-family: Mikro, serif;
     font-size: 14px;
@@ -210,67 +210,137 @@
     text-transform: lowercase;
   }
 
-  .partMobOne{
+  .partMobOne {
 
   }
 
-  .markOne{
+  .markOne {
     display: flex;
   }
 
-  .lineOne{
+  .lineOne {
     margin-top: 30px;
     margin-left: 5px;
   }
 
-  .lineTwo{
+  .lineTwo {
     margin-top: 30px;
   }
 
-  .lineThree{
+  .lineThree {
 
   }
 
-  .linesTwo{
+  .linesTwo {
     display: flex;
     column-gap: 0;
     margin-left: 43px;
 
   }
 
-  .first{
+  .first {
     margin-left: 2px;
   }
 
-  .two{
+  .two {
     margin-top: 26px;
     margin-right: 5px;
     margin-left: 5px;
   }
 
-  .lineFour{
-    margin-top:60px;
+  .lineFour {
+    margin-top: 60px;
   }
 
-  .linesThree{
+  .linesThree {
     display: flex;
     margin-left: 43px;
   }
 
-  .second{
+  .second {
     width: 251px;
     height: 50px;
     flex-shrink: 0;
     margin-left: 24px;
   }
 
-  .linesFour{
+  .linesFour {
     display: flex;
     margin-left: 43px;
   }
 
-  .three{
+  .three {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .lineSeven {
+    margin-top: 30px;
+  }
+
+  .linesFive {
+    display: flex;
+    margin-left: 149px;
+  }
+
+  .third {
+    width: 240px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .linesSix {
+    display: flex;
+    margin-left: 7px;
+  }
+
+  .four {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .lineNine {
+    margin-top: 50px;
+  }
+
+  .lineEleven {
+    margin-top: 52px;
+  }
+
+  .lineTwelve {
+    margin-left: 7px;
+  }
+
+  .linesSeven {
+    display: flex;
+  }
+
+  .fourth {
+    margin-left: 121px;
+    width: 125px;
+    height: 41px;
+    flex-shrink: 0;
+  }
+
+  .four{
+    margin-right: 6px;
+  }
+
+  .linesEight {
+    margin-left: 7px;
+    display: flex;
+    margin-bottom: 29px;
+  }
+
+  .fifth{
+    margin-left: 9px;
+  }
+
+  .five{
+    width: 211px;
+    height: 38px;
+    flex-shrink: 0;
+    margin-left: 11px;
   }
 }
