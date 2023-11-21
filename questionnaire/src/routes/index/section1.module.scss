@@ -24,6 +24,7 @@
   }
 
   .containerFirst{
+    flex: 1;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -144,8 +145,8 @@
   }
 
   .containerSecond img{
-    width: 100%; /* Ширина 100% от родительского контейнера */
-    max-width: 100%; /* Не превышает оригинальную ширину изображения */
+    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -153,280 +154,92 @@
 }
 
 @include xl{
-  .containerMain{
-    width: 100%;
-    padding-left: 91px;
-    padding-right: 93px;
-    padding-bottom: 62px;
-  }
-
-
   .text1large{
-    margin-top: 65px;
-    margin-left: 79px;
+    margin-top: 55px;
+    margin-left: 59px;
     width: 777px;
-    height: 129px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+    height: auto;
+    font-size: 90px;
   }
 
   .text1small{
     margin-bottom: 20px;
-    margin-left: 88px;
-    width: 500px;
-    height: 100px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+    margin-left: 68px;
+    width: 550px;
+    height: 110px;
+    font-size: 32px;
+    overflow-wrap: break-word;
   }
 
   .text2{
     margin-top: 55px;
-    margin-bottom: 35px;
-    margin-left: 88px;
+    margin-left:68px;
     width: 500px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+    font-size: 35px;
   }
 
   .text3{
-    margin-top: 26px;
-    margin-left: 88px;
-    margin-bottom: 40px;
-    display: flex;
-    width: 699px;
-    height: 118px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
+    margin-top: 36px;
+    margin-left: 68px;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
   }
 
   .text4{
     margin-top: 18px;
     margin-bottom: 25px;
-    margin-left: 88px;
-    display: flex;
-    width: 691px;
+    margin-left: 68px;
+    width: 500px;
     height: 88px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .containerSecond img{
-    width: 100%; /* Ширина 100% от родительского контейнера */
-    max-width: 100%; /* Не превышает оригинальную ширину изображения */
-    height: 100%;
-    object-fit: cover;
+    font-size: 35px;
   }
 }
 
 @include l{
-  .containerMain{
-    width: 100%;
-    padding-left: 81px;
-    padding-right: 83px;
-    padding-bottom: 52px;
-  }
-
-
   .text1large{
     margin-top: 55px;
-    margin-left: 58px;
-    width: 500px;
-    height: 119px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 90px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  .text1small{
-    margin-bottom: 10px;
-    margin-left: 68px;
-    width: 400px;
-    height: 90px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  .text2{
-    margin-top: 35px;
-    margin-bottom: 25px;
-    margin-left: 68px;
-    width: 500px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  .text3{
-    margin-top: 16px;
-    margin-left: 68px;
-    margin-bottom: 20px;
-    width: 699px;
-    height: 118px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-  }
-
-  .text4{
-    margin-top: 8px;
-    margin-bottom: 15px;
-    margin-left: 68px;
-    display: flex;
-    width: 691px;
-    height: 88px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-}
-
-@include m{
-  .containerMain{
-    width: 100%;
-    padding-left: 61px;
-    padding-right: 63px;
-    padding-bottom: 42px;
-  }
-
-
-  .text1large{
-    margin-top: 45px;
-    margin-left: 48px;
-    width: auto;
+    margin-left: 59px;
+    width: 777px;
     height: auto;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+    font-size: 90px;
   }
 
   .text1small{
-    margin-bottom: 0;
-    margin-left: 54px;
-    width: 300px;
-    height: 90px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 68px;
+    width: 550px;
+    height: 110px;
+    font-size: 32px;
+    overflow-wrap: break-word;
   }
 
   .text2{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 54px;
-    width: 400px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+    margin-top: 55px;
+    margin-left:68px;
+    width: 500px;
+    font-size: 35px;
   }
 
   .text3{
-    margin-top: 6px;
-    margin-left: 54px;
-    margin-bottom: 10px;
-    width: 699px;
-    height: 90px;
+    margin-top: 36px;
+    margin-left: 68px;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
   }
 
   .text4{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 54px;
-    display: flex;
-    width: 691px;
-    height: 44px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
+    margin-top: 18px;
+    margin-bottom: 25px;
+    margin-left: 68px;
+    width: 500px;
+    height: 88px;
+    font-size: 35px;
   }
-
 }
+
+
 
 @include lg{
   .containerDesktop{
@@ -539,6 +352,10 @@
     line-height: normal;
     text-transform: lowercase;
   }
+}
+
+@include md{
+
 }
 
 @include sm{

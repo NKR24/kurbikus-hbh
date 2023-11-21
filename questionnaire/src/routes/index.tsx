@@ -294,21 +294,20 @@ function Section4() {
         </div>
         <div class={section4Styles.containerMobile}>
           <h1 class={section4Styles.mainTextMob}>ПОЧЕМУ МЫ?</h1>
-          <div class={section4Styles.part}>
-            <svg width="389" height="515" viewBox="0 0 389 515" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="54" y1="0.75" x2="289" y2="0.750021" stroke="black" stroke-width="0.5"/>
-              <path d="M289.25 0.5L289.25 119.5" stroke="black" stroke-width="0.5"/>
-              <line x1="289" y1="119.25" x2="130" y2="119.25" stroke="black" stroke-width="0.5"/>
-              <line x1="34.25" y1="119" x2="34.25" y2="260" stroke="black" stroke-width="0.5"/>
-              <line x1="0.25" y1="386" x2="0.249994" y2="515" stroke="black" stroke-width="0.5"/>
-              <path d="M388.25 259.5L388.25 386" stroke="black" stroke-width="0.5"/>
-              <line x1="34" y1="259.75" x2="137" y2="259.75" stroke="black" stroke-width="0.5"/>
-              <line x1="217" y1="259.75" x2="388" y2="259.75" stroke="black" stroke-width="0.5"/>
-              <line x1="193" y1="385.75" x2="388" y2="385.75" stroke="black" stroke-width="0.5"/>
-              <line x1="50" y1="119.25" x2="34" y2="119.25" stroke="black" stroke-width="0.5"/>
-              <line x1="2.18557e-08" y1="385.75" x2="112" y2="385.75" stroke="black" stroke-width="0.5"/>
-              <line x1="2.18557e-08" y1="514.75" x2="22" y2="514.75" stroke="black" stroke-width="0.5"/>
-            </svg>
+          <div class={section4Styles.module}>
+            <div class={section4Styles.lines}>
+              <div class={section4Styles.partMobOne}>
+                <div class={section4Styles.markOne}>
+                  <h1 class={clsx(section4Styles.main, section4Styles.one)}>01</h1>
+                  <div class={section4Styles.lineOne}>
+                    <svg width="235" height="1" viewBox="0 0 235 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="2.18557e-08" y1="0.75" x2="235" y2="0.750021" stroke="black" stroke-width="0.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <p class={clsx(section4Styles.des, section4Styles.first)}>СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

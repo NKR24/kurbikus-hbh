@@ -182,7 +182,40 @@
     text-transform: lowercase;
   }
 
-  .part{
-    margin-left: 22px;
+  .lines{
+    margin-left: 16px;
+  }
+
+  .main{
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .des{
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .partOneMob{
+
+  }
+
+  .markOne{
+    display: flex;
+  }
+
+  .lineOne{
+    margin-top: 30px;
+    margin-left: 5px;
   }
 }
