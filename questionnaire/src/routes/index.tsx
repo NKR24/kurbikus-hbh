@@ -43,8 +43,8 @@ export default function Home() {
       <Accordion />
       <Section10 />
       <Section11 />
-      <Map/>
-      <Contacts/>
+      <Map />
+      <Contacts />
     </>
   )
 }
@@ -80,7 +80,7 @@ function Section1() {
             </div>
           </div>
           <div class={section1Styles.containerSecond}>
-            <img src={MainHome} alt={"homeImage"}/>
+            <img src={MainHome} alt={"homeImage"} />
           </div>
         </div>
         <div class={section1Styles.containerMobile}>
@@ -295,17 +295,111 @@ function Section4() {
         <div class={section4Styles.containerMobile}>
           <h1 class={section4Styles.mainTextMob}>ПОЧЕМУ МЫ?</h1>
           <div class={section4Styles.module}>
-            <div class={section4Styles.lines}>
+            <div class={section4Styles.linesOne}>
               <div class={section4Styles.partMobOne}>
                 <div class={section4Styles.markOne}>
                   <h1 class={clsx(section4Styles.main, section4Styles.one)}>01</h1>
                   <div class={section4Styles.lineOne}>
                     <svg width="235" height="1" viewBox="0 0 235 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="2.18557e-08" y1="0.75" x2="235" y2="0.750021" stroke="black" stroke-width="0.5"/>
+                      <line x1="2.18557e-08" y1="0.75" x2="235" y2="0.750021" stroke="black" stroke-width="0.5" />
                     </svg>
                   </div>
                 </div>
                 <p class={clsx(section4Styles.des, section4Styles.first)}>СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД</p>
+              </div>
+              <div class={section4Styles.lineTwo}>
+                <svg width="1" height="60" viewBox="0 0 1 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.249995 0.5L0.249995 120" stroke="black" stroke-width="0.9" />
+                </svg>
+              </div>
+            </div>
+            <div class={section4Styles.linesTwo}>
+              <div class={section4Styles.lineFour}>
+                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.25" x2="0.25" y2="25" stroke="black" stroke-width="0.5" />
+                  <line x1="16" y1="0.25" y2="0.25" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+              <h1 class={clsx(section4Styles.main, section4Styles.two)}>02</h1>
+              <div class={section4Styles.lineThree}>
+                <svg width="167.7" height="69" viewBox="0 0 167 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M163 0L163 60" stroke="black" stroke-width="0.5" />
+                  <line x1="163" y1="60.25" x2="4" y2="60.25" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+            </div>
+            <div class={section4Styles.linesThree}>
+              <div class={section4Styles.lineFive}>
+                <svg width="1" height="64" viewBox="0 0 1 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.25" x2="0.25" y2="94" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+              <p class={clsx(section4Styles.des, section4Styles.second)}>ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ
+                КАЧЕСТВА</p>
+            </div>
+            <div class={section4Styles.linesFour}>
+              <div class={section4Styles.lineSix}>
+                <svg width="103" height="62" viewBox="0 0 103 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.25" x2="0.25" y1="-10" y2="22" stroke="black" stroke-width="0.5" />
+                  <line y1="21.75" x2="103" y2="21.75" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+              <h1 class={clsx(section4Styles.main, section4Styles.three)}>03</h1>
+              <div class={section4Styles.lineSeven}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="172" height="32" viewBox="0 0 172 26" fill="none">
+                  <path d="M171 -2V32" stroke="black" stroke-width="0.5" />
+                  <line y1="-1.7" x2="171" y2="-1.7" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+            </div>
+            <div class={section4Styles.linesFive}>
+              <p class={clsx(section4Styles.des, section4Styles.third)}>ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО
+                ПРОИЗВОДСТВА</p>
+              <div class={section4Styles.lineEight}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="48" viewBox="0 0 2 48" fill="none">
+                  <path d="M1 0L1 48" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+            </div>
+            <div class={section4Styles.linesSix}>
+              <div class={section4Styles.lineEleven}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="31" viewBox="0 0 112 31" fill="none">
+                  <line x1="0.25" y1="1" x2="0.25" y2="31" stroke="black" stroke-width="0.5" />
+                  <line x1="2.18557e-08" y1="0.75" x2="112" y2="0.75001" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+              <h1 class={clsx(section4Styles.main, section4Styles.four)}>04</h1>
+              <div class={section4Styles.linesTen}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="196" height="53" viewBox="0 0 196 53" fill="none">
+                  <path d="M195 0L195 53" stroke="black" stroke-width="0.5" />
+                  <line y1="52.75" x2="195" y2="52.75" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+            </div>
+            <div class={section4Styles.linesSeven}>
+              <div class={section4Styles.lineTwelve}>
+                <svg width="1" height="71" viewBox="0 0 1 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.25" x2="0.25" y2="71" stroke="black" stroke-width="0.5" />
+                </svg>
+              </div>
+              <p class={clsx(section4Styles.des, section4Styles.fourth)}>
+                ГИБКАЯ СИСТЕМА ОПЛАТЫ
+              </p>
+            </div>
+            <div class={section4Styles.linesEight}>
+              <div class={section4Styles.lineThirdteen}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none">
+                  <line x1="0.25" y1="5.03462e-08" x2="0.249994" y2="28" stroke="black" stroke-width="0.5"/>
+                  <line x1="2.18557e-08" y1="27.75" x2="22" y2="27.75" stroke="black" stroke-width="0.5"/>
+                </svg>
+              </div>
+              <div class={section4Styles.lastdes}>
+                <h1 class={clsx(section4Styles.main, section4Styles.fifth)}>
+                  05
+                </h1>
+                <p class={clsx(section4Styles.des, section4Styles.five)}>
+                  БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
+                </p>
               </div>
             </div>
           </div>
