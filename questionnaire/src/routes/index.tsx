@@ -33,18 +33,18 @@ export default function Home() {
       <Navbar />
       <Section1 />
       <Section2 />
-      {/*<Section3 />*/}
-      {/*<Section4 />*/}
-      {/*<Section5 />*/}
-      {/*<Section6 />*/}
-      {/*<Section7 />*/}
-      {/*<Section8 />*/}
-      {/*<Section9 />*/}
-      {/*<Accordion />*/}
-      {/*<Section10 />*/}
-      {/*<Section11 />*/}
-      {/*<Map />*/}
-      {/*<Contacts />*/}
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
+      <Accordion />
+      <Section10 />
+      <Section11 />
+      <Map />
+      <Contacts />
     </>
   )
 }
@@ -204,9 +204,7 @@ function Section3() {
         <div class={section3Styles.containerSection}>
           <div class={section3Styles.containerDesktop}>
             <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
-              <div class={clsx(section3Styles.text, section3Styles.textMain)}>
-                <p>5 вопросов о вашем доме</p>
-              </div>
+                <h1 class={section3Styles.textMain}>5 вопросов о вашем доме</h1>
               <button class={section3Styles.buttonStart}>
                 <span class={section3Styles.textButton}>начать</span>
               </button>

@@ -3,6 +3,7 @@
 .containerMain{
   display: flex;
   width: 100%;
+  max-width: max(1728px);
 }
 
 .containerSection {
@@ -35,7 +36,7 @@
   margin-top: 94px;
   margin-left: 672px;
   display: flex;
-  width: 20vw;
+  width: 395px;
   height: 107px;
   padding: 10px;
   justify-content: center;
@@ -58,7 +59,7 @@
 .tableTextMain{
   color: #000;
   font-family: Mikro, serif;
-  font-size: 2.5vw;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -74,12 +75,36 @@
 .tableText{
   color: #000;
   font-family: Mikro, serif;
-  font-size: 1.6666666666666667vw;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
   list-style-type: disc;
+}
+
+@include xlx{
+  .textMain{
+    font-size: 100px;
+  }
+}
+
+@include xl{
+  .textMain{
+    font-size: 90px;
+  }
+}
+
+@include l{
+
+}
+
+@include lg{
+
+}
+
+@include md{
+
 }
 
 @include sm{

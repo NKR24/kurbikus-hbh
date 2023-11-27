@@ -34,4 +34,8 @@
   }
 }
 
-
+@mixin xlx {
+  @media (min-width: 1715px) {
+    @content;
+  }
+}
