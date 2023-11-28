@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Title>Опросник</Title>
       <Navbar />
-      <Section1 />
+      {/*<Section1 />*/}
       <Section2 />
       <Section3 />
       <Section4 />
@@ -48,6 +48,7 @@ export default function Home() {
     </>
   )
 }
+
 
 function Section1() {
   return (
@@ -146,6 +147,7 @@ function Section1() {
   )
 }
 
+
 function Section2() {
   return (
     <>
@@ -204,7 +206,7 @@ function Section3() {
         <div class={section3Styles.containerSection}>
           <div class={section3Styles.containerDesktop}>
             <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
-                <h1 class={section3Styles.textMain}>5 вопросов о вашем доме</h1>
+              <h1 class={section3Styles.textMain}>5 вопросов о вашем доме</h1>
               <button class={section3Styles.buttonStart}>
                 <span class={section3Styles.textButton}>начать</span>
               </button>
