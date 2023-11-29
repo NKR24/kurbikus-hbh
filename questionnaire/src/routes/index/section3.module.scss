@@ -1,5 +1,11 @@
 @import "../../utils";
 
+@include xxl{
+  .containerMain{
+    margin: 0 auto;
+  }
+}
+
 .containerMain{
   display: flex;
   width: 100%;
@@ -83,16 +89,8 @@
   list-style-type: disc;
 }
 
-@include xlx{
-  .textMain{
-    font-size: 100px;
-  }
-}
-
 @include xl{
-  .textMain{
-    font-size: 90px;
-  }
+
 }
 
 @include l{
@@ -108,6 +106,10 @@
 }
 
 @include sm{
+
+}
+
+@include s{
   .containerMain{
     display: flex;
     width: 100%;
@@ -212,6 +214,5 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-
   }
 }

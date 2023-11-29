@@ -165,7 +165,31 @@
   text-transform: lowercase;
 }
 
-@include sm{
+@include xxl {
+
+}
+
+@include xl {
+
+}
+
+@include l {
+
+}
+
+@include lg {
+
+}
+
+@include md {
+
+}
+
+@include sm {
+
+}
+
+@include s{
   .containerMain{
     width: 100%;
   }

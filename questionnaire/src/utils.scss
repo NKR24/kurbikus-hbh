@@ -1,3 +1,9 @@
+@mixin s {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
 @mixin sm {
   @media (max-width: 640px) {
     @content;
@@ -34,8 +40,3 @@
   }
 }
 
-@mixin xlx {
-  @media (min-width: 1715px) {
-    @content;
-  }
-}

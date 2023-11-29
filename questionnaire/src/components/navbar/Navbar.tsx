@@ -7,7 +7,7 @@ export default function Navbar() {
   const state = createNavbarState()
 
   return (
-    <div class="container">
+    <div class="container lg: m-auto">
       <nav
         class="
           flex 
