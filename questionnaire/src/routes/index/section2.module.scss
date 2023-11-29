@@ -95,7 +95,31 @@
   margin-top: 17.48px;
 }
 
+@include xxl{
+
+}
+
+@include xl{
+
+}
+
+@include l{
+
+}
+
+@include lg{
+
+}
+
+@include md{
+
+}
+
 @include sm {
+
+}
+
+@include s{
   .firstText {
     padding-left: 22px;
     padding-top: 18px;

@@ -1,14 +1,14 @@
 @import "../../utils";
 
-.containerMain{
-
+.containerMain {
+  width: 100%;
 }
 
-.containerSection{
+.containerSection {
   margin-bottom: 250px;
 }
 
-.textMain{
+.textMain {
   margin-top: 150px;
   margin-left: 108px;
   width: 766px;
@@ -23,7 +23,7 @@
   text-transform: uppercase;
 }
 
-.itemMain{
+.itemMain {
   width: 462px;
   color: #000;
   font-family: Mikro, serif;
@@ -34,52 +34,76 @@
   text-transform: lowercase;
 }
 
-.OneHalf{
+.OneHalf {
   margin-top: 66px;
   margin-left: 106px;
 }
 
-.OneHalfTwo{
+.OneHalfTwo {
   width: 462px;
   flex-shrink: 0;
   margin-left: 106px;
 }
 
-.OneHalfThree{
+.OneHalfThree {
   width: 462px;
   flex-shrink: 0;
   margin-left: 106px;
 }
 
-.part{
+.part {
   width: 1728px;
   height: 538px;
   background: url("../../assets/img/lines-10.svg") no-repeat;
 }
 
 
-.tableOne{
+.tableOne {
   display: flex;
 }
 
-.Two{
+.Two {
   margin-top: 27px;
   margin-left: 197px;
 }
 
-.tableTwo{
+.tableTwo {
   margin-top: 187px;
   display: flex;
   margin-left: 497px;
 }
 
-.Four{
+.Four {
   margin-left: 186px;
   margin-top: 50px;
 }
 
-@include sm{
-  .containerSection{
+@include xxl {
+
+}
+
+@include xl {
+
+}
+
+@include l {
+
+}
+
+@include lg {
+
+}
+
+@include md {
+
+}
+
+@include sm {
+
+}
+
+@include s {
+  .containerSection {
     display: none;
   }
 }

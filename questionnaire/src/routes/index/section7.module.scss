@@ -45,7 +45,7 @@
 
 .interviewText {
   color: #fff;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 800;
@@ -57,7 +57,7 @@
 
 .textReviews {
   color: #dedede;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -89,15 +89,12 @@
 }
 
 .reviews {
-  margin-top: 40px;
-  margin-bottom: 17px;
-  margin-left: 103px;
-  margin-right: 111px;
+  margin: 40px 111px 17px 103px;
 }
 
 .recallTime {
   color: #dedede;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -107,7 +104,7 @@
 
 .buttonExpand {
   color: #faad67;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -117,7 +114,7 @@
 
 .review, .review2 {
   color: #dedede;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -139,15 +136,12 @@
   gap: 10px;
   flex-shrink: 0;
   border: 1px solid #dedede;
-  margin-top: 77px;
-  margin-bottom: 91px;
-  margin-left: 638px;
-  margin-right: 629px;
+  margin: 77px 629px 91px 638px;
 }
 
 .textDownload {
   color: #dedede;
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +149,31 @@
   text-transform: lowercase;
 }
 
+@include xxl {
+
+}
+
+@include xl {
+
+}
+
+@include l {
+
+}
+
+@include lg {
+
+}
+
+@include md {
+
+}
+
 @include sm {
+
+}
+
+@include s {
   .Section7 {
     width: 100%;
     height: 945px;
@@ -205,7 +223,7 @@
 
   .interviewText {
     color: #dedede;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -218,7 +236,7 @@
 
   .textReviews {
     color: #dedede;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -253,10 +271,7 @@
   .reviews {
     display: flex;
     flex-direction: column;
-    margin-top: 27px;
-    margin-left: 22px;
-    margin-right: 20px;
-    margin-bottom: 19px;
+    margin: 27px 20px 19px 22px;
     width: 388px;
     height: 131px;
     flex-shrink: 0;
@@ -264,7 +279,7 @@
 
   .recallTime {
     color: #dedede;
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -274,7 +289,7 @@
 
   .review, .reviewMobile {
     color: #dedede;
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -299,15 +314,12 @@
     height: 41px;
     flex-shrink: 0;
     border: 0.5px solid #d9d9d9;
-    margin-top: 28px;
-    margin-bottom: 28px;
-    margin-left: 110px;
-    margin-right: 109px;
+    margin: 28px 109px 28px 110px;
   }
 
   .textDownload {
     color: #fff;
-    font-family: Mikro;
+    font-family: Mikro, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
