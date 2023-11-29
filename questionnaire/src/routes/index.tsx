@@ -32,7 +32,7 @@ export default function Home() {
       <Title>Опросник</Title>
       <Navbar />
       <Section1 />
-      {/*<Section2 />
+      <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
@@ -44,7 +44,7 @@ export default function Home() {
       <Section10 />
       <Section11 />
       <Map />
-      <Contacts />*/}
+      <Contacts />
     </>
   )
 }
@@ -60,7 +60,7 @@ function Section1() {
                 <p>БарнХаус</p>
               </div>
               <div class={clsx(section1Styles.text, section1Styles.text1small)}>
-                <p>В котором можно жить даже на крайнем севере</p>
+                <p>В котором можно жить даже на крайнем северe</p>
               </div>
             </div>
             <div class={clsx(section1Styles.box, section1Styles.box2)}>
