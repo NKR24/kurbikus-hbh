@@ -112,7 +112,78 @@
 }
 
 @include md{
+  .firstText {
+    padding-left: 53px;
+    padding-top: 22px;
+    padding-bottom: 31px;
+    padding-right: 85px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 
+  .thirdBlock {
+    order: 1;
+  }
+
+  .fourthBlock {
+    order: 2;
+  }
+
+  .textShale, .blackRectangle {
+    display: none;
+  }
+
+  .overlayImage {
+    width: 57.298px;
+    height: 43.955px;
+    right: 0%;
+    margin-top: 28px;
+    margin-right: 76px;
+  }
+
+  .imageHome {
+    height: 306px;
+    width: 477px;
+    flex-shrink: 0;
+  }
+
+  .text {
+    margin-left: 42px;
+    margin-top: 17px;
+    font-family: Mikro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .textOverlay {
+    top: -5%;
+    margin-left: 50px;
+    margin-top: 22px;
+    
+  }
+
+  .section {
+    height: 1870px;
+    width: 100%;
+  }
+
+  .blocks {
+    grid-template-columns: 1fr;
+    grid-row-gap: 35px;
+    margin-left: 77px;
+    margin-right: 86px;
+  }
+
+  .block1 {
+    height: 398px;
+    width: 100%;
+    max-width: 477px;
+  }
 }
 
 @include sm {
@@ -143,8 +214,8 @@
     width: 57.298px;
     height: 43.955px;
     right: 0%;
-    margin-top: 23px;
-    margin-right: 61.7px;
+    margin-top: 28px;
+    margin-right: 76px;
   }
 
   .imageHome {
@@ -165,9 +236,10 @@
   }
 
   .textOverlay {
-    top: -11%;
-    margin-left: 41px;
+    top: -5%;
+    margin-left: 50px;
     margin-top: 22px;
+    
   }
 
   .section {
