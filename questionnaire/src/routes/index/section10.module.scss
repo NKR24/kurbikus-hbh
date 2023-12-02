@@ -2,10 +2,8 @@
 
 .containerMain {
   width: 100%;
-}
-
-.containerSection {
-  margin-bottom: 250px;
+  padding-bottom: 250px;
+  max-width: max(1728px);
 }
 
 .textMain {
@@ -79,7 +77,9 @@
 }
 
 @include xxl {
-
+  .containerMain{
+    margin: 0 auto;
+  }
 }
 
 @include xl {

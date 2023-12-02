@@ -2,6 +2,9 @@
 
 .containerMain {
   width: 100%;
+  padding-top: 80px;
+  padding-left: 101px;
+  max-width: max(1728px);
 }
 
 .containerSection {
@@ -10,8 +13,6 @@
 }
 
 .textMain {
-  margin-top: 80px;
-  margin-left: 101px;
   margin-bottom: 75px;
   width: 766px;
   height: 123px;
@@ -31,7 +32,7 @@
 }
 
 .table {
-  margin-left: 103px;
+  margin-left: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 127px;
@@ -151,7 +152,9 @@
 }
 
 @include xxl {
-
+  .containerMain{
+    margin: 0 auto;
+  }
 }
 
 @include xl {
