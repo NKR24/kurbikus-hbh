@@ -1,7 +1,17 @@
 @import "../../utils";
 
+@include xxl{
+  .containerMain{
+    margin: 0 auto;
+  }
+}
+
 .containerMain {
   width: 100%;
+  padding-left: 159px;
+  padding-right: 64px;
+  max-width: max(1728px);
+
 }
 
 .containerDesktop {
@@ -17,7 +27,7 @@
 }
 
 .mainText {
-  margin-left: 537px;
+  margin-left: 378px;
   width: 715px;
   height: 125px;
   flex-shrink: 0;
@@ -32,8 +42,6 @@
 
 .boxSecond {
   margin-top: 90px;
-  margin-left: 159px;
-  margin-right: 64px;
 }
 
 .partOne {

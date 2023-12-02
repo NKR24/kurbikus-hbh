@@ -1,11 +1,18 @@
 @import "../../utils";
 
+@include xxl{
+  .containerMain{
+    margin: 0 auto;
+  }
+}
+
 .containerMain{
   width: 100%;
+  padding: 150px 482px 114px 496px;
+  max-width: max(1728px);
 }
 
 .containerSection{
-  margin: 150px 482px 114px 496px;
   border: 2px solid black;
   height: 700px;
   flex-shrink: 0;

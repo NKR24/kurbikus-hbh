@@ -42,7 +42,7 @@
   width: 37.494px;
   height: 37.494px;
   flex-shrink: 0;
-  margin-left: 300px;
+  margin-left: 18%;
   transition: transform 0.6s ease;
 }
 
@@ -51,7 +51,7 @@
   width: 37.494px;
   height: 37.494px;
   flex-shrink: 0;
-  margin-left: 300px;
+  margin-left: 18%;
   transform: rotate(45deg);
 }
 
@@ -69,31 +69,37 @@
   flex-direction: column;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .boxTwo{
   padding-bottom: 20px;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .boxThree{
   padding-bottom: 20px;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .boxFour{
   padding-bottom: 20px;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .boxFive{
   padding-bottom: 20px;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .boxSix{
   padding-bottom: 20px;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 @include sm{
