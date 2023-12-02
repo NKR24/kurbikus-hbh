@@ -1,7 +1,13 @@
 @import "../../utils";
 
+.containerMain{
+  width: 100%;
+  background: #3e3e3e;
+}
+
 .Section5 {
   width: 100%;
+  max-width: max(1728px);
   height: 1051px;
   flex-shrink: 0;
   background: #3e3e3e;

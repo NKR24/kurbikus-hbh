@@ -196,47 +196,53 @@ function Section1() {
 function Section2() {
   return (
     <>
-      <div class={clsx(section2Styles.section, section2Styles.fonts)}>
-        <div class={section2Styles.firstText}>каталоги домов с ценами</div>
-        <div class={section2Styles.blocks}>
-          <div class={clsx(section2Styles.block1, section2Styles.relative)}>
-            <img src={home1} alt="home1" class={section2Styles.imageHome} />
-            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>h1</div>
-            <h1 class={section2Styles.text}>
-              Площадь: от 90 м² <br />
-              3 спальни, 1 санузел От <br />4 300 000 руб.
-            </h1>
-          </div>
-          <div class={clsx(section2Styles.block1, section2Styles.thirdBlock)}>
-            <img src={home3} alt="home3" class={section2Styles.imageHome} />
-            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>h3</div>
-            <h1 class={section2Styles.text}>
-              Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />4 000 000
-              руб.
-            </h1>
-          </div>
-          <div class={clsx(section2Styles.block1, section2Styles.thirdBlock1)}>
-            <img src={home2} alt="home2" class={section2Styles.imageHome} />
-            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>h2</div>
-            <div class={section2Styles.blackRectangle}>
-              <div class={section2Styles.textShale}>шале</div>
+      <div class={section2Styles.containerMain}>
+        <div class={clsx(section2Styles.section, section2Styles.fonts)}>
+          <div class={section2Styles.firstText}>каталоги домов с ценами</div>
+          <div class={section2Styles.blocks}>
+            <div class={clsx(section2Styles.block1, section2Styles.relative)}>
+              <img src={home1} alt="home1" class={section2Styles.imageHome} />
+              <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+              <div class={section2Styles.textOverlay}>h1</div>
+              <h1 class={section2Styles.text}>
+                Площадь: от 90 м² <br />
+                3 спальни, 1 санузел От <br />4 300 000 руб.
+              </h1>
             </div>
-            <h1 class={section2Styles.text}>
-              Площадь: от 90 м²
-              <br /> 3 спальни, 1 санузел От <br /> 4 600 000 руб.
-            </h1>
-          </div>
-          <div class={clsx(section2Styles.block1, section2Styles.fourthBlock)}>
-            <img src={home4} alt="home4" class={section2Styles.imageHome} />
-            <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
-            <div class={section2Styles.textOverlay}>h4</div>
-            <h1 class={section2Styles.text}>
-              Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />3 900 000
-              руб.
-            </h1>
+            <div class={clsx(section2Styles.block1, section2Styles.thirdBlock)}>
+              <img src={home3} alt="home3" class={section2Styles.imageHome} />
+              <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+              <div class={section2Styles.textOverlay}>h3</div>
+              <h1 class={section2Styles.text}>
+                Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />4 000 000
+                руб.
+              </h1>
+            </div>
+            <div
+              class={clsx(section2Styles.block1, section2Styles.thirdBlock1)}
+            >
+              <img src={home2} alt="home2" class={section2Styles.imageHome} />
+              <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+              <div class={section2Styles.textOverlay}>h2</div>
+              <div class={section2Styles.blackRectangle}>
+                <div class={section2Styles.textShale}>шале</div>
+              </div>
+              <h1 class={section2Styles.text}>
+                Площадь: от 90 м²
+                <br /> 3 спальни, 1 санузел От <br /> 4 600 000 руб.
+              </h1>
+            </div>
+            <div
+              class={clsx(section2Styles.block1, section2Styles.fourthBlock)}
+            >
+              <img src={home4} alt="home4" class={section2Styles.imageHome} />
+              <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
+              <div class={section2Styles.textOverlay}>h4</div>
+              <h1 class={section2Styles.text}>
+                Площадь: от 110 м² <br />3 спальни, 1 санузел От <br />3 900 000
+                руб.
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -676,51 +682,55 @@ function Section4() {
 function Section5() {
   return (
     <>
-      <div class={section5Styles.Section5}>
-        <img
-          src={s5image}
-          alt="foundation"
-          class={section5Styles.foundationImage}
-        />
-        <img
-          src={s5imageForMobile}
-          alt="foundation"
-          class={section5Styles.foundationImage2}
-        />
-        <div class={section5Styles.sevenLines}>
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
-          <div class={section5Styles.line} />
+      <div class={section5Styles.containerMain}>
+        <div class={section5Styles.Section5}>
+          <img
+            src={s5image}
+            alt="foundation"
+            class={section5Styles.foundationImage}
+          />
+          <img
+            src={s5imageForMobile}
+            alt="foundation"
+            class={section5Styles.foundationImage2}
+          />
+          <div class={section5Styles.sevenLines}>
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+            <div class={section5Styles.line} />
+          </div>
+          <p class={section5Styles.foundationText}>фундамент</p>
+          <ol class={section5Styles.numberedList}>
+            <li>
+              Бетонные плиты (собственного производства) устанавливаются на
+              длинные ригели из гидротехнического бетона со спец армированием.
+            </li>
+            <li>
+              Конструкцию держат монолитные бетонные сваи на титановых крепежах.
+              Данный сплав используется для строения космических аппаратов.
+            </li>
+            <li>
+              На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2
+              слоя теплоизоляционного материала (экструдированный
+              пенополистерол).
+            </li>
+            <li>
+              {" "}
+              Затем производится полусухая стяжка на немецком оборудовании. В
+              результате создаётся идеально ровное предфинальное покрытие пола.
+              На него кладётся финальное половое покрытие.
+            </li>
+            <li>
+              Конструкция обладает высокой несущей способностью, большой
+              площадью опоры, что делает невозможным опрокидывание и провалы
+              грунта.
+            </li>
+          </ol>
         </div>
-        <p class={section5Styles.foundationText}>фундамент</p>
-        <ol class={section5Styles.numberedList}>
-          <li>
-            Бетонные плиты (собственного производства) устанавливаются на
-            длинные ригели из гидротехнического бетона со спец армированием.
-          </li>
-          <li>
-            Конструкцию держат монолитные бетонные сваи на титановых крепежах.
-            Данный сплав используется для строения космических аппаратов.
-          </li>
-          <li>
-            На бетонной плите, внутри деревянной обвязки шириной 150 мм, 2 слоя
-            теплоизоляционного материала (экструдированный пенополистерол).
-          </li>
-          <li>
-            {" "}
-            Затем производится полусухая стяжка на немецком оборудовании. В
-            результате создаётся идеально ровное предфинальное покрытие пола. На
-            него кладётся финальное половое покрытие.
-          </li>
-          <li>
-            Конструкция обладает высокой несущей способностью, большой площадью
-            опоры, что делает невозможным опрокидывание и провалы грунта.
-          </li>
-        </ol>
       </div>
     </>
   )

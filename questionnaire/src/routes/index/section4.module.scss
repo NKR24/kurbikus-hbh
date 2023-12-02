@@ -1,10 +1,5 @@
 @import "../../utils";
 
-@include xxl{
-  .containerMain{
-    margin: 0 auto;
-  }
-}
 
 .containerMain {
   width: 100%;
@@ -161,33 +156,37 @@
 
 }
 
-@include xxl{
+@include xxl {
+  .containerMain{
+    margin: 0 auto;
+  }
+}
+
+@include xl {
 
 }
 
-@include xl{
+@include l {
 
 }
 
-@include l{
+@include lg {
 
 }
 
-@include lg{
+@include md {
 
 }
 
-@include md{
-
-}
-
-@include sm{
+@include sm {
 
 }
 
 @include s {
   .containerMain {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .containerDesktop {
@@ -356,7 +355,7 @@
     flex-shrink: 0;
   }
 
-  .four{
+  .four {
     margin-right: 6px;
   }
 
@@ -366,11 +365,11 @@
     margin-bottom: 29px;
   }
 
-  .fifth{
+  .fifth {
     margin-left: 9px;
   }
 
-  .five{
+  .five {
     width: 211px;
     height: 38px;
     flex-shrink: 0;
