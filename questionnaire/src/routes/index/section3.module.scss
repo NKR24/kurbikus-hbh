@@ -106,7 +106,116 @@
 }
 
 @include sm{
+  .containerMain{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
+  .containerSection{
+    margin-left: 53px;
+    margin-right: 74px;
+    margin-top: 25px;
+    width: 640px;
+    height: 477px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .box{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .boxMobileFirst{
+    padding-left: 0;
+  }
+
+  .textMainMob{
+    width: 513px;
+    height: 112px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .buttonStartMob{
+    margin-left: 159px;
+    width: 217px;
+    height: 82px;
+    flex-shrink: 0;
+    background: #000;
+  }
+
+  .textButtonMob{
+    padding-top: 26px;
+    margin-bottom: 27px;
+    margin-left: 68px;
+    margin-right: 69px;
+    width: 80px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 22.115px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .boxMobileSecond{
+    margin-left: 45px;
+    width: 445px;
+    height: 173px;
+    flex-shrink: 0;
+    margin-top: 35px;
+    border: 0.5px solid #000;
+  }
+
+  .tableMob{
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
+
+  .tableTextMainMob{
+    padding-left: 36px;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableTextMob{
+    padding-left: 58px;
+    list-style-type: disc;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
 }
 
 @include s{
