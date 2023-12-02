@@ -25,6 +25,7 @@ import s5image from "../assets/img/Section5image.jpg"
 import s5imageForMobile from "..//assets/img/Section5imageForMobile.jpg"
 import s7image from "../assets/img/Section7image.jpg"
 import s7imageForMobile from "..//assets/img/Section7imageForMobile.jpg"
+import { createSignal, Show } from "solid-js"
 
 export default function Home() {
   return (
@@ -736,150 +737,210 @@ function Section5() {
   )
 }
 
+enum HouseDemonstrationTab {
+  Houses,
+  Interior,
+  Construction,
+}
+
 function Section6() {
+  const [tab, setTab] = createSignal(HouseDemonstrationTab.Houses)
+
+  function handleHousesClick() {
+    setTab(HouseDemonstrationTab.Houses)
+  }
+
+  function handleInteriorClick() {
+    setTab(HouseDemonstrationTab.Interior)
+  }
+
+  function handleConstructionClick() {
+    setTab(HouseDemonstrationTab.Construction)
+  }
+
   return (
     <>
       <div class={section6Styles.containerMain}>
         <div class={section6Styles.containerSection}>
           <div class={section6Styles.containerDesktop}>
             <div class={section6Styles.partFirst}>
-              <div class={clsx(section6Styles.box, section6Styles.boxFirst)}>
-                <p class={clsx(section6Styles.text, section6Styles.textFirst)}>
-                  наши дома
-                </p>
-              </div>
-              <div class={clsx(section6Styles.box, section6Styles.boxSecond)}>
-                <p class={clsx(section6Styles.text, section6Styles.textSecond)}>
-                  интерьер
-                </p>
-              </div>
-              <div class={clsx(section6Styles.box, section6Styles.boxThird)}>
-                <p class={clsx(section6Styles.text, section6Styles.textThird)}>
-                  стройка
-                </p>
-              </div>
+              <button
+                onClick={handleHousesClick}
+                class={clsx(section6Styles.houseTab, {
+                  [section6Styles.houseTabSelected]:
+                    tab() === HouseDemonstrationTab.Houses,
+                })}
+              >
+                <span class={clsx(section6Styles.text)}>наши дома</span>
+              </button>
+              <button
+                onClick={handleInteriorClick}
+                class={clsx(section6Styles.houseTab, {
+                  [section6Styles.houseTabSelected]:
+                    tab() === HouseDemonstrationTab.Interior,
+                })}
+              >
+                <span class={clsx(section6Styles.text)}>интерьер</span>
+              </button>
+              <button
+                onClick={handleConstructionClick}
+                class={clsx(section6Styles.houseTab, {
+                  [section6Styles.houseTabSelected]:
+                    tab() === HouseDemonstrationTab.Construction,
+                })}
+              >
+                <span class={clsx(section6Styles.text)}>стройка</span>
+              </button>
             </div>
-            <div class={section6Styles.partSecond}>
-              <div
-                class={clsx(section6Styles.child, section6Styles.OneThreeFive)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
+            <Show when={tab() === HouseDemonstrationTab.Houses}>
+              <div class={section6Styles.partSecond}>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.OneThreeFive,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div class={clsx(section6Styles.child, section6Styles.Second)}>
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.OneThreeFive,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.FourSixEight,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.OneThreeFive,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.FourSixEight,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div class={clsx(section6Styles.target, section6Styles.Seven)}>
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.child,
+                    section6Styles.FourSixEight,
+                  )}
+                >
+                  <p class={section6Styles.textLow}>наши дома</p>
+                  <p class={section6Styles.textLarge}>дом по проекту h1</p>
+                </div>
               </div>
-              <div class={clsx(section6Styles.child, section6Styles.Second)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div
-                class={clsx(section6Styles.child, section6Styles.OneThreeFive)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div
-                class={clsx(section6Styles.child, section6Styles.FourSixEight)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div
-                class={clsx(section6Styles.child, section6Styles.OneThreeFive)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div
-                class={clsx(section6Styles.child, section6Styles.FourSixEight)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div class={clsx(section6Styles.target, section6Styles.Seven)}>
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-              <div
-                class={clsx(section6Styles.child, section6Styles.FourSixEight)}
-              >
-                <p class={section6Styles.textLow}>наши дома</p>
-                <p class={section6Styles.textLarge}>дом по проекту h1</p>
-              </div>
-            </div>
+            </Show>
           </div>
           <div class={section6Styles.containerMobile}>
             <div class={section6Styles.mobileOne}>
-              <div
-                class={clsx(section6Styles.boxMobile, section6Styles.mobFirst)}
+              <button
+                class={clsx(section6Styles.houseTabMobile, {
+                  [section6Styles.houseTabMobileSelected]:
+                    tab() === HouseDemonstrationTab.Houses,
+                })}
+                onClick={handleHousesClick}
               >
-                <p
-                  class={clsx(
-                    section6Styles.textMobile,
-                    section6Styles.textMobFirst,
-                  )}
-                >
-                  наши дома
-                </p>
-              </div>
-              <div
-                class={clsx(section6Styles.boxMobile, section6Styles.mobSecond)}
+                <span class={clsx(section6Styles.textMobile)}>наши дома</span>
+              </button>
+              <button
+                class={clsx(section6Styles.houseTabMobile, {
+                  [section6Styles.houseTabMobileSelected]:
+                    tab() === HouseDemonstrationTab.Interior,
+                })}
+                onClick={handleInteriorClick}
               >
-                <p
-                  class={clsx(
-                    section6Styles.textMobile,
-                    section6Styles.textMobSecond,
-                  )}
-                >
-                  интерьер
-                </p>
-              </div>
-              <div
-                class={clsx(section6Styles.boxMobile, section6Styles.mobThird)}
+                <span class={clsx(section6Styles.textMobile)}>интерьер</span>
+              </button>
+              <button
+                class={clsx(section6Styles.houseTabMobile, {
+                  [section6Styles.houseTabMobileSelected]:
+                    tab() === HouseDemonstrationTab.Construction,
+                })}
+                onClick={handleConstructionClick}
               >
-                <p
-                  class={clsx(
-                    section6Styles.textMobile,
-                    section6Styles.textMobThird,
-                  )}
-                >
-                  стройка
-                </p>
-              </div>
+                <span class={clsx(section6Styles.textMobile)}>стройка</span>
+              </button>
             </div>
-            <div class={section6Styles.mobileTwo}>
-              <div
-                class={clsx(section6Styles.childMobile, section6Styles.mobOne)}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
+            <Show when={tab() === HouseDemonstrationTab.Houses}>
+              <div class={section6Styles.mobileTwo}>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobOne,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobTwo,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobThree,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobFour,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobFive,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
+                <div
+                  class={clsx(
+                    section6Styles.childMobile,
+                    section6Styles.mobSix,
+                  )}
+                >
+                  <p class={section6Styles.textLowMobile}>наши дома</p>
+                </div>
               </div>
-              <div
-                class={clsx(section6Styles.childMobile, section6Styles.mobTwo)}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div
-                class={clsx(
-                  section6Styles.childMobile,
-                  section6Styles.mobThree,
-                )}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div
-                class={clsx(section6Styles.childMobile, section6Styles.mobFour)}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div
-                class={clsx(section6Styles.childMobile, section6Styles.mobFive)}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-              <div
-                class={clsx(section6Styles.childMobile, section6Styles.mobSix)}
-              >
-                <p class={section6Styles.textLowMobile}>наши дома</p>
-              </div>
-            </div>
+            </Show>
           </div>
         </div>
       </div>

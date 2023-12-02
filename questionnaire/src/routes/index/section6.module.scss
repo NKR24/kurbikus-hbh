@@ -1,7 +1,7 @@
 @import "../../utils";
 
-@include xxl{
-  .containerMain{
+@include xxl {
+  .containerMain {
     margin: 0 auto;
   }
 }
@@ -20,78 +20,61 @@
   overflow: hidden;
 }
 
-.containerDesktop{
+.containerDesktop {
   display: flex;
   flex-direction: column;
 }
 
-.containerMobile{
+.containerMobile {
   display: none;
 }
 
-.partFirst{
+.partFirst {
   display: flex;
   flex-direction: row;
   padding-right: 522px;
 }
 
-.boxFirst{
+.boxFirst {
   background: black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.box{
+.houseTabSelected {
+  background: black;
+  color: white;
+}
+
+
+.houseTab {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 331px;
   height: 80px;
   left: 103px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
 }
 
-.boxSecond{
+.boxSecond {
   border-right: 1px solid black;
 }
 
-.boxThird{
+.boxThird {
   border-right: 1px solid black;
 }
 
-.text{
+.text {
   font-family: Mikro, serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0;
   text-align: center;
-  margin-top: 24px;
 }
 
-.textFirst{
-  color: #dedede;
-  width: 144px;
-  height: 33px;
-  top: 5318px;
-  left: 193px;
-  margin-left: 90px;
-
-}
-
-.textSecond{
-  width: 126px;
-  height: 33px;
-  top: 5318px;
-  left: 530px;
-  margin-left: 96px;
-}
-
-.textThird{
-  width: 110px;
-  height: 33px;
-  top: 5318px;
-  left: 873px;
-  margin-left: 109px;
-}
-
-.partSecond{
+.partSecond {
   margin-top: 34px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -99,13 +82,13 @@
 }
 
 
-.child{
+.child {
   width: 481px;
   height: 270px;
   flex-shrink: 0;
 }
 
-.target{
+.target {
   margin-right: 7px;
   height: 270px;
   flex-shrink: 0;
@@ -113,35 +96,35 @@
   grid-column: span 2;
 }
 
-.OneThreeFive{
+.OneThreeFive {
   background-image: url("../../assets/img/section6ImagesDesktop/home-1-3-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.Second{
+.Second {
   background-image: url("../../assets/img/section6ImagesDesktop/home-second.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.FourSixEight{
+.FourSixEight {
   background-image: url("../../assets/img/section6ImagesDesktop/home-4-6-8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.Seven{
+.Seven {
   background-image: url("../../assets/img/section6ImagesDesktop/home-7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.textLow{
+.textLow {
   margin-top: 23px;
   margin-left: 16px;
   width: 162px;
@@ -156,7 +139,7 @@
   text-transform: lowercase;
 }
 
-.textLarge{
+.textLarge {
   margin-left: 16px;
   margin-top: 178px;
   width: 314px;
@@ -191,55 +174,50 @@
 
 }
 
-@include s{
-  .containerMain{
+@include s {
+  .containerMain {
     width: 100%;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  .containerSection{
+  .containerSection {
     margin: 31px 19px 27px 23px;
   }
 
-  .containerMobile{
+  .containerMobile {
     display: flex;
     overflow: hidden;
     flex-direction: column;
   }
 
-  .containerDesktop{
+  .containerDesktop {
     display: none;
   }
 
-  .mobileOne{
+  .mobileOne {
     display: flex;
     flex-direction: row;
     overflow: hidden;
   }
 
-  .boxMobile{
+  .houseTabMobile {
     width: 129px;
     height: 59px;
     flex-shrink: 0;
-    border-bottom: 0.5px solid black;
-    border-top: 0.5px solid black;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .mobFirst{
-    border-left: 0.5px solid black;
-  }
-
-  .mobSecond{
+  .houseTabMobileSelected{
     background: black;
+    color: white;
   }
 
-  .mobThird{
-    border-right: 0.5px solid black;
-  }
-
-  .textMobile{
+  .textMobile {
     margin-top: 21px;
     margin-bottom: 20px;
     font-family: Mikro, serif;
@@ -250,7 +228,7 @@
     text-transform: lowercase;
   }
 
-  .textLowMobile{
+  .textLowMobile {
     margin-top: 7px;
     margin-left: 8px;
     color: #FFF;
@@ -262,21 +240,7 @@
     text-transform: lowercase;
   }
 
-  .textMobFirst{
-    color: #000;
-    margin-left: 25px;
-  }
-
-  .textMobSecond{
-    color: #dedede;
-    margin-left: 30px;
-  }
-
-  .textMobThird{
-    margin-left: 35px;
-  }
-
-  .mobileTwo{
+  .mobileTwo {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 3fr 3fr;
@@ -285,48 +249,48 @@
   }
 
 
-  .childMobile{
+  .childMobile {
     width: 192px;
     height: 126px;
     flex-shrink: 0;
   }
 
-  .mobOne{
+  .mobOne {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-one.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .mobTwo{
+  .mobTwo {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-two.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .mobThree{
+  .mobThree {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-three.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .mobFour{
+  .mobFour {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-four.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .mobFive{
+  .mobFive {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-five.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .mobSix{
+  .mobSix {
     background: url("../../assets/img/section6ImagesMobile/mobile-home-six.jpg");
     background-size: cover;
     background-repeat: no-repeat;

@@ -6,7 +6,6 @@
   padding-left: 159px;
   padding-right: 64px;
   max-width: max(1728px);
-
 }
 
 .containerDesktop {
@@ -157,7 +156,7 @@
 }
 
 @include xxl {
-  .containerMain{
+  .containerMain {
     margin: 0 auto;
   }
 }
