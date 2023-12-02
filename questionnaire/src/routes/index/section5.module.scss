@@ -88,7 +88,7 @@
 @include sm {
   .Section5 {
     width: 100%;
-    height: 744px;
+    height: 858px;
   }
 
   .foundationImage {
@@ -97,33 +97,32 @@
 
   .foundationImage2 {
     display: block;
-    width: 456px;
+    width: 638px;
     height: 260px;
     flex-shrink: 0;
-    margin-left: 19px;
     object-fit: cover;
     position: relative;
   }
 
   .sevenLines {
     display: grid;
-    grid-template-columns: repeat(7, 47px);
+    grid-template-columns: repeat(7, 62px);
     grid-gap: 0;
-    margin-left: 56px;
-    margin-right: 55px;
+    margin-left: 84px;
+    margin-right: 82px;
     position: absolute;
-    margin-top: 252px;
+    margin-top: 265px;
   }
 
   .line {
     display: block;
     height: 1px;
     background-color: #dedede;
-    margin-right: 14px;
+    margin-right: 22px;
   }
 
   .foundationText {
-    width: 320px;
+    width: 481px;
     height: 64px;
     flex-shrink: 0;
     color: #dedede;
@@ -133,28 +132,28 @@
     font-weight: 700;
     line-height: normal;
     text-transform: lowercase;
-    margin-left: 55px;
-    margin-top: 10px;
+    margin-left: 83px;
+    margin-top: 12px;
     position: static;
   }
 
   .numberedList {
-    width: 321px;
+    width: 482px;
     height: 365px;
     flex-shrink: 0;
     color: #dedede;
     leading-trim: both;
     text-edge: cap;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    margin-left: 73px;
+    margin-left: 105px;
     margin-top: 24px;
-    margin-right: 54px;
-    line-height: 1.2;
+    margin-right: 81px;
+    line-height: 1.4;
   }
 }
 
