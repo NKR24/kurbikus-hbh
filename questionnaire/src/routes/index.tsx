@@ -31,10 +31,10 @@ export default function Home() {
     <>
       <Title>Опросник</Title>
       <Navbar />
-      <Section1 />
-      <Section2 />
+     {/* <Section1 />*/}
+     {/* <Section2 />*/}
       <Section3 />
-      <Section4 />
+      {/*<Section4 />
       <Section5 />
       <Section6 />
       <Section7 />
@@ -44,7 +44,7 @@ export default function Home() {
       <Section10 />
       <Section11 />
       <Map />
-      <Contacts />
+      <Contacts />*/}
     </>
   )
 }
