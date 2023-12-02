@@ -66,7 +66,9 @@
 }
 
 @include xxl {
-
+  .Section5 {
+    margin: 0 auto;
+  }
 }
 
 @include xl {

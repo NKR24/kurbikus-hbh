@@ -96,7 +96,9 @@
 }
 
 @include xxl{
-
+  .section {
+    margin: 0 auto;
+  }
 }
 
 @include xl{

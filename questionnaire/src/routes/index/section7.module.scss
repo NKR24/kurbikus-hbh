@@ -150,7 +150,9 @@
 }
 
 @include xxl {
-
+  .Section7 {
+    margin: 0 auto;
+  }
 }
 
 @include xl {
