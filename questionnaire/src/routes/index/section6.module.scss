@@ -12,7 +12,7 @@
   max-width: max(1728px);
   padding-left: 103px;
   padding-top: 40px;
-  padding-bottom: 23px;
+  padding-bottom: 38px;
 }
 
 .containerSection {
@@ -74,11 +74,14 @@
   text-align: center;
 }
 
+/*Houses*/
+
 .partSecond {
   margin-top: 34px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  grid-column-gap: 29px;
+  grid-row-gap: 25px;
 }
 
 
@@ -89,7 +92,7 @@
 }
 
 .target {
-  margin-right: 7px;
+  margin-right: 4px;
   height: 270px;
   flex-shrink: 0;
   grid-row: span 2;
@@ -153,6 +156,165 @@
   line-height: normal;
   text-transform: lowercase;
 }
+
+/*Interior*/
+
+.table{
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 29px;
+  grid-row-gap: 25px;
+  margin-bottom: 25px;
+}
+
+.tableItem{
+  width: 481px;
+  height: 270px;
+}
+
+.textTable{
+  margin-top: 23px;
+  margin-left: 14px;
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.interiorFirst{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorSecond{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorThird{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorFourth{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorFifth{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorSixth{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorSeventh{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorEighth{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.interiorNinth{
+  background-image: url("../../assets/img/section6ImagesDesktop/interior/interior-9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*Construction*/
+
+.constructionFirst{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionSecond{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionThird{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionFourth{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionFifth{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionSixth{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionSeventh{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionEighth{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-8.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.constructionNinth{
+  background-image: url("../../assets/img/section6ImagesDesktop/constuction/construction-9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
 
 @include xl {
 
