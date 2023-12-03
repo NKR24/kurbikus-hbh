@@ -1,13 +1,18 @@
 @import "../../utils";
 
-.containerMain {
+.contacts {
   margin-top: 88px;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
+  height: auto;
+}
+
+.containerMain {
   display: flex;
   flex-direction: row;
   margin-left: 0;
   margin-right: 0;
+  max-width: max(1728px);
 }
 
 .boxSecond {
@@ -120,17 +125,29 @@
   text-transform: capitalize;
 }
 
+@include xxl {
+  .containerMain {
+    margin: 0 auto;
+  }
+}
+
 @include sm {
   .containerMain {
-    margin-top: 7px;
-    border-bottom: 0.5px solid black;
-    border-top: 0.5px solid black;
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
-    margin-right: 8px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contacts {
+    margin-top: 8px;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
     border-left: 0.5px solid black;
     border-right: 0.5px solid black;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 8px;
   }
 
   .boxSecond {
@@ -195,7 +212,7 @@
   }
 
   .phone {
-    margin-top: 9px;
+    margin-top: 4px;
   }
 
   .number {
