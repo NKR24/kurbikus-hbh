@@ -178,7 +178,9 @@
 }
 
 @include sm {
-
+ .containerDesktop{
+   display: none;
+ }
 }
 
 @include s {

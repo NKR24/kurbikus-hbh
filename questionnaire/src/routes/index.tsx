@@ -263,8 +263,8 @@ function Section3() {
                 <span class={section3Styles.textButton}>начать</span>
               </button>
               <div class={section3Styles.table}>
-                <p class={section3Styles.textTableMain}>Вы получите:</p>
-                <ol class={section3Styles.textTable}>
+                <p class={section3Styles.tableTextMain}>Вы получите:</p>
+                <ol class={section3Styles.tableText}>
                   <li>Подходящие проекты с ценой в PDF</li>
                   <li>Изменение комплектации и цены</li>
                   <li>Выбор цветов и покрытий</li>
