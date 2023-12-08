@@ -131,7 +131,141 @@
   }
 }
 
-@include sm {
+@include sm{
+  .containerMain {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contacts {
+    margin-top: 10.18px;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    height: auto;
+    margin-left: 21.82px;
+    margin-right: 18.91px;
+  }
+
+  .boxSecond {
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+  }
+
+  .First {
+    margin-top: 20.36px;
+    margin-left: 34.91px;
+  }
+
+  .Second {
+    margin-top: 20.36px;
+  }
+
+  .Third {
+    margin-top: 20.36px;
+    margin-right: 32px;
+  }
+
+  .logo {
+    margin: 16px 24.73px 16px 23.27px;
+  }
+
+  .font {
+    width: 75.636px;
+    height: 34.909px;
+    flex-shrink: 0;
+    background: url("../../assets/img/hbh-logo.svg") no-repeat;
+    background-size: 75.636px 34.909px;
+  }
+
+
+  .fontinsta {
+    width: 30px;
+    height: 26.128px;
+    flex-shrink: 0;
+    background: url("../../assets/img/contacts/insta-desktop.svg");
+    background-size: 30px 26.182px;
+  }
+
+
+  .fontyoutube {
+    width: 40px;
+    height: 26.182px;
+    flex-shrink: 0;
+    background: url("../../assets/img/contacts/youtube-dekstop.svg");
+    background-size: 40px 26.182px;
+  }
+
+
+  .fontteleg {
+    width: 35px;
+    height: 26.182px;
+    flex-shrink: 0;
+    background: url("../../assets/img/contacts/telega-desktop.svg");
+    background-size: 35px 26.182px;
+  }
+
+  .phone {
+    margin-top: 4px;
+  }
+
+  .number {
+    margin-left: 18.19px;
+    width: 258.909px;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .address {
+    margin-left: 21.82px;
+    margin-bottom: 10.18px;
+    display: flex;
+    width: 256px;
+    height: 11.636px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 10.182px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .website {
+    margin-left: 37.82px;
+    margin-top: 23.27px;
+    margin-bottom: 111.39px;
+    display: flex;
+    width: 151.078px;
+    height: 19.845px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 18.909px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}
+
+@include s {
   .containerMain {
     display: flex;
     flex-direction: row;

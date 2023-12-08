@@ -1,5 +1,5 @@
 @mixin s {
-  @media (max-width: 540px) {
+  @media (max-width: 430px) {
     @content;
   }
 }

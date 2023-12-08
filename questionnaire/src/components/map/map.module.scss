@@ -1,6 +1,21 @@
 @import "../../utils";
 
-@include sm {
+@include sm{
+  .containerMain {
+    width: 100%;
+    height: 316px;
+    flex-shrink: 0;
+  }
+
+  .map {
+    width: 100%;
+    height: 316px;
+    flex-shrink: 0;
+    background: url("../../assets/img/map.png") lightgray -30.068px 0px / 113.953% 148.926% no-repeat;
+  }
+}
+
+@include s {
   .containerMain {
     width: 100%;
     height: 217px;

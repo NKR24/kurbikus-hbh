@@ -137,7 +137,122 @@
 }
 
 @include sm {
+  .containerMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 46.42px 52px 46.31px 55px;
+  }
 
+  .containerSection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 460px;
+  }
+
+  .boxFirst {
+    margin-top: 35.04px;
+    margin-left: 35.18px;
+  }
+
+  .textMain {
+    width: 311.273px;
+    height: 36.364px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 29.091px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .textNoMain {
+    width: 369.455px;
+    height: 56.727px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Montserrat, serif;
+    font-size: 17.455px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .forminputmaterial {
+    display: grid;
+    border-bottom: 1px solid black;
+    margin: 20px 45.45px 0 0;
+  }
+
+  .formcontrolmaterial {
+    background: #DEDEDE;
+  }
+
+  .formcontrolmaterial::placeholder {
+    color: #181818;
+    font-family: Montserrat;
+    font-size: 14.545px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 294px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+
+  .boxSecond {
+    margin-top: 46.45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-left: 11px;
+    margin-right: 5px;
+  }
+
+  .textLow {
+    margin-left: 25px;
+    width: 224px;
+    height: 81.455px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Montserrat, serif;
+    font-size: 14.545px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .button {
+    margin-left: 11.64px;
+    width: 226.909px;
+    height: 52.364px;
+    flex-shrink: 0;
+    border: 1px solid black;
+    background: #000;
+  }
+
+  .buttonText {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .fontButton {
+    width: 136.727px;
+    height: 27.636px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 23.273px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
 }
 
 @include s {

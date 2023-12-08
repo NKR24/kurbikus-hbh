@@ -104,6 +104,104 @@
 
 @include sm{
   .description{
+    margin-left: 39.27px;
+    width: 507px;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 14.545px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .first{
+    display: flex;
+  }
+
+  .mainText{
+    margin-left: 39.27px;
+    margin-top: 21.82px;
+    margin-bottom: 19.09px;
+    width: 460.273px;
+    height: 24.727px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 20.364px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .button{
+    margin-top: 21.82px;
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    margin-left: 45px;
+    transition: transform 0.6s ease;
+  }
+
+  .buttonActive{
+    margin-top: 21.82px;
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    margin-left: 45px;
+    transform: rotate(45deg);
+  }
+
+  .plus{
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    background: url("../../assets/img/accordion/plusSM.svg");
+  }
+
+  .myTransition {
+    transition: height 700ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .containerMain{
+    width: 100%;
+  }
+
+  .boxOne{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxTwo{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxThree{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxFour{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxFive{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxSix{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+}
+
+@include s{
+  .description{
     margin-left: 23px;
     width: 349px;
     flex-shrink: 0;
