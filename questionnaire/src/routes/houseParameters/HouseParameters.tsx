@@ -5,6 +5,8 @@ import cubism from "../../assets/img/houseParameters/styles/one.png"
 import chalet from "../../assets/img/houseParameters/styles/two.png"
 import classic from "../../assets/img/houseParameters/styles/three.png"
 import hightech from "../../assets/img/houseParameters/styles/four.png"
+import storey from "../../assets/img/houseParameters/storeys/font.png"
+import garage from "../../assets/img/houseParameters/garage/font.png"
 
 enum HouseParametersTab {
   Style,
@@ -160,6 +162,47 @@ export default function HouseParameters() {
               <div class={styles.box}>
                 <Slider />
               </div>
+            </div>
+          </Show>
+          <Show when={tab() === HouseParametersTab.Storeys}>
+            <div class={styles.container}>
+              <h1 class={styles.textMain}>этажность?</h1>
+              <div class={styles.storeys}>
+                <img src={storey} alt="stoyer" />
+                <div class={styles.buttonStoreys}>
+                  <button class={styles.buttonOne}>
+                    <span>1</span>
+                  </button>
+                  <button class={styles.buttonTwo}>
+                    <span>2</span>
+                  </button>
+                  <button class={styles.buttonSelectAll}>
+                    <span>выбрать все</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Show>
+          <Show when={tab() === HouseParametersTab.Garage}>
+            <div class={styles.container}>
+              <h1 class={styles.textMain}>гараж?</h1>
+              <img src={garage} alt="garage" />
+              <div class={styles.garage}>
+                <button class={styles.withGarage}>
+                  <span>с гаражом</span>
+                </button>
+                <button class={styles.withoutGarage}>
+                  <span>без гаража</span>
+                </button>
+                <button class={styles.buttonSelectAll}>
+                  <span>выбрать все</span>
+                </button>
+              </div>
+            </div>
+          </Show>
+          <Show when={tab() === HouseParametersTab.Material}>
+            <div class={styles.container}>
+              <h1 class={styles.textMain}>материал?</h1>
             </div>
           </Show>
         </div>
