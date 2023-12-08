@@ -26,6 +26,7 @@ import s5imageForMobile from "..//assets/img/Section5imageForMobile.jpg"
 import s7image from "../assets/img/Section7image.jpg"
 import s7imageForMobile from "..//assets/img/Section7imageForMobile.jpg"
 import { createSignal, Show } from "solid-js"
+import { A } from "solid-start"
 
 export default function Home() {
   return (
@@ -259,9 +260,11 @@ function Section3() {
           <div class={section3Styles.containerDesktop}>
             <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
               <h1 class={section3Styles.textMain}>5 вопросов о вашем доме</h1>
-              <button class={section3Styles.buttonStart}>
-                <span class={section3Styles.textButton}>начать</span>
-              </button>
+              <A href="houseParameters">
+                <button class={section3Styles.buttonStart}>
+                  <span class={section3Styles.textButton}>начать</span>
+                </button>
+              </A>
               <div class={section3Styles.table}>
                 <p class={section3Styles.tableTextMain}>Вы получите:</p>
                 <ol class={section3Styles.tableText}>

@@ -1,0 +1,186 @@
+@import "../../utils";
+
+.containerMain {
+  width: 100%;
+}
+
+.containerSection {
+  padding: 77px 323px 54px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.textMain {
+  color: #000;
+  text-align: center;
+  font-family: Mikro, serif;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.parameterTab {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.parameterTabSelected {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+/*Styles*/
+
+
+.choiceTab {
+  width: 157px;
+  height: 46px;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  background: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.choiceTabSelected {
+  width: 157px;
+  height: 46px;
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.partOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  width: 318px;
+  height: 352px;
+}
+
+.home{
+  position: absolute;
+}
+
+
+.cubism {
+  background-image: url("../../assets/img/houseParameters/styles/one.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.chalet {
+  background-image: url("../../assets/img/houseParameters/styles/two.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.classic {
+  background-image: url("../../assets/img/houseParameters/styles/three.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hightech {
+  background-image: url("../../assets/img/houseParameters/styles/four.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*Square*/
+
+.containerSlide{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sliderText{
+  color: #000;
+  text-align: center;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 787.63px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: #000;
+  background-image: url("../../assets/img/houseParameters/Vector 7.svg");
+}
+
+.slider::-moz-range-thumb{
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: black; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+.sliderNumbers{
+  display: flex;
+  column-gap: 140px;
+}
+
+.number{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+
