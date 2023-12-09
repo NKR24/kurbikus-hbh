@@ -50,14 +50,24 @@
   text-transform: lowercase;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.buttonSelectAll{
+.container {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.buttonSelectAll {
   width: 204px;
   height: 48px;
   display: flex;
@@ -102,19 +112,44 @@
   border: 1px solid black;
 }
 
+.box {
+  display: flex;
+}
+
 .partOne {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  margin-bottom: 105px;
 }
 
-.item{
+.partTwo {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 135px;
+}
+
+.partTwo .buttonSelectAll {
+  margin-left: 104px;
+}
+
+.item {
   width: 318px;
   height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.home{
+.chaletItem {
+  background: url("../../assets/img/houseParameters/styles/two.png") center no-repeat;
+  width: 318px;
+  height: 243px;
+}
+
+.home {
   position: absolute;
 }
 
@@ -149,13 +184,25 @@
 
 /*Square*/
 
-.containerSlide{
+.containerSlide {
   display: flex;
   flex-direction: column;
 
 }
 
-.sliderText{
+.boxSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxSquare .buttonSelectAll {
+  margin-top: 197px;
+  margin-bottom: 158px;
+}
+
+.sliderText {
   margin-top: 141px;
   margin-bottom: 89px;
   color: #000;
@@ -168,10 +215,10 @@
   text-transform: lowercase;
 }
 
-.slider{
+.slider {
   width: 100%;
   flex-shrink: 0;
-  margin-bottom: 403px;
+  /*margin-bottom: 403px;*/
 }
 
 .slider::-webkit-slider-thumb {
@@ -185,12 +232,12 @@
 }
 
 
-.sliderNumbers{
+.sliderNumbers {
   display: flex;
   column-gap: 145px;
 }
 
-.number{
+.number {
   color: #000;
   font-family: Mikro, serif;
   font-size: 32px;
@@ -207,7 +254,7 @@
   margin-bottom: 45px;
 }
 
-.buttonStoreys{
+.buttonStoreys {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -215,7 +262,7 @@
   margin-bottom: 176px;
 }
 
-.buttonOne{
+.buttonOne {
   width: 49px;
   height: 48px;
   display: flex;
@@ -224,7 +271,7 @@
   border: 1px solid black;
 }
 
-.buttonTwo{
+.buttonTwo {
   width: 49px;
   height: 48px;
   display: flex;
@@ -235,7 +282,7 @@
 
 /*Garage*/
 
-.garage{
+.garage {
   display: flex;
   flex-direction: row;
   column-gap: 30px;
@@ -243,7 +290,7 @@
   margin-bottom: 200px;
 }
 
-.withGarage{
+.withGarage {
   width: 171px;
   height: 48px;
   border: 1px solid black;
@@ -252,8 +299,76 @@
   align-items: center;
 }
 
-.withoutGarage{
+.withoutGarage {
   width: 171px;
+  height: 48px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Materials*/
+
+.boxMaterials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 123px;
+  margin-bottom: 117px;
+}
+
+.boxMaterials .buttonSelectAll {
+  margin-top: 278px;
+  margin-left: 19px;
+}
+
+.material {
+  width: 300px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.woodButton {
+  width: 269px;
+  height: 47px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glueButton {
+  width: 217px;
+  height: 47px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameButton {
+  width: 143px;
+  height: 48px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceramicButton {
+  width: 211px;
+  height: 48px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brickButton {
+  width: 204px;
   height: 48px;
   border: 1px solid black;
   display: flex;

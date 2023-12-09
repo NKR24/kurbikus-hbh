@@ -7,6 +7,11 @@ import classic from "../../assets/img/houseParameters/styles/three.png"
 import hightech from "../../assets/img/houseParameters/styles/four.png"
 import storey from "../../assets/img/houseParameters/storeys/font.png"
 import garage from "../../assets/img/houseParameters/garage/font.png"
+import wood from "../../assets/img/houseParameters/material/one.png"
+import glue from "../../assets/img/houseParameters/material/two.png"
+import frame from "../../assets/img/houseParameters/material/three.png"
+import ceramic from "../../assets/img/houseParameters/material/four.png"
+import brick from "../../assets/img/houseParameters/material/five.png"
 
 enum HouseParametersTab {
   Style,
@@ -40,7 +45,7 @@ export default function HouseParameters() {
   }
 
   function Slider() {
-    const [sliderValue, setSliderValue] = createSignal(0)
+    const [sliderValue, setSliderValue] = createSignal(45)
 
     const handleSliderChange = (event: { target: { value: string } }) => {
       setSliderValue(Number(event.target.value))
@@ -65,12 +70,6 @@ export default function HouseParameters() {
             value={sliderValue()}
             onInput={handleSliderChange}
             id="myRange"
-            style={{
-              width: "100%",
-              appearance: "none",
-              background: `url('data:image/svg+xml;utf8,<svg width="790" height="26" viewBox="0 0 790 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.7037H787.63" stroke="black" stroke-width="2"/><line x1="1" y1="4.37115e-08" x2="0.999999" y2="25.4074" stroke="black" stroke-width="2"/><line x1="196.637" y1="4.34294e-08" x2="196.637" y2="25.4074" stroke="black" stroke-width="2"/><line x1="394.815" y1="4.34294e-08" x2="394.815" y2="25.4074" stroke="black" stroke-width="2"/><line x1="590.452" y1="4.34294e-08" x2="590.452" y2="25.4074" stroke="black" stroke-width="2"/><line x1="788.63" y1="4.34294e-08" x2="788.63" y2="25.4074" stroke="black" stroke-width="2"/></svg>') center center no-repeat`,
-              "background-size": "cover",
-            }}
           />
         </div>
       </>
@@ -133,14 +132,14 @@ export default function HouseParameters() {
               <h1 class={styles.textMain}>стиль дома?</h1>
               <div class={styles.box}>
                 <div class={styles.partOne}>
-                  <div class={styles.item}>
+                  <div class={clsx(styles.item)}>
                     <img src={cubism} alt="home" />
                     <button class={styles.choiceTab}>
                       <span>кубизм</span>
                     </button>
                   </div>
                   <div class={styles.item}>
-                    <img src={chalet} alt="home" />
+                    <div class={styles.chaletItem} />
                     <button class={styles.choiceTab}>
                       <span>шале</span>
                     </button>
@@ -158,15 +157,22 @@ export default function HouseParameters() {
                     </button>
                   </div>
                 </div>
-                <div class={styles.partTwo}></div>
+                <div class={styles.partTwo}>
+                  <button class={styles.buttonSelectAll}>
+                    <span>выбрать все</span>
+                  </button>
+                </div>
               </div>
             </div>
           </Show>
           <Show when={tab() === HouseParametersTab.Square}>
             <div class={styles.container}>
               <h1 class={styles.textMain}>площадь?</h1>
-              <div class={styles.box}>
+              <div class={styles.boxSquare}>
                 <Slider />
+                <button class={styles.buttonSelectAll}>
+                  <span>выбрать все</span>
+                </button>
               </div>
             </div>
           </Show>
@@ -209,6 +215,41 @@ export default function HouseParameters() {
           <Show when={tab() === HouseParametersTab.Material}>
             <div class={styles.container}>
               <h1 class={styles.textMain}>материал?</h1>
+              <div class={styles.boxMaterials}>
+                <div class={styles.material}>
+                  <img src={wood} alt="material" />
+                  <button class={styles.woodButton}>
+                    <span>деревянный каркас</span>
+                  </button>
+                </div>
+                <div class={styles.material}>
+                  <img src={glue} alt="material" />
+                  <button class={styles.glueButton}>
+                    <span>клееный брус</span>
+                  </button>
+                </div>
+                <div class={styles.material}>
+                  <img src={frame} alt="material" />
+                  <button class={styles.frameButton}>
+                    <span>каркас</span>
+                  </button>
+                </div>
+                <div class={styles.material}>
+                  <img src={ceramic} alt="material" />
+                  <button class={styles.ceramicButton}>
+                    <span>керамоблок</span>
+                  </button>
+                </div>
+                <div class={styles.material}>
+                  <img src={brick} alt="material" />
+                  <button class={styles.brickButton}>
+                    <span>кирпич</span>
+                  </button>
+                </div>
+                <button class={styles.buttonSelectAll}>
+                  <span>выбрать все</span>
+                </button>
+              </div>
             </div>
           </Show>
         </div>
