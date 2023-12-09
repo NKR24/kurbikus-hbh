@@ -2,7 +2,6 @@ import styles from "./styles.module.scss"
 import { createSignal, Show } from "solid-js"
 import clsx from "clsx"
 import cubism from "../../assets/img/houseParameters/styles/one.png"
-import chalet from "../../assets/img/houseParameters/styles/two.png"
 import classic from "../../assets/img/houseParameters/styles/three.png"
 import hightech from "../../assets/img/houseParameters/styles/four.png"
 import storey from "../../assets/img/houseParameters/storeys/font.png"
@@ -12,6 +11,7 @@ import glue from "../../assets/img/houseParameters/material/two.png"
 import frame from "../../assets/img/houseParameters/material/three.png"
 import ceramic from "../../assets/img/houseParameters/material/four.png"
 import brick from "../../assets/img/houseParameters/material/five.png"
+import { A } from "solid-start"
 
 enum HouseParametersTab {
   Style,
@@ -78,6 +78,34 @@ export default function HouseParameters() {
 
   return (
     <>
+      <div class={styles.buttonClose}>
+        <A href="../index.tsx">
+          <button class={styles.closeButton}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+            >
+              <line
+                x1="18.9976"
+                x2="18.9976"
+                y2="37.4943"
+                stroke="black"
+                stroke-width="2"
+              />
+              <line
+                y1="18.4971"
+                x2="37.4943"
+                y2="18.4971"
+                stroke="black"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </A>
+      </div>
       <div class={styles.containerMain}>
         <div class={styles.containerSection}>
           <div class={styles.buttons}>
