@@ -1,59 +1,39 @@
 @import "../../utils";
 
-@include xxl{
-  .containerMain{
-    margin: 0 auto;
-  }
-}
-
-.containerMain{
-  display: flex;
-  width: 100%;
+.container {
   max-width: max(1728px);
-}
-
-.containerSection {
   width: 100%;
+  padding: 263px 105px 311px 103px;
+}
+
+.section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.containerMobile{
-  display: none;
-}
-
-.containerDesktop{
-  padding-right: 105px;
-}
-
-.textMain{
-  margin-left: 121px;
-  margin-top: 288px;
+.mainText {
+  white-space: nowrap;
+  flex-shrink: 0;
   color: #000;
   font-family: Mikro, serif;
-  font-size: 110px;
+  font-size: 7em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: lowercase;
 }
 
-.buttonStart{
+.button {
   margin-top: 94px;
-  margin-left: 672px;
-  display: flex;
   width: 395px;
   height: 107px;
-  padding: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  background: #000;
-}
-
-.textButton{
-  color: #FFF;
+  background: black;
+  color: white;
   font-family: Mikro, serif;
   font-size: 48px;
   font-style: normal;
@@ -62,7 +42,13 @@
   text-transform: lowercase;
 }
 
-.tableTextMain{
+.table {
+  border: 0;
+  margin-top: 93px;
+  padding: 15px 30px;
+}
+
+.tableName {
   color: #000;
   font-family: Mikro, serif;
   font-size: 48px;
@@ -72,13 +58,7 @@
   text-transform: lowercase;
 }
 
-.table{
-  margin-top: 93px;
-  margin-left: 573px;
-  margin-bottom: 114px;
-}
-
-.tableText{
+.tableMark {
   color: #000;
   font-family: Mikro, serif;
   font-size: 32px;
@@ -89,112 +69,286 @@
   list-style-type: disc;
 }
 
-@include xl{
-
+@include xxl {
+  .container {
+    margin: 0 auto;
+  }
 }
 
-@include l{
-
-}
-
-@include lg{
-
-}
-
-@include md{
-
-}
-
-@include sm{
-  .containerMain{
-    display: flex;
+@include xl {
+  .container {
+    max-width: max(1728px);
     width: 100%;
-    justify-content: center;
+    padding: 253px 0 271px 0;
   }
 
-  .containerSection{
-    margin-left: 53px;
-    margin-right: 74px;
-    margin-top: 25px;
-    width: 640px;
-    height: 477px;
+  .section {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
-  }
-
-  .containerDesktop{
-    display: none;
-  }
-
-  .containerMobile{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .box{
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .boxMobileFirst{
-    padding-left: 0;
-  }
-
-  .textMainMob{
-    width: 513px;
-    height: 112px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  .buttonStartMob{
-    margin-left: 159px;
-    width: 217px;
-    height: 82px;
-    flex-shrink: 0;
-    background: #000;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .textButtonMob{
-    width: 80px;
-    height: 29px;
+  .mainText {
+    white-space: nowrap;
     flex-shrink: 0;
-    color: #FFF;
+    color: #000;
     font-family: Mikro, serif;
-    font-size: 22.115px;
+    font-size: 5.9em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .button {
+    margin-top: 94px;
+    width: 375px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: Mikro, serif;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
   }
 
-  .boxMobileSecond{
-    margin-left: 45px;
-    width: 445px;
-    height: 173px;
+  .table {
+    border: 0;
+    margin-top: 93px;
+  }
+
+  .tableName {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableMark {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    list-style-type: disc;
+  }
+}
+
+@include l {
+  .container {
+    max-width: max(1728px);
+    width: 100%;
+    padding: 213px 85px 221px 83px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainText {
+    white-space: nowrap;
     flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .button {
+    margin-top: 64px;
+    width: 355px;
+    height: 87px;
+    font-size: 46px;
+  }
+
+  .table {
+    border: 1px solid black;
+    margin-top: 73px;
+  }
+
+  .tableName {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableMark {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    list-style-type: disc;
+  }
+}
+
+@include lg {
+  .container {
+    max-width: max(1728px);
+    width: 100%;
+    padding: 213px 85px 221px 83px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainText {
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 3.4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .button {
+    margin-top: 54px;
+    width: 300px;
+    height: 67px;
+    font-size: 46px;
+  }
+
+  .table {
+    border: 1px solid black;
+    margin-top: 53px;
+  }
+
+  .tableName {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableMark {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    list-style-type: disc;
+  }
+}
+
+@include md {
+  .container {
+    max-width: max(1728px);
+    width: 100%;
+    padding: 53px 85px 53px 88px;
+  }
+
+
+  .mainText {
+    white-space: normal;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .button {
+    margin-top: 54px;
+    width: 217px;
+    height: 82px;
+    font-size: 22.115px;
+  }
+
+  .table {
+    border: 1px solid black;
+    margin-top: 53px;
+  }
+
+  .tableName {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .tableMark {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    list-style-type: disc;
+  }
+}
+
+@include sm {
+  .container {
+    max-width: max(1728px);
+    width: 100%;
+    padding: 25px 74px 35px 53px;
+  }
+
+
+  .mainText {
+    white-space: normal;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+
+  .table {
+    border: 0.5px solid black;
     margin-top: 35px;
-    border: 0.5px solid #000;
   }
 
-  .tableMob{
-    margin-top: 16px;
-    margin-bottom: 14px;
-  }
-
-  .tableTextMainMob{
-    padding-left: 36px;
+  .tableName {
     color: #000;
     font-family: Mikro, serif;
     font-size: 37px;
@@ -204,9 +358,7 @@
     text-transform: lowercase;
   }
 
-  .tableTextMob{
-    padding-left: 58px;
-    list-style-type: disc;
+  .tableMark {
     color: #000;
     font-family: Mikro, serif;
     font-size: 18px;
@@ -214,98 +366,42 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+    list-style-type: disc;
   }
 }
 
-@include s{
-  .containerMain{
-    display: flex;
+@include s {
+  .container {
+    max-width: max(1728px);
     width: 100%;
-    justify-content: center;
+    padding: 211px 12px 50px 60px;
   }
 
-  .containerSection{
-    margin-left: 22px;
-    margin-right: 20px;
-    margin-top: 211px;
-    width: 388px;
-    height: 457px;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-  }
 
-  .containerDesktop{
-    display: none;
-  }
-
-  .containerMobile{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .box{
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .boxMobileFirst{
-    padding-left: 38px;
-  }
-
-  .textMainMob{
-    width: 358px;
-    height: 126px;
+  .mainText {
+    white-space: normal;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 48px;
+    font-size: 2.9em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: lowercase;
   }
 
-  .buttonStartMob{
+  .button {
     margin-top: 93px;
-    margin-left: 72px;
     width: 157px;
     height: 59px;
-    flex-shrink: 0;
-    background: #000;
   }
 
-  .textButtonMob{
-    margin: 0 auto;
-    width: 58px;
-    height: 21px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Mikro, serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
+  .table {
+    border: 0.5px solid black;
+    margin-top: 50px;
   }
 
-  .boxMobileSecond{
-    margin-left: 0;
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
-    margin-top: 35px;
-    border: 0.5px solid #000;
-  }
-
-  .tableMob{
-    margin-top: 14px;
-    margin-bottom: 25px;
-  }
-
-  .tableTextMainMob{
-    padding-left: 31px;
+  .tableName {
     color: #000;
     font-family: Mikro, serif;
     font-size: 32px;
@@ -315,9 +411,7 @@
     text-transform: lowercase;
   }
 
-  .tableTextMob{
-    padding-left: 48px;
-    list-style-type: disc;
+  .tableMark {
     color: #000;
     font-family: Mikro, serif;
     font-size: 13px;
@@ -325,5 +419,6 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+    list-style-type: disc;
   }
 }

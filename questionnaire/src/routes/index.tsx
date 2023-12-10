@@ -36,7 +36,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 />
-      <Section4 />
+      {/*  <Section4 />
       <Section5 />
       <Section6 />
       <Section7 />
@@ -46,7 +46,7 @@ export default function Home() {
       <Section10 />
       <Section11 />
       <Map />
-      <Contacts />
+      <Contacts />*/}
     </>
   )
 }
@@ -255,55 +255,20 @@ function Section2() {
 function Section3() {
   return (
     <>
-      <div class={section3Styles.containerMain}>
-        <div class={section3Styles.containerSection}>
-          <div class={section3Styles.containerDesktop}>
-            <div class={clsx(section3Styles.box, section3Styles.boxFirst)}>
-              <h1 class={section3Styles.textMain}>5 вопросов о вашем доме</h1>
-              <A href="houseParameters">
-                <button class={section3Styles.buttonStart}>
-                  <span class={section3Styles.textButton}>начать</span>
-                </button>
-              </A>
-              <div class={section3Styles.table}>
-                <p class={section3Styles.tableTextMain}>Вы получите:</p>
-                <ol class={section3Styles.tableText}>
-                  <li>Подходящие проекты с ценой в PDF</li>
-                  <li>Изменение комплектации и цены</li>
-                  <li>Выбор цветов и покрытий</li>
-                  <li>Подбор материалов кровли и окон</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <div class={section3Styles.containerMobile}>
-            <div
-              class={clsx(section3Styles.box, section3Styles.boxMobileFirst)}
-            >
-              <div
-                class={clsx(section3Styles.text, section3Styles.textMainMob)}
-              >
-                <p>5 вопросов о вашем доме</p>
-              </div>
-              <div class={section3Styles.buttonStartMob}>
-                <div class={section3Styles.textButtonMob}>
-                  <p>начать</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class={clsx(section3Styles.box, section3Styles.boxMobileSecond)}
-            >
-              <div class={section3Styles.tableMob}>
-                <p class={section3Styles.tableTextMainMob}>Вы получите:</p>
-                <ol class={section3Styles.tableTextMob}>
-                  <li>Подходящие проекты с ценой в PDF</li>
-                  <li>Изменение комплектации и цены</li>
-                  <li>Выбор цветов и покрытий</li>
-                  <li>Подбор материалов кровли и окон</li>
-                </ol>
-              </div>
-            </div>
+      <div class={section3Styles.container}>
+        <div class={section3Styles.section}>
+          <h1 class={section3Styles.mainText}>5 вопросов о вашем доме</h1>
+          <button class={section3Styles.button}>
+            <span>начать</span>
+          </button>
+          <div class={section3Styles.table}>
+            <p class={section3Styles.tableName}>Вы получите:</p>
+            <ul class={section3Styles.tableMark}>
+              <li>Подходящие проекты с ценой в PDF</li>
+              <li>Изменение комплектации и цены</li>
+              <li>Выбор цветов и покрытий</li>
+              <li>Подбор материалов кровли и окон</li>
+            </ul>
           </div>
         </div>
       </div>
