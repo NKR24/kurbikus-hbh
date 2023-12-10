@@ -5,7 +5,6 @@ import cubism from "../../assets/img/houseParameters/styles/one.png"
 import classic from "../../assets/img/houseParameters/styles/three.png"
 import hightech from "../../assets/img/houseParameters/styles/four.png"
 import storey from "../../assets/img/houseParameters/storeys/font.png"
-import garage from "../../assets/img/houseParameters/garage/font.png"
 import wood from "../../assets/img/houseParameters/material/one.png"
 import glue from "../../assets/img/houseParameters/material/two.png"
 import frame from "../../assets/img/houseParameters/material/three.png"
@@ -17,7 +16,6 @@ enum HouseParametersTab {
   Style,
   Square,
   Storeys,
-  Garage,
   Material,
 }
 
@@ -34,10 +32,6 @@ export default function HouseParameters() {
 
   function handleStoreysClick() {
     setTab(HouseParametersTab.Storeys)
-  }
-
-  function handleGarageClick() {
-    setTab(HouseParametersTab.Garage)
   }
 
   function handleMaterialClick() {
@@ -70,6 +64,11 @@ export default function HouseParameters() {
             value={sliderValue()}
             onInput={handleSliderChange}
             id="myRange"
+            style={{
+              appearance: "none",
+              width: "100%",
+              background: `url('data:image/svg+xml;utf8,<svg width="790" height="26" viewBox="0 0 790 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.7037H787.63" stroke="black" stroke-width="2"/><line x1="1" y1="4.37115e-08" x2="0.999999" y2="25.4074" stroke="black" stroke-width="2"/><line x1="196.637" y1="4.34294e-08" x2="196.637" y2="25.4074" stroke="black" stroke-width="2"/><line x1="394.815" y1="4.34294e-08" x2="394.815" y2="25.4074" stroke="black" stroke-width="2"/><line x1="590.452" y1="4.34294e-08" x2="590.452" y2="25.4074" stroke="black" stroke-width="2"/><line x1="788.63" y1="4.34294e-08" x2="788.63" y2="25.4074" stroke="black" stroke-width="2"/></svg>') center center no-repeat`,
+            }}
           />
         </div>
       </>
@@ -135,15 +134,6 @@ export default function HouseParameters() {
               })}
             >
               <span class={styles.textButton}>Этажность</span>
-            </button>
-            <button
-              onClick={handleGarageClick}
-              class={clsx(styles.parameterTab, {
-                [styles.parameterTabSelected]:
-                  tab() === HouseParametersTab.Garage,
-              })}
-            >
-              <span class={styles.textButton}>гараж</span>
             </button>
             <button
               onClick={handleMaterialClick}
@@ -220,23 +210,6 @@ export default function HouseParameters() {
                     <span>выбрать все</span>
                   </button>
                 </div>
-              </div>
-            </div>
-          </Show>
-          <Show when={tab() === HouseParametersTab.Garage}>
-            <div class={styles.container}>
-              <h1 class={styles.textMain}>гараж?</h1>
-              <img src={garage} alt="garage" />
-              <div class={styles.garage}>
-                <button class={styles.withGarage}>
-                  <span>с гаражом</span>
-                </button>
-                <button class={styles.withoutGarage}>
-                  <span>без гаража</span>
-                </button>
-                <button class={styles.buttonSelectAll}>
-                  <span>выбрать все</span>
-                </button>
               </div>
             </div>
           </Show>
