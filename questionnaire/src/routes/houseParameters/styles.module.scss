@@ -1,22 +1,11 @@
 @import "../../utils";
 
-.buttonClose{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.closeButton{
-  transform: rotate(45deg);
-}
-
 .containerMain {
   width: 100%;
 }
 
 .containerSection {
-  padding: 0 323px 54px;
+  padding: 51px 323px 59px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -38,6 +27,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 44px;
+  white-space: nowrap;
 }
 
 .parameterTab {
@@ -58,6 +48,16 @@
   font-weight: 800;
   line-height: normal;
   text-decoration-line: underline;
+  text-transform: lowercase;
+}
+
+.closeTab {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   text-transform: lowercase;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .chaletItem {
-  background: url("../../assets/img/houseParameters/styles/two.png") center no-repeat;
+  background: url("../../assets/img/houseParameters/desktop/styles/two.png") center no-repeat;
   width: 318px;
   height: 243px;
 }
@@ -166,28 +166,28 @@
 
 
 .cubism {
-  background-image: url("../../assets/img/houseParameters/styles/one.png");
+  background-image: url("../../assets/img/houseParameters/desktop/styles/one.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .chalet {
-  background-image: url("../../assets/img/houseParameters/styles/two.png");
+  background-image: url("../../assets/img/houseParameters/desktop/styles/two.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .classic {
-  background-image: url("../../assets/img/houseParameters/styles/three.png");
+  background-image: url("../../assets/img/houseParameters/desktop/styles/three.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .hightech {
-  background-image: url("../../assets/img/houseParameters/styles/four.png");
+  background-image: url("../../assets/img/houseParameters/desktop/styles/four.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -387,3 +387,390 @@
   align-items: center;
 }
 
+@include s {
+  .containerMain {
+    width: 100%;
+  }
+
+  .containerSection {
+    padding: 36px 23px 58px 28px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .textMain {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+    white-space: nowrap;
+  }
+
+  .parameterTab {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .parameterTabSelected {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+  }
+
+  .closeTab {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .buttonSelectAll {
+    width: 141px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  /*Styles*/
+
+
+  .choiceTab {
+    width: 157px;
+    height: 46px;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    background: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .choiceTabSelected {
+    width: 157px;
+    height: 46px;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .partOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 103px;
+  }
+
+  .partTwo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 135px;
+  }
+
+  .partTwo .buttonSelectAll {
+    margin-left: 104px;
+  }
+
+  .item {
+    width: 318px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chaletItem {
+    background: url("../../assets/img/houseParameters/desktop/styles/two.png") center no-repeat;
+    width: 318px;
+    height: 243px;
+  }
+
+  .home {
+    position: absolute;
+  }
+
+
+  .cubism {
+    background-image: url("../../assets/img/houseParameters/desktop/styles/one.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .chalet {
+    background-image: url("../../assets/img/houseParameters/desktop/styles/two.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .classic {
+    background-image: url("../../assets/img/houseParameters/desktop/styles/three.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hightech {
+    background-image: url("../../assets/img/houseParameters/desktop/styles/four.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /*Square*/
+
+  .containerSlide {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .boxSquare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-top: 197px;
+    margin-bottom: 207px;
+  }
+
+  .sliderText {
+    margin-top: 141px;
+    margin-bottom: 89px;
+    color: #000;
+    text-align: center;
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .slider {
+    width: 100%;
+    flex-shrink: 0;
+    /*margin-bottom: 403px;*/
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 31px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+
+
+  .sliderNumbers {
+    display: flex;
+    column-gap: 145px;
+  }
+
+  .number {
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  /*Storeys*/
+
+  .storeys {
+    margin-top: 114px;
+    margin-bottom: 45px;
+  }
+
+  .buttonStoreys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 34px;
+    margin-bottom: 164px;
+  }
+
+  .buttonOne {
+    width: 49px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .buttonTwo {
+    width: 49px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  /*Garage*/
+
+  .garage {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-top: 74px;
+    margin-bottom: 215px;
+  }
+
+  .withGarage {
+    width: 171px;
+    height: 48px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .withoutGarage {
+    width: 171px;
+    height: 48px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Materials*/
+
+  .boxMaterials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 123px;
+    margin-bottom: 147px;
+  }
+
+  .boxMaterials .buttonSelectAll {
+    margin-top: 278px;
+    margin-left: 19px;
+  }
+
+  .material {
+    width: 300px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .woodButton {
+    width: 269px;
+    height: 47px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .glueButton {
+    width: 217px;
+    height: 47px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frameButton {
+    width: 143px;
+    height: 48px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ceramicButton {
+    width: 211px;
+    height: 48px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brickButton {
+    width: 204px;
+    height: 48px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

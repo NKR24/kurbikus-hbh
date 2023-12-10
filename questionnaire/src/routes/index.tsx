@@ -36,7 +36,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 />
-      {/*  <Section4 />
+      <Section4 />
       <Section5 />
       <Section6 />
       <Section7 />
@@ -46,7 +46,7 @@ export default function Home() {
       <Section10 />
       <Section11 />
       <Map />
-      <Contacts />*/}
+      <Contacts />
     </>
   )
 }
@@ -258,9 +258,11 @@ function Section3() {
       <div class={section3Styles.container}>
         <div class={section3Styles.section}>
           <h1 class={section3Styles.mainText}>5 вопросов о вашем доме</h1>
-          <button class={section3Styles.button}>
-            <span>начать</span>
-          </button>
+          <A href="./houseParameters">
+            <button class={section3Styles.button}>
+              <span>начать</span>
+            </button>
+          </A>
           <div class={section3Styles.table}>
             <p class={section3Styles.tableName}>Вы получите:</p>
             <ul class={section3Styles.tableMark}>

@@ -1,15 +1,15 @@
 import styles from "./styles.module.scss"
 import { createSignal, Show } from "solid-js"
 import clsx from "clsx"
-import cubism from "../../assets/img/houseParameters/styles/one.png"
-import classic from "../../assets/img/houseParameters/styles/three.png"
-import hightech from "../../assets/img/houseParameters/styles/four.png"
-import storey from "../../assets/img/houseParameters/storeys/font.png"
-import wood from "../../assets/img/houseParameters/material/one.png"
-import glue from "../../assets/img/houseParameters/material/two.png"
-import frame from "../../assets/img/houseParameters/material/three.png"
-import ceramic from "../../assets/img/houseParameters/material/four.png"
-import brick from "../../assets/img/houseParameters/material/five.png"
+import cubism from "~/assets/img/houseParameters/desktop/styles/one.png"
+import classic from "~/assets/img/houseParameters/desktop/styles/three.png"
+import hightech from "~/assets/img/houseParameters/desktop/styles/four.png"
+import storey from "~/assets/img/houseParameters/desktop/storeys/font.png"
+import wood from "~/assets/img/houseParameters/desktop/material/one.png"
+import glue from "~/assets/img/houseParameters/desktop/material/two.png"
+import frame from "~/assets/img/houseParameters/desktop/material/three.png"
+import ceramic from "~/assets/img/houseParameters/desktop/material/four.png"
+import brick from "~/assets/img/houseParameters/desktop/material/five.png"
 import { A } from "solid-start"
 
 enum HouseParametersTab {
@@ -77,7 +77,7 @@ export default function HouseParameters() {
 
   return (
     <>
-      <div class={styles.buttonClose}>
+      {/* <div class={styles.buttonClose}>
         <A href="../index.tsx">
           <button class={styles.closeButton}>
             <svg
@@ -104,7 +104,7 @@ export default function HouseParameters() {
             </svg>
           </button>
         </A>
-      </div>
+      </div>*/}
       <div class={styles.containerMain}>
         <div class={styles.containerSection}>
           <div class={styles.buttons}>
@@ -144,6 +144,11 @@ export default function HouseParameters() {
             >
               <span class={styles.textButton}>материал</span>
             </button>
+            <A href="../index.tsx">
+              <button class={styles.closeTab}>
+                <span>вернуться на сайт</span>
+              </button>
+            </A>
           </div>
           <Show when={tab() === HouseParametersTab.Style}>
             <div class={styles.container}>
