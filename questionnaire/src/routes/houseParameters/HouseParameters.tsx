@@ -77,34 +77,6 @@ export default function HouseParameters() {
 
   return (
     <>
-      {/* <div class={styles.buttonClose}>
-        <A href="../index.tsx">
-          <button class={styles.closeButton}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 60 60"
-              fill="none"
-            >
-              <line
-                x1="18.9976"
-                x2="18.9976"
-                y2="37.4943"
-                stroke="black"
-                stroke-width="2"
-              />
-              <line
-                y1="18.4971"
-                x2="37.4943"
-                y2="18.4971"
-                stroke="black"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
-        </A>
-      </div>*/}
       <div class={styles.containerMain}>
         <div class={styles.containerSection}>
           <div class={styles.buttons}>
