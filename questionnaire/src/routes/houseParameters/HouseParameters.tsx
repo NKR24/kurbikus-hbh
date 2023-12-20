@@ -51,9 +51,9 @@ export default function HouseParameters() {
           <p class={styles.sliderText}>От {sliderValue()} до 250</p>
           <div class={styles.sliderNumbers}>
             <p class={styles.number}>45</p>
-            <p class={styles.number}>90</p>
-            <p class={styles.number}>135</p>
-            <p class={styles.number}>175</p>
+            <p class={styles.number}>95</p>
+            <p class={styles.number}>145</p>
+            <p class={styles.number}>200</p>
             <p class={styles.number}>250</p>
           </div>
           <input
