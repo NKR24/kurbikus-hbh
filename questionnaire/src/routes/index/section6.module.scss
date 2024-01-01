@@ -10,9 +10,7 @@
   display: flex;
   width: 100%;
   max-width: max(1728px);
-  padding-left: 103px;
-  padding-top: 40px;
-  padding-bottom: 38px;
+  padding: 40px 103px 38px;
 }
 
 .containerSection {
@@ -79,19 +77,21 @@
 .partSecond {
   margin-top: 34px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 29px;
   grid-row-gap: 25px;
 }
 
 
 .child {
-  width: 481px;
+  min-width: 0;
+  width: 30em;
   height: 270px;
   flex-shrink: 0;
 }
 
 .target {
+  width: auto;
   margin-right: 4px;
   height: 270px;
   flex-shrink: 0;

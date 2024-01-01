@@ -238,15 +238,111 @@
 @include lg {
   .containerMain {
     width: 100%;
+    padding-left: 90px;
+    padding-right: 88px;
+    padding-bottom: 63px;
   }
 
-  .containerDesktop {
+  .MobileImage {
+    width: 100%;
+    height: 432px;
+    flex-shrink: 0;
+    background: url("../../assets/img/home-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 339px;
+    width: 255px;
+    height: 57px;
+    flex-shrink: 0;
+    background: #000;
+  }
+
+  .homeButtonText {
+    margin-top: 18px;
+    width: 132px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Mikro, serif;
+    font-size: 17.642px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .MobTextFirstLarge {
     display: none;
   }
 
-  .containerMobile {
+  .smSize {
+    width: 497px;
+    height: 83px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 54px;
+    margin-top: 47px;
+  }
+
+  .MobTextFirstSmall {
+    margin-left: 60px;
+    width: 290px;
+    height: 121px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .MobileSecond {
+    border-top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .videoButton {
+    display: none;
+  }
+
+  .videoButtonSm {
+    display: none;
+  }
+
+  .videoButtonMd {
+    margin-left: 60px;
+    margin-top: 47px;
+    margin-bottom: 78px;
+  }
+
+  .MobTextSecond {
+    margin-left: 34px;
+    margin-top: 63px;
+    width: 234px;
+    height: 82px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
   }
 }
 
@@ -256,6 +352,16 @@
     padding-left: 90px;
     padding-right: 88px;
     padding-bottom: 63px;
+  }
+
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    flex-direction: column;
+
   }
 
   .MobileImage {

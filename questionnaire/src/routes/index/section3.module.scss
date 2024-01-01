@@ -371,7 +371,8 @@
   .container {
     max-width: max(1728px);
     width: 100%;
-    padding: 211px 12px 50px 60px;
+    padding: 0;
+    display: flex;
   }
 
 
@@ -394,11 +395,15 @@
   }
 
   .table {
+    padding: 14px 108px 25px 25px;
+    width: 100%;
     border: 0.5px solid black;
     margin-top: 50px;
   }
 
   .tableName {
+    margin-left: 38px;
+    width: auto;
     color: #000;
     font-family: Mikro, serif;
     font-size: 32px;
@@ -409,6 +414,9 @@
   }
 
   .tableMark {
+    margin-left: 20px;
+    margin-top: 10px;
+    white-space: nowrap;
     color: #000;
     font-family: Mikro, serif;
     font-size: 13px;
