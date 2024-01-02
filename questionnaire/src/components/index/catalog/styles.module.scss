@@ -2,19 +2,20 @@
 
 .containerMain{
   background-color: #3e3e3e;
-  width: 1729px;
+  width: 100%;
   display: flex;
   justify-content: center;
+
 }
 
 .section {
-  max-width: max(1728px);
+  padding: 40px 102px 63px 104px;
+  max-width: 1729px;
+  width: 100%;
 }
 
 .firstText {
-  padding-left: 102px;
-  padding-top: 40px;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
   font-size: 40px;
 }
 
@@ -24,29 +25,23 @@
 }
 
 .text {
-  width: 374.732px;
-  height: 68.892px;
   flex-shrink: 0;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
-  font-size: 15px;
-  margin-top: 15px;
-  margin-bottom: 11px;
-  margin-left: 57px;
+  font-size: 0.9vw;
+  margin-top: 2.3%;
+  margin-bottom: 1.7%;
+  margin-left: 8.7%;
 }
 
 .blocks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 220px;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 14%;
+  //justify-content: space-between;
   grid-row-gap: 38.45px;
-  justify-content: center;
-  align-items: center;
-  padding-left: 104px;
-  padding-right: 102px;
-  padding-bottom: 63px;
 }
 
 .block1 {
@@ -61,48 +56,38 @@
 
 .overlayImage {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 30px 49px 327px 538px;
+  top: 7%;
+  right: 7%;
   flex-shrink: 0;
+  width: 10%;
+  height: 13.5%;
 }
 
 .textOverlay {
   position: absolute;
-  font-size: 96px;
+  font-size: 5.5vw;
   color: #3e3e3e;
   font-family: Mikro;
   font-style: normal;
   font-weight: 700;
   text-transform: lowercase;
   top: -3%;
-  margin-left: 10.5%;
+  left: 10.5%;
+  width: 253.743px;
+  height: 139.06px;
 }
-/*.blackRectangle {
-  position: absolute;
-  top: 0%;
-  margin-left: 179px;
-  margin-top: 197.2px;
-  border: 0.5px solid #000;
-  width: 249.026px;
-  height: 76.455px;
-}*/
-
-/*.textShale {
-  color: #000;
-  font-family: Mikro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: lowercase;
-  margin-left: 76.46px;
-  margin-top: 17.48px;
-}*/
 
 @include xxl{
-  .containerMain {
-    width: 100%;
+  .textOverlay {
+    font-size: 96px;
+  }
+  .text {
+    width: 374.732px;
+    height: 68.892px;
+    font-size: 15px;
+    margin-bottom: 11px;
+    margin-left: 57px;
+    margin-top: 15px;
   }
 }
 

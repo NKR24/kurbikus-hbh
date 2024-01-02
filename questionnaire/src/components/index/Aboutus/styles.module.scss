@@ -2,21 +2,26 @@
 
 .containerMain {
   width: 100%;
-  padding-top: 80px;
-  padding-left: 101px;
+
   max-width: max(1728px);
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 80px;
+  padding-left: 101px;
+  padding-right: 101px;
 }
 
 .containerSection {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .textMain {
   margin-bottom: 75px;
-  width: 766px;
   height: 123px;
-  flex-shrink: 0;
+  width: 766px;
   color: #000;
   font-family: Mikro, serif;
   font-size: 110px;
@@ -27,15 +32,18 @@
 }
 
 .box {
-  height: 555px;
-  width: 348px;
+  height: 100%;
+  width: auto;
 }
 
 .table {
-  margin-left: 5px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 127px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  grid-column-gap: 3%;
+  grid-row-gap: 3%;
 }
 
 
@@ -125,7 +133,7 @@
 }
 
 .text {
-  width: 240px;
+  width: auto;
   height: 25px;
   flex-shrink: 0;
   color: #000;
@@ -136,7 +144,7 @@
   line-height: normal;
 }
 
-.boxContacts {
+/*.boxContacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -149,7 +157,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
+}*/
 
 @include xxl {
   .containerMain{
@@ -158,15 +166,33 @@
 }
 
 @include xl {
-
+  .photo {
+    width: 312px;
+    height: 398px;
+  }
+  .text {
+    font-size: 14px;
+  }
 }
 
 @include l {
-
+  .photo {
+    width: 256px;
+    height: 326px;
+  }
+  .text {
+    font-size: 13px;
+  }
 }
 
 @include lg {
-
+  .photo {
+    width: 207px;
+    height: 263px;
+  }
+  .text {
+    font-size: 12px;
+  }
 }
 
 @include md {
@@ -184,11 +210,3 @@
     display: none;
   }
 }
-
-
-
-
-
-
-
-

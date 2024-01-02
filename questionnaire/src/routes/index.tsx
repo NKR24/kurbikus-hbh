@@ -25,13 +25,13 @@ export default function Home() {
       {/*<Whyus />*/}
       <Foundation />
       <Demonstration />
-      <Interview />
+      {/*<Interview />*/}
       <Excursion />
-      <Consultation />
-      <Accordion />
-      <Pros />
+      {/*<Consultation />*/}
+      {/*<Accordion />*/}
+      {/*<Pros />*/}
       <Aboutus />
-      <Contacts/>
+      {/*<Contacts/>*/}
     </>
   )
 }

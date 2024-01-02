@@ -1,7 +1,12 @@
 import styles from "./styles.module.scss"
 import clsx from "clsx"
+import home1 from "~/assets/img/home1.jpg";
+import PDF from "~/assets/img/PDF.png";
+import home3 from "~/assets/img/home3.jpg";
+import home2 from "~/assets/img/home2.jpg";
+import home4 from "~/assets/img/home4.jpg";
 
-export default function Pros() {
+export default function Aboutus() {
   return (
     <>
       <div class={styles.containerMain}>
