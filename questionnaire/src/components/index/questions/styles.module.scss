@@ -371,12 +371,13 @@
   .container {
     max-width: max(1728px);
     width: 100%;
-    padding: 0;
+    padding: 200px 20px 50px 25px;
     display: flex;
   }
 
 
   .mainText {
+    margin-left: 20px;
     white-space: normal;
     flex-shrink: 0;
     color: #000;
@@ -390,6 +391,7 @@
   }
 
   .button {
+    margin-left: -20px;
     width: 157px;
     height: 59px;
   }

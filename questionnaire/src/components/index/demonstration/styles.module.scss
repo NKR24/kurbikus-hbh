@@ -10,7 +10,7 @@
   display: flex;
   width: 100%;
   max-width: max(1728px);
-  padding: 40px 103px 38px;
+  padding: 40px 103px 38px 103px;
 }
 
 .containerSection {
@@ -44,7 +44,6 @@
   color: white;
 }
 
-
 .houseTab {
   border: 1px solid black;
   display: flex;
@@ -64,6 +63,7 @@
 }
 
 .text {
+  white-space: nowrap;
   font-family: Mikro, serif;
   font-size: 24px;
   font-weight: 400;
@@ -77,7 +77,7 @@
 .partSecond {
   margin-top: 34px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 29px;
   grid-row-gap: 25px;
 }
@@ -313,6 +313,23 @@
   background-position: center center;
 }
 
+@include large{
+  .partSecond{
+
+  }
+
+  .partSecond > *{
+    grid-column-gap: 0;
+  }
+
+  .child{
+    width: 26em;
+  }
+
+  .target{
+    width: 920px;
+  }
+}
 
 @include xl {
 
@@ -578,6 +595,10 @@
 
   .mobileOne {
     display: flex;
+  }
+
+  .textMobile{
+    font-size: 18px;
   }
 
   .houseTabMobile {
