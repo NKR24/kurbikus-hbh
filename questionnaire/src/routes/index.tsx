@@ -226,9 +226,9 @@ function Section2() {
               <img src={home2} alt="home2" class={section2Styles.imageHome} />
               <img src={PDF} alt="PDF" class={section2Styles.overlayImage} />
               <div class={section2Styles.textOverlay}>h2</div>
-              <div class={section2Styles.blackRectangle}>
+              {/*<div class={section2Styles.blackRectangle}>
                 <div class={section2Styles.textShale}>шале</div>
-              </div>
+              </div>*/}
               <h1 class={section2Styles.text}>
                 Площадь: от 90 м²
                 <br /> 3 спальни, 1 санузел От <br /> 4 600 000 руб.

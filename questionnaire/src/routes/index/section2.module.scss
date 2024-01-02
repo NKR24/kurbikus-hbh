@@ -6,7 +6,7 @@
 }
 
 .section {
-  height: 1050px;
+  //height: 1050px;
   max-width: max(1728px);
 }
 
@@ -23,24 +23,31 @@
 }
 
 .text {
-  margin-left: 57.05px;
-  margin-top: 17.86px;
-  margin-bottom: 8.93px;
-  font-size: 15px;
+  height: auto;
+  flex-shrink: 0;
+  color: #DEDEDE;
+  font-family: Mikro;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+  font-size: 0.8vw;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 8%;
 }
 
 .blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 220px;
+  grid-column-gap: 12.7%;
   grid-row-gap: 38.45px;
   justify-content: center;
   align-items: center;
-  margin: 0 102px 62.58px 104px;
+  //margin: 0 102px 62.58px 104px;
+  padding-left: 104px;
+  padding-right: 102px;
+  padding-bottom: 63px;
 }
 
 .block1 {
@@ -57,13 +64,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 30px;
-  margin-right: 48px;
+  padding: 7.2% 7.3% 79% 82.6%;
+  flex-shrink: 0;
 }
 
 .textOverlay {
   position: absolute;
-  font-size: 96px;
+  font-size: 5.5vw;
   color: #3e3e3e;
   font-family: Mikro;
   font-style: normal;
@@ -71,10 +78,9 @@
   text-transform: lowercase;
   top: -3%;
   margin-top: 0px;
-  margin-left: 66px;
+  margin-left: 10.5%;
 }
-
-.blackRectangle {
+/*.blackRectangle {
   position: absolute;
   top: 0%;
   margin-left: 179px;
@@ -82,9 +88,9 @@
   border: 0.5px solid #000;
   width: 249.026px;
   height: 76.455px;
-}
+}*/
 
-.textShale {
+/*.textShale {
   color: #000;
   font-family: Mikro;
   font-size: 16px;
@@ -94,16 +100,27 @@
   text-transform: lowercase;
   margin-left: 76.46px;
   margin-top: 17.48px;
-}
+}*/
 
 @include xxl{
   .section {
     margin: 0 auto;
   }
+
+  .textOverlay {
+    font-size: 96px;
+  }
+
+  .text {
+    height: 68.892px;
+    margin-left: 57.05px;
+    margin-top: 17.86px;
+    margin-bottom: 8.93px;
+    font-size: 15px;
+  }
 }
 
 @include xl{
-
 }
 
 @include l{
@@ -192,9 +209,9 @@
     order: 2;
   }
 
-  .textShale, .blackRectangle {
+  /*.textShale, .blackRectangle {
     display: none;
-  }
+  }*/
 }
 
 @include sm {
@@ -275,9 +292,9 @@
     order: 2;
   }
 
-  .textShale, .blackRectangle {
+  /*.textShale, .blackRectangle {
     display: none;
-  }
+  }*/
 }
 
 @include s{
@@ -296,9 +313,9 @@
     order: 2;
   }
 
-  .textShale, .blackRectangle {
+  /*.textShale, .blackRectangle {
     display: none;
-  }
+  }*/
 
   .overlayImage {
     width: 57.298px;
