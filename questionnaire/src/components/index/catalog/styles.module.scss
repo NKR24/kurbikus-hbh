@@ -2,11 +2,12 @@
 
 .containerMain{
   background-color: #3e3e3e;
-  width: 100%;
+  width: 1729px;
+  display: flex;
+  justify-content: center;
 }
 
 .section {
-  //height: 1050px;
   max-width: max(1728px);
 }
 
@@ -23,28 +24,26 @@
 }
 
 .text {
-  height: auto;
+  width: 374.732px;
+  height: 68.892px;
   flex-shrink: 0;
-  color: #DEDEDE;
-  font-family: Mikro;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
-  font-size: 0.8vw;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  margin-left: 8%;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 11px;
+  margin-left: 57px;
 }
 
 .blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 12.7%;
+  grid-column-gap: 220px;
   grid-row-gap: 38.45px;
   justify-content: center;
   align-items: center;
-  //margin: 0 102px 62.58px 104px;
   padding-left: 104px;
   padding-right: 102px;
   padding-bottom: 63px;
@@ -64,20 +63,19 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 7.2% 7.3% 79% 82.6%;
+  padding: 30px 49px 327px 538px;
   flex-shrink: 0;
 }
 
 .textOverlay {
   position: absolute;
-  font-size: 5.5vw;
+  font-size: 96px;
   color: #3e3e3e;
   font-family: Mikro;
   font-style: normal;
   font-weight: 700;
   text-transform: lowercase;
   top: -3%;
-  margin-top: 0px;
   margin-left: 10.5%;
 }
 /*.blackRectangle {
@@ -103,20 +101,8 @@
 }*/
 
 @include xxl{
-  .section {
-    margin: 0 auto;
-  }
-
-  .textOverlay {
-    font-size: 96px;
-  }
-
-  .text {
-    height: 68.892px;
-    margin-left: 57.05px;
-    margin-top: 17.86px;
-    margin-bottom: 8.93px;
-    font-size: 15px;
+  .containerMain {
+    width: 100%;
   }
 }
 
@@ -132,7 +118,7 @@
 }
 
 @include md{
-  .section {
+  /*.section {
     height: 2266px;
     width: 100%;
   }
@@ -209,22 +195,23 @@
     order: 2;
   }
 
-  /*.textShale, .blackRectangle {
+  !*.textShale, .blackRectangle {
     display: none;
-  }*/
+  }*!*/
 }
 
 @include sm {
+  .containerMain {
+    width: 640px;
+  }
+
   .section {
-    height: 1870px;
+    height: auto;
     width: 100%;
   }
 
   .firstText {
-    padding-left: 53px;
-    padding-top: 22px;
-    padding-bottom: 31px;
-    padding-right: 85px;
+    padding: 22px 85px 31px 53px;
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
@@ -234,8 +221,10 @@
   .blocks {
     grid-template-columns: 1fr;
     grid-row-gap: 35px;
-    margin-left: 77px;
-    margin-right: 86px;
+
+    padding-left: 77px;
+    padding-right: 86px;
+    padding-bottom: 32px;
   }
 
   .block1 {
@@ -251,13 +240,12 @@
   }
 
   .textOverlay {
-    top: -5%;
-    margin-left: 50px;
+    top: -8%;
+    margin-left: 55px;
     margin-top: 22px;
     width: 146px;
     height: 119px;
     flex-shrink: 0;
-    font-family: Mikro;
     font-size: 117.964px;
     font-style: normal;
     font-weight: 700;
@@ -266,17 +254,13 @@
   }
 
   .overlayImage {
-    width: 70px;
-    height: 54px;
-    right: 0%;
-    margin-top: 28px;
-    margin-right: 76px;
+    padding: 29px 76px 315px 331px;
   }
 
   .text {
     margin-left: 42px;
-    margin-top: 17px;
-    font-family: Mikro;
+    margin-top: 14px;
+    margin-bottom: 9px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -298,11 +282,20 @@
 }
 
 @include s{
+  .containerMain {
+    width: 430px;
+  }
+
   .firstText {
     padding-left: 22px;
     padding-top: 18px;
     padding-bottom: 31px;
+
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
   }
 
   .thirdBlock {
@@ -318,33 +311,32 @@
   }*/
 
   .overlayImage {
-    width: 57.298px;
-    height: 43.955px;
-    right: 0%;
-    margin-top: 23px;
-    margin-right: 61.7px;
+    padding: 23px 61px 269px 257px;
   }
 
   .imageHome {
     height: 249px;
-    max-width: 388px;
+    //max-width: 388px;
     width: 388px;
   }
 
   .text {
     margin-left: 34px;
-    margin-top: 12px;
+    margin-top: 11px;
+    margin-bottom: 7px;
+    font-size: 15px;
   }
 
   .textOverlay {
-    top: -11%;
-    margin-left: 41px;
+    //top: -11%;
+    margin-left: 47px;
     margin-top: 22px;
-  }
 
-  .section {
-    height: 1488px;
-    width: 100%;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
   }
 
   .blocks {
@@ -356,7 +348,6 @@
 
   .block1 {
     height: 324px;
-    width: 100%;
-    max-width: 430px;
+    width: 388px;
   }
 }

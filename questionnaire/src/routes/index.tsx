@@ -12,7 +12,7 @@ import Consultation from "~/components/index/consultation"
 import Accordion from "~/components/index/accordion"
 import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
-import Contacts from "~/components/index/contacts"
+import Contacts from "~/components/index/contacts";
 
 export default function Home() {
   return (
@@ -25,13 +25,13 @@ export default function Home() {
       {/*<Whyus />*/}
       <Foundation />
       <Demonstration />
-      {/*<Interview />
+      <Interview />
       <Excursion />
       <Consultation />
-      <Accordion />*/}
-      {/*<Pros />*/}
-      {/*<Aboutus />
-      <Contacts />*/}
+      <Accordion />
+      <Pros />
+      <Aboutus />
+      <Contacts/>
     </>
   )
 }
