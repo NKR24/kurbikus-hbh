@@ -20,18 +20,18 @@ export default function Home() {
       <Title>Опросник</Title>
       <Navbar />
       <Barnhouse />
-      {/*<Catalog />
+      <Catalog />
       <Questions />
-      <Whyus />
-      <Foundation />*/}
+      {/*<Whyus />*/}
+      <Foundation />
       <Demonstration />
-      {/*<Interview />
+      {/*<Interview />*/}
       <Excursion />
-      <Consultation />
-      <Accordion />
-      <Pros />
+      {/*<Consultation />*/}
+      {/*<Accordion />*/}
+      {/*<Pros />*/}
       <Aboutus />
-      <Contacts />*/}
+      {/*<Contacts />*/}
     </>
   )
 }
