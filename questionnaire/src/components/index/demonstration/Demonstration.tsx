@@ -1,265 +1,160 @@
-import styles from "./styles.module.scss"
 import { createSignal, Show } from "solid-js"
 import clsx from "clsx"
+import styles from "./styles.module.scss"
 
-enum HouseDemonstrationTab {
+enum HouseDemonstration {
   Houses,
   Interior,
   Construction,
 }
 
-const [tab, setTab] = createSignal(HouseDemonstrationTab.Houses)
-
-function handleHousesClick() {
-  setTab(HouseDemonstrationTab.Houses)
-}
-
-function handleInteriorClick() {
-  setTab(HouseDemonstrationTab.Interior)
-}
-
-function handleConstructionClick() {
-  setTab(HouseDemonstrationTab.Construction)
-}
-
 export default function Demonstration() {
+  const [tab, setTab] = createSignal(HouseDemonstration.Houses)
+
+  function handleClickHouses() {
+    setTab(HouseDemonstration.Houses)
+  }
+
+  function handleClickInterior() {
+    setTab(HouseDemonstration.Interior)
+  }
+
+  function handleClickConstruction() {
+    setTab(HouseDemonstration.Construction)
+  }
+
   return (
     <>
-      <div class={styles.containerMain}>
-        <div class={styles.containerSection}>
-          <div class={styles.containerDesktop}>
-            <div class={styles.partFirst}>
-              <button
-                onClick={handleHousesClick}
-                class={clsx(styles.houseTab, {
-                  [styles.houseTabSelected]:
-                    tab() === HouseDemonstrationTab.Houses,
-                })}
-              >
-                <span class={clsx(styles.text)}>наши дома</span>
-              </button>
-              <button
-                onClick={handleInteriorClick}
-                class={clsx(styles.houseTab, {
-                  [styles.houseTabSelected]:
-                    tab() === HouseDemonstrationTab.Interior,
-                })}
-              >
-                <span class={clsx(styles.text)}>интерьер</span>
-              </button>
-              <button
-                onClick={handleConstructionClick}
-                class={clsx(styles.houseTab, {
-                  [styles.houseTabSelected]:
-                    tab() === HouseDemonstrationTab.Construction,
-                })}
-              >
-                <span class={clsx(styles.text)}>стройка</span>
-              </button>
-            </div>
-            <Show when={tab() === HouseDemonstrationTab.Houses}>
-              <div class={styles.partSecond}>
-                <div class={clsx(styles.child, styles.OneThreeFive)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+      <main class={styles.main}>
+        <div class={styles.section}>
+          <section class={styles.first}>
+            <button
+              onClick={handleClickHouses}
+              class={clsx(styles.tab, {
+                [styles.tabSelected]: tab() === HouseDemonstration.Houses,
+              })}
+            >
+              наши дома
+            </button>
+            <button
+              onClick={handleClickInterior}
+              class={clsx(styles.tab, {
+                [styles.tabSelected]: tab() === HouseDemonstration.Interior,
+              })}
+            >
+              интерьер
+            </button>
+            <button
+              onClick={handleClickConstruction}
+              class={clsx(styles.tab, {
+                [styles.tabSelected]: tab() === HouseDemonstration.Construction,
+              })}
+            >
+              стройка
+            </button>
+          </section>
+          <section>
+            <Show when={tab() === HouseDemonstration.Houses}>
+              <figure class={styles.table}>
+                <div class={clsx(styles.child, styles.housesOne)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesTwo)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesThree)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesFour)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesFive)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesSix)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+                <div class={styles.target}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h3</h2>
+                </div>
+                <div class={clsx(styles.child, styles.housesEight)}>
+                  <text class={styles.text}>наши дома</text>
+                  <h2 class={styles.bald}>дом по проекту h1</h2>
+                </div>
+              </figure>
+            </Show>
+            <Show when={tab() === HouseDemonstration.Interior}>
+              <figure class={styles.table}>
+                <div class={clsx(styles.child, styles.One)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Two)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Three)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Four)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Five)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Six)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Seven)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Eight)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+                <div class={clsx(styles.child, styles.Nine)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+              </figure>
+            </Show>
+            <Show when={tab() === HouseDemonstration.Construction}>
+              <figure class={styles.table}>
+                <div class={clsx(styles.child, styles.First)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
                 <div class={clsx(styles.child, styles.Second)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.child, styles.OneThreeFive)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Third)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.child, styles.FourSixEight)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Fourth)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.child, styles.OneThreeFive)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Fifth)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.child, styles.FourSixEight)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Sixth)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.target, styles.Seven)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Seventh)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-                <div class={clsx(styles.child, styles.FourSixEight)}>
-                  <p class={styles.textLow}>наши дома</p>
-                  <p class={styles.textLarge}>дом по проекту h1</p>
+                <div class={clsx(styles.child, styles.Eights)}>
+                  <text class={styles.text}>наши дома</text>
                 </div>
-              </div>
+                <div class={clsx(styles.child, styles.Ninth)}>
+                  <text class={styles.text}>наши дома</text>
+                </div>
+              </figure>
             </Show>
-            <Show when={tab() === HouseDemonstrationTab.Interior}>
-              <div class={styles.table}>
-                <div class={clsx(styles.tableItem, styles.interiorFirst)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorSecond)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorThird)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorFourth)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorFifth)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorSixth)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorSeventh)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorEighth)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.interiorNinth)}>
-                  <p class={styles.textTable}>наши дома</p>
-                </div>
-              </div>
-            </Show>
-            <Show when={tab() === HouseDemonstrationTab.Construction}>
-              <div class={styles.table}>
-                <div class={clsx(styles.tableItem, styles.constructionFirst)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionSecond)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionThird)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionFourth)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionFifth)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionSixth)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionSeventh)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionEighth)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-                <div class={clsx(styles.tableItem, styles.constructionNinth)}>
-                  <p class={styles.textTable}>Наши дома</p>
-                </div>
-              </div>
-            </Show>
-          </div>
-          <div class={styles.containerMobile}>
-            <div class={styles.mobileOne}>
-              <button
-                class={clsx(styles.houseTabMobile, {
-                  [styles.houseTabMobileSelected]:
-                    tab() === HouseDemonstrationTab.Houses,
-                })}
-                onClick={handleHousesClick}
-              >
-                <span class={clsx(styles.textMobile)}>наши дома</span>
-              </button>
-              <button
-                class={clsx(styles.houseTabMobile, {
-                  [styles.houseTabMobileSelected]:
-                    tab() === HouseDemonstrationTab.Interior,
-                })}
-                onClick={handleInteriorClick}
-              >
-                <span class={clsx(styles.textMobile)}>интерьер</span>
-              </button>
-              <button
-                class={clsx(styles.houseTabMobile, {
-                  [styles.houseTabMobileSelected]:
-                    tab() === HouseDemonstrationTab.Construction,
-                })}
-                onClick={handleConstructionClick}
-              >
-                <span class={clsx(styles.textMobile)}>стройка</span>
-              </button>
-            </div>
-            <Show when={tab() === HouseDemonstrationTab.Houses}>
-              <div class={styles.tableMobile}>
-                <div class={clsx(styles.itemMobile, styles.houseMobOne)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                  <p class={styles.textHomeLow}>дом по проекту h1</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.houseMobTwo)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                  <p class={styles.textHomeLow}>дом по проекту h1</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.houseMobThree)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                  <p class={styles.textHomeLow}>дом по проекту h1</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.houseMobFour)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                  <p class={styles.textHomeLow}>дом по проекту h1</p>
-                </div>
-                <div class={clsx(styles.itemMobileLarge, styles.houseMobFive)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-              </div>
-            </Show>
-            <Show when={tab() === HouseDemonstrationTab.Interior}>
-              <div class={styles.tableInteriorMobile}>
-                <div class={clsx(styles.itemMobile, styles.interiorMobOne)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.interiorMobTwo)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.interiorMobThree)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.interiorMobFour)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.interiorMobFive)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.interiorMobSix)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-              </div>
-            </Show>
-            <Show when={tab() === HouseDemonstrationTab.Construction}>
-              <div class={styles.tableMobile}>
-                <div class={clsx(styles.itemMobile, styles.constructionMobOne)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div class={clsx(styles.itemMobile, styles.constructionMobTwo)}>
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div
-                  class={clsx(styles.itemMobile, styles.constructionMobThree)}
-                >
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div
-                  class={clsx(styles.itemMobile, styles.constructionMobFour)}
-                >
-                  <p class={styles.textLowMobile}>наши дома</p>
-                </div>
-                <div
-                  class={clsx(
-                    styles.itemMobileLarge,
-                    styles.constructionMobFive,
-                  )}
-                />
-              </div>
-            </Show>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     </>
   )
 }
