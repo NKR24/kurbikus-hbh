@@ -464,7 +464,159 @@
 @include sm {
   .main {
     width: 100%;
-    padding: 40px 103px 38px 103px;
+    padding: 31px 19px 27px 23px;
+  }
+
+  .first {
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    border: 0.5px solid black;
+    width: 128px;
+    height: 59px;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .table {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4px;
+    row-gap: 6px;
+  }
+
+  .child {
+    padding-top: 0;
+    height: 126px;
+  }
+
+  .child text {
+    margin-left: 6px;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .table h2 {
+    margin-left: 6px;
+    margin-top: 83px;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+  /*HOUSES*/
+
+  .housesOne {
+    background: url("../../../assets/img/section6/section6ImagesMobile/houses/houses-one.jpeg") no-repeat center;
+    background-size: cover;
+  }
+
+  .housesTwo {
+    background: url("../../../assets/img/section6/section6ImagesMobile/houses/houses-two.jpeg") no-repeat center;
+    background-size: cover;
+  }
+
+  .housesThree {
+    background: url("../../../assets/img/section6/section6ImagesMobile/houses/houses-three.jpeg") no-repeat center;
+    background-size: cover;
+  }
+
+  .housesFour {
+    background: url("../../../assets/img/section6/section6ImagesMobile/houses/houses-four.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .target {
+    padding-top: 100px;
+    height: 124px;
+    background: url("../../../assets/img/section6/section6ImagesMobile/houses/houses-five.jpeg") no-repeat center;
+    background-size: cover;
+  }
+
+  .target h2 {
+    display: none;
+  }
+
+  .target text {
+    margin-left: 6px;
+    color: #FFF;
+    font-family: Mikro, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .housesFive {
+    display: none;
+  }
+
+  .housesSix {
+    display: none;
+  }
+
+  .housesEight {
+    display: none;
+  }
+
+  /*INTERIOR*/
+
+  .Seven {
+    display: none;
+  }
+
+  .Eight {
+    display: none;
+  }
+
+  .Nine {
+    display: none;
+  }
+
+  /*CONSTRUCTION*/
+
+  .Third {
+    background: url("../../../assets/img/section6/section6ImagesMobile/construction/construction-three.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .Fifth {
+    background: url("../../../assets/img/section6/section6ImagesMobile/construction/construction-five.png") no-repeat center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+
+  .Fifth text {
+    display: none;
+  }
+
+  .Sixth {
+    display: none;
+  }
+
+  .Seventh {
+    display: none;
+  }
+
+  .Eights {
+    display: none;
+  }
+
+  .Ninth {
+    display: none;
   }
 }
 
