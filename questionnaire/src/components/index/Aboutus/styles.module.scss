@@ -186,17 +186,15 @@
 }
 
 @include lg {
-  .photo {
-    width: 207px;
-    height: 263px;
-  }
-  .text {
-    font-size: 12px;
+  .containerMain{
+    display: none;
   }
 }
 
 @include md {
-
+  .containerMain{
+    display: none;
+  }
 }
 
 @include sm {
