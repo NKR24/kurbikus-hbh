@@ -75,3 +75,125 @@
   align-items: center;
   flex-direction: column;
 }
+
+@include xl{
+
+  .button{
+    width: 402px;
+    height: 107px;
+    font-size: 46px;
+  }
+
+  .section{
+    padding: 45px 182px 48px 178px;
+  }
+
+  .mainText{
+    white-space: nowrap;
+    font-size: 44px;
+  }
+
+  .videobox{
+    height: 567px;
+    margin-bottom: 66px;
+  }
+
+  .paragraph{
+    font-size: 22px;
+  }
+}
+
+@include l{
+  .button{
+    width: 331px;
+    height: 90px;
+    font-size: 43px;
+    margin-top: 40px;
+  }
+
+  .section{
+    padding: 35px 92px 48px 98px;
+  }
+
+  .mainText{
+    white-space: nowrap;
+    font-size: 38px;
+  }
+
+  .videobox{
+    height: 527px;
+    margin-bottom: 46px;
+  }
+
+  .paragraph{
+    font-size: 19px;
+  }
+}
+
+@include lg{
+  .container{
+    padding: 62px 97px 30px 84px;
+  }
+
+  .button{
+    width: 310px;
+    height: 72px;
+    font-size: 37px;
+    margin-top: 40px;
+  }
+
+  .section{
+    padding: 35px 92px 48px 98px;
+  }
+
+  .mainText{
+    margin-bottom: 40px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+
+  .videobox{
+    height: 249px;
+    margin-bottom: 46px;
+  }
+
+  .paragraph{
+    font-size: 16px;
+  }
+}
+
+@include md{
+  
+}
+
+@include sm{
+  .container{
+    padding: 28px 19px 10px 23px;
+  }
+
+  .button{
+    width: 157px;
+    height: 59px;
+    font-size: 16px;
+    margin-top: 23px;
+  }
+
+  .section{
+    padding: 11px 36px 38px 33px;
+  }
+
+  .mainText{
+    margin-bottom: 12px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .videobox{
+    height: 154px;
+    margin-bottom: 16px;
+  }
+
+  .paragraph{
+    font-size: 12px;
+  }
+}
