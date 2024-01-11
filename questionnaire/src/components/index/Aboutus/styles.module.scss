@@ -186,32 +186,37 @@
 }
 
 @include lg {
-  .photo {
-    width: 20.7vw;
-    height: 26.4vw;
-  }
-  .text {
-    font-size: 1.17vw;
-  }
-  .main {
-    width: 18vw;
-    height: 4.2vw;
-    font-size: 2.34vw;
-  }
+.photo {
+  width: 20.7vw;
+  height: 26.4vw;
+}
+.text {
+  font-size: 1.17vw;
+}
+.main {
+  width: 18vw;
+  height: 4.2vw;
+  font-size: 2.34vw;
+}
+.containerMain {
+  display: none;
+}
 }
 
 @include md {
-
+.containerMain {
+  display: none;
+}
 }
 
 @include sm {
-  .containerMain{
-    display: none;
-  }
+.containerMain {
+  display: none;
+}
 }
 
 @include s {
-  .containerMain {
-    display: none;
-  }
+.containerMain {
+  display: none;
+}
 }

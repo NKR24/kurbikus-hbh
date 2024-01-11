@@ -243,6 +243,16 @@
     padding-bottom: 63px;
   }
 
+  .containerDesktop{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    flex-direction: column;
+
+  }
+
   .MobileImage {
     width: 100%;
     height: 432px;
@@ -468,17 +478,20 @@
 }
 
 @include sm {
+  .containerDesktop {
+    display: none;
+  }
+
   .containerMain {
     width: 100%;
-    padding-left: 53px;
-    padding-right: 52px;
-    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 20px;
   }
 
   .containerSection {
     border: 0.5px solid black !important;
     overflow: hidden;
-    margin-bottom: 0 !important;
+    margin-bottom: 19px !important;
   }
 
   .containerMobile {
@@ -488,8 +501,7 @@
 
   .MobileImage {
     width: 100%;
-    height: 391.559px;
-    flex-shrink: 0;
+    height: 283.68px;
     background: url("../../../assets/img/home-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -501,7 +513,7 @@
   .homeButton {
     display: flex;
     justify-content: center;
-    margin-top: 307px;
+    margin-top: 207px;
     width: 231.451px;
     height: 52px;
     flex-shrink: 0;
@@ -522,70 +534,75 @@
     text-transform: lowercase;
   }
 
-  .MobTextFirstLarge {
+  .smSize {
     display: none;
   }
 
-  .smSize {
+  .MobTextFirstLarge {
+    display: block !important;
+    padding-top: 23px;
+    padding-left: 31px;
     width: 451px;
     height: 75px;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 50px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 49px;
-    margin-top: 42px;
+    text-transform: lowercase;
   }
 
   .MobTextFirstSmall {
-    margin-left: 54px;
-    width: 263px;
+    margin-left: 34px;
+    width: 202px;
     height: 110px;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-transform: lowercase;
   }
 
   .MobileSecond {
-    border-top: 0;
+    border-top: 0.5px solid black;
     display: flex;
     flex-direction: row;
   }
 
   .videoButton {
-    display: none;
-  }
-
-  .videoButtonMd {
-    display: none;
+    display: block;
+    margin-top: 42px;
+    margin-left: 35px;
+    margin-bottom: 43.5px;
   }
 
   .videoButtonSm {
-    display: block;
-    margin-top: 42px;
-    margin-left: 54px;
-    margin-bottom: 71px;
+    display: none;
   }
 
   .MobTextSecond {
-    margin-top: 57px;
-    width: 212px;
+    margin-top: 46px;
+    margin-left: 19.5px;
+    margin-right: 93px;
+    width: 186px;
     height: 74px;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+  }
+
+  .videoButtonMd{
+    display: none;
   }
 }
 

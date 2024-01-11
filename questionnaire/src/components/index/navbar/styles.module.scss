@@ -1,0 +1,19 @@
+@import "../../../utils";
+
+@include xxl{
+  .container{
+    margin: 0 auto;
+  }
+}
+
+.container{
+  width: 100%;
+  padding-left: 104px;
+  padding-right: 103px;
+  max-width: max(1728px);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
