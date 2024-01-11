@@ -23,7 +23,7 @@ export default function Catalog() {
               </h1>
             </div>
             <div class={clsx(styles.block1, styles.thirdBlock)}>
-              <img src={home3} alt="home3" class={styles.imageHome} />
+              <img src={home2} alt="home3" class={styles.imageHome} />
               <img src={PDF} alt="PDF" class={styles.overlayImage} />
               <div class={styles.textOverlay}>h3</div>
               <h1 class={styles.text}>
@@ -32,7 +32,7 @@ export default function Catalog() {
               </h1>
             </div>
             <div class={clsx(styles.block1, styles.thirdBlock1)}>
-              <img src={home2} alt="home2" class={styles.imageHome} />
+              <img src={home3} alt="home2" class={styles.imageHome} />
               <img src={PDF} alt="PDF" class={styles.overlayImage} />
               <div class={styles.textOverlay}>h2</div>
               {/*<div class={styles.blackRectangle}>
