@@ -13,6 +13,7 @@
 
 .first{
   display: flex;
+  padding-right: 104px;
 }
 
 .mainText{
@@ -38,20 +39,22 @@
 }
 
 .button{
+  /*padding-right: 138px;*/
   margin-top: 43px;
   width: 37.494px;
   height: 37.494px;
   flex-shrink: 0;
-  margin-left: 18%;
+  margin-left: auto;
   transition: transform 0.6s ease;
 }
 
 .buttonActive{
+  /*padding-right: 138px;*/
   margin-top: 43px;
   width: 37.494px;
   height: 37.494px;
   flex-shrink: 0;
-  margin-left: 18%;
+  margin-left: auto;
   transform: rotate(45deg);
 }
 
@@ -102,6 +105,184 @@
   width: 100%;
 }
 
+@include xl{
+  .mainText{
+    width: auto;
+    font-size: 46px;
+  }
+}
+
+@include l{
+  .mainText{
+    width: auto;
+    font-size: 34px;
+    margin-left: 103px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .button{
+    margin-top: 23px;
+  }
+}
+
+@include lg{
+  .mainText{
+    width: auto;
+    font-size: 24px;
+    margin-left: 82px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    height: 40px;
+  }
+
+  .description{
+    font-size: 18px;
+    width: 730px;
+    margin-left: 84px;
+  }
+
+  .button{
+    margin-top: 23px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .first{
+    padding-right: 95px;
+  }
+
+  .boxOne{
+    padding-bottom: 5px;
+  }
+
+  .boxTwo{
+    padding-bottom: 5px;
+  }
+
+  .boxThree{
+    padding-bottom: 5px;
+  }
+
+  .boxFour{
+    padding-bottom: 5px;
+  }
+
+  .boxFive{
+    padding-bottom: 5px;
+  }
+
+  .boxSix{
+    padding-bottom: 5px;
+  }
+
+  .plus{
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    background: url("../../../assets/img/accordion/plusSM.svg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@include md{
+  .description{
+    margin-left: 39.27px;
+    width: 507px;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 14.545px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .first{
+    display: flex;
+  }
+
+  .mainText{
+    margin-left: 39.27px;
+    margin-top: 21.82px;
+    margin-bottom: 19.09px;
+    width: 460.273px;
+    height: 24.727px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 20.364px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .button{
+    margin-top: 21.82px;
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    margin-left: auto;
+    transition: transform 0.6s ease;
+  }
+
+  .buttonActive{
+    margin-top: 21.82px;
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    margin-left: auto;
+    transform: rotate(45deg);
+  }
+
+  .plus{
+    width: 24.727px;
+    height: 24.727px;
+    flex-shrink: 0;
+    background: url("../../../assets/img/accordion/plusSM.svg");
+  }
+
+  .myTransition {
+    transition: height 700ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .containerMain{
+    width: 100%;
+  }
+
+  .boxOne{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxTwo{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxThree{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxFour{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxFive{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+
+  .boxSix{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+  }
+}
+
 @include sm{
   .description{
     margin-left: 39.27px;
@@ -138,7 +319,7 @@
     width: 24.727px;
     height: 24.727px;
     flex-shrink: 0;
-    margin-left: 45px;
+    margin-left: auto;
     transition: transform 0.6s ease;
   }
 
@@ -147,7 +328,7 @@
     width: 24.727px;
     height: 24.727px;
     flex-shrink: 0;
-    margin-left: 45px;
+    margin-left: auto;
     transform: rotate(45deg);
   }
 
