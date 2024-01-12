@@ -101,7 +101,7 @@
     height: 450px;
     flex-shrink: 0;
     margin-top: 0;
-    margin-left: 218px;
+    margin-left: 165px;
     margin-right: 0;
   }
 
@@ -165,7 +165,7 @@
     height: 400px;
     flex-shrink: 0;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 85px;
     margin-right: 0;
   }
 
@@ -286,7 +286,7 @@
 
   .Section5 {
     width: 100%;
-    height: 858px;
+    height: 800px;
     display: flex;
     align-items: center;
   }
@@ -359,7 +359,9 @@
 }
 
 @include md {
-
+  .numberedList{
+    font-size: 17px;
+  }
 }
 
 @include sm {
@@ -370,7 +372,7 @@
 
   .Section5 {
     width: 100%;
-    height: 858px;
+    height: 980px;
   }
 
   .foundationImage {
@@ -427,14 +429,14 @@
     leading-trim: both;
     text-edge: cap;
     font-family: Montserrat, serif;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    margin-left: 105px;
-    margin-top: 24px;
-    margin-right: 81px;
+    margin-left: 55px;
+    margin-top: 9px;
+    margin-right: 50px;
     line-height: 1.4;
   }
 }
