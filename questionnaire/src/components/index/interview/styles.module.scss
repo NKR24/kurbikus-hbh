@@ -11,29 +11,31 @@
 
 .rectangle {
   border: 2px solid #d9d9d9;
-  width: 1002px;
-  max-width: 1728px;
-  height: 590px;
+  max-width: 1002px;
+  max-height: 587px;
+  width: 83vw; //1207
+  height: 48.63vw;
   flex-shrink: 0;
   margin-top: 123px;
-  margin-left: 361px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
 .previewImage {
-  width: 1002px;
-  height: 587px;
   flex-shrink: 0;
 }
 
 .playButton {
-  width: 96.812px;
-  height: 96.812px;
+  max-width: 96.812px;
+  max-height: 96.812px;
+  width: 8vw;
+  height: 8vw;
   flex-shrink: 0;
-  margin-top: 240px;
-  margin-left: 443px;
+  margin-top: 23.5%;
+  margin-left: 44.2%;
   position: absolute;
-  top: 0%;
+  top: 0;
 }
 
 .previewImage2 {
@@ -52,8 +54,9 @@
   font-weight: 800;
   line-height: normal;
   text-transform: lowercase;
-  margin-top: 61px;
-  margin-left: 401px;
+  margin-top: 3.5vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .textReviews {
@@ -64,23 +67,28 @@
   font-weight: 700;
   line-height: normal;
   text-transform: lowercase;
-  margin-top: 276px;
-  margin-left: 103px;
-  margin-bottom: 29px;
 }
 
 .arrow {
-  width: 41px;
+ /* width: 41px;
   height: 41px;
   flex-shrink: 0;
   margin-top: 1134px;
-  margin-left: 1575px;
-  margin-right: 103px;
-  position: absolute;
+  margin-left: 91.15vw;
+  margin-right: 6.4vw;
+  position: absolute;*/
+
+  margin-left: auto;
+  margin-top: auto;
 }
 
 .arrow2 {
   display: none;
+}
+
+.block {
+  margin: 16vw 111px 17px 103px;
+  display: flex;
 }
 
 .lines {
@@ -137,7 +145,7 @@
   gap: 10px;
   flex-shrink: 0;
   border: 1px solid #dedede;
-  margin: 77px 629px 91px 638px;
+  margin: 4.45vw auto 5.26vw auto;
 }
 
 .textDownload {
@@ -166,6 +174,10 @@
   .downloadButton{
     margin: 57px auto 91px;
   }
+
+  .block {
+    margin-top: 276px;
+  }
 }
 
 @include xl {
@@ -173,19 +185,42 @@
 }
 
 @include l {
-
 }
 
 @include lg {
-
+  .interviewText {
+    font-size: 4.6875vw;
+  }
 }
 
 @include md {
-
+  .reviews {
+    margin-left: 5.5vw;
+    margin-right: 4vw;
+  }
+  .block {
+    margin-left: 5.5vw;
+    margin-right: 4vw;
+  }
+  .downloadButton {
+    width: 62.2vw;
+    height: 15.8vw;
+    //padding: 10px;
+    //gap: 10px;
+  }
+  .textDownload {
+    font-size: 6.25vw;
+  }
+  .rectangle {
+    margin-top: 16px;
+  }
+  .review, .review2 {
+    font-size: 21px;
+  }
 }
 
 @include sm {
-  .Section7 {
+ /* .Section7 {
     width: 100%;
     height: 1409px;
     flex-shrink: 0;
@@ -336,11 +371,11 @@
     font-weight: 400;
     line-height: normal;
     font-variant: small-caps;
-  }
+  }*/
 }
 
 @include s {
-  .Section7 {
+  /*.Section7 {
     width: 100%;
     height: 945px;
     flex-shrink: 0;
@@ -491,5 +526,5 @@
     font-weight: 400;
     line-height: normal;
     font-variant: small-caps;
-  }
+  }*/
 }

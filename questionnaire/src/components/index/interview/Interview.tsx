@@ -68,6 +68,7 @@ export default function Interview() {
           </div>
         </div>
         <p class={styles.interviewText}>ИНТЕРВЬЮ С СОЗДАТЕЛЕМ КОМПАНИИ</p>
+        <div class={styles.block}>
         <p class={styles.textReviews}>отзывы:</p>
         <svg
           class={styles.arrow}
@@ -83,6 +84,7 @@ export default function Interview() {
             stroke-width="3"
           />
         </svg>
+        </div>
         <svg
           class={styles.arrow2}
           xmlns="http://www.w3.org/2000/svg"
