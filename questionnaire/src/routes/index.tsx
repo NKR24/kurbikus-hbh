@@ -29,7 +29,7 @@ export default function Home() {
       <Excursion />
       <Consultation />
       <Accordion />
-      {/*<Pros />*/}
+      <Pros />
       <Aboutus />
       <Contacts />
     </>

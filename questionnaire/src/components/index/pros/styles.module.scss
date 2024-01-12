@@ -3,19 +3,19 @@
 
 .containerMain {
   width: 100%;
-  padding-bottom: 250px;
+  padding-bottom: 14.47vw;
   max-width: max(1728px);
 }
 
 .textMain {
-  margin-top: 150px;
-  margin-left: 108px;
-  width: 766px;
-  height: 123px;
+  margin-top: 8.68vw;
+  margin-left: 6.25vw;
+  width: 44.33vw;
+  height: 7.12vw;
   flex-shrink: 0;
   color: #000;
   font-family: Mikro, serif;
-  font-size: 110px;
+  font-size: 6.37vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -23,10 +23,10 @@
 }
 
 .itemMain {
-  width: 462px;
+  width: 26.74vw;
   color: #000;
   font-family: Mikro, serif;
-  font-size: 48px;
+  font-size: 2.78vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -34,26 +34,27 @@
 }
 
 .OneHalf {
-  margin-top: 66px;
-  margin-left: 106px;
+  margin-top: 3.82vw;
+  margin-left: 6.134vw;
 }
 
 .OneHalfTwo {
-  width: 462px;
+  width: 26.74vw;
   flex-shrink: 0;
-  margin-left: 106px;
+  margin-left: 6.134vw;
 }
 
 .OneHalfThree {
-  width: 462px;
+  width: 26.74vw;
   flex-shrink: 0;
-  margin-left: 106px;
+  margin-left: 6.134vw;
 }
 
 .part {
-  width: 1728px;
-  height: 538px;
+  width: 100vw;
+  height: 31.134vw;
   background: url("../../../assets/img/lines-10.svg") no-repeat;
+  background-size: 100vw;
 }
 
 
@@ -62,19 +63,19 @@
 }
 
 .Two {
-  margin-top: 27px;
-  margin-left: 197px;
+  margin-top: 1.56vw;
+  margin-left: 11.4vw;
 }
 
 .tableTwo {
-  margin-top: 187px;
+  margin-top: 10.82vw;
   display: flex;
-  margin-left: 497px;
+  margin-left: 28.76vw;
 }
 
 .Four {
-  margin-left: 186px;
-  margin-top: 50px;
+  margin-left: 10.76vw;
+  margin-top: 2.89vw;
 }
 
 @include xxl {
@@ -92,11 +93,15 @@
 }
 
 @include lg {
-
+ .containerMain{
+   display: none;
+ }
 }
 
 @include md {
-
+ .containerMain{
+   display: none;
+ }
 }
 
 @include sm {
