@@ -31,7 +31,7 @@ export default function Home() {
       <Accordion />
       {/*<Pros />*/}
       <Aboutus />
-      {/*<Contacts />*/}
+      <Contacts />
     </>
   )
 }
