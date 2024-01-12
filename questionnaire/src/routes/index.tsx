@@ -27,7 +27,7 @@ export default function Home() {
       <Demonstration />
       <Interview />
       <Excursion />
-      {/*<Consultation />*/}
+      <Consultation />
       <Accordion />
       {/*<Pros />*/}
       <Aboutus />

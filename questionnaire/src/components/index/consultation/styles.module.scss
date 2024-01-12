@@ -7,29 +7,32 @@
 }
 
 .containerMain{
+  padding: 8.912vw 27.89vw 6.58vw 29.4vw;
   width: 100%;
-  padding: 150px 482px 114px 496px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: max(1728px);
 }
 
 .containerSection{
   border: 2px solid black;
-  height: 700px;
+  height: auto;
   flex-shrink: 0;
 }
 
 .boxFirst{
-  margin-top: 62px;
-  margin-left: 75px;
+  margin-top: 3.59vw;
+  margin-left: 4.34vw;
 }
 
 .textMain{
-  width: 431px;
-  height: 60px;
+  width: 24.94vw;
+  height: 3.47vw;
   flex-shrink: 0;
   color: #000;
   font-family: Mikro, serif;
-  font-size: 58px;
+  font-size: 3.36vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -37,24 +40,24 @@
 }
 
 .textNoMain{
-  margin-left: 2px;
-  margin-top: 5px;
-  width: 385px;
-  height: 83px;
+  margin-left: 0.12vw;
+  margin-top: 0.23vw;
+  width: 22.28vw;
+  height: 4.8vw;
   flex-shrink: 0;
   color: #181818;
   font-family: Montserrat, serif;
-  font-size: 20px;
+  font-size: 1.16vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 15px;
+  margin-bottom: 0.87vw;
 }
 
 .forminputmaterial{
   display: grid;
   border-bottom: 2px solid black;
-  margin: 40px 50px 33px 4px;
+  margin: 2.31vw 2.89vw 1.91vw 0.23vw;
 }
 
 .formcontrolmaterial{
@@ -64,311 +67,169 @@
 .formcontrolmaterial::placeholder {
   color: #181818;
   font-family: Montserrat, serif;
-  font-size: 19px;
+  font-size: 1.10vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 268px;
-  height: 20px;
+  width: 15.51vw;
+  height: 1.16vw;
   flex-shrink: 0;
 }
 
 
 .boxSecond{
-  margin-top: 110px;
+  margin-bottom: 5.56vw;
+  margin-top: 6.37vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 129px;
-  margin-left: 79px;
+  gap: 7.47vw;
+  margin-left: 4.57vw;
 }
 
 .textLow{
-  width: 277px;
-  height: 67px;
+  width: 16.03vw;
+  height: 3.88vw;
   flex-shrink: 0;
   color: #181818;
   font-family: Montserrat, serif;
-  font-size: 16px;
+  font-size: 0.93vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .button{
-  margin-left: 0;
-  width: 214px;
-  height: 60px;
+  margin-left: 0.8vw;
+  width: 12.38vw;
+  height: 3.47vw;
   border: 2px solid black;
 }
 
 .buttonText{
   display: flex;
   justify-content: center;
-  margin-top: 12px;
+  margin-top: 0.69vw;
 }
 
 .fontButton{
   color: #181818;
   font-family: Montserrat, serif;
-  font-size: 24px;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-@include xxl {
-
-}
-
-@include xl {
-
-}
-
-@include l {
-
-}
-
-@include lg {
-
-}
-
-@include md {
-
-}
-
 @include sm {
-  .containerMain {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 46.42px 52px 46.31px 55px;
+  .containerMain{
+    padding: 7.1875vw 8.125vw 7.1875vw 8.6vw;
   }
 
-  .containerSection {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 460px;
+  .containerSection{
+    border: 0.5px solid black;
+    height: auto;
+    flex-shrink: 0;
   }
 
-  .boxFirst {
-    margin-top: 35.04px;
-    margin-left: 35.18px;
+  .boxFirst{
+    margin-top: 5.47vw;
+    margin-left: 5.47vw;
   }
 
-  .textMain {
-    width: 311.273px;
-    height: 36.364px;
+  .textMain{
+    width: 48.59vw;
+    height: 5.625vw;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 29.091px;
+    font-size: 4.53vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
   }
 
-  .textNoMain {
-    width: 369.455px;
-    height: 56.727px;
+  .textNoMain{
+    margin-left: 0.3vw;
+    margin-top: 0.625vw;
+    width: 57.66vw;
+    height: 8.75vw;
     flex-shrink: 0;
     color: #181818;
     font-family: Montserrat, serif;
-    font-size: 17.455px;
+    font-size: 2.66vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 0.87vw;
   }
 
-  .forminputmaterial {
+  .forminputmaterial{
     display: grid;
-    border-bottom: 1px solid black;
-    margin: 20px 45.45px 0 0;
+    border-bottom: 0.5px solid black;
+    margin: 4.56vw 7.03vw 0 0.3vw;
   }
 
-  .formcontrolmaterial {
+  .formcontrolmaterial{
     background: #DEDEDE;
   }
 
   .formcontrolmaterial::placeholder {
     color: #181818;
     font-family: Montserrat, serif;
-    font-size: 14.545px;
+    font-size: 2.34vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 294px;
-    height: 32px;
+    width: 23.75vw;
+    height: 2.34vw;
     flex-shrink: 0;
   }
 
 
-  .boxSecond {
-    margin-top: 46.45px;
+  .boxSecond{
+    margin-right: 2.8vh;
+    margin-bottom: 3.125vw;
+    margin-top: 7.81vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-left: 11px;
-    margin-right: 5px;
+    gap: 1.875vw;
+    margin-left: 6vw;
   }
 
-  .textLow {
-    margin-left: 25px;
-    width: 224px;
-    height: 81.455px;
+  .textLow{
+    width: 35vw;
+    height: 12.81vw;
     flex-shrink: 0;
     color: #181818;
     font-family: Montserrat, serif;
-    font-size: 14.545px;
+    font-size: 2.34vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
 
-  .button {
-    margin-left: 11.64px;
-    width: 226.909px;
-    height: 52.364px;
-    flex-shrink: 0;
-    border: 1px solid black;
-    background: #000;
+  .button{
+    background: black;
+    color: white;
+    margin-left: 1.875vw;
+    width: 35.47vw;
+    height: 8.47vw;
+    border: 0;
   }
 
-  .buttonText {
+  .buttonText{
     display: flex;
     justify-content: center;
-    margin-top: 12px;
+    margin-top: 0.69vw;
   }
 
-  .fontButton {
-    width: 136.727px;
-    height: 27.636px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Mikro, serif;
-    font-size: 23.273px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-}
-
-@include s {
-  .containerMain {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 28px 19px 32px 23px;
-  }
-
-  .containerSection {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 316px;
-  }
-
-  .boxFirst {
-    margin-top: 24px;
-    margin-left: 34px;
-  }
-
-  .textMain {
-    width: 214px;
-    height: 25px;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  .textNoMain {
-    width: 254px;
-    height: 39px;
-    flex-shrink: 0;
-    color: #181818;
+  .fontButton{
+    color: white;
     font-family: Montserrat, serif;
-    font-size: 12px;
+    font-size: 3.75vw;;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
-
-  .forminputmaterial {
-    display: grid;
-    border-bottom: 1px solid black;
-    margin: 10px 42px 13px 0;
-  }
-
-  .formcontrolmaterial {
-    background: #DEDEDE;
-  }
-
-  .formcontrolmaterial::placeholder {
-    color: #181818;
-    font-family: Montserrat, serif;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 202px;
-    height: 23px;
-    flex-shrink: 0;
-  }
-
-
-  .boxSecond {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-left: 11px;
-    margin-right: 5px;
-  }
-
-  .textLow {
-    margin-left: 23px;
-    width: 154px;
-    height: 56px;
-    flex-shrink: 0;
-    color: #181818;
-    font-family: Montserrat, serif;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .button {
-    margin-left: 9px;
-    width: 146px;
-    height: 36px;
-    border: 1px solid black;
-    background: #000;
-  }
-
-  .buttonText {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-  }
-
-  .fontButton {
-    width: 94px;
-    height: 19px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Mikro, serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
   }
 }
