@@ -1,14 +1,129 @@
 @import "../../../utils";
-.container{
-  display: flex;
-  flex-direction: column;
-  width: 70%;
+
+.button {
+  position: relative;
+  z-index: 100;
 }
 
-.collapse{
-  position: absolute;
+.collapsed {
+  margin-top: -100px;
+  padding-top: 115px;
+  margin-left: -1364px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 21px;
   background: #dedede;
+  position: absolute;
+  animation: myAnim 0.4s ease-in-out forwards;
 }
+
+.target {
+  grid-column: span 2;
+}
+
+.box {
+  padding: 15px 237px 15px 240px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@include xl {
+  .collapsed {
+    margin-left: -1140px;
+  }
+
+  .box {
+    padding: 15px 192px 15px 189px;
+  }
+}
+
+@include l {
+  .collapsed {
+    margin-left: -884px;
+  }
+
+  .box {
+    border: 0.5px solid black;
+    padding: 15px 116px 15px 136px;
+  }
+}
+
+@include lg {
+  .collapsed {
+    margin-left: -768px;
+  }
+
+  .box {
+    padding: 15px 66px 15px 72px;
+  }
+}
+
+@include md {
+
+  .item {
+    font-size: 26px;
+  }
+
+  .collapsed {
+    margin-top: -90px;
+    margin-left: -563px;
+  }
+
+  .box {
+    padding: 15px 66px 15px 72px;
+  }
+}
+
+@include sm {
+  .item {
+    font-size: 26px;
+  }
+
+  .collapsed {
+    margin-top: -90px;
+    margin-left: -567px;
+  }
+
+  .box {
+    padding: 15px 71px 15px 73px;
+  }
+}
+
+@include s {
+  .item {
+    font-size: 24px;
+  }
+
+  .collapsed {
+    padding-bottom: 298px;
+    padding-top: 286px;
+    margin-top: -49px;
+    margin-left: -358px;
+  }
+
+  .box {
+    padding: 15px 27px 15px 24px;
+  }
+}
+
