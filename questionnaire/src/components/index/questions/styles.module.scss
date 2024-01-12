@@ -1,431 +1,155 @@
 @import "../../../utils";
 
-.container {
-  max-width: max(1728px);
-  width: 100%;
-  padding: 263px 105px 311px 103px;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainText {
-  white-space: nowrap;
-  flex-shrink: 0;
-  color: #000;
-  font-family: Mikro, serif;
-  font-size: 7em;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: lowercase;
-  margin-bottom: 94px;
-}
-
-.button {
-  width: 395px;
-  height: 107px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: white;
-  font-family: Mikro, serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: lowercase;
-}
-
-.table {
-  border: 0;
-  margin-top: 93px;
-  padding: 15px 30px;
-}
-
-.tableName {
-  color: #000;
-  font-family: Mikro, serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: lowercase;
-}
-
-.tableMark {
-  color: #000;
-  font-family: Mikro, serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: lowercase;
-  list-style-type: disc;
-}
-
-@include xxl {
-  .container {
+@include xxl{
+  .container{
     margin: 0 auto;
   }
 }
 
-@include xl {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 253px 0 271px 0;
+.container{
+  width: 100%;
+  max-width: max(1728px);
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 15.22vw 2.72vw 0 7vw;
+}
+
+.mainText{
+  margin-bottom: 5.44vw;
+  width: 90.28vw;
+  height: 8.91vw;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 6.37vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.button{
+  margin-left: -70px;
+  background: black;
+  display: flex;
+  width: 22.86vw;
+  height: 6.192vw;
+  padding: 0.58vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.58vw;
+  flex-shrink: 0;
+}
+
+.textButton{
+  color: #FFF;
+  font-family: Mikro, serif;
+  font-size: 2.78vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.table{
+  margin-top: 5.38vw;
+  margin-bottom: 5.38vw;
+}
+
+.tableName{
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 2.78vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.tableMark{
+  list-style-type: disc;
+  color: #000;
+  font-family: Mikro, serif;
+  font-size: 1.85vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+@include md{
+  .section{
+    padding: 15.22vw 9.9vw 0 11.85vw;
   }
 
-  .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mainText {
-    white-space: nowrap;
+  .mainText{
+    margin-left: 10vw;
+    margin-bottom: 3.65vw;
+    width: 78.25vw;
+    height: 14.58vw;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 5.9em;
+    font-size: 6.4vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: lowercase;
-    margin-bottom: 94px;
   }
 
-  .button {
-    width: 375px;
-    height: 97px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .button{
+    margin-left: -2vw;
     background: black;
-    color: white;
-    font-family: Mikro, serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .table {
-    border: 0;
-    margin-top: 93px;
-  }
-
-  .tableName {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .tableMark {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    list-style-type: disc;
-  }
-}
-
-@include l {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 213px 85px 221px 83px;
-  }
-
-  .section {
     display: flex;
-    flex-direction: column;
+    width: 28.26vw;
+    height: 10.68vw;
+    padding: 0.58vw;
     justify-content: center;
     align-items: center;
+    gap: 0.58vw;
+    flex-shrink: 0;
   }
 
-  .mainText {
-    white-space: nowrap;
-    flex-shrink: 0;
-    color: #000;
+  .textButton{
+    color: #FFF;
     font-family: Mikro, serif;
-    font-size: 4em;
+    font-size: 2.78vw;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    margin-bottom: 64px;
   }
 
-  .button {
-    width: 355px;
-    height: 87px;
-    font-size: 46px;
-  }
-
-  .table {
+  .table{
+    padding: 2vw 2vw 2vw 4vw;
     border: 1px solid black;
-    margin-top: 73px;
+    margin-top: 5.38vw;
+    margin-bottom: 5.38vw;
   }
 
-  .tableName {
+  .tableName{
     color: #000;
     font-family: Mikro, serif;
-    font-size: 39px;
+    font-size: 2.78vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
   }
 
-  .tableMark {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
+  .tableMark{
     list-style-type: disc;
-  }
-}
-
-@include lg {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 213px 85px 221px 83px;
-  }
-
-  .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mainText {
-    white-space: nowrap;
-    flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 3.4em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-bottom: 54px;
-  }
-
-  .button {
-    width: 300px;
-    height: 67px;
-    font-size: 46px;
-  }
-
-  .table {
-    border: 1px solid black;
-    margin-top: 53px;
-  }
-
-  .tableName {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 35px;
+    font-size: 1.85vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-  }
-
-  .tableMark {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    list-style-type: disc;
-  }
-}
-
-@include md {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 53px 85px 53px 88px;
-  }
-
-
-  .mainText {
-    white-space: normal;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 3.5em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-bottom: 54px;
-  }
-
-  .button {
-    width: 217px;
-    height: 82px;
-    font-size: 22.115px;
-  }
-
-  .table {
-    border: 1px solid black;
-    margin-top: 53px;
-  }
-
-  .tableName {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .tableMark {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    list-style-type: disc;
-  }
-}
-
-@include sm {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 25px 74px 35px 53px;
-  }
-
-
-  .mainText {
-    white-space: normal;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 2.5em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-bottom: 30px;
-  }
-
-  .table {
-    border: 0.5px solid black;
-    margin-top: 35px;
-  }
-
-  .tableName {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 37px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .tableMark {
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    list-style-type: disc;
-  }
-}
-
-@include s {
-  .container {
-    max-width: max(1728px);
-    width: 100%;
-    padding: 200px 20px 50px 25px;
-    display: flex;
-  }
-
-
-  .mainText {
-    margin-left: 20px;
-    white-space: normal;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 2.9em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-bottom: 93px;
-  }
-
-  .button {
-    margin-left: -20px;
-    width: 157px;
-    height: 59px;
-  }
-
-  .table {
-    padding: 14px 108px 25px 25px;
-    width: 100%;
-    border: 0.5px solid black;
-    margin-top: 50px;
-  }
-
-  .tableName {
-    margin-left: 38px;
-    width: auto;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-  }
-
-  .tableMark {
-    margin-left: 20px;
-    margin-top: 10px;
-    white-space: nowrap;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    list-style-type: disc;
   }
 }

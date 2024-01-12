@@ -9,7 +9,7 @@ export default function Questions() {
           <h1 class={styles.mainText}>5 вопросов о вашем доме</h1>
           <A href="../../../routes/houseParameters">
             <button class={styles.button}>
-              <span>начать</span>
+              <span class={styles.textButton}>начать</span>
             </button>
           </A>
           <div class={styles.table}>

@@ -110,6 +110,11 @@
     width: auto;
     font-size: 46px;
   }
+
+  .description{
+    width: 900px;
+    font-size: 27px;
+  }
 }
 
 @include l{
@@ -123,6 +128,11 @@
 
   .button{
     margin-top: 23px;
+  }
+
+  .description{
+    width: 860px;
+    font-size: 24px;
   }
 }
 
@@ -138,7 +148,7 @@
 
   .description{
     font-size: 18px;
-    width: 730px;
+    width: auto;
     margin-left: 84px;
   }
 
@@ -240,6 +250,10 @@
     height: 24.727px;
     flex-shrink: 0;
     background: url("../../../assets/img/accordion/plusSM.svg");
+  }
+
+  .description{
+    margin-left: 86.27px;
   }
 
   .myTransition {
@@ -347,6 +361,17 @@
 
   .containerMain{
     width: 100%;
+  }
+
+  .description{
+    margin-left: 27.27px;
+    width: auto;
+    color: #000;
+    font-family: Montserrat, serif;
+    font-size: 13.545px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
   .boxOne{
