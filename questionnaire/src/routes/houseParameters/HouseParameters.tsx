@@ -11,6 +11,7 @@ import frame from "~/assets/img/houseParameters/desktop/material/three.png"
 import ceramic from "~/assets/img/houseParameters/desktop/material/four.png"
 import brick from "~/assets/img/houseParameters/desktop/material/five.png"
 import { A } from "solid-start"
+import * as url from "url"
 
 enum HouseParametersTab {
   Style,
@@ -38,13 +39,13 @@ export default function HouseParameters() {
     setTab(HouseParametersTab.Material)
   }
 
+  const [sliderValue, setSliderValue] = createSignal(45)
+
+  const handleSliderChange = (event: { target: { value: string } }) => {
+    setSliderValue(Number(event.target.value))
+  }
+
   function Slider() {
-    const [sliderValue, setSliderValue] = createSignal(45)
-
-    const handleSliderChange = (event: { target: { value: string } }) => {
-      setSliderValue(Number(event.target.value))
-    }
-
     return (
       <>
         <div class={styles.containerSlide}>
@@ -165,6 +166,7 @@ export default function HouseParameters() {
               <h1 class={styles.textMain}>площадь?</h1>
               <div class={styles.boxSquare}>
                 <Slider />
+                <SliderMobile />
                 <button class={styles.buttonSelectAll}>
                   <span>выбрать все</span>
                 </button>

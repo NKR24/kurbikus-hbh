@@ -388,6 +388,10 @@
   align-items: center;
 }
 
+.containerSliderMobile{
+  display: none;
+}
+
 @include l{
   .textMain{
     font-size: 94px;
@@ -417,10 +421,42 @@
   .boxMaterials{
     column-gap: 6px;
   }
+
+  .containerSliderMobile{
+    display: none;
+  }
 }
 
 @include lg{
+  .box{
+    flex-direction: column;
+  }
 
+  .partTwo{
+    flex-direction: unset;
+    padding-bottom: 25px;
+    margin-top: 40px;
+  }
+
+  .boxMaterials{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .textMain{
+    font-size: 85px;
+  }
+
+  .partOne{
+    margin-bottom: 0;
+  }
+
+  span{
+    font-size: 22px;
+  }
+
+  .containerSliderMobile{
+    display: none;
+  }
 }
 
 @include md{
