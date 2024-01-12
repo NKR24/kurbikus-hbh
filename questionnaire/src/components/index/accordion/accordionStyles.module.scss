@@ -130,7 +130,7 @@
   .mainText{
     width: auto;
     font-size: 24px;
-    margin-left: 82px;
+    margin-left: 83px;
     margin-top: 25px;
     margin-bottom: 0;
     height: 40px;
@@ -199,13 +199,14 @@
 
   .first{
     display: flex;
+    padding-right: 85px;
   }
 
   .mainText{
-    margin-left: 39.27px;
+    margin-left: 86.27px;
     margin-top: 21.82px;
     margin-bottom: 19.09px;
-    width: 460.273px;
+    width: auto;
     height: 24.727px;
     flex-shrink: 0;
     color: #000;
@@ -297,18 +298,19 @@
 
   .first{
     display: flex;
+    padding-right: 20px;
   }
 
   .mainText{
-    margin-left: 39.27px;
+    margin-left: 25.27px;
     margin-top: 21.82px;
     margin-bottom: 19.09px;
-    width: 460.273px;
+    width: auto;
     height: 24.727px;
     flex-shrink: 0;
     color: #000;
     font-family: Montserrat, serif;
-    font-size: 20.364px;
+    font-size: 15.364px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
