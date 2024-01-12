@@ -163,7 +163,35 @@
 }
 
 @include md{
-  
+  .container{
+    padding: 28px 86px 10px 84px;
+  }
+
+  .button{
+    width: 157px;
+    height: 59px;
+    font-size: 16px;
+    margin-top: 23px;
+  }
+
+  .section{
+    padding: 11px 54px 38px 54px;
+  }
+
+  .mainText{
+    margin-bottom: 25px;
+    white-space: nowrap;
+    font-size: 22px;
+  }
+
+  .videobox{
+    height: 300px;
+    margin-bottom: 16px;
+  }
+
+  .paragraph{
+    font-size: 20px;
+  }
 }
 
 @include sm{
