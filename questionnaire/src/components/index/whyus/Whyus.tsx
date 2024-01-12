@@ -53,8 +53,8 @@ export default function Whyus() {
                   <h1 class={clsx(styles.main, styles.one)}>01</h1>
                   <div class={styles.lineOne}>
                     <svg
-                      width="13.6vw"
-                      height="0,06vw"
+                      width="235"
+                      height="1"
                       viewBox="0 0 235 1"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Whyus() {
                       <line
                         x1="2.18557e-08"
                         y1="0.75"
-                        x2="13.6"
+                        x2="235"
                         y2="0.750021"
                         stroke="black"
                         stroke-width="0.5"

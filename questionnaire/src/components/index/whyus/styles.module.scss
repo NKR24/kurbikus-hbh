@@ -5,7 +5,6 @@
   width: 100%;
   padding-left: 9.20vw;
   padding-right: 3.70vw;
-  max-width: max(1728px);
 }
 
 .containerDesktop {
@@ -72,53 +71,54 @@
 }
 
 .content {
-  margin-left: 180px;
+  margin-left: 10.42vw;
 }
 
 .Three {
-  width: 257px;
-  height: 90px;
+  width: 14.87vw;
+  height: 5.21vw;
   flex-shrink: 0;
 }
 
 .ThreeD {
-  margin-top: 44px;
-  width: 265px;
-  height: 85px;
+  margin-top: 2.55vw;
+  width: 15.34vw;
+  height: 4.92vw;
   flex-shrink: 0;
 }
 
 .Four {
-  width: 257px;
-  margin-left: 391px;
+  width: 14.87vw;
+  margin-left: 22.63vw;
 }
 
 .FourD {
-  width: 372px;
-  height: 193px;
+  width: 21.53vw;
+  height: 11.17vw;
   flex-shrink: 0;
-  margin-left: 329px;
+  margin-left: 19.04vw;
 }
 
 .Five {
-  width: 256px;
+  width: 14.81vw;
 }
 
 .FiveD {
-  width: 324px;
-  height: 188px;
+  width: 18.75vw;
+  height: 10.88vw;
   flex-shrink: 0;
 }
 
 .partTwo {
-  width: 1510px;
+  width: 87.38vw;
   background: url("../../../assets/img/lines-4.svg") no-repeat;
+  background-size: 87.39vw;
 }
 
 .partThree {
   display: flex;
-  margin-left: 210px;
-  margin-bottom: 58px;
+  margin-left: 12.15vw;
+  margin-bottom: 3.36vw;
 }
 
 .tableOne {
@@ -127,14 +127,14 @@
 
 .tableTwo {
   display: flex;
-  margin-top: 90px;
-  margin-left: 202px;
+  margin-top: 5.21vw;
+  margin-left: 11.69vw;
 }
 
 .itemMain {
   color: #000;
   font-family: Mikro, serif;
-  font-size: 110px;
+  font-size: 6.37vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -144,7 +144,7 @@
 .itemDescription {
   color: #000;
   font-family: Mikro, serif;
-  font-size: 32px;
+  font-size: 1.85vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -178,9 +178,7 @@
 }
 
 @include sm {
-  .containerDesktop{
-    display: none;
-  }
+
 }
 
 @include s {
