@@ -22,7 +22,7 @@ export default function Home() {
       <Barnhouse />
       <Catalog />
       <Questions />
-      {/*<Whyus />*/}
+      <Whyus />
       <Foundation />
       <Demonstration />
       <Interview />
