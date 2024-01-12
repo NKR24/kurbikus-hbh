@@ -25,8 +25,8 @@ export default function Home() {
       {/*<Whyus />*/}
       <Foundation />
       <Demonstration />
-      {/*<Interview />*/}
-      {/*<Excursion />*/}
+      <Interview />
+      <Excursion />
       {/*<Consultation />*/}
       <Accordion />
       {/*<Pros />*/}
