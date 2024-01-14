@@ -1,6 +1,5 @@
 @import "../../../utils";
 
-
 .containerMain {
   width: 100%;
   padding-left: 9.20vw;
@@ -173,15 +172,19 @@
 
 }
 
+
+
 @include md {
+  .snake {
+    margin-left: 5.1vw;
+    margin-right: 4.6vw;
+  }
 
-}
+  .snake_svg {
+    width: 90.1vw;
+    height: 119.6vw;
+  }
 
-@include sm {
-
-}
-
-@include s {
   .containerMain {
     width: 100%;
     padding-left: 0;
@@ -195,18 +198,19 @@
   .containerMobile {
     display: flex;
     flex-direction: column;
-    margin-top: 87px;
+    margin-top: 6.73vw;
+    margin-bottom: 21.4vw;
+    position: relative;
   }
 
   .mainTextMob {
-    margin-bottom: 16px;
-    margin-left: 90px;
-    width: 268px;
-    height: 57px;
+    margin-bottom: 12.2vw;
+    margin-left: auto;
+    margin-right: auto;
     flex-shrink: 0;
     color: #000;
     font-family: Mikro, serif;
-    font-size: 40px;
+    font-size: 9.3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -214,17 +218,49 @@
   }
 
   .module {
-    margin-left: 16px;
+
   }
 
-  .linesOne {
+  .OneMob {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 3.7vw;
+    top: 16.98vw;
+  }
+  .TwoMob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 18.6vw;
+    top: 44.88vw;
+  }
+  .ThreeMob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 39.07vw;
+    top: 77.21vw;
+  }
+  .FourMob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 33.25vw;
+    top: 107.2vw;
+  }
+  .FiveMob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 12.32vw;
+    top: 136.7vw;
   }
 
   .main {
     color: #000;
     font-family: Mikro, serif;
-    font-size: 48px;
+    font-size: 11.16vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -234,144 +270,33 @@
   .des {
     color: #000;
     font-family: Mikro, serif;
-    font-size: 14px;
+    font-size: 3.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
   }
 
-  .partMobOne {
-
-  }
-
-  .markOne {
-    display: flex;
-  }
-
-  .lineOne {
-    margin-top: 30px;
-    margin-left: 5px;
-  }
-
-  .lineTwo {
-    margin-top: 30px;
-  }
-
-  .lineThree {
-
-  }
-
-  .linesTwo {
-    display: flex;
-    column-gap: 0;
-    margin-left: 43px;
-
-  }
-
-  .first {
-    margin-left: 2px;
-  }
-
-  .two {
-    margin-top: 26px;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  .lineFour {
-    margin-top: 60px;
-  }
-
-  .linesThree {
-    display: flex;
-    margin-left: 43px;
-  }
-
   .second {
-    width: 251px;
-    height: 50px;
-    flex-shrink: 0;
-    margin-left: 24px;
-  }
-
-  .linesFour {
-    display: flex;
-    margin-left: 43px;
-  }
-
-  .three {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .lineSeven {
-    margin-top: 30px;
-  }
-
-  .linesFive {
-    display: flex;
-    margin-left: 149px;
+    width: 58.37vw;
   }
 
   .third {
-    width: 240px;
-    height: 30px;
-    flex-shrink: 0;
-  }
-
-  .linesSix {
-    display: flex;
-    margin-left: 7px;
-  }
-
-  .four {
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .lineNine {
-    margin-top: 50px;
-  }
-
-  .lineEleven {
-    margin-top: 52px;
-  }
-
-  .lineTwelve {
-    margin-left: 7px;
-  }
-
-  .linesSeven {
-    display: flex;
+    width: 53.5vw;
   }
 
   .fourth {
-    margin-left: 121px;
-    width: 125px;
-    height: 41px;
-    flex-shrink: 0;
-  }
-
-  .four {
-    margin-right: 6px;
-  }
-
-  .linesEight {
-    margin-left: 7px;
-    display: flex;
-    margin-bottom: 29px;
-  }
-
-  .fifth {
-    margin-left: 9px;
+    width: 29.1vw;
   }
 
   .five {
-    width: 211px;
-    height: 38px;
-    flex-shrink: 0;
-    margin-left: 11px;
+    width: 49.1vw;
   }
+
+}
+@include sm {
+
+}
+@include s {
+
 }
