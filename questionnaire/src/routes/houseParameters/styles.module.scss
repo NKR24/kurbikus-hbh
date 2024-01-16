@@ -80,6 +80,8 @@
 }
 
 .buttonSelectAll {
+  background: black;
+  color: white;
   width: 204px;
   height: 48px;
   display: flex;
@@ -153,6 +155,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.item img{
+  width: 68%;
 }
 
 .chaletItem {
@@ -257,6 +263,11 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+}
+
+.sliderMobile{
+  width: 100%;
+  flex-shrink: 0;
 }
 
 /*Storeys*/
@@ -407,7 +418,7 @@
 
   .partTwo{
     justify-content: center;
-    margin-top: 95px;
+    margin-top: 150px;
   }
 
   .partTwo .buttonSelectAll{
@@ -486,40 +497,100 @@
   .containerSection{
     padding: 51px 32px 59px;
   }
+
+  .partTwo .buttonSelectAll{
+    margin-left: 2vw;
+  }
+
+  .storeys{
+    margin-bottom: 69px;
+  }
+
+  .storeys img{
+    margin-left: 134px;
+    max-width: 57%;
+    height: auto;
+  }
+
+  .buttonStoreys{
+    margin-top: 130px;
+    margin-bottom: 34px;
+  }
 }
 
 @include sm{
   .textMain{
-    font-size: 55px;
+    font-size: 9.375vw;
   }
 
   img {
-    max-width: 65%;
+    max-width: 70%;
     height: auto;
   }
 
   .chaletItem{
-    width: 65%;
+    width: 100%;
     height: 195px;
   }
 
   span{
-    font-size: 17px;
+    font-size: 2.65vw;
   }
 
   .item{
-    width: 270px;
+    width: 42.19vw;
     height: 300px;
+  }
+
+  .partTwo .buttonSelectAll{
+    width: 31.875vw;
+    margin-left: 3vw;
   }
 
   .containerSection{
     padding: 51px 32px 59px;
   }
+
+  .choiceTab{
+    width: 24.53vw;
+    height: 7.18vw;
+  }
+
+  .choiceTab span{
+    font-size: 2.66vw;
+  }
+
+  .partTwo{
+    margin-top: 6.25vw;
+  }
+
+  .storeys{
+    margin-bottom: 69px;
+  }
+
+  .storeys img{
+    margin-left: 20.94vw;
+    max-width: 57%;
+    height: auto;
+  }
+
+  .buttonStoreys{
+    margin-top: 20.31vw;
+    margin-bottom: 17.44vw;
+  }
+
+  .buttonSelectAll{
+    width: 31.875vw;
+  }
+
+  .storeys{
+    margin-bottom: 10.78vw;
+  }
 }
 
 @include s{
   .textMain{
-    font-size: 48px;
+    font-size: 11.16vw;
   }
 
   img {
@@ -533,29 +604,29 @@
   }
 
   span{
-    font-size: 11px;
+    font-size: 2.56vw;
   }
 
   .item{
-    width: 200px;
+    width: 46.51vw;
     height: 230px;
   }
 
   .containerSection{
-    padding: 25px 32px 15px;
+    padding: 5.81vw 7.44vw 3.49vw;
   }
 
   .choiceTab{
-    width: 114px;
+    width: 26.51vw;
     height: 35px;
   }
 
   .choiceTab span{
-    font-size: 16px;
+    font-size: 3.72vw;
   }
 
   .buttons{
-    column-gap: 10px;
+    column-gap: 2.33vw;
   }
 
   img{
@@ -563,19 +634,37 @@
   }
 
   .buttonSelectAll{
-    width: 141px;
+    width: 32.79vw;
     height: 35px;
     background: black;
     color: white;
   }
 
   .buttonSelectAll span{
-    font-size: 16px;
+    font-size: 3.72vw;
   }
 
   .partTwo{
-    margin-left: 10px;
+    margin-left: 0;
   }
 
+  .partTwo .buttonSelectAll{
+    margin-left: 0;
+  }
+
+  .buttonOne{
+    width: 35px;
+    height: 35px;
+  }
+
+  .buttonTwo{
+    width: 35px;
+    height: 35px;
+  }
+
+  .buttonStoreys{
+    column-gap: 2.79vw;
+
+  }
 
 }
