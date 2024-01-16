@@ -1,5 +1,6 @@
 import clsx from "clsx"
 import styles from "./styles.module.scss"
+import Observe from "~/components/index/whyus/observe/Observe"
 
 export default function Whyus() {
   return (
@@ -86,6 +87,7 @@ export default function Whyus() {
             </p>
           </div>
         </div>
+        <Observe/>
       </div>
     </>
   )
