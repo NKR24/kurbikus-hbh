@@ -460,13 +460,112 @@
 }
 
 @include md{
+  .textMain{
+    font-size: 75px;
+  }
 
+  img {
+    max-width: 65%;
+    height: auto;
+  }
+
+  .chaletItem{
+    width: 65%;
+    height: 195px;
+  }
+
+  span{
+    font-size: 17px;
+  }
+
+  .item{
+    width: 270px;
+    height: 300px;
+  }
+
+  .containerSection{
+    padding: 51px 32px 59px;
+  }
 }
 
 @include sm{
+  .textMain{
+    font-size: 55px;
+  }
 
+  img {
+    max-width: 65%;
+    height: auto;
+  }
+
+  .chaletItem{
+    width: 65%;
+    height: 195px;
+  }
+
+  span{
+    font-size: 17px;
+  }
+
+  .item{
+    width: 270px;
+    height: 300px;
+  }
+
+  .containerSection{
+    padding: 51px 32px 59px;
+  }
 }
 
 @include s{
+  .textMain{
+    font-size: 48px;
+  }
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .chaletItem{
+    width: 65%;
+    height: 195px;
+  }
+
+  span{
+    font-size: 11px;
+  }
+
+  .item{
+    width: 200px;
+    height: 230px;
+  }
+
+  .containerSection{
+    padding: 51px 32px 59px;
+  }
+
+  .choiceTab{
+    width: 114px;
+    height: 35px;
+  }
+
+  .buttons{
+    column-gap: 10px;
+  }
+
+  img{
+    max-width: 85%;
+  }
+
+  .buttonSelectAll{
+    width: 141px;
+    height: 35px;
+    background: black;
+    color: white;
+  }
+
+  .partTwo{
+    margin-left: 10px;
+  }
 }

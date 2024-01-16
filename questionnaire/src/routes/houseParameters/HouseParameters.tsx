@@ -2,6 +2,7 @@ import styles from "./styles.module.scss"
 import { createSignal, Show } from "solid-js"
 import clsx from "clsx"
 import cubism from "~/assets/img/houseParameters/desktop/styles/one.png"
+import chalet from "~/assets/img/houseParameters/desktop/styles/two.png"
 import classic from "~/assets/img/houseParameters/desktop/styles/three.png"
 import hightech from "~/assets/img/houseParameters/desktop/styles/four.png"
 import storey from "~/assets/img/houseParameters/desktop/storeys/font.png"
@@ -134,7 +135,7 @@ export default function HouseParameters() {
                     </button>
                   </div>
                   <div class={styles.item}>
-                    <div class={styles.chaletItem} />
+                    <img src={chalet} alt="home" />
                     <button class={styles.choiceTab}>
                       <span>шале</span>
                     </button>
