@@ -173,5 +173,22 @@
 }
 
 @include s{
+  .section{
+    padding: 22px 5vw 32px 1.3vw;
+  }
 
+  .imageHome{
+    width: 90.53vw;
+    height: 50vw;
+  }
+
+  .textOverlay{
+    font-size: 21vw;
+    left: 10%;
+  }
+
+  .firstText{
+    margin-left: 3vw;
+    font-size: 4.25vw;
+  }
 }

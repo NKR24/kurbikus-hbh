@@ -76,6 +76,37 @@ export default function HouseParameters() {
     )
   }
 
+  function SliderMobile() {
+    return (
+      <>
+        <div class={styles.containerSlideMobile}>
+          <p class={styles.sliderTextMobile}>От {sliderValue()} до 250</p>
+          <div class={styles.sliderNumbersMobile}>
+            <p class={styles.numberMobile}>45</p>
+            <p class={styles.numberMobile}>95</p>
+            <p class={styles.numberMobile}>145</p>
+            <p class={styles.numberMobile}>200</p>
+            <p class={styles.numberMobile}>250</p>
+          </div>
+          <input
+            class={styles.sliderMobile}
+            type="range"
+            min="45"
+            max="250"
+            value={sliderValue()}
+            onInput={handleSliderChange}
+            id="myRange"
+            style={{
+              appearance: "none",
+              width: "100%",
+              background: `url('data:image/svg+xml;utf8,<svg width="311" height="10" viewBox="0 0 311 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5H310" stroke="black"/><line x1="0.5" y1="2.18557e-08" x2="0.5" y2="10" stroke="black"/><line x1="77.5" y1="2.17147e-08" x2="77.5" y2="10" stroke="black"/><line x1="155.5" y1="2.17147e-08" x2="155.5" y2="10" stroke="black"/><line x1="232.5" y1="2.17147e-08" x2="232.5" y2="10" stroke="black"/><line x1="310.5" y1="2.17147e-08" x2="310.5" y2="10" stroke="black"/></svg>`,
+            }}
+          />
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
       <div class={styles.containerMain}>
@@ -166,6 +197,7 @@ export default function HouseParameters() {
               <h1 class={styles.textMain}>площадь?</h1>
               <div class={styles.boxSquare}>
                 <Slider />
+                <SliderMobile />
                 <button class={styles.buttonSelectAll}>
                   <span>выбрать все</span>
                 </button>
