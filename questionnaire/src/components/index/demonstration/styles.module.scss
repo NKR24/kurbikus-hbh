@@ -288,9 +288,13 @@
   }
 
   .child h2 {
-    margin-top: 100px;
-    margin-left: 15px;
+    margin-top: 120px;
+    margin-left: 10px;
     font-size: 18px;
+  }
+
+  .child text{
+    margin-left: 10px;
   }
 
   .target {
@@ -314,7 +318,7 @@
 
   .tab{
     border: 0.5px solid black;
-    width: 155px;
+    width: 25vw;
     height: 69px;
     flex-shrink: 0;
     font-size: 17px;
@@ -348,7 +352,7 @@
 
   .table h2{
     margin-left: 6px;
-    margin-top: 100px;
+    margin-top: 155px;
     color: #FFF;
     font-family: Mikro, serif;
     font-size: 19px;
@@ -623,7 +627,7 @@
 @include s {
   .main {
     width: 100%;
-    padding: 31px 32px 27px 23px;
+    padding: 31px 8.37vw 27px 8.14vw;
   }
 
   .first {
@@ -632,7 +636,7 @@
 
   .tab {
     border: 0.5px solid black;
-    width: 119px;
+    width: 27.67vw;
     height: 59px;
     flex-shrink: 0;
     font-size: 14px;
