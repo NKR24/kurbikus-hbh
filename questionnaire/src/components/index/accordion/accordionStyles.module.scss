@@ -410,12 +410,12 @@
 
 @include s{
   .description{
-    margin-left: 23px;
-    width: 349px;
+    margin-left: 6.51vw;
+    width: 81.16vw;
     flex-shrink: 0;
     color: #000;
     font-family: Montserrat, serif;
-    font-size: 10px;
+    font-size: 2.33vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -426,35 +426,35 @@
   }
 
   .mainText{
-    margin-left: 23px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 300px;
-    height: 17px;
+    margin-left: 6.51vw;
+    margin-top: 4.65vw;
+    margin-bottom: 2.33vw;
+    width: 69.77vw;
+    height: 2.66vw;
     flex-shrink: 0;
     color: #000;
     font-family: Montserrat, serif;
-    font-size: 14px;
+    font-size: 3.26vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
   .button{
-    margin-top: 15px;
+    margin-top: 3.49vw;
     width: 17px;
     height: 17px;
     flex-shrink: 0;
-    margin-left: 45px;
+    margin-left: 10.47vw;
     transition: transform 0.6s ease;
   }
 
   .buttonActive{
-    margin-top: 15px;
+    margin-top: 3.49vw;
     width: 17px;
     height: 17px;
     flex-shrink: 0;
-    margin-left: 45px;
+    margin-left: 10.17vw;
     transform: rotate(45deg);
   }
 
@@ -478,31 +478,31 @@
     flex-direction: column;
     border-top: 0.5px solid black;
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 
   .boxTwo{
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 
   .boxThree{
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 
   .boxFour{
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 
   .boxFive{
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 
   .boxSix{
     border-bottom: 0.5px solid black;
-    padding-bottom: 10px;
+    padding-bottom: 2.33vw;
   }
 }
