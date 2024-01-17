@@ -47,7 +47,8 @@ export default function Whyus() {
         </div>
 
         <div class={styles.containerMobile}>
-          <Observer animationClass={styles.animation}>
+          <h1 class={styles.mainText}>ПОЧЕМУ МЫ?</h1>
+          <Observer animationClass={""}>
             {(isAnimated) => (
               <div class={styles.container}>
                 <div
