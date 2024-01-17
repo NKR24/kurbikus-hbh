@@ -2,8 +2,6 @@
 
 .containerMain {
   width: 100%;
-  padding-left: 9.20vw;
-  padding-right: 3.70vw;
 }
 
 .containerDesktop {
@@ -182,6 +180,7 @@
 
   .containerMobile{
     display: flex;
+    flex-direction: column;
   }
 
   .container {
@@ -192,6 +191,21 @@
 
   .nonDisplayLine {
     display: none;
+  }
+
+  .mainText {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 13.256vw;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Mikro, serif;
+    font-size: 9.3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
   }
 
   @keyframes stretchPointToLine {
@@ -214,10 +228,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: left center; /* Start stretching from the left */
-    animation: stretchPointToLine 1.567s forwards; /* Apply the animation */
+    animation: stretchPointToLine 1.175s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 2s;
+    animation-delay: 1s;
   }
 
   .line2 {
@@ -231,10 +245,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center left; /* Start stretching from the left */
-    animation: stretchPointToLine 0.793s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.595s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 3.567s;
+    animation-delay: 2.175s;
   }
 
   .line3 {
@@ -246,10 +260,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center right; /* Start stretching from the left */
-    animation: stretchPointToLine 1.06s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.795s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 4.360s;
+    animation-delay: 2.77s;
   }
 
   .line4 {
@@ -261,10 +275,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center right; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.08s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 6.42s;
+    animation-delay: 4.565s;
   }
 
   .line5 {
@@ -278,10 +292,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center left; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.705s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 10s;
+    animation-delay: 4.645s;
   }
 
   .line6 {
@@ -293,10 +307,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: left center; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.515s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 12s;
+    animation-delay: 5.35s;
   }
 
   .line7 {
@@ -308,10 +322,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: left center; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.855s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 16s;
+    animation-delay: 6.865s;
   }
 
   .line8 {
@@ -325,10 +339,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center left; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.6325s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 18s;
+    animation-delay: 7.72s;
   }
 
   .line9 {
@@ -340,10 +354,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center right; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.975s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 20s;
+    animation-delay: 8.3525s;
   }
 
   .line10 {
@@ -355,10 +369,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center right; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.56s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 24s;
+    animation-delay: 10.3275s;
   }
 
   .line11 {
@@ -372,10 +386,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center left; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.645s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 26s;
+    animation-delay: 10.8875s;
   }
 
   .line12 {
@@ -387,10 +401,10 @@
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
     transform-origin: center left; /* Start stretching from the left */
-    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation: stretchPointToLine 0.11s forwards; /* Apply the animation */
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 28s;
+    animation-delay: 11.5325s;
   }
 
   @keyframes revealTextFromBottom {
@@ -411,7 +425,7 @@
     left: 3.7vw;
     top: 3.7209vw;
 
-    animation: revealTextFromBottom 2s forwards;
+    animation: revealTextFromBottom 1s forwards;
     animation-timing-function: linear;
     visibility: hidden;
   }
@@ -422,10 +436,10 @@
     left: 18.6vw;
     top: 31.6279vw;
 
-    animation: revealTextFromBottom 2s forwards;
+    animation: revealTextFromBottom 1s forwards;
     animation-timing-function: linear;
     visibility: hidden;
-    animation-delay: 5.42s;
+    animation-delay: 3.565s;
   }
   .ThreeMob {
     display: flex;
@@ -433,6 +447,11 @@
     position: absolute;
     left: 39.07vw;
     top: 63.9535vw;
+
+    animation: revealTextFromBottom 1s forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 5.865s;
   }
   .FourMob {
     display: flex;
@@ -440,6 +459,11 @@
     position: absolute;
     left: 33.25vw;
     top: 93.9534vw;
+
+    animation: revealTextFromBottom 1s forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 9.3275s;
   }
   .FiveMob {
     display: flex;
@@ -447,6 +471,11 @@
     position: absolute;
     left: 12.32vw;
     top: 123.4883vw;
+
+    animation: revealTextFromBottom 1s forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 11.6425s;
   }
   .main {
     color: #000;
@@ -466,6 +495,11 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+  }
+
+  .one {
+    width: 60.04651vw;
+    height: 5.5814vw;
   }
 
   .two {
