@@ -13,19 +13,17 @@ import Accordion from "~/components/index/accordion"
 import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
-import App from "~/components/app"
 
 export default function Home() {
   return (
     <>
       <Title>Опросник</Title>
       <Navbar />
-      {/*<Barnhouse />
-      <Catalog />*/}
-      {/*<Questions />*/}
-      <App />
-      {/*<Whyus />*/}
-      {/*<Foundation />
+      <Barnhouse />
+      <Catalog />
+      <Questions />
+      <Whyus />
+      <Foundation />
       <Demonstration />
       <Interview />
       <Excursion />
@@ -33,7 +31,7 @@ export default function Home() {
       <Accordion />
       <Pros />
       <Aboutus />
-      <Contacts />*/}
+      <Contacts />
     </>
   )
 }
