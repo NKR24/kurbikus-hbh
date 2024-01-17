@@ -21,6 +21,7 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
+    "@motionone/solid": "^10.16.4",
     "@solid-primitives/media": "^2.2.5",
     "@solid-primitives/scroll": "^2.0.20",
     "@solidjs/meta": "^0.28.6",

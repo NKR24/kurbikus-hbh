@@ -1,0 +1,80 @@
+/*
+.section {
+  height: 100vh; !* высота секции *!
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); !* начальная форма *!
+  transition: clip-path 1s ease-out; !* плавный переход *!
+}
+
+.section.active {
+  animation: floatUp 1s forwards; !* анимация вплывания *!
+}
+
+@keyframes floatUp {
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); } !* начало анимации *!
+  100% { clip-path: polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%); } !* конец анимации *!
+}
+
+
+
+
+.containerMain{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.containerMain h1{
+  font-size: 100px;
+  color: white;
+
+}*/
+
+.container {
+  position: relative;
+  height: 200vh;
+}
+
+.upperSection {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.containerUpper{
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerUpper h1{
+  font-size: 100px;
+  color: black;
+}
+
+.lowerSection {
+  position: absolute;
+  top: 0;
+  height: 200vh;
+  width: 100%;
+  transition: transform 1s ease-out;
+}
+
+.containerLower{
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerLower h1{
+  font-size: 100px;
+  color: #d9d9d9;
+}
+
