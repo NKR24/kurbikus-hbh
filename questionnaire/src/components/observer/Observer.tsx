@@ -1,11 +1,12 @@
 import { createSignal, JSX, onCleanup, onMount } from "solid-js"
-import styles from "./IntersectionObserverComponent.module.scss"
 
 interface IntersectionObserverProps {
   children: ((isAnimated: boolean) => JSX.Element) | JSX.Element
 }
 
-const IntersectionObserverComponent = (props: IntersectionObserverProps) => {
+const IntersectionObserverComponent = (
+  props: IntersectionObserverProps & { animationClass: string },
+) => {
   const [isAnimated, setIsAnimated] = createSignal(false)
   let ref: HTMLDivElement | null = null
 
@@ -27,7 +28,10 @@ const IntersectionObserverComponent = (props: IntersectionObserverProps) => {
   })
 
   return (
-    <div ref={(el) => (ref = el)} class={isAnimated() ? styles.animated : ""}>
+    <div
+      ref={(el) => (ref = el)}
+      class={isAnimated() ? props.animationClass : ""}
+    >
       {typeof props.children === "function"
         ? props.children(isAnimated())
         : props.children}
