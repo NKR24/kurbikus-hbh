@@ -175,50 +175,233 @@
 
 
 @include md {
-  .snake {
-    margin-left: 5.1vw;
-    margin-right: 4.6vw;
-  }
 
-  .snake_svg {
-    width: 90.1vw;
-    height: 119.6vw;
-  }
-
-  .containerMain {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .containerDesktop {
+  .containerDesktop{
     display: none;
   }
 
-  .containerMobile {
+  .containerMobile{
     display: flex;
-    flex-direction: column;
-    margin-top: 6.73vw;
-    margin-bottom: 21.4vw;
+  }
+
+  .container {
+    height: 151.4vw;
     position: relative;
+    width: 100%;
   }
 
-  .mainTextMob {
-    margin-bottom: 12.2vw;
-    margin-left: auto;
-    margin-right: auto;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Mikro, serif;
-    font-size: 9.3vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: lowercase;
+  .nonDisplayLine {
+    display: none;
   }
 
-  .module {
+  @keyframes stretchPointToLine {
+    0% {
+      transform: scaleX(0); /* Start as a point */
+      visibility: hidden;
+    }
+    100% {
+      transform: scaleX(1); /* Stretch to a full line */
+      visibility: visible;
+    }
+  }
 
+  .line1 {
+    position: absolute;
+    top: 10.596vw;
+    left: 17.67vw;
+
+    width: 54.65vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: left center; /* Start stretching from the left */
+    animation: stretchPointToLine 1.567s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 2s;
+  }
+
+  .line2 {
+    position: absolute;
+    top: 10.45vw;
+    left: 72.38vw;
+
+    rotate: 90deg;
+
+    width: 27.67vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center left; /* Start stretching from the left */
+    animation: stretchPointToLine 0.793s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 3.567s;
+  }
+
+  .line3 {
+    position: absolute;
+    top: 38.05vw;
+    left: 35.35vw;
+
+    width: 36.97vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center right; /* Start stretching from the left */
+    animation: stretchPointToLine 1.06s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 4.360s;
+  }
+
+  .line4 {
+    position: absolute;
+    top: 38.05vw;
+    left: 13.0232vw;
+
+    width: 3.721vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center right; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 6.42s;
+  }
+
+  .line5 {
+    position: absolute;
+    top: 38.05vw;
+    left: 13.0232vw;
+
+    rotate: 90deg;
+
+    width: 32.7907vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center left; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 10s;
+  }
+
+  .line6 {
+    position: absolute;
+    top: 70.6976vw;
+    left: 13.0232vw;
+
+    width: 23.9534vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: left center; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 12s;
+  }
+
+  .line7 {
+    position: absolute;
+    top: 70.6976vw;
+    left: 55.5814vw;
+
+    width: 39.7674vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: left center; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 16s;
+  }
+
+  .line8 {
+    position: absolute;
+    top: 70.6976vw;
+    left: 95.407vw;
+
+    rotate: 90deg;
+
+    width: 29.4186vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center left; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 18s;
+  }
+
+  .line9 {
+    position: absolute;
+    top: 100vw;
+    left: 50vw;
+
+    width: 45.3488vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center right; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 20s;
+  }
+
+  .line10 {
+    position: absolute;
+    top: 100vw;
+    left: 5.1163vw;
+
+    width: 26.0465vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center right; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 24s;
+  }
+
+  .line11 {
+    position: absolute;
+    top: 100vw;
+    left: 5.1163vw;
+
+    rotate: 90deg;
+
+    width: 30vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center left; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 26s;
+  }
+
+  .line12 {
+    position: absolute;
+    top: 130vw;
+    left: 5.1163vw;
+
+    width: 5.1163vw; /* Define the final width of the line */
+    height: 1px; /* Define the height/thickness of the line */
+    background-color: black; /* The color of the line */
+    transform-origin: center left; /* Start stretching from the left */
+    animation: stretchPointToLine 2s forwards; /* Apply the animation */
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 28s;
+  }
+
+  @keyframes revealTextFromBottom {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 100%;
+      visibility: visible;
+    }
   }
 
   .OneMob {
@@ -226,37 +409,45 @@
     flex-direction: column;
     position: absolute;
     left: 3.7vw;
-    top: 16.98vw;
+    top: 3.7209vw;
+
+    animation: revealTextFromBottom 2s forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
   }
   .TwoMob {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 18.6vw;
-    top: 44.88vw;
+    top: 31.6279vw;
+
+    animation: revealTextFromBottom 2s forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
+    animation-delay: 5.42s;
   }
   .ThreeMob {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 39.07vw;
-    top: 77.21vw;
+    top: 63.9535vw;
   }
   .FourMob {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 33.25vw;
-    top: 107.2vw;
+    top: 93.9534vw;
   }
   .FiveMob {
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 12.32vw;
-    top: 136.7vw;
+    top: 123.4883vw;
   }
-
   .main {
     color: #000;
     font-family: Mikro, serif;
@@ -277,22 +468,21 @@
     text-transform: lowercase;
   }
 
-  .second {
+  .two {
     width: 58.37vw;
   }
 
-  .third {
+  .three {
     width: 53.5vw;
   }
 
-  .fourth {
+  .four {
     width: 29.1vw;
   }
 
   .five {
     width: 49.1vw;
   }
-
 }
 @include sm {
 

@@ -1,14 +1,14 @@
 import { createSignal, JSX, onCleanup, onMount } from "solid-js"
 
-interface IntersectionObserverProps {
+type Props = {
   children: ((isAnimated: boolean) => JSX.Element) | JSX.Element
+  animationClass: string
 }
 
-const IntersectionObserverComponent = (
-  props: IntersectionObserverProps & { animationClass: string },
-) => {
-  const [isAnimated, setIsAnimated] = createSignal(false)
+function Observer(props: Props) {
   let ref: HTMLDivElement | null = null
+
+  const [isAnimated, setIsAnimated] = createSignal(false)
 
   onMount(() => {
     const onIntersect: IntersectionObserverCallback = ([entry], observer) => {
@@ -39,4 +39,4 @@ const IntersectionObserverComponent = (
   )
 }
 
-export default IntersectionObserverComponent
+export default Observer

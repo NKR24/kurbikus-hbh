@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import styles from "./styles.module.scss"
-import Observe from "~/components/index/whyus/observe/Observe"
+import Observer from "~/components/observer"
 
 export default function Whyus() {
   return (
@@ -47,56 +47,85 @@ export default function Whyus() {
         </div>
 
         <div class={styles.containerMobile}>
-          <h1 class={styles.mainTextMob}>ПОЧЕМУ МЫ?</h1>
-          <div class={styles.snake}>
-            <svg
-              class={styles.snake_svg}
-              width="388"
-              height="515"
-              viewBox="0 0 388 515"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M288 1H53V0.5H288V1ZM288 119.5L288 0.5L288.5 0.5L288.5 119.5L288 119.5ZM129 119L288 119L288 119.5L129 119.5L129 119ZM33 119H49V119.5H33V119ZM33 260L33 119L33.5 119L33.5 260L33 260ZM136 260H33V259.5H136V260ZM387 260H216V259.5H387V260ZM387 386L387 259.5L387.5 259.5L387.5 386L387 386ZM387 386L192 386V385.5L387 385.5V386ZM112 386L5.63877e-06 386L5.68248e-06 385.5L112 385.5L112 386ZM0 515L5.63877e-06 386L0.500006 386L0.5 515L0 515ZM22 515L5.63877e-06 515L5.68248e-06 514.5L22 514.5L22 515Z"
-                fill="black"
-              />
-            </svg>
-          </div>
-          <div class={styles.OneMob}>
-            <div class={styles.markOne}>
-              <h1 class={clsx(styles.main, styles.one)}>01</h1>
-            </div>
-            <p class={clsx(styles.des, styles.first)}>
-              СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД
-            </p>
-          </div>
-          <div class={styles.TwoMob}>
-            <h1 class={clsx(styles.main, styles.two)}>02</h1>
-            <p class={clsx(styles.des, styles.second)}>
-              ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
-            </p>
-          </div>
-          <div class={styles.ThreeMob}>
-            <h1 class={clsx(styles.main, styles.three)}>03</h1>
-            <p class={clsx(styles.des, styles.third)}>
-              ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА
-            </p>
-          </div>
-          <div class={styles.FourMob}>
-            <h1 class={clsx(styles.main, styles.four)}>04</h1>
-            <p class={clsx(styles.des, styles.fourth)}>ГИБКАЯ СИСТЕМА ОПЛАТЫ</p>
-          </div>
-          <div class={styles.FiveMob}>
-            <h1 class={clsx(styles.main, styles.fifth)}>05</h1>
-            <p class={clsx(styles.des, styles.five)}>
-              БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
-            </p>
-          </div>
+          <Observer animationClass={styles.animation}>
+            {(isAnimated) => (
+              <div class={styles.container}>
+                <div
+                  class={isAnimated ? styles.line1 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line2 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line3 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line4 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line5 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line6 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line7 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line8 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line9 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line10 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line11 : styles.nonDisplayLine}
+                />
+                <div
+                  class={isAnimated ? styles.line12 : styles.nonDisplayLine}
+                />
+                <div class={isAnimated ? styles.OneMob : styles.nonDisplayLine}>
+                  <div class={styles.hide}>
+                    <h1 class={styles.main}>01</h1>
+                    <p class={styles.des}>СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД</p>
+                  </div>
+                </div>
+                <div class={isAnimated ? styles.TwoMob : styles.nonDisplayLine}>
+                  <h1 class={styles.main}>02</h1>
+                  <p class={clsx(styles.des, styles.two)}>
+                    ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
+                  </p>
+                </div>
+                <div
+                  class={isAnimated ? styles.ThreeMob : styles.nonDisplayLine}
+                >
+                  <h1 class={styles.main}>03</h1>
+                  <p class={clsx(styles.des, styles.three)}>
+                    ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА
+                  </p>
+                </div>
+                <div
+                  class={isAnimated ? styles.FourMob : styles.nonDisplayLine}
+                >
+                  <h1 class={styles.main}>04</h1>
+                  <p class={clsx(styles.des, styles.four)}>
+                    ГИБКАЯ СИСТЕМА ОПЛАТЫ
+                  </p>
+                </div>
+                <div
+                  class={isAnimated ? styles.FiveMob : styles.nonDisplayLine}
+                >
+                  <h1 class={styles.main}>05</h1>
+                  <p class={clsx(styles.des, styles.five)}>
+                    БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
+                  </p>
+                </div>
+              </div>
+            )}
+          </Observer>
         </div>
-        <Observe />
       </div>
     </>
   )
