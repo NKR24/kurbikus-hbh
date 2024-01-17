@@ -2,14 +2,19 @@ import { createMediaQuery } from "@solid-primitives/media"
 import hbhLogo from "../../../assets/img/hbh-logo.svg"
 import Menu from "../menu"
 import { createMemo } from "solid-js"
+import "../../observer/IntersectionObserverComponent.module.scss"
+import IntersectionObserverComponent from "~/components/observer"
 
 export default function Navbar() {
   const state = createNavbarState()
 
   return (
-    <div class="container lg: m-auto">
-      <nav
-        class="
+    <IntersectionObserverComponent>
+      {(isAnimated) => (
+        <div class={isAnimated ? "animated" : ""}>
+          <div class="container lg: m-auto">
+            <nav
+              class="
           flex 
 
           max-w-[1635px]
@@ -18,11 +23,11 @@ export default function Navbar() {
   
           px-[22px] md:px-[104px]
         "
-      >
-        <Logo />
-        <div class="flex w-full justify-between leading-[1.3]">
-          <span
-            class="
+            >
+              <Logo />
+              <div class="flex w-full justify-between leading-[1.3]">
+                <span
+                  class="
               text-[8px] md:text-[12px] lg:text-[15px]
   
               w-[150px] md:w-[250px] lg:w-[370px]
@@ -30,15 +35,18 @@ export default function Navbar() {
               pt-[19px] md:pt-[52px]
               pl-[17px]
             "
-          >
-            {state.label()}
-          </span>
-          <div class="pt-[14px] md:pt-[23px]">
-            <Menu size={state.menuButtonSize()} />
+                >
+                  {state.label()}
+                </span>
+                <div class="pt-[14px] md:pt-[23px]">
+                  <Menu size={state.menuButtonSize()} />
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
-      </nav>
-    </div>
+      )}
+    </IntersectionObserverComponent>
   )
 }
 

@@ -1,27 +1,35 @@
 import styles from "./styles.module.scss"
 import { A } from "solid-start"
+import IntersectionObserverComponent from "~/components/observer"
+import "../../observer/IntersectionObserverComponent.module.scss"
 
 export default function Questions() {
   return (
     <>
       <div class={styles.container}>
-        <div class={styles.section}>
-          <h1 class={styles.mainText}>5 вопросов о вашем доме</h1>
-          <A href="~/routes/houseParameters/">
-            <button class={styles.button}>
-              <span class={styles.textButton}>начать</span>
-            </button>
-          </A>
-          <div class={styles.table}>
-            <p class={styles.tableName}>Вы получите:</p>
-            <ul class={styles.tableMark}>
-              <li>Подходящие проекты с ценой в PDF</li>
-              <li>Изменение комплектации и цены</li>
-              <li>Выбор цветов и покрытий</li>
-              <li>Подбор материалов кровли и окон</li>
-            </ul>
-          </div>
-        </div>
+        <IntersectionObserverComponent>
+          {(isAnimated) => (
+            <div class={isAnimated ? "animation" : ""}>
+              <div class={styles.section}>
+                <h1 class={styles.mainText}>5 вопросов о вашем доме</h1>
+                <A href="~/routes/houseParameters/">
+                  <button class={styles.button}>
+                    <span class={styles.textButton}>начать</span>
+                  </button>
+                </A>
+                <div class={styles.table}>
+                  <p class={styles.tableName}>Вы получите:</p>
+                  <ul class={styles.tableMark}>
+                    <li>Подходящие проекты с ценой в PDF</li>
+                    <li>Изменение комплектации и цены</li>
+                    <li>Выбор цветов и покрытий</li>
+                    <li>Подбор материалов кровли и окон</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
+        </IntersectionObserverComponent>
       </div>
     </>
   )
