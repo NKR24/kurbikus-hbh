@@ -10,40 +10,61 @@ export default function Whyus() {
           <div class={styles.boxOne}>
             <h1 class={styles.mainText}>ПОЧЕМУ МЫ?</h1>
           </div>
-          <div class={styles.boxSecond}>
-            <div class={styles.partOne}>
-              <p class={clsx(styles.itemMain, styles.One)}>01</p>
-              <p class={clsx(styles.itemMain, styles.Two)}>02</p>
-            </div>
-            <div class={styles.partTwo}>
-              <div class={styles.tableOne}>
-                <p class={clsx(styles.itemDescription, styles.OneD)}>
-                  СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД
-                </p>
-                <p class={clsx(styles.itemDescription, styles.TwoD)}>
-                  ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
-                </p>
-                <div class={styles.content}>
-                  <p class={clsx(styles.itemMain, styles.Three)}>03</p>
-                  <p class={clsx(styles.itemDescription, styles.ThreeD)}>
-                    ГИБКАЯ СИСТЕМА ОПЛАТЫ
-                  </p>
+          <Observer animationClass={""}>
+            {(isAnimated) => (
+                <div class={styles.boxSecond}>
+                  <div
+                      class={isAnimated ? styles.line1 : styles.nonDisplayLine}
+                  />
+                  <div
+                      class={isAnimated ? styles.line2 : styles.nonDisplayLine}
+                  />
+                  <div
+                      class={isAnimated ? styles.line3 : styles.nonDisplayLine}
+                  />
+                  <div
+                      class={isAnimated ? styles.line4 : styles.nonDisplayLine}
+                  />
+                  <div
+                      class={isAnimated ? styles.line5 : styles.nonDisplayLine}
+                  />
+                  <div
+                      class={isAnimated ? styles.line6 : styles.nonDisplayLine}
+                  />
+                  <div class={isAnimated ? styles.part1 : styles.nonDisplay}>
+                    <p class={styles.itemMain}>01</p>
+                    <p class={styles.itemDescription}>
+                      СТРОИМ/МОНТАЖ КРУГЛЫЙ ГОД
+                    </p>
+                  </div>
+                  <div class={isAnimated ? styles.part2 : styles.nonDisplay}>
+                    <p class={styles.itemMain}>02</p>
+                    <p class={styles.itemDescription}>
+                      ЛУЧШИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ И ГАРАНТИЯ КАЧЕСТВА
+                    </p>
+                  </div>
+                  <div class={isAnimated ? styles.part3 : styles.nonDisplay}>
+                    <p class={styles.itemMain}>03</p>
+                    <p class={styles.itemDescription}>
+                      ГИБКАЯ СИСТЕМА ОПЛАТЫ
+                    </p>
+                  </div>
+                  <div class={isAnimated ? styles.part4 : styles.nonDisplay}>
+                    <p class={styles.itemMain}>04</p>
+                    <p class={styles.itemDescription}>
+                      БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
+                    </p>
+                  </div>
+                  <div class={isAnimated ? styles.part5 : styles.nonDisplay}>
+                    <p class={styles.itemMain}>05</p>
+                    <p class={styles.itemDescription}>
+                      ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class={styles.tableTwo}>
-                <p class={clsx(styles.itemMain, styles.Five)}>05</p>
-                <p class={clsx(styles.itemMain, styles.Four)}>04</p>
-              </div>
-            </div>
-            <div class={styles.partThree}>
-              <p class={clsx(styles.itemDescription, styles.FiveD)}>
-                БЕСПЛАТНЫЙ ПОДБОР УЧАСТКА И РАСЧЁТ ФУНДАМЕНТА
-              </p>
-              <p class={clsx(styles.itemDescription, styles.FourD)}>
-                ДОСТУПНАЯ СТОИМОСТЬ ЗА СЧЕТ СОБСТВЕННОГО ПРОИЗВОДСТВА
-              </p>
-            </div>
-          </div>
+            )}
+          </Observer>
+
         </div>
 
         <div class={styles.containerMobile}>

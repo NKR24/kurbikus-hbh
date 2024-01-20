@@ -17,7 +17,8 @@
 }
 
 .mainText {
-  margin-left: 21.875vw;
+  margin-left: auto;
+  margin-right: auto;
   width: 41.37vw;
   height: 7.23vw;
   flex-shrink: 0;
@@ -31,101 +32,166 @@
 }
 
 .boxSecond {
-  margin-top: 5.21vw;
+  position: relative;
+  height: 49.7106vw;
 }
 
-.partOne {
+.part1 {
+  position: absolute;
+  left: 10.59vw;
+  top: 2.5463vw;
+  width: 14.9305vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  animation: revealTextFromBottom 1s forwards;
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 0s;
 }
 
-.One {
-  width: 14.93vw;
-  height: 6.94vw;
-  flex-shrink: 0;
-  margin-left: 1.39vw;
+.part2 {
+  position: absolute;
+  top: 2.5463vw;
+  width: 26.852vw;
+  left: 35.8217vw;
+
+  animation: revealTextFromBottom 1s forwards;
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 1s;
 }
 
-.OneD {
-  margin-top: 0.93vw;
-  width: 15.04vw;
-  margin-left: 1.74vw;
+.part3 {
+  position: absolute;
+  width: 15.335vw;
+  left: 73.3217vw;
+  top: 9.3vw;
+
+  animation: revealTextFromBottom 1s forwards;
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 2.597826s;
 }
 
-.Two {
-  width: 14.87vw;
-  height: 6.94vw;
-  flex-shrink: 0;
-  margin-left: 10.3vw;
+.part4{
+  position: absolute;
+  top: 27.199vw;
+  width: 21.5278vw;
+  left: 58.6805vw;
+
+  animation: revealTextFromBottom 1s forwards;
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 4.808696s;
 }
 
-.TwoD {
-  margin-top: 0.93vw;
-  margin-left: 10.42vw;
-  width: 26.85vw;
-  height: 6.71vw;
-  flex-shrink: 0;
-}
-
-.content {
-  margin-left: 10.42vw;
-}
-
-.Three {
-  width: 14.87vw;
-  height: 5.21vw;
-  flex-shrink: 0;
-}
-
-.ThreeD {
-  margin-top: 2.55vw;
-  width: 15.34vw;
-  height: 4.92vw;
-  flex-shrink: 0;
-}
-
-.Four {
-  width: 14.87vw;
-  margin-left: 22.63vw;
-}
-
-.FourD {
-  width: 21.53vw;
-  height: 11.17vw;
-  flex-shrink: 0;
-  margin-left: 19.04vw;
-}
-
-.Five {
-  width: 14.81vw;
-}
-
-.FiveD {
+.part5{
+  position: absolute;
+  left: 20.8912vw;
+  top: 27.199vw;
   width: 18.75vw;
-  height: 10.88vw;
-  flex-shrink: 0;
+
+  animation: revealTextFromBottom 1s forwards;
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 6.332609s;
 }
 
-.partTwo {
-  width: 86.38vw;
-  background: url("../../../assets/img/lines-4.svg") no-repeat;
-  background-size: 86.39vw;
+.line1 {
+  position: absolute;
+  top: 9.6065vw;
+  left: 9.2014vw;
+
+  width: 62.2685vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: left center; /* Start stretching from the left */
+  animation: stretchPointToLine 2.33913s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 0s;
 }
 
-.partThree {
-  display: flex;
-  margin-left: 12.15vw;
-  margin-bottom: 3.36vw;
+.line2 {
+  position: absolute;
+  top: 9.6065vw;
+  left: 71.4699vw;
+
+  rotate: 90deg;
+
+  width: 6.8865vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: left center; /* Start stretching from the left */
+  animation: stretchPointToLine 0.258695s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 2.33913s;
 }
 
-.tableOne {
-  display: flex;
+.line3 {
+  position: absolute;
+  top: 16.493vw;
+  left: 71.4699vw;
+
+  width: 24.8264vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: left center; /* Start stretching from the left */
+  animation: stretchPointToLine 0.93261s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 2.597826s;
 }
 
-.tableTwo {
-  display: flex;
-  margin-top: 5.21vw;
-  margin-left: 11.69vw;
+.line4 {
+  position: absolute;
+  top: 16.493vw;
+  left: 96.2963vw;
+
+  rotate: 90deg;
+
+  width: 17.9398vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: left center; /* Start stretching from the left */
+  animation: stretchPointToLine 0.673913s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 3.530435s;
+}
+
+.line5 {
+  position: absolute;
+  top: 34.4328vw;
+  left: 9.2014vw;
+
+  width: 87.0949vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: center right; /* Start stretching from the left */
+  animation: stretchPointToLine 3.27174s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 4.204348s;
+}
+
+.line6 {
+  position: absolute;
+  top: 34.4328vw;
+  left: 9.2014vw;
+
+  rotate: -90deg;
+
+  width: 24.8264vw; /* Define the final width of the line */
+  height: 1px; /* Define the height/thickness of the line */
+  background-color: black; /* The color of the line */
+  transform-origin: center left; /* Start stretching from the left */
+  animation: stretchPointToLine 0.93261s forwards; /* Apply the animation */
+  animation-timing-function: linear;
+  visibility: hidden;
+  animation-delay: 7.476087s;
 }
 
 .itemMain {
@@ -148,8 +214,30 @@
   text-transform: lowercase;
 }
 
-.itemOne {
+.nonDisplay {
+  display: none;
+}
 
+@keyframes stretchPointToLine {
+  0% {
+    transform: scaleX(0); /* Start as a point */
+    visibility: hidden;
+  }
+  100% {
+    transform: scaleX(1); /* Stretch to a full line */
+    visibility: visible;
+  }
+}
+
+@keyframes revealTextFromBottom {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
 }
 
 @include xxl {
@@ -208,17 +296,6 @@
     text-transform: lowercase;
   }
 
-  @keyframes stretchPointToLine {
-    0% {
-      transform: scaleX(0); /* Start as a point */
-      visibility: hidden;
-    }
-    100% {
-      transform: scaleX(1); /* Stretch to a full line */
-      visibility: visible;
-    }
-  }
-
   .line1 {
     position: absolute;
     top: 10.596vw;
@@ -271,6 +348,8 @@
     top: 38.05vw;
     left: 13.0232vw;
 
+    rotate: 0deg;
+
     width: 3.721vw; /* Define the final width of the line */
     height: 1px; /* Define the height/thickness of the line */
     background-color: black; /* The color of the line */
@@ -302,6 +381,8 @@
     position: absolute;
     top: 70.6976vw;
     left: 13.0232vw;
+
+    rotate: 0deg;
 
     width: 23.9534vw; /* Define the final width of the line */
     height: 1px; /* Define the height/thickness of the line */
@@ -405,17 +486,6 @@
     animation-timing-function: linear;
     visibility: hidden;
     animation-delay: 11.5325s;
-  }
-
-  @keyframes revealTextFromBottom {
-    0% {
-      opacity: 0;
-      visibility: hidden;
-    }
-    100% {
-      opacity: 100%;
-      visibility: visible;
-    }
   }
 
   .OneMob {

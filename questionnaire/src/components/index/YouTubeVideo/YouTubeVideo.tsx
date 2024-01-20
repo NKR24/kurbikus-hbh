@@ -1,11 +1,9 @@
-import {Component, JSX, JSXElement} from 'solid-js';
-
-interface YouTubeVideoProps {
+type YouTubeVideoProps = {
     videoId: string;
     child: string;
 }
 
-const YouTubeVideo: Component<YouTubeVideoProps> = (props: YouTubeVideoProps) => {
+function YouTubeVideo(props: YouTubeVideoProps) {
     const videoSrc = `https://www.youtube.com/embed/${props.videoId}`;
 
     return (
@@ -15,6 +13,6 @@ const YouTubeVideo: Component<YouTubeVideoProps> = (props: YouTubeVideoProps) =>
             allowfullscreen
         ></iframe>
     );
-};
+}
 
 export default YouTubeVideo;

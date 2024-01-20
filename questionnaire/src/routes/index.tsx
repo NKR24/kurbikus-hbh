@@ -13,7 +13,6 @@ import Accordion from "~/components/index/accordion"
 import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
-import Test from "~/components/index/YouTubeVideo/YouTubeVideo";
 
 export default function Home() {
   return (
