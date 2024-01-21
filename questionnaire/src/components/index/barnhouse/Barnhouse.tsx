@@ -1,11 +1,13 @@
 import clsx from "clsx"
 import styles from "./styles.module.scss"
 import MainHome from "../../../assets/img/home-main.jpg"
+import Navbar from "~/components/index/navbar"
 
 export default function Barnhouse() {
   return (
     <>
       <div class={styles.containerMain}>
+        <Navbar />
         <div class={styles.containerSection}>
           <div class={styles.containerDesktop}>
             <div class={styles.containerFirst}>

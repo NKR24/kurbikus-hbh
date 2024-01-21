@@ -10,6 +10,10 @@
   width: 100%;
   padding: 40px 103px 38px 103px;
   max-width: max(1728px);
+  background: #DEDEDE;
+  position: sticky;
+  top: -25%;
+  z-index: -3;
 }
 
 .section {
