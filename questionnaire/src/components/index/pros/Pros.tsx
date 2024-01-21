@@ -1,35 +1,35 @@
 import styles from "./styles.module.scss"
 import clsx from "clsx"
+import Observer from "~/components/observer";
 
 export default function Pros() {
   return (
     <>
       <div class={styles.containerMain}>
-        <div class={styles.containerSection}>
-          <h1 class={styles.textMain}>ПЛЮСЫ</h1>
-          <p class={clsx(styles.itemMain, styles.OneHalf)}>мобильные</p>
-          <div class={styles.part}>
-            <div class={styles.tableOne}>
-              <div class={styles.SecondHalf}>
-                <p class={clsx(styles.itemMain, styles.OneHalfTwo)}>бригады</p>
-                <p class={clsx(styles.itemMain, styles.OneHalfThree)}>
-                  по всей россии
-                </p>
-              </div>
-              <p class={clsx(styles.itemMain, styles.Two)}>
-                Используем европейские материалы
-              </p>
-            </div>
-            <div class={styles.tableTwo}>
-              <p class={clsx(styles.itemMain, styles.Three)}>
-                СОБСТВЕННЕ ПРОИЗВОДСТВО
-              </p>
-              <p class={clsx(styles.itemMain, styles.Four)}>
-                низкая цена за счет серийного производства
-              </p>
-            </div>
+          <div class={styles.head}>
+              <h1 class={styles.textMain}>ПЛЮСЫ</h1>
           </div>
-        </div>
+          <div class={styles.container}>
+              <Observer animationClass={""}>
+                  {(isAnimated) => (
+                      <>
+                          <p class={isAnimated ? clsx(styles.text1, styles.itemMain) : styles.nonDisplay}>мобильные бригады по всей россии</p>
+                          <p class={isAnimated ? clsx(styles.text2, styles.itemMain) : styles.nonDisplay}>Используем европейские материалы</p>
+                          <p class={isAnimated ? clsx(styles.text3, styles.itemMain) : styles.nonDisplay}>СОБСТВЕННЕ ПРОИЗВОДСТВО</p>
+                          <p class={isAnimated ? clsx(styles.text4, styles.itemMain) : styles.nonDisplay}>низкая цена за счет серийного производства</p>
+                          <hr class={isAnimated ? styles.line1 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line2 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line3 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line4 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line5 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line6 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line7 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line8 : styles.nonDisplay}/>
+                          <hr class={isAnimated ? styles.line9 : styles.nonDisplay}/>
+                      </>
+                  )}
+              </Observer>
+          </div>
       </div>
     </>
   )
