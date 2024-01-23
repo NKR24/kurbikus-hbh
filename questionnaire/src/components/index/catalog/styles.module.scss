@@ -8,51 +8,7 @@
   position: sticky;
   top: -22%;
   z-index: -5;
-  animation: appearFromBottom 1s ease-out forwards;
 }
-
-@keyframes appearFromBottom {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.your-section {
-  animation: appearFromBottom 1s ease-out forwards;
-}
-
-/*.animation{
-  opacity: 0;
-  animation: fadeIn 3s linear;
-  animation-delay: 1s;
-}
-
-@keyframes fadeIn {
-  0%{
-    opacity: 0;
-  }
-
-  25%{
-    opacity: 0.25;
-  }
-
-  50%{
-    opacity: 0.5;
-  }
-
-  75%{
-    opacity: 0.75;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}*/
 
 .section {
   padding: 8vh 102px 63px 104px;
@@ -62,30 +18,12 @@
 
 .firstText {
   width: auto;
-  white-space: nowrap;
-  animation: typing 2s steps(40, start), blink-caret .75s forwards;
   border-right: solid white;
   overflow: hidden;
   margin-bottom: 38px;
   font-size: 40px;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 40% }
-}
-
-@keyframes blink-caret {
-  50% { border-color: transparent; }
-}
-
-.typing {
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: .15em solid orange;
-  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-}
 
 .fonts {
   color: #dedede;

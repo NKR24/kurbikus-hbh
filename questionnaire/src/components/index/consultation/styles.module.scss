@@ -1,7 +1,7 @@
 @import "../../../utils";
 
 @include xxl{
-  .containerMain{
+  .containerSection{
     margin: 0 auto;
   }
 }
@@ -12,11 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: max(1728px);
   background: #DEDEDE;
 }
 
 .containerSection{
+  max-width: max(1728px);
   border: 2px solid black;
   height: auto;
   flex-shrink: 0;

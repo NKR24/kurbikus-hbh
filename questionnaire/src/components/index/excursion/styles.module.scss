@@ -1,7 +1,7 @@
 @import "../../../utils";
 
 @include xxl{
-  .container{
+  .section{
     margin: 0 auto;
   }
 }
@@ -19,13 +19,13 @@
 .container{
   width: 100%;
   padding: 62px 103px 30px 103px;
-  max-width: max(1728px);
   background: #DEDEDE;
   position: sticky;
   z-index: -2;
 }
 
 .section{
+  max-width: max(1728px);
   padding: 55px 262px 68px 258px;
   border: 1px solid black;
   display: flex;

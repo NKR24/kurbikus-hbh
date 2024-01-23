@@ -1,0 +1,82 @@
+@keyframes drawLetters {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.letter1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}
+
+.letter3 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter4 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}
+
+.letter5 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter6 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}
+
+.letter7 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter8 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}
+
+.letter9 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter10 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter11 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}
+
+.letter12 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards;
+}
+
+.letter13 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLetters 2s linear forwards 2s; /* Delay start of animation */
+}

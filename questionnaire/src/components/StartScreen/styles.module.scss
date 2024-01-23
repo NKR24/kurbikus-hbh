@@ -1,0 +1,44 @@
+.ContainerMain{
+  width: 100%;
+  height: 100vh;
+  background: #DEDEDE;
+  position: sticky;
+  top: 0;
+  z-index: -1000000000000;
+}
+
+.Section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section img{
+  width: 500px;
+  height: 500px;
+  animation: riseUp 2s ease-in-out;
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeOut{
+  animation: fadeOut 4s forwards;
+  animation-delay: 3s;
+}
+
+
+@keyframes fadeOut {
+  0% {opacity: 1; transform: translateY(0)}
+  100% {opacity: 0; transform: translateY(-100%)}
+}
