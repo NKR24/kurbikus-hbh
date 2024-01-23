@@ -18,7 +18,7 @@ export default function StartScreen(props: Props) {
       setTimeout(() => {
         setNextComponentVisible(true)
       }, 0)
-    }, 5000)
+    }, 4000)
   })
 
   return (
