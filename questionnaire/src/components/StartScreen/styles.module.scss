@@ -1,6 +1,6 @@
 @import "../../utils";
 
-.ContainerMain{
+.ContainerMain {
   width: 100%;
   height: 100vh;
   background: #DEDEDE;
@@ -9,7 +9,7 @@
   z-index: -1000000000000;
 }
 
-.Section{
+.Section {
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -18,18 +18,98 @@
   align-items: center;
 }
 
-.first img{
+.first img {
   width: 500px;
   height: 500px;
   animation: riseUp 2s ease-in-out;
 }
 
-.second img{
+.second svg {
   margin-top: -500px;
   width: 500px;
   height: 500px;
-  animation: fadeIn 2s ease-in-out;
-  animation-duration: 4s;
+}
+
+@keyframes Go{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.letter1{
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 2.15s;
+}
+
+.letter2 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 2.3s;
+
+}
+
+.letter3 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 2.45s;
+
+}
+
+.letter4 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 3.1s;
+}
+
+.letter5 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 3.25s;
+}
+
+.letter6 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 3.9s;
+}
+
+.letter7 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 4.05s;
+}
+
+.letter8 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 4.2s;
+}
+
+.letter9 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 4.35s;
+}
+
+.letter10 {
+  opacity: 0;
+
+  animation: Go 0.15s forwards;
+  animation-delay: 4.5s;
 }
 
 @keyframes fadeIn {
@@ -37,7 +117,7 @@
     opacity: 0;
   }
 
-  50%{
+  50% {
     opacity: 0;
   }
 
@@ -57,29 +137,35 @@
   }
 }
 
-.fadeOut{
+.fadeOut {
   animation: fadeOut 4s forwards;
-  animation-delay: 4s;
+  animation-delay: 5s;
 }
 
 
 @keyframes fadeOut {
-  0% {opacity: 1; transform: translateY(0)}
-  100% {opacity: 0; transform: translateY(-100%)}
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 
-@include md{
-  .first img{
+@include md {
+  .first img {
     width: 300px;
     height: 300px;
   }
 
-  .Section{
+  .Section {
     flex-direction: column;
   }
 
-  .second img{
+  .second img {
     width: 300px;
     height: 300px;
     animation: fadeIn 2s ease-in-out;
@@ -87,7 +173,7 @@
     margin-top: -300px;
   }
 
-  .ContainerMain{
+  .ContainerMain {
     height: 90vh;
   }
 }

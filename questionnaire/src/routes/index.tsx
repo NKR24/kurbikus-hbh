@@ -12,6 +12,8 @@ import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
 import Theme from "~/components/index/Theme/Theme"
+import AnimatedLogo from "~/components/WordAnimation/WordAnimation"
+import StartScreen from "~/components/StartScreen/StartScreen"
 
 export default function Home() {
   return (
