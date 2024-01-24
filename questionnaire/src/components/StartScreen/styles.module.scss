@@ -10,6 +10,7 @@
 }
 
 .Section{
+  flex-direction: column;
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,10 +18,32 @@
   align-items: center;
 }
 
-.Section img{
+.first img{
   width: 500px;
   height: 500px;
   animation: riseUp 2s ease-in-out;
+}
+
+.second img{
+  margin-top: -500px;
+  width: 500px;
+  height: 500px;
+  animation: fadeIn 2s ease-in-out;
+  animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes riseUp {
@@ -36,7 +59,7 @@
 
 .fadeOut{
   animation: fadeOut 4s forwards;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 
 
@@ -47,10 +70,21 @@
 
 
 @include md{
-  .Section img{
+  .first img{
     width: 300px;
     height: 300px;
-    animation: riseUp 2s ease-in-out;
+  }
+
+  .Section{
+    flex-direction: column;
+  }
+
+  .second img{
+    width: 300px;
+    height: 300px;
+    animation: fadeIn 2s ease-in-out;
+    animation-duration: 4s;
+    margin-top: -300px;
   }
 
   .ContainerMain{

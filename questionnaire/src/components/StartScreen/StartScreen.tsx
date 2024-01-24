@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss"
-import hbhLogo from "~/assets/img/hbh-logo.svg"
+import hbhLogo from "./logo.svg"
+import name from "./name.svg"
 import { createSignal, JSX, onMount } from "solid-js"
-import AnimatedLogo from "~/components/AnimatedLogo/AnimatedLogo"
 
 type Props = {
   LowerSection: ((nextComponentVisible: boolean) => JSX.Element) | JSX.Element
@@ -18,7 +18,7 @@ export default function StartScreen(props: Props) {
       setTimeout(() => {
         setNextComponentVisible(true)
       }, 0)
-    }, 4000)
+    }, 5500)
   })
 
   return (
@@ -27,7 +27,12 @@ export default function StartScreen(props: Props) {
         <div class={styles.fadeOut}>
           <div class={styles.ContainerMain}>
             <div class={styles.Section}>
-              <img src={hbhLogo} alt="logo" />
+              <div class={styles.first}>
+                <img src={hbhLogo} alt="logo" />
+              </div>
+              <div class={styles.second}>
+                <img src={name} alt="logo" />
+              </div>
             </div>
           </div>
         </div>

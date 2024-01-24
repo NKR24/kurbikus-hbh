@@ -1,6 +1,6 @@
 import StartScreen from "~/components/StartScreen/StartScreen"
-import Barnhouse from "~/components/index/barnhouse"
 import styles from "./styles.module.scss"
+import Barnhouse from "~/components/index/barnhouse"
 
 function Test() {
   return (

@@ -1,6 +1,4 @@
 import { Title } from "solid-start"
-import Navbar from "~/components/index/navbar"
-import Barnhouse from "~/components/index/barnhouse"
 import Catalog from "~/components/index/catalog"
 import Questions from "~/components/index/questions"
 import Whyus from "~/components/index/whyus/Whyus"
