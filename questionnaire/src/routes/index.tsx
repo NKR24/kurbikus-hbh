@@ -11,13 +11,13 @@ import Accordion from "~/components/index/accordion"
 import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
-import Test from "~/components/Test/Test"
+import Theme from "~/components/index/Theme/Theme"
 
 export default function Home() {
   return (
     <>
       <Title>Опросник</Title>
-      <Test />
+      <Theme />
       <Catalog />
       <Questions />
       <Whyus />
