@@ -38,6 +38,9 @@ dependencies:
   solid-plyr:
     specifier: ^1.0.10
     version: 1.0.10(solid-js@1.7.11)
+  solid-slider:
+    specifier: ^1.3.17
+    version: 1.3.17(solid-js@1.7.11)
   solid-start:
     specifier: ^0.3.5
     version: 0.3.5(@solidjs/meta@0.28.6)(@solidjs/router@0.8.3)(solid-js@1.7.11)(solid-start-node@0.3.5)(vite@4.4.9)
@@ -1798,6 +1801,14 @@ packages:
       solid-js: ^1.6.12
     dependencies:
       '@solid-primitives/utils': 6.2.1(solid-js@1.7.11)
+      solid-js: 1.7.11
+    dev: false
+
+  /@solid-primitives/timer@1.3.8(solid-js@1.7.11):
+    resolution: {integrity: sha512-NTOoKAYXDkNkrpZvu7svCzIlAGy/XCbz4rToJaMtqf3BOK0YOJ8t2l2JwikFOTZW3MLH553VjEGFZjJwVHOzHg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
       solid-js: 1.7.11
     dev: false
 
@@ -3743,6 +3754,10 @@ packages:
     resolution: {integrity: sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==}
     dev: true
 
+  /keen-slider@6.8.6:
+    resolution: {integrity: sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==}
+    dev: false
+
   /keyv@4.5.3:
     resolution: {integrity: sha512-QCiSav9WaX1PgETJ+SpNnx2PRRapJ/oRSXM4VO5OGYGSjrxbKPVFVhB3l2OCbLCk329N8qyAtsJjSjvVBWzEug==}
     dependencies:
@@ -4482,6 +4497,17 @@ packages:
       '@babel/helper-module-imports': 7.22.5
       '@babel/types': 7.22.11
       solid-js: 1.7.11
+
+  /solid-slider@1.3.17(solid-js@1.7.11):
+    resolution: {integrity: sha512-dcPKMWEqhyYo1zD2rIhQnDXUSSOGpBn3lKyH25AuSdGb4eE8nZgEVK9+tTSRjrJ7d73WprW+ZdNqEmaQAfbWyQ==}
+    peerDependencies:
+      solid-js: ^1.8.5
+    dependencies:
+      '@solid-primitives/timer': 1.3.8(solid-js@1.7.11)
+      '@solid-primitives/utils': 6.2.1(solid-js@1.7.11)
+      keen-slider: 6.8.6
+      solid-js: 1.7.11
+    dev: false
 
   /solid-start-node@0.3.5(solid-start@0.3.5)(vite@4.4.9):
     resolution: {integrity: sha512-1nvPnxbUuMfhJiILBPln7g+EJUJYz9KRCZS096XVWDz7/pX6PhBzcIxWEZdaCfPdLGWbY97oib/jdKyPLoSaBQ==}
