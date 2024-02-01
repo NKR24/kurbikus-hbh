@@ -10,6 +10,11 @@ export default function SliderComponent() {
   const [slider, { current, next, prev/*, moveTo*/ }] = createSlider();
   return (<>
     <div class={styles.container}>
+      {/*<div class={styles.lines}>
+        <div class={}/>
+        <div class={}/>
+        <div class={}/>
+      </div>*/}
       <div ref={slider}>
         <div><Page1 /></div>
         <div><Page2 /></div>

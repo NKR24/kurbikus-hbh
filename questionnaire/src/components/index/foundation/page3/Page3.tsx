@@ -6,9 +6,10 @@ export default function Page3() {
 
   return (
     <>
-      <div class={styles.page}>
+      <div class={styles.top}>
         <h1 class={clsx(stylesF.head, styles.head)}>каркас/утеплитель</h1>
         <img class={styles.pic} src={pic} alt={"frame"} />
+      </div>
         <div class={styles.text}>
           <text class={stylesF.numberedList}>
             Домокомплект - выдерживает сильные морозы. Поставляется с завода
@@ -21,7 +22,6 @@ export default function Page3() {
             обеспечивает прочную, экологичную сцепку древесины.
           </text>
         </div>
-      </div>
     </>
   )
 

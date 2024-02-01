@@ -31,3 +31,19 @@
 .disable {
   display: none;
 }
+
+.lines {
+
+}
+
+.line {
+  width: 35px;
+  height: 1px;
+  background: #DEDEDE;
+}
+
+.activeLine {
+  width: 35px;
+  height: 1px;
+  background: #FAAD67;
+}

@@ -6,10 +6,11 @@ export default function Page2() {
 
   return (
     <>
-      <div class={styles.page}>
+      <div class={styles.top}>
         <h1 class={clsx(stylesF.head, styles.head)}>окна/стеклопакеты</h1>
         <img class={styles.pic} src={pic} alt={"windows"} />
-        <div class={styles.text}>
+      </div>
+      <div class={styles.text}>
           <ol class={stylesF.numberedList}>
             <li>
               Качественные энергоэффективные стеклопакеты (3 стекла, 2
@@ -28,7 +29,6 @@ export default function Page2() {
             </li>
           </ol>
         </div>
-      </div>
     </>
   )
 

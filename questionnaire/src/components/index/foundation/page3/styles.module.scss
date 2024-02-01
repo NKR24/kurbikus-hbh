@@ -2,9 +2,9 @@
 
 
 .pic {
-  margin-right: auto;
-  margin-left: 20.5439815vw;
-  margin-bottom: 2.77778vw;
+  position: absolute;
+  left: 20.5439815vw;
+  top: 2.736111vw;
   width: 62.722vw;
   height: 35.5324074vw;
 }
@@ -21,15 +21,32 @@
   margin-left: 113px;
   margin-right: 103px;
   margin-bottom: 5.2083vw;
+  margin-top: 2.777778vw;
 }
 
-.page {
-  padding-top: 7.1vw;
+.top {
+  height: 36.574074vw;
 }
 
 @include lg {
   .text {
-    margin-left: 105px;
+    margin-left: 83px;
     margin-right: 98px;
+  }
+}
+
+@include sm {
+  .pic {
+    display: none;
+  }
+  .head {
+    position: initial;
+    margin-left: 55px;
+    margin-bottom: 24px;
+  }
+  .text {
+    margin-left: 55px;
+    margin-right: 54px;
+    margin-bottom: 19px;
   }
 }

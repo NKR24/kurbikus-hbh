@@ -36,3 +36,14 @@
   }
 }
 
+@include sm {
+  .head {
+    font-family: Mikro, serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}
+

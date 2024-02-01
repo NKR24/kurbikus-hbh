@@ -2,9 +2,9 @@
 
 
 .pic {
-  margin-right: 13.0787037vw;
-  margin-left: auto;
-  margin-bottom: 2.77778vw;
+  position: absolute;
+  right: 13.0787037vw;
+  top: 7.118056vw;
   width: 68.34491vw;
   height: 29.4560185vw;
 }
@@ -19,16 +19,33 @@
 .text {
   margin-left: 143px;
   margin-right: 103px;
+  margin-top: 2.777778vw;
   margin-bottom: 5.2083vw;
 }
 
-.page {
-  padding-top: 10.1180556vw;
+.top {
+  height: 36.574074vw;
 }
 
 @include lg {
   .text {
     margin-left: 105px;
     margin-right: 98px;
+  }
+}
+
+@include sm {
+  .pic {
+    display: none;
+  }
+  .head {
+    position: initial;
+    margin-bottom: 24px;
+    margin-left: 55px;
+  }
+  .text {
+    margin-left: 72px;
+    margin-right: 54px;
+    margin-bottom: 19px;
   }
 }
