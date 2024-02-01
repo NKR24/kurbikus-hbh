@@ -1,0 +1,35 @@
+@import "../../../../utils";
+
+
+.pic {
+  margin-right: auto;
+  margin-left: 20.5439815vw;
+  margin-bottom: 2.77778vw;
+  width: 59.722vw;
+  height: 35.5324074vw;
+}
+
+.head {
+  position: absolute;
+  left: 113px;
+  top: 6.4236111vw;
+  z-index: 1;
+  width: 27.5462963vw;
+}
+
+.text {
+  margin-left: 143px;
+  margin-right: 103px;
+  margin-bottom: 5.2083vw;
+}
+
+.page {
+  padding-top: 5.7361vw;
+}
+
+@include lg {
+  .text {
+    margin-left: 105px;
+    margin-right: 98px;
+  }
+}

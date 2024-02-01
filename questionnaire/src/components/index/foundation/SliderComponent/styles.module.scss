@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  background: #3E3E3E;
+  width: 100%;
+}
+
+.next {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  opacity: 0.4;
+}
+
+.next:hover {
+  opacity: 1;
+}
+
+.prev {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  opacity: 0.4;
+}
+
+.prev:hover {
+  opacity: 1;
+}
+
+.disable {
+  display: none;
+}
