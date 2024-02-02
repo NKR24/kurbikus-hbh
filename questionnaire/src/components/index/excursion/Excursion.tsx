@@ -6,21 +6,24 @@ export default function Excursion() {
     <>
       <div class={styles.container}>
         <section class={styles.section}>
-          <text class={styles.mainText}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</text>
-          <YouTubeVideo videoId="ZGKVhUQEK5c" child={styles.frame}/>
+          <div class={styles.mobSection}>
+            <p class={styles.mainText}>ЭКСКУРСИЯ ПО НАШИМ ОБЪЕКТАМ</p>
+            <YouTubeVideo videoId="ZGKVhUQEK5c" child={styles.frame}/>
+          </div>
           <div class={styles.end}>
-            <text class={styles.paragraph}>
+            <p class={styles.paragraph}>
               Демонстрируем построенный вариант дома, однако может отвезти на
               недостроенный объект, чтобы вы могли проверить и убедиться своими
-              глазами. Экскурсию проводит наш проектный менеджер, поэтому вы
+              глазами.
+            <br />
+              Экскурсию проводит наш проектный менеджер, поэтому вы
               получите ответы на все интересующие вас вопросы.
-            </text>
-            <text class={styles.paragraph}>
+            <br />
               Также поможем подобрать вам участок, если вы в растерянности от
               большого количества предложений и не знаете, что лучше.
-            </text>
+            </p>
             <button class={styles.button}>
-              <span>записаться</span>
+                записаться
             </button>
           </div>
         </section>

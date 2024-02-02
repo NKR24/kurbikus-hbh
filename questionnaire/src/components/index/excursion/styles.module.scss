@@ -7,13 +7,14 @@
 }
 
 .frame {
-  max-width: 997px;
+  //max-width: 997px;
   max-height: 587px;
-  width: 57.6967vw;
+  width: 100%;
   height: 33.97vw;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4.9768vw;
+
 }
 
 .container{
@@ -24,7 +25,7 @@
 
 .section{
   max-width: max(1728px);
-  padding: 55px 262px 68px 258px;
+  padding: 3.18287vw 15.335648vw 3.935185vw 15.046296vw;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -104,11 +105,6 @@
     font-size: 44px;
   }
 
-  .videobox{
-    height: 567px;
-    margin-bottom: 66px;
-  }
-
   .paragraph{
     font-size: 22px;
   }
@@ -129,11 +125,6 @@
   .mainText{
     white-space: nowrap;
     font-size: 38px;
-  }
-
-  .videobox{
-    height: 455px;
-    margin-bottom: 46px;
   }
 
   .paragraph{
@@ -163,11 +154,6 @@
     font-size: 25px;
   }
 
-  .videobox{
-    height: 370px;
-    margin-bottom: 46px;
-  }
-
   .paragraph{
     font-size: 16px;
   }
@@ -195,44 +181,66 @@
     font-size: 22px;
   }
 
-  .videobox{
-    height: 300px;
-    margin-bottom: 16px;
-  }
-
   .paragraph{
     font-size: 20px;
   }
+
 }
 
 @include sm{
   .container{
-    padding: 28px 5.4vw 10px 5.9vw;
+    padding: 28px 5.4vw 0 5.9vw;
   }
 
   .button{
-    width: 24.53vw;
-    height: 9.22vw;
-    font-size: 2.5vw;
-    margin-top: 3.59vw;
+    width: 36.511628vw;
+    height: 13.72093vw;
+    font-size: 3.72093vw;
+    margin-top: 5.3489vw;
   }
 
   .section{
-    padding: 1.72vw 5.625vw 5.94vw 5.16vw;
+    border-width: 0;
+    padding: 0;
   }
 
   .mainText{
-    margin-bottom: 1.875vw;
-    white-space: nowrap;
-    font-size: 3.188vw;
-  }
-
-  .videobox{
-    height: 35vw;
-    margin-bottom: 16px;
+    margin-bottom: 2.79vw;
+    white-space: initial;
+    font-size: 3.2558vw;
+    line-height: 3.907vw;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
   }
 
   .paragraph{
-    font-size: 1.875vw;
+    font-size: 2.791vw;
+    font-weight: 400;
+    line-height: 3.255814vw;
+    letter-spacing: 0;
+    text-align: left;
   }
+
+  .frame {
+    max-width: 997px;
+    max-height: 587px;
+    width: 100%;
+    height: 40.813953vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  .mobSection {
+    padding: 2.55814vw 8.372093vw 5.581395vw 7.67442vw;
+    border-width: 0.5px;
+    height: auto;
+    border-color: black;
+  }
+
+  .end{
+    padding: 3.023356vw 8.372093vw 6.744186vw 7.67442vw;
+  }
+
 }
