@@ -6,7 +6,7 @@ export default function Questions() {
     <>
       <div class={styles.container}>
         <div class={styles.section}>
-          <h1 class={styles.mainText}>5 вопросов о вашем доме</h1>
+          <h1 class={styles.mainText}>5 вопросов о вашем дома</h1>
           <A href="~/routes/houseParameters/HouseParameters.tsx">
             <button class={styles.button}>
               <span class={styles.textButton}>начать</span>
