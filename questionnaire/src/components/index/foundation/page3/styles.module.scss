@@ -29,6 +29,10 @@
 }
 
 @include lg {
+  .head {
+    left: 83px;
+  }
+
   .text {
     margin-left: 83px;
     margin-right: 98px;
@@ -47,6 +51,20 @@
   .text {
     margin-left: 55px;
     margin-right: 54px;
-    margin-bottom: 19px;
+    margin-top: 0;
+  }
+  .top {
+    height: auto;
+  }
+}
+
+@include s {
+  .head {
+    margin-bottom: 5.5814vw;
+    margin-left: 12.7907vw;
+  }
+  .text {
+    margin-left: 12.7907vw;
+    margin-right: 12.55814vw;
   }
 }

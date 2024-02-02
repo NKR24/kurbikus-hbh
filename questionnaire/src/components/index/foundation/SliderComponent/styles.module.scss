@@ -1,7 +1,11 @@
+@import "../../../../utils";
+
+
 .container {
   position: relative;
   background: #3E3E3E;
   width: 100%;
+  z-index: 0;
 }
 
 .next {
@@ -32,18 +36,116 @@
   display: none;
 }
 
-.lines {
-
+.houses {
+  display: none;
 }
 
-.line {
-  width: 35px;
-  height: 1px;
-  background: #DEDEDE;
+
+
+@include sm {
+  .houses {
+    height: 60.4651163vw;
+    display: flex;
+  }
+
+  .slide1 {
+    width: 106.0465116vw;
+    height: 60.4651163vw;
+  }
+
+  .slide2 {
+    width: 98.372093vw;
+    height: 54.6511628vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slide3 {
+    width: 98.372093vw;
+    height: 60.4651163vw;
+  }
+
+  .animation {
+    display: flex;
+    animation: up 1s forwards;
+  }
+
+  .animationOff {
+    display: none;
+  }
+
+  @keyframes up {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .lines {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+
+    justify-content: space-between;
+
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+  }
+
+  .line {
+    height: 1px;
+    background: #DEDEDE;
+  }
+
+  .activeLine {
+    height: 1px;
+    background: #FAAD67;
+  }
+
+  .next {
+    top: 70%;
+  }
+
+  .prev {
+    top: 70%;
+  }
+
+  .next:hover {
+    opacity: 0.4;
+  }
+
+  .prev:hover {
+    opacity: 0.4;
+  }
+
+  .arrow{
+    width: 35px;
+    height: 67.5px;
+  }
 }
 
-.activeLine {
-  width: 35px;
-  height: 1px;
-  background: #FAAD67;
+@include s {
+  .arrow{
+    width: 8.14vw;
+    height: 15.6976vw;
+  }
+
+  .next {
+    top: 60%;
+  }
+
+  .prev {
+    top: 60%;
+  }
+
+  .line {
+    height: 3px;
+  }
+
+  .activeLine {
+    height: 3px;
+  }
 }

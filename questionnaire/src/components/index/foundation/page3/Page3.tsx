@@ -11,7 +11,7 @@ export default function Page3() {
         <img class={styles.pic} src={pic} alt={"frame"} />
       </div>
         <div class={styles.text}>
-          <text class={stylesF.numberedList}>
+          <p class={stylesF.numberedList}>
             Домокомплект - выдерживает сильные морозы. Поставляется с завода
             не утепленным. Ширина 4-5 метров.Каркас состоит из древесных
             плит хвойных пород (ОСП Kalevala) камерной сушки. Особенность
@@ -20,7 +20,7 @@ export default function Page3() {
             высоких температурах выделяется природный компонент смола,
             которая выполняет роль естественной клеевой основы и
             обеспечивает прочную, экологичную сцепку древесины.
-          </text>
+          </p>
         </div>
     </>
   )

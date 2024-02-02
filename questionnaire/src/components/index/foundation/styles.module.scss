@@ -1,7 +1,7 @@
 @import "../../../utils";
 
 .head {
-  font-family: Mikro;
+  font-family: Mikro, serif;
   font-size: 2.777778vw;
   font-weight: 700;
   line-height: 3.356481vw;
@@ -32,7 +32,13 @@
 
 @include md {
   .numberedList {
+    font-family: Montserrat, serif;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+
   }
 }
 
@@ -42,8 +48,19 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
-    letter-spacing: 0;
+    letter-spacing: -0.03em;
     text-align: left;
+  }
+}
+
+@include s {
+  .head {
+    font-size: 11.162791vw;
+    line-height: 13.489vw;
+  }
+  .numberedList {
+    font-size: 3.2556vw;
+    line-height: 3.95349vw;
   }
 }
 
