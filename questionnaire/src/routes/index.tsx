@@ -12,12 +12,14 @@ import Pros from "~/components/index/pros"
 import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
 import Theme from "~/components/index/Theme/Theme"
+import Barnhouse from "~/components/index/barnhouse"
 
 export default function Home() {
   return (
     <>
       <Title>Опросник</Title>
       <Theme />
+      <Barnhouse />
       <Catalog />
       <Questions />
       <Whyus />

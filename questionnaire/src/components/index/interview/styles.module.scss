@@ -7,6 +7,9 @@
   background: #3e3e3e;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: -150%;
+  z-index: -5;
 }
 
 .rectangle {

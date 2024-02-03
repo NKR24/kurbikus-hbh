@@ -3,6 +3,9 @@
 .containerMain {
   width: 100%;
   background: #DEDEDE;
+  position: sticky;
+  top: -20vh;
+  z-index: -9;
 }
 
 .containerDesktop {

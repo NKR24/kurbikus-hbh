@@ -7,6 +7,9 @@
 }
 
 .containerMain {
+  z-index: -13;
+  position: sticky;
+  top: -10vh;
   width: 100%;
   padding-left: 101px;
   padding-right: 103px;
