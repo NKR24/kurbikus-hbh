@@ -22,10 +22,6 @@
   position: relative;
 }
 
-.previewImage {
-  flex-shrink: 0;
-}
-
 .playButton {
   max-width: 96.812px;
   max-height: 96.812px;
@@ -36,14 +32,6 @@
   margin-left: 44.2%;
   position: absolute;
   top: 0;
-}
-
-.previewImage2 {
-  display: none;
-}
-
-.playButton2 {
-  display: none;
 }
 
 .interviewText {
@@ -70,20 +58,12 @@
 }
 
 .arrow {
- /* width: 41px;
-  height: 41px;
-  flex-shrink: 0;
-  margin-top: 1134px;
-  margin-left: 91.15vw;
-  margin-right: 6.4vw;
-  position: absolute;*/
-
   margin-left: auto;
   margin-top: auto;
 }
 
-.arrow2 {
-  display: none;
+.arrow:active {
+  transform: translate3d(3px, -5px, 0);
 }
 
 .block {
@@ -98,7 +78,7 @@
 }
 
 .reviews {
-  margin: 40px 111px 17px 103px;
+  margin: 40px 111px 40px 103px;
 }
 
 .recallTime {
@@ -119,6 +99,7 @@
   font-weight: 700;
   line-height: normal;
   font-variant: small-caps;
+  margin-top: 29.26px;
 }
 
 .review, .review2 {
@@ -131,8 +112,21 @@
   font-variant: small-caps;
 }
 
-.reviewMobile {
-  display: none;
+.myTransition {
+  transition: height 800ms ease;
+}
+
+.myTransition2 {
+  transition: height 1s ease;
+}
+
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .downloadButton {
@@ -156,6 +150,10 @@
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
+}
+
+.disable {
+  display: none;
 }
 
 @include xxl {
@@ -205,8 +203,6 @@
   .downloadButton {
     width: 62.2vw;
     height: 15.8vw;
-    //padding: 10px;
-    //gap: 10px;
   }
   .textDownload {
     font-size: 6.25vw;
@@ -220,319 +216,56 @@
 }
 
 @include sm {
- /* .Section7 {
-    width: 100%;
-    height: 1409px;
-    flex-shrink: 0;
-  }
-
-  .rectangle {
-    border: 0.5px solid #d9d9d9;
-    width: 579px;
-    height: 376px;
-    flex-shrink: 0;
-    margin-top: 16px;
-    margin-left: 44px;
-  }
-
-  .rectangle2 {
-    margin-top: 124px;
-    margin-left: 65px;
-    position: relative;
-  }
-
-  .previewImage {
-    display: none;
-  }
-
-  .previewImage2 {
-    display: block;
-    width: 459px;
-    height: 198px;
-    flex-shrink: 0;
-  }
-
-  .playButton {
-    display: none;
-  }
-
-  .playButton2 {
-    display: block;
-    width: 67px;
-    height: 67px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 0%;
-    margin-top: 76px;
-    margin-left: 196px;
-  }
-
-  .interviewText {
-    color: #dedede;
-    font-family: Mikro, serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-top: 17px;
-    margin-left: 61px;
-    position: absolute;
-  }
-
-  .textReviews {
-    color: #dedede;
-    font-family: Mikro, serif;
-    font-size: 35.787px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-top: 13px;
-    margin-left: 60px;
-    margin-bottom: 5px;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  .arrow2 {
-    display: block;
-    width: 25px;
-    height: 25px;
-    flex-shrink: 0;
-    stroke-width: 1.491px;
-    stroke: #dedede;
-    margin-top: 418px;
-    margin-left: 560px;
-    margin-right: 56px;
-    position: absolute;
-  }
-
-  .lines {
-    height: 0.746px;
+  .textDownload {
+    font-size: 3.255814vw;
   }
 
   .reviews {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 36px 29px 41px;
-    width: 579px;
-    height: 195px;
-    flex-shrink: 0;
-  }
-
-  .recallTime {
-    color: #dedede;
-    font-family: Montserrat, serif;
-    font-size: 20.876px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-variant: small-caps;
-  }
-
-  .review, .reviewMobile {
-    color: #dedede;
-    font-family: Montserrat, serif;
-    font-size: 20.876px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-variant: small-caps;
-  }
-
-  .reviewMobile {
-    display: block;
-  }
-
-  .review2 {
-    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .buttonExpand {
     display: none;
   }
 
-  .downloadButton {
-    width: 212px;
-    height: 41px;
-    flex-shrink: 0;
-    border: 0.7px solid #d9d9d9;
-    margin: 67px 215px 28px 210px;
+  .arrow {
+    width: 17px;
+    height: 17px;
   }
 
-  .textDownload {
-    color: #fff;
-    font-family: Mikro, serif;
-    font-size: 20px;
-    font-style: normal;
+  .textReviews {
+    font-size: 36px;
     font-weight: 400;
-    line-height: normal;
-    font-variant: small-caps;
-  }*/
+    line-height: 43px;
+    letter-spacing: 0;
+    text-align: left;
+
+  }
+
+  .review, .review2, .recallTime {
+    font-size: 20.88px;
+    line-height: 25.45px;
+  }
+
+  .downloadButton {
+    width: 49.3vw;
+    height: 9.535vw;
+  }
 }
 
 @include s {
-  /*.Section7 {
-    width: 100%;
-    height: 945px;
-    flex-shrink: 0;
-  }
-
-  .rectangle {
-    border: 0.5px solid #d9d9d9;
-    width: 388px;
-    height: 208px;
-    flex-shrink: 0;
-    margin-top: 11px;
-    margin-left: 22px;
-  }
-
-  .rectangle2 {
-    margin-top: 46px;
-    margin-left: 44px;
-    position: relative;
-  }
-
-  .previewImage {
-    display: none;
-  }
-
-  .previewImage2 {
-    display: block;
-    width: 308px;
-    height: 133px;
-    flex-shrink: 0;
-  }
-
-  .playButton {
-    display: none;
-  }
-
-  .playButton2 {
-    display: block;
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 0%;
-    margin-top: 41px;
-    margin-left: 131px;
-  }
-
-  .interviewText {
-    color: #dedede;
-    font-family: Mikro, serif;
+  .review, .review2, .recallTime {
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-top: 30px;
-    margin-left: 64px;
-    position: absolute;
-  }
-
-  .textReviews {
-    color: #dedede;
-    font-family: Mikro, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-top: 44px;
-    margin-left: 22px;
-    margin-bottom: 12px;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  .arrow2 {
-    display: block;
-    width: 17px;
-    height: 17px;
-    flex-shrink: 0;
-    stroke-width: 1px;
-    stroke: #dedede;
-    margin-top: 272px;
-    margin-left: 393px;
-    margin-right: 20px;
-    position: absolute;
-  }
-
-  .lines {
-    height: 0.5px;
-  }
-
-  .reviews {
-    display: flex;
-    flex-direction: column;
-    margin: 27px 20px 19px 22px;
-    width: 388px;
-    height: 131px;
-    flex-shrink: 0;
-  }
-
-  .recallTime {
-    color: #dedede;
-    font-family: Montserrat, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-variant: small-caps;
-  }
-
-  .review, .reviewMobile {
-    color: #dedede;
-    font-family: Montserrat, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-variant: small-caps;
-  }
-
-  .reviewMobile {
-    display: block;
-  }
-
-  .review2 {
-    display: none;
-  }
-
-  .buttonExpand {
-    display: none;
-  }
-
-  .downloadButton {
-    width: 212px;
-    height: 41px;
-    flex-shrink: 0;
-    border: 0.5px solid #d9d9d9;
-    margin: 28px 109px 28px 110px;
-  }
-
-  .textDownload {
-    color: #fff;
-    font-family: Mikro, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-variant: small-caps;
-  }*/
-
-  .review2{
-    font-size: 16px;
   }
 
   .textReviews{
-    font-size: 38px;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .reviews {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

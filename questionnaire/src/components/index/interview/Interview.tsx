@@ -1,8 +1,28 @@
 import styles from "./styles.module.scss"
 import s7image from "../../../assets/img/Section7image.jpg"
-import s7imageForMobile from "../../../assets/img/Section7imageForMobile.jpg"
+import { createSignal } from "solid-js"
+import { Collapse } from "solid-collapse"
+
 
 export default function Interview() {
+  const [isExpanded1, setIsExpanded1] = createSignal(false)
+  const [isExpanded2, setIsExpanded2] = createSignal(false)
+  const [isExpanded3, setIsExpanded3] = createSignal(false)
+  const [isExpanded4, setIsExpanded4] = createSignal(false)
+  const [isExpanded5, setIsExpanded5] = createSignal(false)
+  const [isExpanded6, setIsExpanded6] = createSignal(false)
+  const [isExpanded7, setIsExpanded7] = createSignal(false)
+
+  function reset() {
+    setIsExpanded1(false)
+    setIsExpanded2(false)
+    setIsExpanded3(false)
+    setIsExpanded4(false)
+    setIsExpanded5(false)
+    setIsExpanded6(false)
+    setIsExpanded7(false)
+  }
+
   return (
     <>
       <div class={styles.Section7}>
@@ -31,90 +51,72 @@ export default function Interview() {
               stroke-miterlimit="10"
             />
           </svg>
-          <div class={styles.rectangle2}>
-            <img
-              src={s7imageForMobile}
-              alt="preview"
-              class={styles.previewImage2}
-            />
-            <svg
-              class={styles.playButton2}
+        </div>
+        <p class={styles.interviewText}>ИНТЕРВЬЮ С СОЗДАТЕЛЕМ КОМПАНИИ</p>
+        <div class={styles.block}>
+          <p class={styles.textReviews}>отзывы:</p>
+          <button class={styles.arrow} onClick={() => reset()}>
+            <svg class={styles.arrow}
               xmlns="http://www.w3.org/2000/svg"
               width="45"
               height="45"
               viewBox="0 0 45 45"
               fill="none"
             >
-              <g clip-path="url(#clip0_1_631)">
-                <path
-                  d="M22.2273 44.4545C34.5031 44.4545 44.4545 34.5031 44.4545 22.2273C44.4545 9.95149 34.5031 0 22.2273 0C9.95149 0 0 9.95149 0 22.2273C0 34.5031 9.95149 44.4545 22.2273 44.4545Z"
-                  stroke="#DEDEDE"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M15.8184 22.5657V14.7275L22.6093 18.6439L29.4002 22.5657L22.6093 26.4875L15.8184 30.4039V22.5657Z"
-                  fill="black"
-                  fill-opacity="0.05"
-                  stroke="#DEDEDE"
-                  stroke-miterlimit="10"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_631">
-                  <rect width="45" height="45" fill="white" />
-                </clipPath>
-              </defs>
+              <path
+                d="M2 43L43 2M43 2H2M43 2V43"
+                stroke="#DEDEDE"
+                stroke-width="3"
+              />
             </svg>
-          </div>
+          </button>
         </div>
-        <p class={styles.interviewText}>ИНТЕРВЬЮ С СОЗДАТЕЛЕМ КОМПАНИИ</p>
-        <div class={styles.block}>
-          <p class={styles.textReviews}>отзывы:</p>
-          <svg
-            class={styles.arrow}
-            xmlns="http://www.w3.org/2000/svg"
-            width="45"
-            height="45"
-            viewBox="0 0 45 45"
-            fill="none"
-          >
-            <path
-              d="M2 43L43 2M43 2H2M43 2V43"
-              stroke="#DEDEDE"
-              stroke-width="3"
-            />
-          </svg>
-        </div>
-        <svg
-          class={styles.arrow2}
-          xmlns="http://www.w3.org/2000/svg"
-          width="19"
-          height="19"
-          viewBox="0 0 19 19"
-          fill="none"
-        >
-          <path d="M1 18L18 1M18 1H1M18 1V18" stroke="#DEDEDE" />
-        </svg>
         <div class={styles.lines} />
         <div class={styles.reviews}>
           <p class={styles.recallTime}>Март 2023</p>
           <br />
           <p class={styles.review}>Мария Ш</p>
           <br />
-          <p class={styles.review2}>
+          <span class={styles.review}>
             Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
-            Спасибо Дом за домом! все сделали быстро и качественно. Нам срочно
-            нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </span>
+          <Collapse value={isExpanded1()} class={styles.myTransition}>
+            <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли.</p>
+          </Collapse>
+          <br />
+          <button class={!isExpanded1() ? styles.buttonExpand : styles.disable}
+                  onClick={() => setIsExpanded1(true)}>Раскрыть...
+          </button>
+        </div>
+        <div class={styles.lines} />
+        <div class={styles.reviews}>
+          <p class={styles.recallTime}>Февраль 2023</p>
+          <br />
+          <p class={styles.review}>Игорь Д</p>
+          <br />
+          <span class={styles.review}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </span>
+          <Collapse value={isExpanded2()} class={styles.myTransition}>
+            <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
             за домом! все сделали быстро и качественно. Нам срочно нужно было
             съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
-            все сделали быстро и качественно.
-          </p>
-          <p class={styles.reviewMobile}>
-            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
-            Спасибо Дом за домом! все сделали быстро и качественно.
-          </p>
+            все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+            за домом! все сделали быстро и качественно. Нам срочно нужно было
+            съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+            все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+            за домом! все сделали быстро и качественно. Нам срочно нужно было
+            съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+            все сделали быстро и качественно.</p>
+          </Collapse>
           <br />
-          <p class={styles.buttonExpand}>Раскрыть...</p>
+          <button class={!isExpanded2() ? styles.buttonExpand : styles.disable}
+                  onClick={() => setIsExpanded2(true)}>Раскрыть...
+          </button>
         </div>
         <div class={styles.lines} />
         <div class={styles.reviews}>
@@ -122,30 +124,134 @@ export default function Interview() {
           <br />
           <p class={styles.review}>Игорь Д</p>
           <br />
-          <p class={styles.review}>
+          <span class={styles.review}>
             Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
             Спасибо Дом за домом! все сделали быстро и качественно.
-          </p>
+          </span>
+          <Collapse value={isExpanded3()} class={styles.myTransition}>
+            <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо Дом
+              за домом! все сделали быстро и качественно. Нам срочно нужно было
+              съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+              все сделали быстро и качественно.</p>
+          </Collapse>
           <br />
-          <p class={styles.buttonExpand}>Раскрыть...</p>
+          <button class={!isExpanded3() ? styles.buttonExpand : styles.disable}
+                  onClick={() => setIsExpanded3(true)}>Раскрыть...
+          </button>
         </div>
         <div class={styles.lines} />
-        <div class={styles.reviews}>
-          <p class={styles.recallTime}>Февраль 2023</p>
-          <br />
-          <p class={styles.review}>Игорь Д</p>
-          <br />
-          <p class={styles.review}>
+        <Collapse value={isExpanded4()} class={styles.myTransition2}>
+          <div class={styles.reviews}>
+            <p class={styles.recallTime}>Март 2023</p>
+            <br />
+            <p class={styles.review}>Мария Ш</p>
+            <br />
+            <span class={styles.review}>
             Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
-            Спасибо Дом за домом! все сделали быстро и качественно. Спасибо Дом
-            за домом! все сделали быстро и качественно.
-          </p>
-          <br />
-          <p class={styles.buttonExpand}>Раскрыть...</p>
-        </div>
-        <div class={styles.lines} />
-        <div class={styles.downloadButton}>
-          <p class={styles.textDownload}>загрузить ещё</p>
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </span>
+            <Collapse value={isExpanded5()} class={styles.myTransition}>
+              <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо
+                Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли.</p>
+            </Collapse>
+            <br />
+            <button class={!isExpanded5() ? styles.buttonExpand : styles.disable}
+                    onClick={() => setIsExpanded5(true)}>Раскрыть...
+            </button>
+          </div>
+          <div class={styles.lines} />
+          <div class={styles.reviews}>
+            <p class={styles.recallTime}>Февраль 2023</p>
+            <br />
+            <p class={styles.review}>Игорь Д</p>
+            <br />
+            <span class={styles.review}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </span>
+            <Collapse value={isExpanded6()} class={styles.myTransition}>
+              <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо
+                Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно.</p>
+            </Collapse>
+            <br />
+            <button class={!isExpanded6() ? styles.buttonExpand : styles.disable}
+                    onClick={() => setIsExpanded6(true)}>Раскрыть...
+            </button>
+          </div>
+          <div class={styles.lines} />
+          <div class={styles.reviews}>
+            <p class={styles.recallTime}>Февраль 2023</p>
+            <br />
+            <p class={styles.review}>Игорь Д</p>
+            <br />
+            <span class={styles.review}>
+            Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+            Спасибо Дом за домом! все сделали быстро и качественно.
+          </span>
+            <Collapse value={isExpanded7()} class={styles.myTransition}>
+              <p class={styles.review}>Нам срочно нужно было съехать со съемной квартиры, искали и нашли. Спасибо
+                Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно. Нам срочно нужно было съехать со съемной квартиры, искали и нашли.
+                Спасибо Дом
+                за домом! все сделали быстро и качественно. Нам срочно нужно было
+                съехать со съемной квартиры, искали и нашли. Спасибо Дом за домом!
+                все сделали быстро и качественно.</p>
+            </Collapse>
+            <br />
+            <button class={!isExpanded7() ? styles.buttonExpand : styles.disable}
+                    onClick={() => setIsExpanded7(true)}>Раскрыть...
+            </button>
+          </div>
+          <div class={styles.lines} />
+        </Collapse>
+        <div class={!isExpanded4() ? styles.downloadButton : styles.disable}>
+          <button class={styles.textDownload} onClick={() => setIsExpanded4(true)}>загрузить ещё</button>
         </div>
       </div>
     </>
