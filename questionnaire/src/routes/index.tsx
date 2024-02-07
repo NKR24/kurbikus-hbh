@@ -19,7 +19,6 @@ export default function Home() {
     <>
       <Title>Опросник</Title>
       <Theme />
-      <Barnhouse />
       <Catalog />
       <Questions />
       <Whyus />

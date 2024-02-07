@@ -24,7 +24,6 @@ export default function StartScreen(props: Props) {
   return (
     <>
       {isVisible() && (
-        <div class={styles.fadeOut}>
           <div class={styles.ContainerMain}>
             <div class={styles.Section}>
               <div class={styles.first}>
@@ -99,7 +98,6 @@ export default function StartScreen(props: Props) {
               </div>
             </div>
           </div>
-        </div>
       )}
       {nextComponentVisible() && (
         <div class={props.LowerClass}>

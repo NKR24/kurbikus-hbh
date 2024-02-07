@@ -24,10 +24,12 @@ export default function SliderComponent() {
         <button class={current() == 1 ? styles.activeLine : styles.line} onClick={() => moveTo(1)}/>
         <button class={current() == 2 ? styles.activeLine : styles.line} onClick={() => moveTo(2)}/>
       </div>
-      <div ref={slider}>
-        <div><Page1 /></div>
-        <div><Page2 /></div>
-        <div><Page3 /></div>
+      <div class={styles.slider}>
+        <div /*class={styles.slider}*/ ref={slider}>
+          <div><Page1 /></div>
+          <div><Page2 /></div>
+          <div><Page3 /></div>
+        </div>
       </div>
       <div class={current() != 2 ? styles.next : styles.disable} onClick={next}>
         <svg class={styles.arrow} width="70" height="135" viewBox="0 0 70 135" fill="none" xmlns="http://www.w3.org/2000/svg">

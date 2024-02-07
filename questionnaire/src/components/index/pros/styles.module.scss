@@ -2,6 +2,8 @@
 
 
 .containerMain {
+  position: relative;
+  z-index: 8;
   display: flex;
   flex-direction: column ;
   width: 100%;

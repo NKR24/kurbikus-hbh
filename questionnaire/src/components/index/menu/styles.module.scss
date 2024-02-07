@@ -2,7 +2,7 @@
 
 .button {
   position: relative;
-  z-index: 100;
+  z-index: 3;
 }
 
 .collapsed {
@@ -13,6 +13,7 @@
   grid-template-columns: repeat(2, 1fr);
   background: #dedede;
   position: absolute;
+  z-index: 2;
   animation: myAnim 0.4s ease-in-out forwards;
 }
 

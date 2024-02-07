@@ -63,8 +63,8 @@ export default function Contacts() {
             </p>
           </div>
         </div>
+        <p class={styles.website}>HBH.ru©2022</p>
       </div>
-      <p class={styles.website}>HBH.ru©2022</p>
     </>
   )
 }

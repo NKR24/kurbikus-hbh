@@ -4,7 +4,7 @@
 .container {
   background: #3E3E3E;
   width: 100%;
-  z-index: -8;
+  z-index: 5;
   position: sticky;
   top: -30%;
 }
@@ -12,6 +12,7 @@
 .next {
   display: flex;
   position: absolute;
+  z-index: 10;
   top: 40%;
   right: 2%;
   opacity: 0.4;
@@ -24,6 +25,7 @@
 .prev {
   display: flex;
   position: absolute;
+  z-index: 10;
   top: 40%;
   left: 2%;
   opacity: 0.4;
@@ -38,10 +40,20 @@
 }
 
 .houses {
+  position: relative;
+  z-index: -7;
   display: none;
 }
 
+.arrow{
+  position: relative;
+  z-index: 10;
+}
 
+.slider {
+  position: relative;
+  z-index: -7;
+}
 
 @include sm {
   .houses {
@@ -85,6 +97,8 @@
   }
 
   .lines {
+    position: relative;
+    z-index: -7;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;

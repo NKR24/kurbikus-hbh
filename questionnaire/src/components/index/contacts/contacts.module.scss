@@ -1,17 +1,20 @@
 @import "../../../utils";
 
 .contacts {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  position: relative;
+  z-index: 8;
   height: auto;
   background: #DEDEDE;
 }
 
 .containerMain {
+  background: #DEDEDE;
   display: flex;
   flex-direction: row;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   max-width: max(1728px);
 }
 
@@ -111,6 +114,8 @@
 }
 
 .website {
+  position: relative;
+  z-index: 8;
   width: 100%;
   background: #DEDEDE;
   padding-top: 38px;
@@ -130,7 +135,9 @@
 
 @include xxl {
   .containerMain {
-    margin: 0 auto;
+    margin: auto auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
   }
   .First {
     margin-left: 100.66px;
@@ -199,11 +206,16 @@
 
 @include sm{
   .contacts {
-    margin-top: 10.18px;
+    background: #DEDEDE;
+    padding-top: 10.18px;
+  }
+
+  .containerMain {
     border-bottom: 0.5px solid black;
     border-top: 0.5px solid black;
     border-left: 0.5px solid black;
     border-right: 0.5px solid black;
+
     margin-left: 3.41vw;
     margin-right: 2.95vw;
   }
