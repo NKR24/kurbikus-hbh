@@ -14,9 +14,12 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  max-width: max(1728px);
+}
+
+.borderWrap {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
-  max-width: max(1728px);
 }
 
 .boxSecond {
@@ -137,8 +140,6 @@
 @include xxl {
   .containerMain {
     margin: auto auto;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
   }
   .First {
     margin-left: 100.66px;
@@ -219,6 +220,11 @@
     margin-top: 5px;
     margin-left: 3.41vw;
     margin-right: 2.95vw;
+  }
+
+  .borderWrap {
+    border-bottom: 0;
+    border-top: 0;
   }
 
   .boxSecond {

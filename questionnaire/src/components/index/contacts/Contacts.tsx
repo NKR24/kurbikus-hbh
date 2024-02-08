@@ -17,7 +17,8 @@ export default function Contacts() {
         <Accordion />
         <Pros />
         <Aboutus />
-        <div class={styles.containerMain}>
+        <div class={styles.borderWrap}>
+          <div class={styles.containerMain}>
           <div class={styles.boxOne}>
             <div class={styles.logo}>
               <div class={styles.font} />
@@ -72,6 +73,7 @@ export default function Contacts() {
               МКАД, 69-й километр, внешняя сторона, к19
             </p>
           </div>
+        </div>
         </div>
         <p class={styles.website}>HBH.ru©2022</p>
       </div>
