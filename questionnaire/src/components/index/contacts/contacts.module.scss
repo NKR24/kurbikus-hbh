@@ -1,8 +1,9 @@
 @import "../../../utils";
 
 .contacts {
-  position: relative;
-  z-index: 8;
+  position: sticky;
+  top: 500vh;
+  z-index: 7;
   height: auto;
   background: #DEDEDE;
 }

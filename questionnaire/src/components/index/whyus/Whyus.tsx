@@ -1,11 +1,13 @@
 import clsx from "clsx"
 import styles from "./styles.module.scss"
 import Observer from "~/components/observer"
+import Questions from "~/components/index/questions"
 
 export default function Whyus() {
   return (
     <>
       <div class={styles.containerMain}>
+        <Questions />
         <div class={styles.containerDesktop}>
           <div class={styles.boxOne}>
             <h1 class={styles.mainText}>ПОЧЕМУ МЫ?</h1>

@@ -7,8 +7,8 @@
 }
 
 .container{
-  position: relative;
-  z-index: 4;
+  /*position: relative;
+  z-index: 3;*/
   width: 100%;
   /*max-width: max(1728px);*/
   background: #DEDEDE;
@@ -154,5 +154,11 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+  }
+}
+
+@include s {
+  .section{
+    padding: 20vw 9.9vw 10vw 11.85vw;
   }
 }

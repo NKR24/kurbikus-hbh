@@ -2,8 +2,8 @@
 
 .containerMain{
   position: sticky;
-  top: -15vh;
-  z-index: 3;
+  top: -13vh;
+  z-index: 2;
   background-color: #3e3e3e;
   width: 100%;
   display: flex;
@@ -178,8 +178,14 @@
 }
 
 @include s{
+
+  .containerMain {
+    z-index: 2;
+    top: -75vh;
+  }
+
   .section{
-    padding: 22px 5vw 32px 1.3vw;
+    padding: 22px 5vw 132px 1.3vw;
   }
 
   .imageHome{

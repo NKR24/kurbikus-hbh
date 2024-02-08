@@ -1,8 +1,8 @@
 import styles from "./styles.module.scss"
 import s7image from "../../../assets/img/Section7image.jpg"
-import { createSignal } from "solid-js"
+import { createEffect, createSignal } from "solid-js"
 import { Collapse } from "solid-collapse"
-
+import { createMediaQuery } from "@solid-primitives/media"
 
 export default function Interview() {
   const [isExpanded1, setIsExpanded1] = createSignal(false)
@@ -23,9 +23,40 @@ export default function Interview() {
     setIsExpanded7(false)
   }
 
+
+  const s = createMediaQuery("(max-width: 430px)")
+  const  initialTop: number = 139
+  const [topValue, setTopValue] = createSignal({
+    top: `-${initialTop}vh`,
+  })
+
+  createEffect(() => {
+    let a = initialTop
+
+    if (isExpanded1())
+      a+=3
+    if (isExpanded2())
+      a+=15
+    if (isExpanded3())
+      a+=30
+    if (isExpanded4())
+      a+=63
+    if (isExpanded5())
+      a+=3
+    if (isExpanded6())
+      a+=15
+    if (isExpanded7())
+      a+=35
+
+    setTopValue ({
+        top: `-${a}vh`,
+      }
+    )
+  })
+
   return (
     <>
-      <div class={styles.Section7}>
+      <div class={styles.Section7} style={topValue()}>
         <div class={styles.rectangle}>
           <img src={s7image} alt="preview" class={styles.previewImage} />
           <svg

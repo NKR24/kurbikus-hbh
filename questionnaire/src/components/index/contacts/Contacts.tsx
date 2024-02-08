@@ -1,5 +1,10 @@
 import { createSignal } from "solid-js"
 import styles from "./contacts.module.scss"
+import Excursion from "~/components/index/excursion"
+import Consultation from "~/components/index/consultation"
+import Accordion from "~/components/index/accordion"
+import Pros from "~/components/index/pros"
+import Aboutus from "~/components/index/Aboutus"
 
 export default function Contacts() {
   const [openButton, setOpenButton] = createSignal(false)
@@ -7,6 +12,11 @@ export default function Contacts() {
   return (
     <>
       <div class={styles.contacts}>
+        <Excursion />
+        <Consultation />
+        <Accordion />
+        <Pros />
+        <Aboutus />
         <div class={styles.containerMain}>
           <div class={styles.boxOne}>
             <div class={styles.logo}>

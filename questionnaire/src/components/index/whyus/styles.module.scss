@@ -4,8 +4,8 @@
   width: 100%;
   background: #DEDEDE;
   position: sticky;
-  top: -20vh;
-  z-index: 4;
+  top: -133vh;
+  z-index: 3;
 }
 
 .containerDesktop {
@@ -596,5 +596,7 @@
 
 }
 @include s {
-
+ .containerMain {
+   top: -70vh
+ }
 }

@@ -20,16 +20,11 @@ export default function Home() {
       <Title>Опросник</Title>
       <Theme />
       <Catalog />
-      <Questions />
       <Whyus />
       <Foundation />
       <Demonstration />
       <Interview />
-      <Excursion />
-      <Consultation />
-      <Accordion />
-      <Pros />
-      <Aboutus />
+
       <Contacts />
     </>
   )
