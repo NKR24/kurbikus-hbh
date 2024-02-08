@@ -56,6 +56,10 @@
 }
 
 @include sm {
+  .container {
+    top: 0;
+  }
+
   .houses {
     height: 60.4651163vw;
     display: flex;

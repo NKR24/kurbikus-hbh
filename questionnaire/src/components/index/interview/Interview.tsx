@@ -24,7 +24,7 @@ export default function Interview() {
   }
 
 
-  const s = createMediaQuery("(max-width: 430px)")
+  const s = createMediaQuery("(max-width: 430px)") ////доделать
   const  initialTop: number = 139
   const [topValue, setTopValue] = createSignal({
     top: `-${initialTop}vh`,
