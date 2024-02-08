@@ -12,7 +12,6 @@
 .next {
   display: flex;
   position: absolute;
-  z-index: 10;
   top: 40%;
   right: 2%;
   opacity: 0.4;
@@ -25,7 +24,6 @@
 .prev {
   display: flex;
   position: absolute;
-  z-index: 10;
   top: 40%;
   left: 2%;
   opacity: 0.4;
@@ -41,18 +39,16 @@
 
 .houses {
   position: relative;
-  z-index: -7;
   display: none;
 }
 
 .arrow{
   position: relative;
-  z-index: 10;
+  filter: drop-shadow(1px 2px 1px black);
 }
 
 .slider {
   position: relative;
-  z-index: -7;
 }
 
 @include sm {
@@ -102,7 +98,6 @@
 
   .lines {
     position: relative;
-    z-index: -7;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;

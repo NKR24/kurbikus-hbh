@@ -24,14 +24,37 @@ export default function Interview() {
   }
 
 
-  const s = createMediaQuery("(max-width: 430px)") ////доделать
-  const  initialTop: number = 139
+  const s = createMediaQuery("(max-height: 690px)")
+  const sm = createMediaQuery("(max-height: 800px)")
+  const m = createMediaQuery("(max-height: 950px)")
+
+  function getInitTop(){
+    let a = 139
+    if (m())
+      a = 45
+    if (sm())
+      a = 45
+    if (s())
+      a = 90
+    return a
+  }
+  function getMoreButtonTop() {
+    let a = 63
+    if (m())
+      a = 68
+    if (sm())
+      a = 77
+    if (s())
+      a = 87
+    return a
+  }
+
   const [topValue, setTopValue] = createSignal({
-    top: `-${initialTop}vh`,
+    top: `-${getInitTop()}vh`,
   })
 
   createEffect(() => {
-    let a = initialTop
+    let a = getInitTop()
 
     if (isExpanded1())
       a+=3
@@ -40,7 +63,7 @@ export default function Interview() {
     if (isExpanded3())
       a+=30
     if (isExpanded4())
-      a+=63
+      a+=getMoreButtonTop()
     if (isExpanded5())
       a+=3
     if (isExpanded6())
