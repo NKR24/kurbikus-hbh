@@ -602,4 +602,11 @@
  .containerMain {
    top: -70vh
  }
+
+  @media (max-height: 770px) {
+    .containerMain {
+      top: -95vh;
+    }
+  }
+
 }
