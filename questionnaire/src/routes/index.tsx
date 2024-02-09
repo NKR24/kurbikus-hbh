@@ -13,19 +13,29 @@ import Aboutus from "~/components/index/Aboutus"
 import Contacts from "~/components/index/contacts"
 import Theme from "~/components/index/Theme/Theme"
 import Barnhouse from "~/components/index/barnhouse"
+import { createSignal, onMount, Show } from "solid-js"
 
 export default function Home() {
+  const [isRendered, setIsRendered] = createSignal(false)
+
+  onMount(() => {
+    setTimeout(() => {
+      setIsRendered(true)
+    }, 7500)
+  })
+
   return (
     <>
       <Title>Опросник</Title>
       <Theme />
-      <Catalog />
-      <Whyus />
-      <Foundation />
-      <Demonstration />
-      <Interview />
-
-      <Contacts />
+      <Show when={isRendered()}>
+        <Catalog />
+        <Whyus />
+        <Foundation />
+        <Demonstration />
+        <Interview />
+        <Contacts />
+      </Show>
     </>
   )
 }
