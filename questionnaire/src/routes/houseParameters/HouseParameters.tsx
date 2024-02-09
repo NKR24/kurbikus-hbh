@@ -58,49 +58,13 @@ export default function HouseParameters() {
             <p class={styles.number}>250</p>
           </div>
           <input
-            class={styles.slider}
+            class={clsx(styles.slider, styles.sliderMobile)}
             type="range"
             min="45"
             max="250"
             value={sliderValue()}
             onInput={handleSliderChange}
             id="myRange"
-            style={{
-              appearance: "none",
-              width: "100%",
-              background: `url('data:image/svg+xml;utf8,<svg width="790" height="26" viewBox="0 0 790 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.7037H787.63" stroke="black" stroke-width="2"/><line x1="1" y1="4.37115e-08" x2="0.999999" y2="25.4074" stroke="black" stroke-width="2"/><line x1="196.637" y1="4.34294e-08" x2="196.637" y2="25.4074" stroke="black" stroke-width="2"/><line x1="394.815" y1="4.34294e-08" x2="394.815" y2="25.4074" stroke="black" stroke-width="2"/><line x1="590.452" y1="4.34294e-08" x2="590.452" y2="25.4074" stroke="black" stroke-width="2"/><line x1="788.63" y1="4.34294e-08" x2="788.63" y2="25.4074" stroke="black" stroke-width="2"/></svg>') center center no-repeat`,
-            }}
-          />
-        </div>
-      </>
-    )
-  }
-
-  function SliderMobile() {
-    return (
-      <>
-        <div class={styles.containerSlideMobile}>
-          <p class={styles.sliderTextMobile}>От {sliderValue()} до 250</p>
-          <div class={styles.sliderNumbersMobile}>
-            <p class={styles.numberMobile}>45</p>
-            <p class={styles.numberMobile}>95</p>
-            <p class={styles.numberMobile}>145</p>
-            <p class={styles.numberMobile}>200</p>
-            <p class={styles.numberMobile}>250</p>
-          </div>
-          <input
-            class={styles.sliderMobile}
-            type="range"
-            min="45"
-            max="250"
-            value={sliderValue()}
-            onInput={handleSliderChange}
-            id="myRange"
-            style={{
-              appearance: "none",
-              width: "100%",
-              background: `url('data:image/svg+xml;utf8,<svg width="311" height="10" viewBox="0 0 311 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5H310" stroke="black"/><line x1="0.5" y1="2.18557e-08" x2="0.5" y2="10" stroke="black"/><line x1="77.5" y1="2.17147e-08" x2="77.5" y2="10" stroke="black"/><line x1="155.5" y1="2.17147e-08" x2="155.5" y2="10" stroke="black"/><line x1="232.5" y1="2.17147e-08" x2="232.5" y2="10" stroke="black"/><line x1="310.5" y1="2.17147e-08" x2="310.5" y2="10" stroke="black"/></svg>`,
-            }}
           />
         </div>
       </>
@@ -197,7 +161,6 @@ export default function HouseParameters() {
               <h1 class={styles.textMain}>площадь?</h1>
               <div class={styles.boxSquare}>
                 <Slider />
-                <SliderMobile />
                 <button class={styles.buttonSelectAll}>
                   <span>выбрать все</span>
                 </button>

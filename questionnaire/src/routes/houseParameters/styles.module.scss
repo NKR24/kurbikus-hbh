@@ -157,7 +157,7 @@
   align-items: center;
 }
 
-.item img{
+.item img {
   width: 68%;
 }
 
@@ -236,7 +236,8 @@
 .slider {
   width: 100%;
   flex-shrink: 0;
-  /*margin-bottom: 403px;*/
+  background: url("sliderDesktop.svg") no-repeat center center;
+  appearance: none;
 }
 
 .slider::-webkit-slider-thumb {
@@ -265,7 +266,7 @@
   text-transform: lowercase;
 }
 
-.sliderMobile{
+.sliderMobile {
   width: 100%;
   flex-shrink: 0;
 }
@@ -399,79 +400,131 @@
   align-items: center;
 }
 
-.containerSliderMobile{
+.containerSliderMobile {
   display: none;
 }
 
-@include l{
-  .textMain{
+@include l {
+
+  .containerSection {
+    padding: 51px 115px 59px;
+  }
+
+  .textMain {
     font-size: 94px;
   }
 
-  span{
+  span {
     font-size: 24px;
   }
 
-  .buttons{
+  .buttons {
     column-gap: 15px;
   }
 
-  .partTwo{
+  .partTwo {
     justify-content: center;
     margin-top: 150px;
   }
 
-  .partTwo .buttonSelectAll{
+  .partTwo .buttonSelectAll {
     margin-left: -15px;
   }
 
-  .storeys{
-    margin-bottom: 121px;
+  .storeys {
+    margin-bottom: 45px;
   }
 
-  .boxMaterials{
+  .boxMaterials {
     column-gap: 6px;
   }
 
-  .containerSliderMobile{
+  .containerSliderMobile {
     display: none;
+  }
+
+  .slider {
+    background-size: 600px;
+  }
+
+  .number{
+    font-size: 25px;
+  }
+
+  .sliderNumbers{
+    column-gap: 105px;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-bottom: 214px;
   }
 }
 
-@include lg{
-  .box{
+@include lg {
+  .box {
     flex-direction: column;
   }
 
-  .partTwo{
+  .partTwo {
     flex-direction: unset;
     padding-bottom: 25px;
     margin-top: 40px;
   }
 
-  .boxMaterials{
+  .boxMaterials {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .textMain{
+  .textMain {
     font-size: 85px;
   }
 
-  .partOne{
+  .partOne {
     margin-bottom: 0;
   }
 
-  span{
+  span {
     font-size: 22px;
   }
 
-  .containerSliderMobile{
+  .containerSliderMobile {
     display: none;
   }
+
+  .material img{
+    width: 68%;
+  }
+
+  .material{
+    height: 244px;
+  }
+
+  .boxMaterials{
+    margin-bottom: 85px;
+  }
+
+  .boxMaterials .buttonSelectAll {
+    margin-top: 192px;
+    margin-left: 52px;
+  }
+
+  .frameButton{
+    margin-top: -22px;
+    width: 211px;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-bottom: 224px;
+  }
+
+  .storeys{
+    margin-bottom: 55px;
+  }
+
 }
 
-@include md{
-  .textMain{
+@include md {
+  .textMain {
     font-size: 75px;
   }
 
@@ -480,46 +533,59 @@
     height: auto;
   }
 
-  .chaletItem{
+  .chaletItem {
     width: 65%;
     height: 195px;
   }
 
-  span{
+  span {
     font-size: 17px;
   }
 
-  .item{
+  .item {
     width: 270px;
     height: 300px;
   }
 
-  .containerSection{
+  .containerSection {
     padding: 51px 32px 59px;
   }
 
-  .partTwo .buttonSelectAll{
+  .partTwo .buttonSelectAll {
     margin-left: 2vw;
   }
 
-  .storeys{
+  .storeys {
     margin-bottom: 69px;
   }
 
-  .storeys img{
+  .storeys img {
     margin-left: 134px;
     max-width: 57%;
     height: auto;
   }
 
-  .buttonStoreys{
+  .buttonStoreys {
     margin-top: 130px;
     margin-bottom: 34px;
   }
+
+  .slider {
+    background-size: 400px;
+  }
+
+  .sliderNumbers{
+    column-gap: 57px;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-top: 122px;
+    margin-bottom: 195px;
+  }
 }
 
-@include sm{
-  .textMain{
+@include sm {
+  .textMain {
     font-size: 9.375vw;
   }
 
@@ -528,68 +594,145 @@
     height: auto;
   }
 
-  .chaletItem{
+  .chaletItem {
     width: 100%;
     height: 195px;
   }
 
-  span{
+  span {
     font-size: 2.65vw;
   }
 
-  .item{
+  .item {
     width: 42.19vw;
     height: 300px;
   }
 
-  .partTwo .buttonSelectAll{
+  .partTwo .buttonSelectAll {
     width: 31.875vw;
     margin-left: 3vw;
   }
 
-  .containerSection{
+  .containerSection {
     padding: 51px 32px 59px;
   }
 
-  .choiceTab{
+  .choiceTab {
     width: 24.53vw;
     height: 7.18vw;
   }
 
-  .choiceTab span{
+  .choiceTab span {
     font-size: 2.66vw;
   }
 
-  .partTwo{
+  .partTwo {
     margin-top: 6.25vw;
   }
 
-  .storeys{
-    margin-bottom: 69px;
-  }
-
-  .storeys img{
+  .storeys img {
     margin-left: 20.94vw;
     max-width: 57%;
     height: auto;
   }
 
-  .buttonStoreys{
+  .buttonStoreys {
     margin-top: 20.31vw;
     margin-bottom: 17.44vw;
   }
 
-  .buttonSelectAll{
+  .buttonSelectAll {
     width: 31.875vw;
   }
 
-  .storeys{
+  .storeys {
     margin-bottom: 10.78vw;
+  }
+
+  .sliderText{
+    margin-top: 31.86vw;
+    margin-bottom: 13.25vw;
+    font-weight: 400;
+    font-size: 5.58vw;
+  }
+
+  .number{
+    font-size: 3.72vw;
+  }
+
+  .sliderNumbers{
+    column-gap: 10.79vw;
+  }
+
+  .slider{
+    background-size: 72.09vw;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-top: 47.1vw;
+    margin-bottom: 16.74vw;
+  }
+
+  .storeys {
+    margin-bottom: 13.78vw;
+  }
+
+  .material{
+    width: 33.95vw;
+    height: 37.44vw;
+  }
+
+  .woodButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .glueButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .frameButton{
+    margin-top: -12px;
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .ceramicButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .brickButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .boxMaterials .buttonSelectAll {
+    width: 34.88vw;
+    height: 7.91vw;
+    margin-top: 25.116vw;
+    margin-left: 0;
+  }
+
+  .boxMaterials{
+    column-gap: 7.90vw;
+    margin-bottom: 18.8vw;
   }
 }
 
-@include s{
-  .textMain{
+@include s {
+  .textMain {
     font-size: 11.16vw;
   }
 
@@ -598,73 +741,153 @@
     height: auto;
   }
 
-  .chaletItem{
+  .chaletItem {
     width: 65%;
     height: 195px;
   }
 
-  span{
+  span {
     font-size: 2.56vw;
   }
 
-  .item{
+  .item {
     width: 46.51vw;
     height: 230px;
   }
 
-  .containerSection{
+  .containerSection {
     padding: 5.81vw 7.44vw 3.49vw;
   }
 
-  .choiceTab{
+  .choiceTab {
     width: 26.51vw;
     height: 35px;
   }
 
-  .choiceTab span{
+  .choiceTab span {
     font-size: 3.72vw;
   }
 
-  .buttons{
+  .buttons {
     column-gap: 2.33vw;
   }
 
-  img{
+  img {
     max-width: 85%;
   }
 
-  .buttonSelectAll{
+  .buttonSelectAll {
     width: 32.79vw;
     height: 35px;
     background: black;
     color: white;
   }
 
-  .buttonSelectAll span{
+  .buttonSelectAll span {
     font-size: 3.72vw;
   }
 
-  .partTwo{
+  .partTwo {
     margin-left: 0;
   }
 
-  .partTwo .buttonSelectAll{
+  .partTwo .buttonSelectAll {
     margin-left: 0;
   }
 
-  .buttonOne{
+  .buttonOne {
     width: 35px;
     height: 35px;
   }
 
-  .buttonTwo{
+  .buttonTwo {
     width: 35px;
     height: 35px;
   }
 
-  .buttonStoreys{
+  .buttonStoreys {
     column-gap: 2.79vw;
 
   }
 
+  .sliderText{
+    margin-top: 31.86vw;
+    margin-bottom: 13.25vw;
+    font-weight: 400;
+    font-size: 5.58vw;
+  }
+
+  .number{
+    font-size: 3.72vw;
+  }
+
+  .sliderNumbers{
+    column-gap: 10.79vw;
+  }
+
+  .slider{
+    background-size: 72.09vw;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+  }
+
+  .boxSquare .buttonSelectAll {
+    margin-top: 47.1vw;
+    margin-bottom: 16.74vw;
+  }
+
+  .storeys {
+    margin-bottom: 13.78vw;
+  }
+
+  .material{
+    width: 33.95vw;
+    height: 37.44vw;
+  }
+
+  .woodButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .glueButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .frameButton{
+    margin-top: -12px;
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .ceramicButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .brickButton{
+    width: 34.88vw;
+    height: 7.91vw;
+  }
+
+  .boxMaterials .buttonSelectAll {
+    width: 34.88vw;
+    height: 7.91vw;
+    margin-top: 25.116vw;
+    margin-left: 0;
+  }
+
+  .boxMaterials{
+    column-gap: 7.90vw;
+    margin-bottom: 18.8vw;
+  }
 }
