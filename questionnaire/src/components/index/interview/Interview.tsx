@@ -27,26 +27,41 @@ export default function Interview() {
   const s = createMediaQuery("(max-height: 690px)")
   const sm = createMediaQuery("(max-height: 800px)")
   const m = createMediaQuery("(max-height: 950px)")
+  const mob = createMediaQuery("(max-width: 768px)")
 
   function getInitTop(){
-    let a = 139
-    if (m())
-      a = 45
-    if (sm())
-      a = 45
-    if (s())
-      a = 90
-    return a
+    if (!mob()){
+      if(s())
+        return 300
+      if(sm())
+        return 230
+      if(m())
+        return 190
+      return 154
+    }
+    else {
+      if (s())
+        return 90
+      return 45
+    }
   }
   function getMoreButtonTop() {
-    let a = 63
-    if (m())
-      a = 68
-    if (sm())
-      a = 77
-    if (s())
-      a = 87
-    return a
+    if (!mob()){
+      if(s())
+        return 90
+      if(sm())
+        return 175
+      if(m())
+        return 120
+      return 57
+    }
+    else {
+      if (s())
+        return  87
+      if (sm())
+        return  77
+      return 68
+    }
   }
 
   const [topValue, setTopValue] = createSignal({

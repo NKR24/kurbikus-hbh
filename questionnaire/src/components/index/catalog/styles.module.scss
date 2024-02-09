@@ -2,7 +2,7 @@
 
 .containerMain{
   position: sticky;
-  top: -13vh;
+  top: -25vw;
   z-index: 2;
   background-color: #3e3e3e;
   width: 100%;
@@ -96,12 +96,20 @@
   }
 }
 
+/*@media (max-width: 1650px) {
+  .containerMain{
+    top: -35vh
+  }
+}
+
 @include xl{
 }
 
 @include l{
-
-}
+  .containerMain{
+    top: -13vh
+  }
+}*/
 
 @include lg{
 

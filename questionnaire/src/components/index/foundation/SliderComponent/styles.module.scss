@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 4;
   position: sticky;
-  top: -30%;
+  top: -25vw;
 }
 
 .next {
@@ -50,6 +50,19 @@
 .slider {
   position: relative;
 }
+
+@media (max-width: 1650px) {
+  .container{
+    top: -23vw
+  }
+}
+
+@include l {
+  .container{
+    top: -30%
+  }
+}
+
 
 @include sm {
   .container {

@@ -3,7 +3,7 @@
 .fadeIn{
   z-index: 1;
   position: sticky;
-  top: -13vh;
+  top: -25vw;
 
   animation: fadeIn 2s forwards;
   opacity: 0;
@@ -14,3 +14,15 @@
   100% {opacity: 1; transform: translateY(0)}
 }
 
+
+/*@media (max-width: 1650px) {
+  .fadeIn{
+    top: -35vh
+  }
+}
+
+@include l {
+  .fadeIn{
+    top: -13vh
+  }
+}*/
