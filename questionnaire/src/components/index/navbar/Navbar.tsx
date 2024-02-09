@@ -7,22 +7,22 @@ export default function Navbar() {
   const state = createNavbarState()
 
   return (
-      <div class="container lg: m-auto">
-        <nav
-          class="
+    <div class="container lg: m-auto">
+      <nav
+        class="
             flex
 
             max-w-[1635px]
 
             h-[73px] md:h-[105px]
 
-            px-[22px] md:px-[104px]
+
           "
-        >
-          <Logo />
-          <div class="flex w-full justify-between leading-[1.3]">
-            <span
-              class="
+      >
+        <Logo />
+        <div class="flex w-full justify-between leading-[1.3]">
+          <span
+            class="
                 text-[8px] md:text-[12px] lg:text-[15px]
 
                 w-[150px] md:w-[250px] lg:w-[370px]
@@ -30,15 +30,16 @@ export default function Navbar() {
                 pt-[19px] md:pt-[52px]
                 pl-[17px]
               "
-            >
-              {state.label()}
-            </span>
-            <div class="pt-[14px] md:pt-[23px]">
-              <Menu size={state.menuButtonSize()} />
-            </div>
+          >
+            {state.label()}
+          </span>
+          <PhoneNumber />
+          <div class="pt-[14px] md:pt-[23px]">
+            <Menu size={state.menuButtonSize()} />
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
   )
 }
 
@@ -81,5 +82,21 @@ function Logo() {
         "
       />
     </div>
+  )
+}
+
+function PhoneNumber() {
+  return (
+    <a
+      class="hidden xl:block"
+      style={{
+        "font-size": "24px",
+        "align-self": "center",
+      }}
+      href="tel:+79854723509"
+    >
+      {" "}
+      8 985 472 35 09
+    </a>
   )
 }

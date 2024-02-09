@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <Title>Опросник</Title>
+      <Title>Дом За Домом</Title>
       <Theme />
       <Show when={isRendered()}>
         <Catalog />
