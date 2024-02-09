@@ -32,62 +32,62 @@ export default function Interview() {
   function getInitTop(){
     if (!mob()){
       if(s())
-        return 300
+        return 2000
       if(sm())
-        return 230
+        return 1750
       if(m())
-        return 190
-      return 154
+        return 1600
+      return 1400
     }
     else {
       if (s())
-        return 90
-      return 45
+        return 750
+      return 450
     }
   }
   function getMoreButtonTop() {
     if (!mob()){
       if(s())
-        return 90
+        return 600
       if(sm())
-        return 175
+        return 650
       if(m())
-        return 120
-      return 57
+        return 750
+      return 950
     }
     else {
       if (s())
-        return  87
+        return  600
       if (sm())
-        return  77
-      return 68
+        return  650
+      return 700
     }
   }
 
   const [topValue, setTopValue] = createSignal({
-    top: `-${getInitTop()}vh`,
+    top: `-${getInitTop()}px`,
   })
 
   createEffect(() => {
     let a = getInitTop()
 
     if (isExpanded1())
-      a+=3
+      a+=50
     if (isExpanded2())
-      a+=15
+      a+=200
     if (isExpanded3())
-      a+=30
+      a+=400
     if (isExpanded4())
       a+=getMoreButtonTop()
     if (isExpanded5())
-      a+=3
+      a+=50
     if (isExpanded6())
-      a+=15
+      a+=200
     if (isExpanded7())
-      a+=35
+      a+=400
 
     setTopValue ({
-        top: `-${a}vh`,
+        top: `-${a}px`,
       }
     )
   })
