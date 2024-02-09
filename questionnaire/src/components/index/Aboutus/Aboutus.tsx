@@ -4,7 +4,7 @@ import clsx from "clsx"
 export default function Aboutus() {
   return (
     <>
-      <div class={styles.containerMain}>
+      <div class={styles.containerMain} id={"team"}>
         <div class={styles.containerSection}>
           <p class={styles.textMain}>О НАС</p>
           <div class={styles.table}>

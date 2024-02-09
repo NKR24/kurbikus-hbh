@@ -1,6 +1,8 @@
-import { createSignal } from "solid-js"
+import { createEffect, createSignal } from "solid-js"
 import { Collapse } from "solid-collapse"
 import styles from "./accordionStyles.module.scss"
+import { globalSignal, setGlobalSignal } from "~/global_state/globalState";
+
 
 export default function Accordion() {
   const [isExpandedOne, setIsExpandedOne] = createSignal(false)
@@ -9,6 +11,13 @@ export default function Accordion() {
   const [isExpandedFour, setIsExpandedFour] = createSignal(false)
   const [isExpandedFive, setIsExpandedFive] = createSignal(false)
   const [isExpandedSix, setIsExpandedSix] = createSignal(false)
+
+  createEffect(() => {
+    if(globalSignal()) {
+      setIsExpandedThree(true)
+      setGlobalSignal(false)
+    }
+  })
 
   return (
     <div class={styles.containerMain}>
@@ -66,15 +75,15 @@ export default function Accordion() {
             </Collapse>
           </div>
         </div>
-        <div class={styles.boxThree}>
+        <div class={styles.boxThree} id="materials">
           <div class={styles.first}>
             <h1 class={styles.mainText}>Какие материалы используем</h1>
             <button
               classList={{
                 [styles.button]: true,
-                [styles.buttonActive]: isExpandedThree(),
+                [styles.buttonActive]: isExpandedThree()
               }}
-              onClick={() => setIsExpandedThree(!isExpandedThree())}
+              onClick={() => {setIsExpandedThree(!isExpandedThree())}}
             >
               <div class={styles.plus} />
             </button>

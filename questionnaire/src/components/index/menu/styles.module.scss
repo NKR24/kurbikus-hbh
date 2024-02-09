@@ -1,18 +1,46 @@
 @import "../../../utils";
 
-.button {
+
+.btn {
   position: relative;
   z-index: 3;
+  cursor: pointer;
+}
+
+.btnLine {
+
+}
+
+.btnLineOpen {
+
+}
+
+.btnLineClosed1 {
+  transform-origin:   0   9.5px;
+  transform: rotate(45deg) translate(0, -7px);
+  transition: transform 0.3s linear;
+}
+
+.btnLineClosed2 {
+  transform-origin:   0   19.5px;
+  transform: rotate(-45deg) translate(0,   7px);
+  transition: transform 0.3s linear;
 }
 
 .collapsed {
   margin-top: -100px;
   padding-top: 115px;
-  margin-left: -1364px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #dedede;
   position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 4.5vw;
+  padding-right: 4.5vw;
+  max-width: 1728px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
   animation: myAnim 0.4s ease-in-out forwards;
 }
@@ -22,7 +50,8 @@
 }
 
 .box {
-  padding: 15px 237px 15px 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -51,32 +80,26 @@
 
 @include xl {
   .collapsed {
-    margin-left: -1140px;
   }
 
   .box {
-    padding: 15px 192px 15px 189px;
   }
 }
 
 @include l {
   .collapsed {
-    margin-left: -884px;
   }
 
   .box {
     border: 0.5px solid black;
-    padding: 15px 116px 15px 136px;
   }
 }
 
 @include lg {
   .collapsed {
-    margin-left: -768px;
   }
 
   .box {
-    padding: 15px 66px 15px 72px;
   }
 }
 
@@ -87,12 +110,14 @@
   }
 
   .collapsed {
-    margin-top: -90px;
-    margin-left: -563px;
+    padding-top: 63vw;
+    padding-bottom: 72vw;
+    height: 100%;
+    row-gap: 0;
   }
 
   .box {
-    padding: 15px 66px 15px 72px;
+    max-height: 61px;
   }
 }
 
@@ -102,12 +127,11 @@
   }
 
   .collapsed {
-    margin-top: -90px;
-    margin-left: -567px;
+    padding-top: 65vw;
+    padding-bottom: 71.86vw;
   }
 
   .box {
-    padding: 15px 71px 15px 73px;
   }
 }
 
@@ -117,14 +141,11 @@
   }
 
   .collapsed {
-    padding-bottom: 298px;
-    padding-top: 286px;
-    margin-top: -49px;
-    margin-left: -358px;
+    padding-top: 280px;
+    padding-bottom: 309px;
   }
 
   .box {
-    padding: 15px 27px 15px 24px;
   }
 }
 

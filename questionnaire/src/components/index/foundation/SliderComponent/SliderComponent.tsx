@@ -13,7 +13,7 @@ import clsx from "clsx"
 export default function SliderComponent() {
   const [slider, { current, next, prev, moveTo }] = createSlider();
   return (<>
-    <div class={styles.container}>
+    <div class={styles.container} id="stages">
       <div class={styles.houses}>
         <img class={clsx(styles.slide1, current() == 0 ? styles.animation : styles.animationOff)} src={slide1} alt={"slide 1"} />
         <img class={clsx(styles.slide2, current() == 1 ? styles.animation : styles.animationOff)} src={slide2} alt={"slide 2"} />

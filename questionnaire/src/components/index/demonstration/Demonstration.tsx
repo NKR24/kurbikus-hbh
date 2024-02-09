@@ -25,7 +25,7 @@ export default function Demonstration() {
 
   return (
     <>
-      <main class={styles.main}>
+      <main class={styles.main} id="houses">
         <div class={styles.section}>
           <section class={styles.first}>
             <button

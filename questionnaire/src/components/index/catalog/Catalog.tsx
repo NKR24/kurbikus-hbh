@@ -10,7 +10,7 @@ import Observer from "~/components/observer"
 export default function Catalog() {
   return (
     <>
-      <div class={styles.containerMain}>
+      <div class={styles.containerMain} id="catalog">
         <div class={clsx(styles.section, styles.fonts)}>
           <Observer animationClass={styles.animation}>
             <div class={styles.firstText}>каталоги домов с ценами</div>

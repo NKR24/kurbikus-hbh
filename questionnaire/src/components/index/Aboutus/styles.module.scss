@@ -202,30 +202,38 @@
 .text {
   font-size: 1.17vw;
 }
+.textMain {
+  margin-bottom: 30px;
+  margin-top: 60px;
+  height: auto;
+  font-weight: 400;
+  font-size: 48px;
+}
 .main {
   width: 18vw;
   height: 4.2vw;
   font-size: 2.34vw;
 }
 .containerMain {
-  display: none;
+  padding-bottom: 101px;
 }
+
 }
 
 @include md {
 .containerMain {
-  display: none;
 }
 }
 
 @include sm {
 .containerMain {
-  display: none;
+  padding-left: 22px;
+  padding-right: 25px;
+  padding-bottom: 50px;
 }
 }
 
 @include s {
 .containerMain {
-  display: none;
 }
 }
