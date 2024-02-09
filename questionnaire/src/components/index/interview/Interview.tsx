@@ -41,7 +41,11 @@ export default function Interview() {
     }
     else {
       if (s())
-        return 750
+        return 850
+      if (sm())
+        return 800
+      if (m())
+        return 550
       return 450
     }
   }
@@ -57,10 +61,10 @@ export default function Interview() {
     }
     else {
       if (s())
-        return  600
-      if (sm())
         return  650
-      return 700
+      if (sm())
+        return  700
+      return 750
     }
   }
 

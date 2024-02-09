@@ -188,8 +188,13 @@
 @include s{
 
   .containerMain {
-    z-index: 2;
     top: -75vh;
+  }
+
+  @media (max-height: 770px) {
+    .containerMain {
+      top: -95vh;
+    }
   }
 
   .section{
