@@ -90,6 +90,7 @@ function PhoneNumber() {
     <a
       class="hidden xl:block"
       style={{
+        "padding-left": "14vw",
         "font-size": "24px",
         "align-self": "center",
       }}
