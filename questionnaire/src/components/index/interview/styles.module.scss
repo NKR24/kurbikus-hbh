@@ -203,6 +203,11 @@
 }
 
 @include md {
+
+  .rectangle img{
+    max-width: 100%;
+  }
+
   .reviews {
     margin-left: 5.5vw;
     margin-right: 4vw;
@@ -266,6 +271,11 @@
 }
 
 @include s {
+
+  .rectangle img{
+    max-width: 100%;
+  }
+
   .review, .review2, .recallTime {
     font-size: 14px;
   }

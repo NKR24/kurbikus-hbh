@@ -141,10 +141,9 @@
     max-height: 100%;
   }
 
-  .imageHome {
+  .img{
     height: 47.81vw;
     width: 74.53vw;
-    flex-shrink: 0;
   }
 
   .textOverlay {
@@ -186,6 +185,8 @@
 }
 
 @include s{
+
+
 
   .containerMain {
     top: -75vh;
